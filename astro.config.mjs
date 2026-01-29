@@ -1,16 +1,31 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-// https://astro.build/config
 export default defineConfig({
-site: 'https://dpg-archive.vercel.app',
+  site: 'https://dpg-archive.vercel.app',
   integrations: [
     starlight({
-      title: '디지털 피아노 갤러리 아카이브', // 사이드바 상단에 표시될 사이트 제목
+      title: '디지털 피아노 갤러리 아카이브',
       sidebar: [
         {
-          label: '카테고리 전체', // 메뉴 묶음의 대표 이름
-          autogenerate: { directory: 'dpga' }, // docs 폴더 내 모든 하위 폴더를 자동으로 메뉴화
+          label: '디지털 피아노',
+          autogenerate: { directory: '디지털 피아노' }
+        },
+        {
+          label: '음악 이론',
+          autogenerate: { directory: '음악 이론' }
+        },
+        {
+          label: '피아노 연습',
+          autogenerate: { directory: '피아노 연습' }
+        },
+        {
+          label: '가상 악기',
+          autogenerate: { directory: '가상 악기' }
+        },
+        {
+          label: '음악 이야기',
+          autogenerate: { directory: '음악 이야기' }
         },
       ],
     }),
