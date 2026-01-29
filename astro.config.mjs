@@ -3,6 +3,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+site: 'https://dpg-archive.vercel.app',
   integrations: [
     starlight({
       title: '디지털 피아노 갤러리 아카이브', // 사이드바 상단에 표시될 사이트 제목
