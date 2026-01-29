@@ -10,7 +10,7 @@ site: 'https://dpg-archive.vercel.app',
       sidebar: [
         {
           label: '카테고리 전체', // 메뉴 묶음의 대표 이름
-          autogenerate: { directory: '/' }, // docs 폴더 내 모든 하위 폴더를 자동으로 메뉴화
+          autogenerate: { directory: 'dpga' }, // docs 폴더 내 모든 하위 폴더를 자동으로 메뉴화
         },
       ],
     }),
