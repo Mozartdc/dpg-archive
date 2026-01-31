@@ -4,6 +4,12 @@ title: v. 장조와 단조의 3화음
 
 <img src="/images/v.-장조와-단조의-3화음-0.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
+<p style="margin-bottom: 1em;"></p>
+
+<p style="margin-bottom: 1em;"></p>
+
+---
+
 <p style="margin-bottom: 1em;">장음계와 화성 단음계의 각 음을 근음으로 하여 3도씩 쌓아 올리면, 총 7개의 기본 3화음이 만들어짐.</p>
 
 <p style="margin-bottom: 1em;"></p>
@@ -31,11 +37,16 @@ title: v. 장조와 단조의 3화음
 | <strong>vi / VI</strong> | 버금가온화음 | Submediant Triad |
 | <strong>vii° / vii°</strong> | 이끔화음 | Leading-tone Triad |
 
-<p style="margin-bottom: 1em;">장은 Major니까 대문자, 단은 minor니까 소문자, 증(Aug)은 더해져서 +, 감(Dim)은 비어서(0) °라고 외우면 됨.</p>
+<p style="margin-bottom: 1em;">장은 Major니까 대문자, 
+단은 minor니까 소문자, 
+증(Aug)은 더해져서 +, 
+감(Dim)은 비어서(0) °라고 외우면 됨.</p>
 
 <p style="margin-bottom: 1em;"></p>
 
 ---
+
+<p style="margin-bottom: 1em;"></p>
 
 
 <div style="background-color: #F1F1EF; padding: 20px; border-radius: 8px; display: flex; flex-direction: column; gap: 10px; margin: 20px 0; color: #37352f; border: 1px solid #e5e7eb;">
@@ -45,7 +56,11 @@ title: v. 장조와 단조의 3화음
       
     </div>
   </div>
-  <div style="margin-top: 10px; width: 100%; display: flex; flex-direction: column; gap: 10px;">  <p style="margin-bottom: 1em;">본 게시물은 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a> 의 글을 복사한 것입니다. 관련 질문이나 문의는 우리 갤러리를 방문해주세요.</p>
+  <div style="margin-top: 10px; width: 100%; display: flex; flex-direction: column; gap: 10px;">---
+
+  <p style="margin-bottom: 1em;"></p>
+
+  <p style="margin-bottom: 1em;">본 게시물은 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a> 의 글을 복사한 것입니다. 관련 질문이나 문의는 우리 갤러리를 방문해주세요.</p>
 
 <img src="/images/v.-장조와-단조의-3화음-1.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 

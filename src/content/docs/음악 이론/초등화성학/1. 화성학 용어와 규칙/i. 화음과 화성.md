@@ -4,6 +4,12 @@ title: i. 화음과 화성
 
 <img src="/images/i.-화음과-화성-0.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
+<p style="margin-bottom: 1em;"></p>
+
+<p style="margin-bottom: 1em;"></p>
+
+---
+
 <p style="margin-bottom: 1em;"><strong>화음</strong></p>
 
 <p style="margin-bottom: 1em;">화음은 높이가 다른 두개 이상의 음이 동시에 울리는 소리임</p>
@@ -50,6 +56,8 @@ title: i. 화음과 화성
 
 <p style="margin-bottom: 1em;"></p>
 
+---
+
 <p style="margin-bottom: 1em;"></p>
 
 
@@ -60,7 +68,11 @@ title: i. 화음과 화성
       
     </div>
   </div>
-  <div style="margin-top: 10px; width: 100%; display: flex; flex-direction: column; gap: 10px;">  <p style="margin-bottom: 1em;">본 게시물은 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a> 의 글을 복사한 것입니다. 관련 질문이나 문의는 우리 갤러리를 방문해주세요.</p>
+  <div style="margin-top: 10px; width: 100%; display: flex; flex-direction: column; gap: 10px;">---
+
+  <p style="margin-bottom: 1em;"></p>
+
+  <p style="margin-bottom: 1em;">본 게시물은 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a> 의 글을 복사한 것입니다. 관련 질문이나 문의는 우리 갤러리를 방문해주세요.</p>
 
 <img src="/images/i.-화음과-화성-2.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
