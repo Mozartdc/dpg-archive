@@ -1,0 +1,62 @@
+/* src/styles/global.css */
+
+
+/* ============================================================
+   1. Site Title 색상
+      아래 값만 바꾸면 됨
+   ============================================================ */
+
+:root {
+  --site-title-color: #CD5B45;
+}
+
+.sl-logo-text,
+header .sl-logo span {
+  color: var(--site-title-color) !important;
+}
+
+
+/* ============================================================
+   2. Previous / Next 네비게이션
+      Starlight 0.37.x 구조:
+        <nav class="sl-prev-next">
+          <a class="sl-prev-next__link sl-prev-next__link--prev">
+            <span class="sl-prev-next__label">Previous</span>
+            <span class="sl-prev-next__title">페이지 제목</span>
+          </a>
+          <a class="sl-prev-next__link sl-prev-next__link--next">...</a>
+        </nav>
+   ============================================================ */
+
+/* 각 링크 박스 자체: 그림자, 테두리 제거 */
+.sl-prev-next__link {
+  box-shadow: none !important;
+  border: 1px solid transparent !important;
+  background: transparent !important;
+  padding: 0.5rem 0 !important;
+  text-decoration: none;
+}
+
+.sl-prev-next__link:hover {
+  border-color: transparent !important;
+  background: transparent !important;
+}
+
+/* "Previous" / "Next" 라벨 (작은 텍스트) — 유지 */
+.sl-prev-next__label {
+  font-size: 0.75rem;
+  color: var(--sl-color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* 페이지 제목 텍스트 — 크기 축소, 일반 웨이트 */
+.sl-prev-next__title {
+  font-size: 0.85rem !important;
+  font-weight: 400 !important;
+  color: var(--sl-color-text-muted);
+}
+
+.sl-prev-next__link:hover .sl-prev-next__title {
+  color: var(--sl-color-accent);
+}

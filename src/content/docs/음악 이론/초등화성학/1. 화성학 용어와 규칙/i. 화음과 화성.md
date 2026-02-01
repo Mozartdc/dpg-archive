@@ -1,5 +1,11 @@
 ---
-title: i. 화음과 화성
+title: "i. 화음과 화성"
+date: 2026-01-30
+lastEdited: 2026-02-01
+tags:
+  - "화성학"
+  - "음악이론"
+  - "피아노"
 ---
 
 <img src="/images/i.-화음과-화성-0.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
@@ -61,20 +67,11 @@ title: i. 화음과 화성
 <p style="margin-bottom: 1em;"></p>
 
 
-<div style="background-color: #F1F1EF; padding: 20px; border-radius: 8px; display: flex; flex-direction: column; gap: 10px; margin: 20px 0; color: #37352f; border: 1px solid #e5e7eb;">
-  <div style="display: flex; gap: 12px; align-items: flex-start;">
-    <div style="font-size: 24px; line-height: 1.2; margin-top: -2px;">💡</div>
-    <div style="flex: 1; min-width: 0; line-height: 1.6;">
-      
-    </div>
-  </div>
-  <div style="margin-top: 10px; width: 100%; display: flex; flex-direction: column; gap: 10px;">---
+<div style="background-color: rgba(240, 239, 237, 1); padding: 20px; border-radius: 8px; margin: 20px 0; color: #37352f; border: 1px solid #e5e7eb; line-height: 1.6;">
+  <div>이 글은 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a> 의 글을 복사한 것입니다. 관련 질문이나 문의는 우리 갤러리를 방문해주세요.</div>
+  <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;"><img src="/images/i.-화음과-화성-2.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
   <p style="margin-bottom: 1em;"></p>
-
-  <p style="margin-bottom: 1em;">본 게시물은 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a> 의 글을 복사한 것입니다. 관련 질문이나 문의는 우리 갤러리를 방문해주세요.</p>
-
-<img src="/images/i.-화음과-화성-2.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 </div>
 </div>
