@@ -64,30 +64,58 @@ a[rel="next"] .label {
 }
 
 /* ============================================================
-   3. 사이드바 항목 간격 조정
-      - 기본 간격: 0.25rem ~ 0.5rem (4px ~ 8px)
-      - 여유있게: 0.5rem ~ 0.75rem (8px ~ 12px)
+   3. 사이드바 최종 (Docusaurus Flat Style + Custom Colors)
+      - .large 클래스 직접 타격으로 굵기 문제 해결
+      - :has() 선택자로 상위 카테고리 색상 연동
    ============================================================ */
 
-/* 사이드바 전체 리스트 항목 간격 */
-nav.astro-3ii7xxms ul.astro-3ii7xxms > li.astro-3ii7xxms {
-  margin-bottom: 0.5rem !important;  /* 8px — 적당한 간격 */
+/* [1] 폰트 굵기 & 크기 강제 통일 (카테고리 + 링크) */
+#starlight__sidebar summary .large,  /* 카테고리 제목 내부 스팬 */
+#starlight__sidebar summary,         /* 카테고리 자체 */
+#starlight__sidebar a {              /* 하위 링크 */
+  font-weight: 400 !important;       /* 무조건 보통 굵기 (볼드 제거) */
+  font-size: 0.9rem !important;      /* 크기 통일 */
+  color: var(--sl-color-gray-3);     /* 기본 회색 */
+  line-height: 1.8 !important;
+  border: none !important;           /* 모든 테두리/세로줄 제거 */
 }
 
-/* 중첩된 리스트 (하위 카테고리) 간격 */
-nav.astro-3ii7xxms ul.astro-3ii7xxms ul.astro-3ii7xxms > li.astro-3ii7xxms {
-  margin-bottom: 0.375rem !important; /* 6px — 하위는 조금 좁게 */
+/* [2] 세로줄(Border) 완벽 제거 및 들여쓰기 최소화 */
+#starlight__sidebar ul,
+#starlight__sidebar li {
+  border-left: none !important;      /* 세로줄 삭제 */
+  padding-left: 0 !important;
+  margin-left: 0 !important;
 }
 
-/* details(폴더) summary 자체의 패딩 */
-nav.astro-3ii7xxms details.astro-3ii7xxms > summary.astro-3ii7xxms {
-  padding-top: 0.375rem !important;
-  padding-bottom: 0.375rem !important;
+/* 하위 항목 들여쓰기 (더 줄임: 0.5rem) */
+#starlight__sidebar ul ul {
+  padding-left: 0.5rem !important; 
 }
 
-/* 링크(문서) 항목의 패딩 */
-nav.astro-3ii7xxms a.astro-3ii7xxms {
-  padding-top: 0.375rem !important;
-  padding-bottom: 0.375rem !important;
-  display: block !important;
+/* [3] 현재 읽는 글 (Active) - 기본(라이트 모드) */
+#starlight__sidebar a[aria-current="page"] {
+  color: #338296 !important;         /* [요청] 라이트 모드 색상 */
+  background-color: #f3f4f6 !important;
+  font-weight: 500 !important;
+  border-radius: 4px;
+}
+
+/* [4] 현재 글의 '상위 카테고리' - 기본(라이트 모드) */
+#starlight__sidebar details:has(a[aria-current="page"]) > summary .large,
+#starlight__sidebar details:has(a[aria-current="page"]) > summary {
+  color: #338296 !important;         /* [요청] 라이트 모드 색상 */
+  font-weight: 500 !important;
+}
+
+/* [5] 다크모드 대응 (색상 변경 #89cdc6) */
+:root[data-theme='dark'] #starlight__sidebar a[aria-current="page"] {
+  color: #89cdc6 !important;         /* [요청] 다크 모드 색상 */
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* 다크모드일 때 상위 카테고리도 색상 변경 */
+:root[data-theme='dark'] #starlight__sidebar details:has(a[aria-current="page"]) > summary .large,
+:root[data-theme='dark'] #starlight__sidebar details:has(a[aria-current="page"]) > summary {
+  color: #89cdc6 !important;         /* [요청] 다크 모드 색상 */
 }
