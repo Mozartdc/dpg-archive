@@ -1,0 +1,42 @@
+name: Notion 자동 동기화
+
+on:
+  schedule:
+    # 6시간마다 자동 실행 (UTC 0시, 6시, 12시, 18시)
+    # 한국시간으로 오전 9시, 오후 3시, 오후 9시, 오전 3시
+    - cron: '0 */6 * * *'
+  
+  # GitHub Actions 탭에서 수동 실행 가능
+  workflow_dispatch:
+
+jobs:
+  sync-notion:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write  # 저장소 수정 권한
+    
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+      
+      - name: Node.js 설정
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: 의존성 설치
+        run: npm ci
+      
+      - name: 노션 동기화 실행
+        env:
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+        run: npm run sync
+      
+      - name: 변경사항 커밋 및 푸시
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🤖 노션 콘텐츠 자동 업데이트 [skip ci]"
+          branch: main
