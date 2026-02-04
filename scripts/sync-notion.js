@@ -9,52 +9,52 @@ dotenv.config();
 
 const DATABASE_ID = process.env.NOTION_DATABASE_ID;
 const API_KEY = process.env.NOTION_API_KEY;
-const DOCS_PATH = path.join(__dirname, 'src', 'content', 'docs');
-const IMAGES_PATH = path.join(__dirname, 'public', 'images');
+const DOCS_PATH = path.join(__dirname, '..', 'src', 'content', 'docs');
+const IMAGES_PATH = path.join(__dirname, '..', 'public', 'images');
 
 
 // ═══════════════════════════════════════════════════════════════
-// Notion 색상 맵 (HTML 원본의 highlight-* / block-color-* 기준)
+// Notion 색상 맵 (팬톤 '올해의 컬러' 에디션)
 // ═══════════════════════════════════════════════════════════════
 
-// annotations.color 값 → 글자색
+// annotations.color 값 → 글자색 (가독성을 위해 투명도 1)
 const TEXT_COLOR_MAP = {
-  gray:   'rgba(125, 122, 117, 1)',
-  brown:  'rgba(159, 118, 90, 1)',
-  orange: 'rgba(210, 123, 45, 1)',
-  yellow: 'rgba(203, 148, 52, 1)',
-  teal:   'rgba(80, 148, 110, 1)',
-  blue:   'rgba(56, 125, 201, 1)',
-  purple: 'rgba(154, 107, 180, 1)',
-  pink:   'rgba(193, 76, 138, 1)',
-  red:    'rgba(207, 81, 72, 1)',
+  gray:   'rgba(147, 149, 151, 1)', // Ultimate Gray (2021)
+  brown:  'rgba(150, 79, 76, 1)',   // Marsala (2015)
+  orange: 'rgba(255, 111, 97, 1)',  // Living Coral (2019)
+  yellow: 'rgba(245, 223, 77, 1)',  // Illuminating (2021)
+  teal:   'rgba(0, 148, 115, 1)',   // Emerald (2013)
+  blue:   'rgba(15, 76, 129, 1)',   // Classic Blue (2020)
+  purple: 'rgba(95, 75, 139, 1)',   // Ultra Violet (2018)
+  pink:   'rgba(214, 80, 118, 1)',  // Honeysuckle (2011)
+  red:    'rgba(190, 52, 85, 1)',   // Viva Magenta (2023)
 };
 
-// annotations.color 값 → 백그라운드 하이라이트
+// annotations.color 값 → 백그라운드 하이라이트 (투명도 0.2로 은은하게)
 const HIGHLIGHT_BG_MAP = {
-  gray:   'rgba(240, 239, 237, 1)',
-  brown:  'rgba(245, 237, 233, 1)',
-  orange: 'rgba(251, 235, 222, 1)',
-  yellow: 'rgba(249, 243, 220, 1)',
-  teal:   'rgba(232, 241, 236, 1)',
-  blue:   'rgba(229, 242, 252, 1)',
-  purple: 'rgba(243, 235, 249, 1)',
-  pink:   'rgba(250, 233, 241, 1)',
-  red:    'rgba(252, 233, 231, 1)',
+  gray:   'rgba(147, 149, 151, 0.2)',
+  brown:  'rgba(150, 79, 76, 0.2)',
+  orange: 'rgba(255, 111, 97, 0.2)',
+  yellow: 'rgba(245, 223, 77, 0.3)', // 노랑은 밝아서 조금 더 진하게(0.3)
+  teal:   'rgba(0, 148, 115, 0.2)',
+  blue:   'rgba(15, 76, 129, 0.2)',
+  purple: 'rgba(95, 75, 139, 0.2)',
+  pink:   'rgba(214, 80, 118, 0.2)',
+  red:    'rgba(190, 52, 85, 0.2)',
 };
 
-// callout 블럭의 color 속성 → 배경색
+// callout 블럭의 color 속성 → 배경색 (투명도 0.15로 아주 연하게)
 const CALLOUT_BG_MAP = {
-  default_background:  'rgba(240, 239, 237, 1)',
-  gray_background:     'rgba(240, 239, 237, 1)',
-  brown_background:    'rgba(245, 237, 233, 1)',
-  orange_background:   'rgba(251, 235, 222, 1)',
-  yellow_background:   'rgba(249, 243, 220, 1)',
-  teal_background:     'rgba(232, 241, 236, 1)',
-  blue_background:     'rgba(229, 242, 252, 1)',
-  purple_background:   'rgba(243, 235, 249, 1)',
-  pink_background:     'rgba(250, 233, 241, 1)',
-  red_background:      'rgba(252, 233, 231, 1)',
+  default_background:  'rgba(147, 149, 151, 0.15)', // 기본은 그레이 계열
+  gray_background:     'rgba(147, 149, 151, 0.15)',
+  brown_background:    'rgba(150, 79, 76, 0.15)',
+  orange_background:   'rgba(255, 111, 97, 0.15)',
+  yellow_background:   'rgba(245, 223, 77, 0.2)',
+  teal_background:     'rgba(0, 148, 115, 0.15)',
+  blue_background:     'rgba(15, 76, 129, 0.15)',
+  purple_background:   'rgba(95, 75, 139, 0.15)',
+  pink_background:     'rgba(214, 80, 118, 0.15)',
+  red_background:      'rgba(190, 52, 85, 0.15)',
 };
 
 
@@ -341,7 +341,7 @@ async function convertToMarkdown(blocks, indent = "") {
         output.push(`${indent}<p style="margin-bottom: 1em;${blockColorStyle ? ' ' + blockColorStyle : ''}">${text}</p>\n\n`);
         break;
 
-      // ── heading: 블럭 단위 color가 있으면 <h> 태그로, 없으면 # 마크다운 ──
+      // ── heading ──
       case 'heading_1':
       case 'heading_2':
       case 'heading_3': {
@@ -359,15 +359,12 @@ async function convertToMarkdown(blocks, indent = "") {
       case 'quote':               output.push(`> ${text}\n\n`); break;
 
       // ── callout ──
-      // icon이 null이면 이모지를 붙이지 않음
-      // 배경색은 block.callout.color로부터 동적 결정
       case 'callout': {
         const icon = block.callout?.icon?.emoji || null;
         const calloutColor = block.callout?.color || 'default_background';
         const bgColor = CALLOUT_BG_MAP[calloutColor] || CALLOUT_BG_MAP['default_background'];
 
         if (icon) {
-          // 이모지 있음
           output.push(`
 <div style="background-color: ${bgColor}; padding: 20px; border-radius: 8px; display: flex; flex-direction: column; gap: 10px; margin: 20px 0; color: #37352f; border: 1px solid #e5e7eb;">
   <div style="display: flex; gap: 12px; align-items: flex-start;">
@@ -379,7 +376,6 @@ async function convertToMarkdown(blocks, indent = "") {
   ${childrenMd ? `<div style="margin-top: 10px; width: 100%; display: flex; flex-direction: column; gap: 10px;">${childrenMd}</div>` : ''}
 </div>\n\n`);
         } else {
-          // 이모지 없음 — 이모지 열 제거
           output.push(`
 <div style="background-color: ${bgColor}; padding: 20px; border-radius: 8px; margin: 20px 0; color: #37352f; border: 1px solid #e5e7eb; line-height: 1.6;">
   ${text ? `<div>${text}</div>` : ''}
@@ -460,7 +456,6 @@ async function convertToMarkdown(blocks, indent = "") {
         const bImage       = meta.image || null;
 
         if (bImage) {
-          // 썸네일 있음
           output.push(`
 <a href="${bUrl}" target="_blank" style="display: flex; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; overflow: hidden; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
   <div style="padding: 12px 16px; flex: 1; min-width: 0;">
@@ -473,7 +468,6 @@ async function convertToMarkdown(blocks, indent = "") {
   </div>
 </a>\n\n`);
         } else {
-          // 썸네일 없음
           output.push(`
 <a href="${bUrl}" target="_blank" style="display: flex; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; overflow: hidden; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
   <div style="padding: 12px 16px; flex: 1; min-width: 0;">
@@ -536,10 +530,10 @@ async function downloadImage(url, filepathWithoutExt) {
 
 
 // ═══════════════════════════════════════════════════════════════
-// 11. Frontmatter 생성
+// 11. Frontmatter 생성 (✅ 업데이트: 순서 속성 추가)
 // ═══════════════════════════════════════════════════════════════
 
-function buildFrontmatter(title, tags, createdTime, lastEditedTime) {
+function buildFrontmatter(title, tags, createdTime, lastEditedTime, order) {
   let fm = `---\ntitle: "${title.replace(/"/g, '\\"')}"\n`;
 
   if (createdTime) {
@@ -555,6 +549,9 @@ function buildFrontmatter(title, tags, createdTime, lastEditedTime) {
     });
   }
 
+  // ✅ 사이드바 정렬 순서 추가
+  fm += `sidebar:\n  order: ${order}\n`;
+
   fm += `---\n\n`;
   return fm;
 }
@@ -566,7 +563,7 @@ function sanitizeName(name) {
 
 
 // ═══════════════════════════════════════════════════════════════
-// 12. 메인
+// 12. 메인 (✅ 업데이트: 순서 속성 처리 로직 추가)
 // ═══════════════════════════════════════════════════════════════
 
 async function syncNotion() {
@@ -601,6 +598,10 @@ async function syncNotion() {
         const createdTime = page.created_time;
         const lastEdited  = page.last_edited_time;
 
+        // ✅ 순서 속성 가져오기 (값이 없으면 9999로 설정하여 맨 뒤로 보냄)
+        const orderProp = page.properties['순서'];
+        const order = (orderProp?.number !== undefined && orderProp?.number !== null) ? orderProp.number : 9999;
+
         // tags 추출
         let tags = [];
         const descProp = page.properties['설명'];
@@ -627,7 +628,7 @@ async function syncNotion() {
         const categoryFolder = findFolderPath(DOCS_PATH, category);
         if (!categoryFolder) continue;
 
-        console.log(`   📄 [변환] "${title}" ${tags.length ? `[tags: ${tags.join(', ')}]` : ''}`);
+        console.log(`   📄 [변환] "${title}" (순서: ${order})`);
 
         const blocks = await fetchAllChildren(page.id);
         let markdown = await convertToMarkdown(blocks);
@@ -650,7 +651,8 @@ async function syncNotion() {
         }
         markdown = newMarkdown;
 
-        const frontmatter = buildFrontmatter(title, tags, createdTime, lastEdited);
+        // ✅ Frontmatter 생성 시 order 전달
+        const frontmatter = buildFrontmatter(title, tags, createdTime, lastEdited, order);
         const filename = `${sanitizeName(title)}.md`;
         fs.writeFileSync(path.join(categoryFolder, filename), frontmatter + markdown, 'utf-8');
 
