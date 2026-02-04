@@ -13,6 +13,9 @@ const DOCS_PATH = path.join(__dirname, '..', 'src', 'content', 'docs');
 const IMAGES_PATH = path.join(__dirname, '..', 'public', 'images');
 
 
+// ⚠️ [참고] 아래 맵들은 이제 직접 사용되지 않지만, 
+// CSS 파일(global.css)을 작성할 때 색상 참고용으로 남겨둡니다.
+
 // annotations.color 값 → 글자색
 const TEXT_COLOR_MAP = {
   gray:   'rgba(125, 122, 117, 1)',
@@ -257,10 +260,7 @@ async function fetchBookmarkMeta(url) {
 
 
 // ═══════════════════════════════════════════════════════════════
-// 7. RichText → HTML
-//    annotations.color:
-//      "gray", "pink" 등           → 글자색 변경
-//      "gray_background" 등        → 백그라운드 하이라이트(mark)
+// 7. RichText → HTML (✅ 수정 1: CSS 클래스 사용)
 // ═══════════════════════════════════════════════════════════════
 
 function richTextToHtml(richTextArray) {
@@ -281,18 +281,16 @@ function richTextToHtml(richTextArray) {
     if (t.annotations.italic)        txt = `<em>${txt}</em>`;
     if (t.annotations.strikethrough) txt = `<del>${txt}</del>`;
 
-    // color 처리
+    // color 처리 - CSS 클래스 사용
     const color = t.annotations.color;
     if (color && color !== 'default') {
       if (color.endsWith('_background')) {
         // 백그라운드 하이라이트
         const key = color.replace('_background', '');
-        const bg = HIGHLIGHT_BG_MAP[key] || 'rgba(240,239,237,1)';
-        txt = `<mark style="background: ${bg}; padding: 0.1em 0.2em; border-radius: 2px;">${txt}</mark>`;
+        txt = `<mark class="notion-highlight-${key}">${txt}</mark>`;
       } else {
         // 글자색
-        const c = TEXT_COLOR_MAP[color];
-        if (c) txt = `<span style="color: ${c};">${txt}</span>`;
+        txt = `<span class="notion-text-${color}">${txt}</span>`;
       }
     }
 
@@ -302,8 +300,7 @@ function richTextToHtml(richTextArray) {
 
 
 // ═══════════════════════════════════════════════════════════════
-// 8. 블럭 단위 color → 스타일 문자열
-//    heading 등의 블럭 자체에 color 속성이 붙는 경우
+// 8. 블럭 단위 color → 스타일 문자열 (✅ 수정 2: 클래스 이름 반환)
 // ═══════════════════════════════════════════════════════════════
 
 function getBlockColorStyle(content) {
@@ -312,11 +309,9 @@ function getBlockColorStyle(content) {
 
   if (color.endsWith('_background')) {
     const key = color.replace('_background', '');
-    const bg = HIGHLIGHT_BG_MAP[key] || '';
-    return bg ? `background: ${bg}; padding: 0.2em 0.4em; border-radius: 3px;` : '';
+    return `notion-highlight-${key}`;
   } else {
-    const c = TEXT_COLOR_MAP[color];
-    return c ? `color: ${c};` : '';
+    return `notion-text-${color}`;
   }
 }
 
@@ -341,21 +336,26 @@ async function convertToMarkdown(blocks, indent = "") {
       ? await convertToMarkdown(block.children_content, indent + "  ")
       : "";
 
+    // 여기서는 이제 inline style 대신 class 이름이 반환됨
     const blockColorStyle = content ? getBlockColorStyle(content) : '';
 
     switch (type) {
-      // ── paragraph ──
+      // ── paragraph (✅ 수정 3: class 적용) ──
       case 'paragraph':
-        output.push(`${indent}<p style="margin-bottom: 1em;${blockColorStyle ? ' ' + blockColorStyle : ''}">${text}</p>\n\n`);
+        if (blockColorStyle) {
+          output.push(`${indent}<p class="${blockColorStyle}" style="margin-bottom: 1em;">${text}</p>\n\n`);
+        } else {
+          output.push(`${indent}<p style="margin-bottom: 1em;">${text}</p>\n\n`);
+        }
         break;
 
-      // ── heading ──
+      // ── heading (✅ 수정 4: class 적용) ──
       case 'heading_1':
       case 'heading_2':
       case 'heading_3': {
         const level = type.slice(-1);
         if (blockColorStyle) {
-          output.push(`\n<h${level} style="${blockColorStyle}">${text}</h${level}>\n\n`);
+          output.push(`\n<h${level} class="${blockColorStyle}">${text}</h${level}>\n\n`);
         } else {
           output.push(`\n${'#'.repeat(Number(level))} ${text}\n\n`);
         }
@@ -366,15 +366,16 @@ async function convertToMarkdown(blocks, indent = "") {
       case 'numbered_list_item':  output.push(`${indent}1. ${text}\n${childrenMd}`); break;
       case 'quote':               output.push(`> ${text}\n\n`); break;
 
-      // ── callout ──
+      // ── callout (✅ 수정 5: class 기반 및 배경색 제거) ──
       case 'callout': {
         const icon = block.callout?.icon?.emoji || null;
         const calloutColor = block.callout?.color || 'default_background';
-        const bgColor = CALLOUT_BG_MAP[calloutColor] || CALLOUT_BG_MAP['default_background'];
+        const colorKey = calloutColor.replace('_background', '');
+        const calloutClass = `notion-callout-${colorKey}`;
 
         if (icon) {
           output.push(`
-<div style="background-color: ${bgColor}; padding: 20px; border-radius: 8px; display: flex; flex-direction: column; gap: 10px; margin: 20px 0; color: #37352f; border: 1px solid #e5e7eb;">
+<div class="${calloutClass}" style="padding: 20px; border-radius: 8px; display: flex; flex-direction: column; gap: 10px; margin: 20px 0; border: 1px solid #e5e7eb;">
   <div style="display: flex; gap: 12px; align-items: flex-start;">
     <div style="font-size: 24px; line-height: 1.2; margin-top: -2px;">${icon}</div>
     <div style="flex: 1; min-width: 0; line-height: 1.6;">
@@ -385,7 +386,7 @@ async function convertToMarkdown(blocks, indent = "") {
 </div>\n\n`);
         } else {
           output.push(`
-<div style="background-color: ${bgColor}; padding: 20px; border-radius: 8px; margin: 20px 0; color: #37352f; border: 1px solid #e5e7eb; line-height: 1.6;">
+<div class="${calloutClass}" style="padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #e5e7eb; line-height: 1.6;">
   ${text ? `<div>${text}</div>` : ''}
   ${childrenMd ? `<div style="${text ? 'margin-top: 10px; ' : ''}display: flex; flex-direction: column; gap: 10px;">${childrenMd}</div>` : ''}
 </div>\n\n`);
