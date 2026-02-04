@@ -10,12 +10,12 @@ sidebar:
 ---
 
 
-### <span style="color: rgba(214, 80, 118, 1);"><strong>Fundamentals of piano practice</strong></span>
+### <span style="color: rgba(255, 180, 220, 1);"><strong>Fundamentals of piano practice</strong></span>
 
-<p style="margin-bottom: 1em;"><span style="color: rgba(147, 149, 151, 1);">© 2009 Chuan C. Chang. Copy permitted if author’s name, Chuan C. Chang, and this copyright statement are included.</span></p>
+<p style="margin-bottom: 1em;"><span style="color: rgba(220, 220, 220, 1);">© 2009 Chuan C. Chang. Copy permitted if author’s name, Chuan C. Chang, and this copyright statement are included.</span></p>
 
-<p style="margin-bottom: 1em;"><span style="color: rgba(147, 149, 151, 1);"><strong>피아노 연습의 원리 한글판 
-</strong></span><span style="color: rgba(147, 149, 151, 1);">(dcinside digital piano gallery)</span></p>
+<p style="margin-bottom: 1em;"><span style="color: rgba(220, 220, 220, 1);"><strong>피아노 연습의 원리 한글판 
+</strong></span><span style="color: rgba(220, 220, 220, 1);">(dcinside digital piano gallery)</span></p>
 
 <p style="margin-bottom: 1em;"></p>
 
@@ -92,7 +92,7 @@ sidebar:
 <p style="margin-bottom: 1em;"></p>
 
 
-<div style="background-color: rgba(147, 149, 151, 0.15); padding: 20px; border-radius: 8px; margin: 20px 0; color: #37352f; border: 1px solid #e5e7eb; line-height: 1.6;">
+<div style="background-color: rgba(200, 200, 200, 0.15); padding: 20px; border-radius: 8px; margin: 20px 0; color: #37352f; border: 1px solid #e5e7eb; line-height: 1.6;">
   <div>이 글은 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a> 의 글을 복사한 것입니다. 관련 질문이나 문의는 우리 갤러리를 방문해주세요.</div>
   <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;"><img src="/images/preface-0.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 

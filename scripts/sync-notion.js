@@ -13,50 +13,44 @@ const DOCS_PATH = path.join(__dirname, '..', 'src', 'content', 'docs');
 const IMAGES_PATH = path.join(__dirname, '..', 'public', 'images');
 
 
-// ═══════════════════════════════════════════════════════════════
-// Notion 색상 맵 (팬톤 '올해의 컬러' 에디션)
-// ═══════════════════════════════════════════════════════════════
-
-// annotations.color 값 → 글자색 (가독성을 위해 투명도 1)
-// 1. 글자색: 검은 배경에서 잘 보이도록 '명도'를 확 높임
+// annotations.color 값 → 글자색
 const TEXT_COLOR_MAP = {
-  gray:   'rgba(220, 220, 220, 1)', // 밝은 회색
-  brown:  'rgba(235, 180, 160, 1)', // 옅은 흙색 -> 살구빛으로 변경
-  orange: 'rgba(255, 180, 140, 1)', // 진한 주황 -> 밝은 오렌지
-  yellow: 'rgba(255, 240, 140, 1)', // 개나리색 -> 레몬색
-  teal:   'rgba(140, 230, 210, 1)', // 청록색 -> 민트색
-  blue:   'rgba(150, 200, 255, 1)', // 남색 -> 하늘색
-  purple: 'rgba(210, 180, 255, 1)', // 보라색 -> 라벤더
-  pink:   'rgba(255, 180, 220, 1)', // 진분홍 -> 베이비핑크
-  red:    'rgba(255, 160, 160, 1)', // 빨강 -> 연한 장미색
+  gray:   'rgba(125, 122, 117, 1)',
+  brown:  'rgba(159, 118, 90, 1)',
+  orange: 'rgba(210, 123, 45, 1)',
+  yellow: 'rgba(203, 148, 52, 1)',
+  teal:   'rgba(80, 148, 110, 1)',
+  blue:   'rgba(56, 125, 201, 1)',
+  purple: 'rgba(154, 107, 180, 1)',
+  pink:   'rgba(193, 76, 138, 1)',
+  red:    'rgba(207, 81, 72, 1)',
 };
 
-// 2. 하이라이트 배경: 형광펜 느낌 (투명도 0.2~0.3)
+// annotations.color 값 → 백그라운드 하이라이트
 const HIGHLIGHT_BG_MAP = {
-  gray:   'rgba(200, 200, 200, 0.2)',
-  brown:  'rgba(235, 180, 160, 0.2)',
-  orange: 'rgba(255, 180, 140, 0.2)',
-  yellow: 'rgba(255, 240, 140, 0.2)', 
-  teal:   'rgba(140, 230, 210, 0.2)',
-  blue:   'rgba(150, 200, 255, 0.2)',
-  purple: 'rgba(210, 180, 255, 0.2)',
-  pink:   'rgba(255, 180, 220, 0.2)',
-  red:    'rgba(255, 160, 160, 0.2)',
+  gray:   'rgba(240, 239, 237, 1)',
+  brown:  'rgba(245, 237, 233, 1)',
+  orange: 'rgba(251, 235, 222, 1)',
+  yellow: 'rgba(249, 243, 220, 1)',
+  teal:   'rgba(232, 241, 236, 1)',
+  blue:   'rgba(229, 242, 252, 1)',
+  purple: 'rgba(243, 235, 249, 1)',
+  pink:   'rgba(250, 233, 241, 1)',
+  red:    'rgba(252, 233, 231, 1)',
 };
 
-// 3. 콜아웃 박스 배경: 은은한 빛 효과 (투명도 0.15)
-// ★ 핵심: 배경색의 '원색'을 밝은 색으로 써야 검은 배경에서 칙칙해지지 않음
+// callout 블럭의 color 속성 → 배경색
 const CALLOUT_BG_MAP = {
-  default_background:  'rgba(200, 200, 200, 0.15)',
-  gray_background:     'rgba(200, 200, 200, 0.15)',
-  brown_background:    'rgba(235, 180, 160, 0.15)',
-  orange_background:   'rgba(255, 180, 140, 0.15)',
-  yellow_background:   'rgba(255, 240, 140, 0.15)',
-  teal_background:     'rgba(140, 230, 210, 0.15)',
-  blue_background:     'rgba(150, 200, 255, 0.15)',
-  purple_background:   'rgba(210, 180, 255, 0.15)',
-  pink_background:     'rgba(255, 180, 220, 0.15)',
-  red_background:      'rgba(255, 160, 160, 0.15)',
+  default_background:  'rgba(240, 239, 237, 1)',
+  gray_background:     'rgba(240, 239, 237, 1)',
+  brown_background:    'rgba(245, 237, 233, 1)',
+  orange_background:   'rgba(251, 235, 222, 1)',
+  yellow_background:   'rgba(249, 243, 220, 1)',
+  teal_background:     'rgba(232, 241, 236, 1)',
+  blue_background:     'rgba(229, 242, 252, 1)',
+  purple_background:   'rgba(243, 235, 249, 1)',
+  pink_background:     'rgba(250, 233, 241, 1)',
+  red_background:      'rgba(252, 233, 231, 1)',
 };
 
 

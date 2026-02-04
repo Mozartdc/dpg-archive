@@ -39,7 +39,7 @@ sidebar:
 <p style="margin-bottom: 1em;"></p>
 
 
-<div style="background-color: rgba(147, 149, 151, 0.15); padding: 20px; border-radius: 8px; display: flex; flex-direction: column; gap: 10px; margin: 20px 0; color: #37352f; border: 1px solid #e5e7eb;">
+<div style="background-color: rgba(200, 200, 200, 0.15); padding: 20px; border-radius: 8px; display: flex; flex-direction: column; gap: 10px; margin: 20px 0; color: #37352f; border: 1px solid #e5e7eb;">
   <div style="display: flex; gap: 12px; align-items: flex-start;">
     <div style="font-size: 24px; line-height: 1.2; margin-top: -2px;">ℹ️</div>
     <div style="flex: 1; min-width: 0; line-height: 1.6;">
@@ -58,7 +58,7 @@ sidebar:
 <p style="margin-bottom: 1em;"></p>
 
 
-<div style="background-color: rgba(147, 149, 151, 0.15); padding: 20px; border-radius: 8px; margin: 20px 0; color: #37352f; border: 1px solid #e5e7eb; line-height: 1.6;">
+<div style="background-color: rgba(200, 200, 200, 0.15); padding: 20px; border-radius: 8px; margin: 20px 0; color: #37352f; border: 1px solid #e5e7eb; line-height: 1.6;">
   <div>이 글은 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a> 의 글을 복사한 것입니다. 관련 질문이나 문의는 우리 갤러리를 방문해주세요.</div>
   <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;"><img src="/images/vi.-주요-3화음과-부-3화음-1.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
