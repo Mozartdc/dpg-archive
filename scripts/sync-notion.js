@@ -18,57 +18,71 @@ const IMAGES_PATH = path.join(__dirname, '..', 'public', 'images');
 // ═══════════════════════════════════════════════════════════════
 
 // annotations.color 값 → 글자색 (가독성을 위해 투명도 1)
+// 1. 글자색: 검은 배경에서 잘 보이도록 '명도'를 확 높임
 const TEXT_COLOR_MAP = {
-  gray:   'rgba(147, 149, 151, 1)', // Ultimate Gray (2021)
-  brown:  'rgba(150, 79, 76, 1)',   // Marsala (2015)
-  orange: 'rgba(255, 111, 97, 1)',  // Living Coral (2019)
-  yellow: 'rgba(245, 223, 77, 1)',  // Illuminating (2021)
-  teal:   'rgba(0, 148, 115, 1)',   // Emerald (2013)
-  blue:   'rgba(15, 76, 129, 1)',   // Classic Blue (2020)
-  purple: 'rgba(95, 75, 139, 1)',   // Ultra Violet (2018)
-  pink:   'rgba(214, 80, 118, 1)',  // Honeysuckle (2011)
-  red:    'rgba(190, 52, 85, 1)',   // Viva Magenta (2023)
+  gray:   'rgba(220, 220, 220, 1)', // 밝은 회색
+  brown:  'rgba(235, 180, 160, 1)', // 옅은 흙색 -> 살구빛으로 변경
+  orange: 'rgba(255, 180, 140, 1)', // 진한 주황 -> 밝은 오렌지
+  yellow: 'rgba(255, 240, 140, 1)', // 개나리색 -> 레몬색
+  teal:   'rgba(140, 230, 210, 1)', // 청록색 -> 민트색
+  blue:   'rgba(150, 200, 255, 1)', // 남색 -> 하늘색
+  purple: 'rgba(210, 180, 255, 1)', // 보라색 -> 라벤더
+  pink:   'rgba(255, 180, 220, 1)', // 진분홍 -> 베이비핑크
+  red:    'rgba(255, 160, 160, 1)', // 빨강 -> 연한 장미색
 };
 
-// annotations.color 값 → 백그라운드 하이라이트 (투명도 0.2로 은은하게)
+// 2. 하이라이트 배경: 형광펜 느낌 (투명도 0.2~0.3)
 const HIGHLIGHT_BG_MAP = {
-  gray:   'rgba(147, 149, 151, 0.2)',
-  brown:  'rgba(150, 79, 76, 0.2)',
-  orange: 'rgba(255, 111, 97, 0.2)',
-  yellow: 'rgba(245, 223, 77, 0.3)', // 노랑은 밝아서 조금 더 진하게(0.3)
-  teal:   'rgba(0, 148, 115, 0.2)',
-  blue:   'rgba(15, 76, 129, 0.2)',
-  purple: 'rgba(95, 75, 139, 0.2)',
-  pink:   'rgba(214, 80, 118, 0.2)',
-  red:    'rgba(190, 52, 85, 0.2)',
+  gray:   'rgba(200, 200, 200, 0.2)',
+  brown:  'rgba(235, 180, 160, 0.2)',
+  orange: 'rgba(255, 180, 140, 0.2)',
+  yellow: 'rgba(255, 240, 140, 0.2)', 
+  teal:   'rgba(140, 230, 210, 0.2)',
+  blue:   'rgba(150, 200, 255, 0.2)',
+  purple: 'rgba(210, 180, 255, 0.2)',
+  pink:   'rgba(255, 180, 220, 0.2)',
+  red:    'rgba(255, 160, 160, 0.2)',
 };
 
-// callout 블럭의 color 속성 → 배경색 (투명도 0.15로 아주 연하게)
+// 3. 콜아웃 박스 배경: 은은한 빛 효과 (투명도 0.15)
+// ★ 핵심: 배경색의 '원색'을 밝은 색으로 써야 검은 배경에서 칙칙해지지 않음
 const CALLOUT_BG_MAP = {
-  default_background:  'rgba(147, 149, 151, 0.15)', // 기본은 그레이 계열
-  gray_background:     'rgba(147, 149, 151, 0.15)',
-  brown_background:    'rgba(150, 79, 76, 0.15)',
-  orange_background:   'rgba(255, 111, 97, 0.15)',
-  yellow_background:   'rgba(245, 223, 77, 0.2)',
-  teal_background:     'rgba(0, 148, 115, 0.15)',
-  blue_background:     'rgba(15, 76, 129, 0.15)',
-  purple_background:   'rgba(95, 75, 139, 0.15)',
-  pink_background:     'rgba(214, 80, 118, 0.15)',
-  red_background:      'rgba(190, 52, 85, 0.15)',
+  default_background:  'rgba(200, 200, 200, 0.15)',
+  gray_background:     'rgba(200, 200, 200, 0.15)',
+  brown_background:    'rgba(235, 180, 160, 0.15)',
+  orange_background:   'rgba(255, 180, 140, 0.15)',
+  yellow_background:   'rgba(255, 240, 140, 0.15)',
+  teal_background:     'rgba(140, 230, 210, 0.15)',
+  blue_background:     'rgba(150, 200, 255, 0.15)',
+  purple_background:   'rgba(210, 180, 255, 0.15)',
+  pink_background:     'rgba(255, 180, 220, 0.15)',
+  red_background:      'rgba(255, 160, 160, 0.15)',
 };
 
 
 // ═══════════════════════════════════════════════════════════════
-// 1. 폴더 찾기
+// 1. 폴더 찾기 (맥 NFD 자모 분리 문제 해결)
 // ═══════════════════════════════════════════════════════════════
 
 function findFolderPath(startPath, targetFolderName) {
   if (!fs.existsSync(startPath)) return null;
   const files = fs.readdirSync(startPath, { withFileTypes: true });
+  
+  // 타겟(노션 카테고리) 이름을 NFC(합친 글자)로 통일
+  const targetNormalized = targetFolderName.normalize('NFC');
+
   for (const file of files) {
     if (file.isDirectory()) {
-      if (file.name === targetFolderName) return path.join(startPath, file.name);
-      if (['node_modules', '.git', 'public', '.astro'].includes(file.name)) continue;
+      // 파일(폴더) 이름을 NFC로 변환해서 비교
+      const fileNameNormalized = file.name.normalize('NFC');
+
+      if (fileNameNormalized === targetNormalized) {
+        return path.join(startPath, file.name);
+      }
+      
+      // 제외할 폴더들
+      if (['node_modules', '.git', 'public', '.astro', 'scripts'].includes(file.name)) continue;
+      
       const foundPath = findFolderPath(path.join(startPath, file.name), targetFolderName);
       if (foundPath) return foundPath;
     }
