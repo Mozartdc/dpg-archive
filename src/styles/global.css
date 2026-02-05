@@ -1,11 +1,36 @@
-/* src/styles/global.css */
+/* src/styles/global.css - Pantone Edition */
+
+/* ============================================================
+   0. Pantone Color Variables (2020-2026)
+   ============================================================ */
+
+:root {
+  /* Pantone Color of the Year */
+  --pantone-cloud-dancer: #F0EFEB;    /* 2026 - 오프화이트 */
+  --pantone-mocha-mousse: #A47864;    /* 2025 - 따뜻한 브라운 */
+  --pantone-peach-fuzz: #FFBE98;      /* 2024 - 부드러운 피치 */
+  --pantone-viva-magenta: #BE3455;    /* 2023 - 생동감 있는 마젠타 */
+  --pantone-very-peri: #6667AB;       /* 2022 - 활기찬 퍼플 */
+  --pantone-illuminating: #F5DF4D;    /* 2021 - 밝은 노랑 */
+  --pantone-ultimate-gray: #939597;   /* 2021 - 얼티밋 그레이 */
+  --pantone-classic-blue: #0F4C81;    /* 2020 - 클래식 블루 */
+  
+  /* 파스텔 & 중간톤 */
+  --pastel-peach: #FFD7C4;            /* Peach Fuzz 밝은 버전 */
+  --pastel-lavender: #B8A9D4;         /* Very Peri 파스텔 */
+  --pastel-cream: #F9F6F1;            /* Cloud Dancer 크림톤 */
+  --mid-mocha: #C4A088;               /* Mocha Mousse 중간톤 */
+  --mid-magenta: #D86B8A;             /* Viva Magenta 중간톤 */
+  --light-blue: #5A8CC1;              /* Classic Blue 밝은 버전 */
+  --soft-yellow: #F9ED9E;             /* Illuminating 부드러운 버전 */
+}
 
 /* ============================================================
    1. Site Title 색상
    ============================================================ */
 
 :root {
-  --site-title-color: #EB5757;
+  --site-title-color: var(--pantone-viva-magenta);  /* Viva Magenta */
 }
 
 .astro-m46x6ez3 {
@@ -14,49 +39,41 @@
 
 
 /* ============================================================
-   2. Previous / Next 네비게이션 (수정됨)
-      - #63b7b7 테두리, 내부 투명
-      - 최대한 작은 박스 형태
+   2. Previous / Next 네비게이션
+      - Pantone Very Peri 테두리, 내부 투명
    ============================================================ */
 
-/* 링크 박스 스타일 */
 a[rel="prev"],
 a[rel="next"] {
-  /* 1. 박스 테두리와 배경 */
-  border: 1px solid #63b7b7 !important;   /* 요청하신 색상 적용 */
-  background: transparent !important;      /* 배경 투명 */
-  border-radius: 4px !important;           /* 모서리 살짝 둥글게 */
+  border: 1px solid var(--pantone-very-peri) !important;
+  background: transparent !important;
+  border-radius: 4px !important;
   box-shadow: none !important;
-
-  /* 2. 크기 및 배치 (최대한 작게) */
-  padding: 4px 8px !important;             /* 패딩을 줄여서 박스 크기 축소 */
-  display: inline-flex !important;         /* 내용물 한 줄 배치 */
+  padding: 4px 8px !important;
+  display: inline-flex !important;
   align-items: center !important;
-  width: auto !important;                  /* 화면 꽉 차지 않게 글자 크기만큼만 */
-  min-width: 0 !important;                 /* 불필요한 늘어남 방지 */
-  margin-top: 10px !important;             /* 위쪽 여백 */
-  gap: 6px !important;                     /* 화살표와 텍스트 사이 간격 좁힘 */
+  width: auto !important;
+  min-width: 0 !important;
+  margin-top: 10px !important;
+  gap: 6px !important;
   text-decoration: none !important;
 }
 
-/* 마우스 올렸을 때 효과 */
 a[rel="prev"]:hover,
 a[rel="next"]:hover {
-  background: rgba(99, 183, 183, 0.1) !important; /* 아주 연한 #63b7b7 배경 추가 */
-  border-color: #63b7b7 !important;
+  background: rgba(102, 103, 171, 0.1) !important; /* Very Peri 연한 배경 */
+  border-color: var(--pantone-viva-magenta) !important;
 }
 
-/* 내부 텍스트 및 아이콘 크기 축소 */
 a[rel="prev"] *,
 a[rel="next"] * {
-  font-size: 0.8rem !important;        /* 글자 크기 작게 (약 12-13px) */
-  font-weight: normal !important;      /* 굵기 뺌 */
-  color: var(--sl-color-gray-2) !important; /* 글자색은 테마 기본색 */
-  line-height: 1.2 !important;         /* 줄 간격 좁힘 */
-  display: inline !important;          /* 강제 한 줄 배치 */
+  font-size: 0.8rem !important;
+  font-weight: normal !important;
+  color: var(--sl-color-gray-2) !important;
+  line-height: 1.2 !important;
+  display: inline !important;
 }
 
-/* "이전", "다음" 라벨 글씨는 더 작게 혹은 숨김 처리 (선택사항) */
 a[rel="prev"] .label,
 a[rel="next"] .label {
   font-size: 0.75rem !important;
@@ -64,58 +81,258 @@ a[rel="next"] .label {
 }
 
 /* ============================================================
-   3. 사이드바 최종 (Docusaurus Flat Style + Custom Colors)
-      - .large 클래스 직접 타격으로 굵기 문제 해결
-      - :has() 선택자로 상위 카테고리 색상 연동
+   3. 사이드바 (Pantone 컬러 적용)
    ============================================================ */
 
-/* [1] 폰트 굵기 & 크기 강제 통일 (카테고리 + 링크) */
-#starlight__sidebar summary .large,  /* 카테고리 제목 내부 스팬 */
-#starlight__sidebar summary,         /* 카테고리 자체 */
-#starlight__sidebar a {              /* 하위 링크 */
-  font-weight: 400 !important;       /* 무조건 보통 굵기 (볼드 제거) */
-  font-size: 0.9rem !important;      /* 크기 통일 */
-  color: var(--sl-color-gray-3);     /* 기본 회색 */
+#starlight__sidebar summary .large,
+#starlight__sidebar summary,
+#starlight__sidebar a {
+  font-weight: 400 !important;
+  font-size: 0.9rem !important;
+  color: var(--sl-color-gray-3);
   line-height: 1.8 !important;
-  border: none !important;           /* 모든 테두리/세로줄 제거 */
+  border: none !important;
 }
 
-/* [2] 세로줄(Border) 완벽 제거 및 들여쓰기 최소화 */
 #starlight__sidebar ul,
 #starlight__sidebar li {
-  border-left: none !important;      /* 세로줄 삭제 */
+  border-left: none !important;
   padding-left: 0 !important;
   margin-left: 0 !important;
 }
 
-/* 하위 항목 들여쓰기 (더 줄임: 0.5rem) */
 #starlight__sidebar ul ul {
   padding-left: 0.5rem !important; 
 }
 
-/* [3] 현재 읽는 글 (Active) - 기본(라이트 모드) */
+/* 현재 읽는 글 (Active) - 라이트 모드 */
 #starlight__sidebar a[aria-current="page"] {
-  color: #338296 !important;         /* [요청] 라이트 모드 색상 */
-  background-color: #f3f4f6 !important;
+  color: var(--pantone-classic-blue) !important;
+  background-color: var(--pastel-cream) !important;
   font-weight: 500 !important;
   border-radius: 4px;
 }
 
-/* [4] 현재 글의 '상위 카테고리' - 기본(라이트 모드) */
+/* 현재 글의 상위 카테고리 - 라이트 모드 */
 #starlight__sidebar details:has(a[aria-current="page"]) > summary .large,
 #starlight__sidebar details:has(a[aria-current="page"]) > summary {
-  color: #338296 !important;         /* [요청] 라이트 모드 색상 */
+  color: var(--pantone-classic-blue) !important;
   font-weight: 500 !important;
 }
 
-/* [5] 다크모드 대응 (색상 변경 #89cdc6) */
+/* 다크모드 대응 */
 :root[data-theme='dark'] #starlight__sidebar a[aria-current="page"] {
-  color: #89cdc6 !important;         /* [요청] 다크 모드 색상 */
-  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: var(--pastel-lavender) !important;  /* Very Peri 파스텔 */
+  background-color: rgba(102, 103, 171, 0.15) !important;
 }
 
-/* 다크모드일 때 상위 카테고리도 색상 변경 */
 :root[data-theme='dark'] #starlight__sidebar details:has(a[aria-current="page"]) > summary .large,
 :root[data-theme='dark'] #starlight__sidebar details:has(a[aria-current="page"]) > summary {
-  color: #89cdc6 !important;         /* [요청] 다크 모드 색상 */
+  color: var(--pastel-lavender) !important;
+}
+
+
+/* ============================================================
+   4. Notion 색상 시스템 (Pantone 파레트로 재정의)
+   ============================================================ */
+
+/* Notion 텍스트 색상 - 라이트 모드 (Pantone 기반) */
+.notion-text-gray { color: var(--pantone-ultimate-gray); }
+.notion-text-brown { color: var(--pantone-mocha-mousse); }
+.notion-text-orange { color: #D27B2D; }  /* 오렌지 유지 */
+.notion-text-yellow { color: var(--pantone-illuminating); }
+.notion-text-teal { color: #50946E; }    /* 틸 유지 */
+.notion-text-blue { color: var(--pantone-classic-blue); }
+.notion-text-purple { color: var(--pantone-very-peri); }
+.notion-text-pink { color: var(--mid-magenta); }
+.notion-text-red { color: var(--pantone-viva-magenta); }
+
+/* Notion 하이라이트(배경) - 라이트 모드 */
+.notion-highlight-gray { background-color: var(--pastel-cream); padding: 0.1em 0.2em; border-radius: 2px; }
+.notion-highlight-brown { background-color: rgba(196, 160, 136, 0.2); padding: 0.1em 0.2em; border-radius: 2px; }
+.notion-highlight-orange { background-color: rgba(251, 235, 222, 1); padding: 0.1em 0.2em; border-radius: 2px; }
+.notion-highlight-yellow { background-color: var(--soft-yellow); padding: 0.1em 0.2em; border-radius: 2px; }
+.notion-highlight-teal { background-color: rgba(232, 241, 236, 1); padding: 0.1em 0.2em; border-radius: 2px; }
+.notion-highlight-blue { background-color: rgba(15, 76, 129, 0.1); padding: 0.1em 0.2em; border-radius: 2px; }
+.notion-highlight-purple { background-color: rgba(184, 169, 212, 0.2); padding: 0.1em 0.2em; border-radius: 2px; }
+.notion-highlight-pink { background-color: rgba(214, 107, 138, 0.2); padding: 0.1em 0.2em; border-radius: 2px; }
+.notion-highlight-red { background-color: rgba(190, 52, 85, 0.15); padding: 0.1em 0.2em; border-radius: 2px; }
+
+/* Notion Callout 배경 - 라이트 모드 */
+.notion-callout-default { background-color: var(--pastel-cream); }
+.notion-callout-gray { background-color: var(--pastel-cream); }
+.notion-callout-brown { background-color: rgba(196, 160, 136, 0.15); }
+.notion-callout-orange { background-color: rgba(251, 235, 222, 1); }
+.notion-callout-yellow { background-color: rgba(245, 223, 77, 0.2); }
+.notion-callout-teal { background-color: rgba(232, 241, 236, 1); }
+.notion-callout-blue { background-color: rgba(15, 76, 129, 0.1); }
+.notion-callout-purple { background-color: rgba(102, 103, 171, 0.15); }
+.notion-callout-pink { background-color: rgba(255, 190, 152, 0.2); }
+.notion-callout-red { background-color: rgba(190, 52, 85, 0.1); }
+
+/* 다크 모드 색상 (Pantone 다크 버전) */
+:root[data-theme='dark'] .notion-text-gray { color: rgba(147, 149, 151, 1); }
+:root[data-theme='dark'] .notion-text-brown { color: var(--mid-mocha); }
+:root[data-theme='dark'] .notion-text-orange { color: rgba(255, 163, 68, 1); }
+:root[data-theme='dark'] .notion-text-yellow { color: var(--soft-yellow); }
+:root[data-theme='dark'] .notion-text-teal { color: rgba(77, 171, 154, 1); }
+:root[data-theme='dark'] .notion-text-blue { color: var(--light-blue); }
+:root[data-theme='dark'] .notion-text-purple { color: var(--pastel-lavender); }
+:root[data-theme='dark'] .notion-text-pink { color: var(--pastel-peach); }
+:root[data-theme='dark'] .notion-text-red { color: var(--mid-magenta); }
+
+:root[data-theme='dark'] .notion-highlight-gray { background-color: rgba(147, 149, 151, 0.2); }
+:root[data-theme='dark'] .notion-highlight-brown { background-color: rgba(164, 120, 100, 0.2); }
+:root[data-theme='dark'] .notion-highlight-orange { background-color: rgba(89, 74, 58, 0.3); }
+:root[data-theme='dark'] .notion-highlight-yellow { background-color: rgba(245, 223, 77, 0.2); }
+:root[data-theme='dark'] .notion-highlight-teal { background-color: rgba(53, 76, 75, 0.3); }
+:root[data-theme='dark'] .notion-highlight-blue { background-color: rgba(15, 76, 129, 0.25); }
+:root[data-theme='dark'] .notion-highlight-purple { background-color: rgba(102, 103, 171, 0.25); }
+:root[data-theme='dark'] .notion-highlight-pink { background-color: rgba(255, 190, 152, 0.2); }
+:root[data-theme='dark'] .notion-highlight-red { background-color: rgba(190, 52, 85, 0.2); }
+
+:root[data-theme='dark'] .notion-callout-default { background-color: rgba(240, 239, 235, 0.1); border-color: rgba(255, 255, 255, 0.1); }
+:root[data-theme='dark'] .notion-callout-gray { background-color: rgba(147, 149, 151, 0.15); border-color: rgba(255, 255, 255, 0.1); }
+:root[data-theme='dark'] .notion-callout-brown { background-color: rgba(164, 120, 100, 0.15); border-color: rgba(255, 255, 255, 0.1); }
+:root[data-theme='dark'] .notion-callout-orange { background-color: rgba(89, 74, 58, 0.3); border-color: rgba(255, 255, 255, 0.1); }
+:root[data-theme='dark'] .notion-callout-yellow { background-color: rgba(245, 223, 77, 0.15); border-color: rgba(255, 255, 255, 0.1); }
+:root[data-theme='dark'] .notion-callout-teal { background-color: rgba(53, 76, 75, 0.3); border-color: rgba(255, 255, 255, 0.1); }
+:root[data-theme='dark'] .notion-callout-blue { background-color: rgba(15, 76, 129, 0.2); border-color: rgba(255, 255, 255, 0.1); }
+:root[data-theme='dark'] .notion-callout-purple { background-color: rgba(102, 103, 171, 0.2); border-color: rgba(255, 255, 255, 0.1); }
+:root[data-theme='dark'] .notion-callout-pink { background-color: rgba(255, 190, 152, 0.15); border-color: rgba(255, 255, 255, 0.1); }
+:root[data-theme='dark'] .notion-callout-red { background-color: rgba(190, 52, 85, 0.15); border-color: rgba(255, 255, 255, 0.1); }
+
+/* ============================================================
+   5. 제목 스타일 (Pantone 컬러)
+   ============================================================ */
+
+.sl-markdown-content h1 {
+  color: var(--pantone-peach-fuzz) !important;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--pantone-very-peri);
+  padding-bottom: 0.5rem;
+}
+
+.sl-markdown-content h2 {
+  color: var(--pantone-viva-magenta) !important;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.sl-markdown-content h3 {
+  color: var(--pantone-very-peri) !important;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.sl-markdown-content h4 {
+  color: var(--pastel-lavender) !important;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.sl-markdown-content h5 {
+  color: var(--mid-mocha) !important;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.sl-markdown-content h6 {
+  color: var(--pantone-mocha-mousse) !important;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* 페이지 최상단 제목 */
+.page-title,
+.content-panel h1:first-f-type {
+  color: var(--pantone-peach-fuzz) !important;
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* ============================================================
+   6. 링크 & 코드 블록 (Pantone)
+   ============================================================ */
+
+.sl-markdown-content a {
+  color: var(--pantone-viva-magenta);
+}
+
+.sl-markdown-content a:hover {
+  color: var(--mid-magenta);
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.sl-markdown-content code {
+  background-color: rgba(102, 103, 171, 0.15);
+  color: var(--pantone-peach-fuzz);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+.sl-markdown-content pre {
+  background-color: #1a1a1a;
+  border-left: 3px solid var(--pantone-very-peri);
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+/* ============================================================
+   7. 테이블 (Pantone)
+   ============================================================ */
+
+.sl-markdown-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.sl-markdown-content th {
+  background-color: var(--pantone-very-peri);
+  color: var(--pantone-cloud-dancer);
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.sl-markdown-content td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--pantone-ultimate-gray);
+}
+
+.sl-markdown-content tr:hover {
+  background-color: rgba(102, 103, 171, 0.08);
+}
+
+/* ============================================================
+   8. 인용구 & Callout (Pantone)
+   ============================================================ */
+
+.sl-markdown-content blockquote {
+  border-left: 4px solid var(--pantone-peach-fuzz);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--pastel-peach);
+}
+
+.sl-markdown-content .callout,
+.sl-markdown-content aside {
+  background-color: rgba(102, 103, 171, 0.1);
+  border-left: 4px solid var(--pantone-viva-magenta);
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 4px;
 }
