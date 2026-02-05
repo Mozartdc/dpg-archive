@@ -255,7 +255,7 @@ a[rel="next"] .label {
 .content-panel h1:first-f-type {
   color: var(--pantone-peach-fuzz) !important;
   font-size: 1.5rem !important;
-  font-weight: 900 !important;
+  font-weight: 300 !important;
   margin-bottom: 1.5rem !important;
 }
 
