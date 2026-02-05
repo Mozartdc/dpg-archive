@@ -337,13 +337,28 @@ a[rel="next"] .label {
   border-radius: 4px;
 }
 
-/* 다크모드 callout 글자 색상 */
-:root[data-theme='dark'] .sl-markdown-content .callout,
-:root[data-theme='dark'] .sl-markdown-content aside {
-  color: var(--pantone-cloud-dancer) !important;  /* 밝은 오프화이트 */
+/* 다크모드 - 인라인 스타일 강제 덮어쓰기 */
+:root[data-theme='dark'] .sl-markdown-content div[style*="color: #37352f"],
+:root[data-theme='dark'] .sl-markdown-content div[style*="color:#37352f"] {
+  color: var(--pantone-cloud-dancer) !important;
 }
 
-:root[data-theme='dark'] .sl-markdown-content .callout a,
-:root[data-theme='dark'] .sl-markdown-content aside a {
-  color: var(--pastel-peach) !important;  /* 링크는 Peach */
+:root[data-theme='dark'] .sl-markdown-content div[style*="color: #37352f"] a,
+:root[data-theme='dark'] .sl-markdown-content div[style*="color:#37352f"] a {
+  color: var(--pastel-peach) !important;
+  text-decoration: underline;
+}
+
+:root[data-theme='dark'] .sl-markdown-content div[style*="color: #37352f"] strong,
+:root[data-theme='dark'] .sl-markdown-content div[style*="color:#37352f"] strong {
+  color: var(--pantone-peach-fuzz) !important;
+}
+
+/* 모든 div 안의 텍스트를 다크모드에서 밝게 */
+:root[data-theme='dark'] .sl-markdown-content div {
+  color: var(--pantone-cloud-dancer);
+}
+
+:root[data-theme='dark'] .sl-markdown-content div a[style*="color: inherit"] {
+  color: var(--pastel-peach) !important;
 }
