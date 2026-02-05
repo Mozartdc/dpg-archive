@@ -254,8 +254,8 @@ a[rel="next"] .label {
 .page-title,
 .content-panel h1:first-f-type {
   color: var(--pantone-peach-fuzz) !important;
-  font-size: 2rem !important;
-  font-weight: 600 !important;
+  font-size: 1.5rem !important;
+  font-weight: 900 !important;
   margin-bottom: 1.5rem !important;
 }
 
@@ -335,4 +335,15 @@ a[rel="next"] .label {
   padding: 1rem;
   margin: 1.5rem 0;
   border-radius: 4px;
+}
+
+/* 다크모드 callout 글자 색상 */
+:root[data-theme='dark'] .sl-markdown-content .callout,
+:root[data-theme='dark'] .sl-markdown-content aside {
+  color: var(--pantone-cloud-dancer) !important;  /* 밝은 오프화이트 */
+}
+
+:root[data-theme='dark'] .sl-markdown-content .callout a,
+:root[data-theme='dark'] .sl-markdown-content aside a {
+  color: var(--pastel-peach) !important;  /* 링크는 Peach */
 }
