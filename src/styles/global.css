@@ -208,8 +208,8 @@ a[rel="next"] .label {
 
 .sl-markdown-content h1 {
   color: var(--pantone-peach-fuzz) !important;
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 300;
   margin-top: 2rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid var(--pantone-very-peri);
@@ -254,8 +254,8 @@ a[rel="next"] .label {
 .page-title,
 .content-panel h1:first-f-type {
   color: var(--pantone-peach-fuzz) !important;
-  font-size: 1.5rem !important;
-  font-weight: 300 !important;
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
   margin-bottom: 1.5rem !important;
 }
 
