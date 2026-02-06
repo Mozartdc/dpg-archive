@@ -376,8 +376,8 @@ async function convertToMarkdown(blocks, indent = "") {
         if (icon) {
           output.push(`
 <div class="${calloutClass}" style="padding: 20px; border-radius: 8px; display: flex; flex-direction: column; gap: 10px; margin: 20px 0; border: 1px solid #e5e7eb;">
-  <div style="display: flex; gap: 12px; align-items: flex-start;">
-    <div style="font-size: 24px; line-height: 1.2; margin-top: -2px;">${icon}</div>
+  <div style="display: flex; gap: 12px; align-items: align-items:baseline;">
+  <div style="font-size: 18px; line-height: 1; flex-shrink: 0;">${icon}</div>
     <div style="flex: 1; min-width: 0; line-height: 1.6;">
       ${text}
     </div>
@@ -477,18 +477,13 @@ async function convertToMarkdown(blocks, indent = "") {
   </div>
 </a>\n\n`);
         } else {
-          output.push(`
-<a href="${bUrl}" target="_blank" style="display: flex; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; overflow: hidden; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
-  <div style="padding: 12px 16px; flex: 1; min-width: 0;">
-    <div style="font-size: 14px; font-weight: 600; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #111827;">${bTitle}</div>
-    ${bDescription ? `<div style="font-size: 12px; color: #6b7280; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 6px;">${bDescription}</div>` : ''}
-    <div style="font-size: 11px; color: #9ca3af; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${bUrl}</div>
-  </div>
-  <div style="width: 48px; background: #f9fafb; display: flex; align-items: center; justify-content: center; border-left: 1px solid #e5e7eb; color: #9ca3af;">
-    <span style="font-size: 20px;">🔗</span>
-  </div>
+  output.push(`
+<a href="${bUrl}" target="_blank" style="display: block; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; padding: 16px; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+  <div style="font-size: 14px; font-weight: 600; margin-bottom: 6px; color: #111827;">🔗 ${bTitle}</div>
+  ${bDescription ? `<div style="font-size: 12px; color: #6b7280; line-height: 1.5; margin-bottom: 8px;">${bDescription}</div>` : ''}
+  <div style="font-size: 11px; color: #9ca3af; word-break: break-all;">${bUrl}</div>
 </a>\n\n`);
-        }
+              }
         break;
       }
 
