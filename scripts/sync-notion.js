@@ -340,14 +340,28 @@ async function convertToMarkdown(blocks, indent = "") {
     const blockColorStyle = content ? getBlockColorStyle(content) : '';
 
     switch (type) {
-      // ── paragraph (✅ 수정 3: class 적용) ──
-      case 'paragraph':
+// ── paragraph (✅ 수정: 유령 문자 제거 로직 강화) ──
+      case 'paragraph': {
+        // 다시 수정함
+        const plain = (text || '')
+          .replace(/<br\s*\/?>/gi, '')
+          .replace(/&nbsp;/gi, ' ')
+          .replace(/&ZeroWidthSpace;/gi, '')
+          .replace(/[\u200B-\u200D\uFEFF]/g, '') // 눈에 안 보이는 특수 문자 제거
+          .replace(/<[^>]*>/g, '') // HTML 태그 제거
+          .trim();
+
+        // 진짜 내용이 없으면 아예 출력하지 않음 (빈 p태그 생성 방지)
+        if (!plain) break;
+
         if (blockColorStyle) {
-          output.push(`${indent}<p class="${blockColorStyle}" style="margin-bottom: 1em;">${text}</p>\n\n`);
+          output.push(`${indent}<p class="${blockColorStyle}" style="margin: 0 0 1em 0;">${text}</p>\n\n`);
         } else {
-          output.push(`${indent}<p style="margin-bottom: 1em;">${text}</p>\n\n`);
+          output.push(`${indent}<p style="margin: 0 0 1em 0;">${text}</p>\n\n`);
         }
         break;
+      }
+
 
       // ── heading (✅ 수정 4: class 적용) ──
       case 'heading_1':
@@ -376,12 +390,13 @@ async function convertToMarkdown(blocks, indent = "") {
         if (icon) {
           output.push(`
 <div class="${calloutClass}" style="padding: 20px; border-radius: 8px; display: flex; flex-direction: column; gap: 10px; margin: 20px 0; border: 1px solid #e5e7eb;">
-  <div style="display: flex; gap: 12px; align-items: align-items:baseline;">
-  <div style="font-size: 18px; line-height: 1; flex-shrink: 0;">${icon}</div>
-    <div style="flex: 1; min-width: 0; line-height: 1.6;">
-      ${text}
-    </div>
+  <div style="display: flex; gap: 12px; align-items: baseline;">
+    <div style="font-size: 18px; line-height: 1; flex-shrink: 0; transform: translateY(2px);">${icon}</div>
+    <div style="flex: 1; min-width: 0; line-height: 1.6;">${text}</div>
   </div>
+  ${childrenMd ? `<div style="margin-top: 10px; width: 100%; display: flex; flex-direction: column; gap: 10px;">${childrenMd}</div>` : ''}
+</div>
+
   ${childrenMd ? `<div style="margin-top: 10px; width: 100%; display: flex; flex-direction: column; gap: 10px;">${childrenMd}</div>` : ''}
 </div>\n\n`);
         } else {

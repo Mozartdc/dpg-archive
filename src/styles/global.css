@@ -8,7 +8,7 @@
   /* Pantone Color of the Year */
   --pantone-cloud-dancer: #F0EFEB;    /* 2026 - 오프화이트 */
   --pantone-mocha-mousse: #A47864;    /* 2025 - 따뜻한 브라운 */
-  --pantone-peach-fuzz: #FF6F61;      /* 2024 - 부드러운 피치 */
+  --pantone-peach-fuzz: #FFBE98;      /* 2024 - 부드러운 피치 */
   --pantone-viva-magenta: #BE3455;    /* 2023 - 생동감 있는 마젠타 */
   --pantone-very-peri: #6667AB;       /* 2022 - 활기찬 퍼플 */
   --pantone-illuminating: #F5DF4D;    /* 2021 - 밝은 노랑 */
@@ -30,11 +30,16 @@
    ============================================================ */
 
 :root {
-  --site-title-color: var(--pantone-viva-magenta);  /* Viva Magenta */
+  --site-title-color: #2C3E50;  /* 라이트: 어두운 푸른 계열 */
 }
 
 .astro-m46x6ez3 {
   color: var(--site-title-color) !important;
+}
+
+/* 다크모드: 회색에 가까운 밝은 파랑 */
+:root[data-theme='dark'] .astro-m46x6ez3 {
+  color: #A8B5C4 !important;  /* 회색 느낌의 밝은 블루 */
 }
 
 
@@ -209,7 +214,7 @@ a[rel="next"] .label {
 .sl-markdown-content h1 {
   color: var(--pantone-peach-fuzz) !important;
   font-size: 2.5rem;
-  font-weight: 300;
+  font-weight: 700;
   margin-top: 2rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid var(--pantone-very-peri);
@@ -250,15 +255,19 @@ a[rel="next"] .label {
   font-weight: 500;
 }
 
-/* 페이지 최상단 제목 (수정됨) */
-h1#_top,
+/* 페이지 최상단 제목 */
+.page-title,
 .content-panel h1:first-of-type {
-  color: var(--pantone-peach-fuzz) !important;
-  font-size: 1.4rem !important;  /* 기존 2.5rem에서 줄임 (원하는 크기로 숫자 변경) */
-  font-weight: 600 !important;
-  margin-bottom: 0.5rem !important;
-  line-height: 1.2 !important; /* 줄 간격이 너무 벌어지지 않게 조정 */
-  border-bottom: none !important; /* 혹시 모를 밑줄 제거 */
+  color: #374151 !important;  /* 라이트: 어두운 그레이 */
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* 다크모드: 밝은 그레이 */
+:root[data-theme='dark'] .page-title,
+:root[data-theme='dark'] .content-panel h1:first-of-type {
+  color: #D1D5DB !important;  /* 다크: 밝은 그레이 */
 }
 
 /* ============================================================
@@ -339,28 +348,28 @@ h1#_top,
   border-radius: 4px;
 }
 
-/* 다크모드 - 인라인 스타일 강제 덮어쓰기 */
-:root[data-theme='dark'] .sl-markdown-content div[style*="color: #37352f"],
-:root[data-theme='dark'] .sl-markdown-content div[style*="color:#37352f"] {
-  color: var(--pantone-cloud-dancer) !important;
+/* ============================================================
+   9. [최종] 테이블 100% 강제 & Callout 수정
+   ============================================================ */
+
+/* 1. 테이블 강제 확장 (선택자 우선순위 높임) */
+:where(article, .content-panel, .sl-markdown-content) table {
+  display: table !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  table-layout: auto; /* 내용물에 따라 자동 조절 */
+  margin-bottom: 1.5rem !important;
 }
 
-:root[data-theme='dark'] .sl-markdown-content div[style*="color: #37352f"] a,
-:root[data-theme='dark'] .sl-markdown-content div[style*="color:#37352f"] a {
-  color: var(--pastel-peach) !important;
-  text-decoration: underline;
+/* 2. (선택사항) 본문 폭 자체가 너무 좁다고 느껴지면 아래 주석 해제 */
+/*
+:root {
+  --sl-content-width: 100% !important; 
+  --sl-text-width: 100% !important;
 }
+*/
 
-:root[data-theme='dark'] .sl-markdown-content div[style*="color: #37352f"] strong,
-:root[data-theme='dark'] .sl-markdown-content div[style*="color:#37352f"] strong {
-  color: var(--pantone-peach-fuzz) !important;
-}
-
-/* 모든 div 안의 텍스트를 다크모드에서 밝게 */
-:root[data-theme='dark'] .sl-markdown-content div {
-  color: var(--pantone-cloud-dancer);
-}
-
-:root[data-theme='dark'] .sl-markdown-content div a[style*="color: inherit"] {
-  color: var(--pastel-peach) !important;
+/* 3. Callout 내부 텍스트 상단 마진 제거 (보험용) */
+.notion-callout-text > *:first-child {
+  margin-top: 0 !important;
 }
