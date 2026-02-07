@@ -255,20 +255,21 @@ a[rel="next"] .label {
   font-weight: 500;
 }
 
-/* 페이지 최상단 제목 */
+/* 페이지 최상단 제목 – 크기 축소 버전 유지 */
 .page-title,
 .content-panel h1:first-of-type {
-  color: #374151 !important;  /* 라이트: 어두운 그레이 */
-  font-size: 3rem !important;
-  font-weight: 700 !important;
-  margin-bottom: 1.5rem !important;
+  color: #374151 !important;
+  font-size: 1.4rem !important;   /* ← 당신이 원한 작은 크기 */
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
 }
 
-/* 다크모드: 밝은 그레이 */
+/* 다크모드 */
 :root[data-theme='dark'] .page-title,
 :root[data-theme='dark'] .content-panel h1:first-of-type {
-  color: #D1D5DB !important;  /* 다크: 밝은 그레이 */
+  color: #D1D5DB !important;
 }
+
 
 /* ============================================================
    6. 링크 & 코드 블록 (Pantone)
