@@ -16,6 +16,11 @@ export default defineConfig({
           autogenerate: { directory: '디지털 피아노' }
         },
         {
+          label: '가상 악기',
+          collapsed: true,
+          autogenerate: { directory: '가상 악기' }
+        },
+        {
           label: '음악 이론',
           collapsed: true,
           autogenerate: { directory: '음악 이론' }
@@ -24,11 +29,6 @@ export default defineConfig({
           label: '피아노 연습',
           collapsed: true,
           autogenerate: { directory: '피아노 연습' }
-        },
-        {
-          label: '가상 악기',
-          collapsed: true,
-          autogenerate: { directory: '가상 악기' }
         },
         {
           label: '음악 이야기',
