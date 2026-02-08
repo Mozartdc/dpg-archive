@@ -1,7 +1,7 @@
 ---
 title: "i. 화음과 화성"
 date: 2026-01-30
-lastEdited: 2026-02-06
+lastEdited: 2026-02-08
 tags:
   - "화성학"
   - "음악이론"
