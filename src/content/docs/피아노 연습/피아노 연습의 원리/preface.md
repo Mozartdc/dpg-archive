@@ -81,6 +81,8 @@ sidebar:
 
 ---
 
+---
+
 
 <div class="notion-callout-gray" style="padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #e5e7eb; line-height: 1.6;">
   <div>이 글은 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a> 의 글을 복사한 것입니다. 관련 질문이나 문의는 우리 갤러리를 방문해주세요.</div>
