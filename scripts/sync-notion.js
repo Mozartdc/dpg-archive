@@ -2,6 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
+import { syncPianoDB } from './sync-pianos.js';
+
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -11,6 +13,7 @@ const DATABASE_ID = process.env.NOTION_DATABASE_ID;
 const API_KEY = process.env.NOTION_API_KEY;
 const DOCS_PATH = path.join(__dirname, '..', 'src', 'content', 'docs');
 const IMAGES_PATH = path.join(__dirname, '..', 'public', 'images');
+
 
 
 // ⚠️ [참고] 아래 맵들은 이제 직접 사용되지 않지만, 
@@ -679,6 +682,9 @@ async function syncNotion() {
         console.error(`❌ 에러: ${e.message}`);
       }
     }
+
+    await syncPianoDB();
+    
     console.log('\n✨ 동기화 완료!');
 
   } catch (error) {

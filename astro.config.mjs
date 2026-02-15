@@ -1,9 +1,11 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import react from '@astrojs/react';
 
 export default defineConfig({
   site: 'https://dpg-archive.vercel.app',
   integrations: [
+    react(), // 리액트 통합
     starlight({
       title: '디지털 피아노 갤러리 아카이브',
       customCss: [
