@@ -90,10 +90,10 @@ GP-9M,Roland,그랜드,Hybrid Grand (Moving Keys),목재+플라스틱,Piano Real
 PX-S1100,Casio,포터블,Smart Scaled Hammer,플라스틱,Multi-Dimensional AiR,192,"USB, BT(Audio/MIDI)",❌,스위치 (기본포함),16W (8W+8W) 2-spk
 AP-S450,Casio,슬림,Smart Hybrid Hammer,목재+플라스틱,Multi-Dimensional AiR,256,"USB, BT(Audio/MIDI)",❌,3페달 (Continuous),40W (20W+20W) 4-spk
 PX-S6000,Casio,포터블,Smart Hybrid Hammer,목재+플라스틱,Multi-Dimensional AiR,256,"USB, BT(Audio/MIDI)",❌,스위치 (기본포함),32W (8Wx4) 4-spk
-Yamaha,CLP-895GP,그랜드,GrandTouch (Linear),목재 (White only),"CFX, Bösendorfer (VRM)",256,"USB-B, BT(Audio/MIDI)",✅,3페달 (GP Response),(45W+45W+45W) x 2 (Spruce Cone)
-Yamaha,CLP-885,콘솔,GrandTouch (Linear),목재 (White only),"CFX, Bösendorfer (VRM)",256,"USB-B, BT(Audio/MIDI)",✅,3페달 (GP Response),(45W+30W+40W) x 2 (Spruce Cone)
-Yamaha,CLP-825,콘솔,GrandTouch-S,플라스틱,"CFX, Bösendorfer (VRM)",256,USB-B,✅,3페달 (GrandTouch),20W x 2
-Yamaha,CLP-835,콘솔,GrandTouch-S,플라스틱,"CFX, Bösendorfer (VRM)",256,"USB-B, BT(Audio/MIDI)",✅,3페달 (GrandTouch),30W x 2
-Yamaha,CLP-865GP,그랜드,GrandTouch-S,목재 (White only),"CFX, Bösendorfer (VRM)",256,"USB-B, BT(Audio/MIDI)",✅,3페달 (GP Response),(45W+45W) x 2
-Yamaha,CLP-845,콘솔,GrandTouch-S,목재 (White only),"CFX, Bösendorfer (VRM)",256,"USB-B, BT(Audio/MIDI)",✅,3페달 (GrandTouch),(45W+45W) x 2
-Yamaha,CLP-875,콘솔,GrandTouch (Linear),목재 (White only),"CFX, Bösendorfer (VRM)",256,"USB-B, BT(Audio/MIDI)",✅,3페달 (GP Response),(45W+25W+40W) x 2
+CLP-895GP,Yamaha,그랜드,GrandTouch (Linear),목재 (White only),"CFX, Bösendorfer (VRM)",256,"USB-B, BT(Audio/MIDI)",✅,3페달 (GP Response),(45W+45W+45W) x 2 (Spruce Cone)
+CLP-885,Yamaha,콘솔,GrandTouch (Linear),목재 (White only),"CFX, Bösendorfer (VRM)",256,"USB-B, BT(Audio/MIDI)",✅,3페달 (GP Response),(45W+30W+40W) x 2 (Spruce Cone)
+CLP-825,Yamaha,콘솔,GrandTouch-S,플라스틱,"CFX, Bösendorfer (VRM)",256,USB-B,✅,3페달 (GrandTouch),20W x 2
+CLP-835,Yamaha,콘솔,GrandTouch-S,플라스틱,"CFX, Bösendorfer (VRM)",256,"USB-B, BT(Audio/MIDI)",✅,3페달 (GrandTouch),30W x 2
+CLP-865GP,Yamaha,그랜드,GrandTouch-S,목재 (White only),"CFX, Bösendorfer (VRM)",256,"USB-B, BT(Audio/MIDI)",✅,3페달 (GP Response),(45W+45W) x 2
+CLP-845,Yamaha,콘솔,GrandTouch-S,목재 (White only),"CFX, Bösendorfer (VRM)",256,"USB-B, BT(Audio/MIDI)",✅,3페달 (GrandTouch),(45W+45W) x 2
+CLP-875,Yamaha,콘솔,GrandTouch (Linear),목재 (White only),"CFX, Bösendorfer (VRM)",256,"USB-B, BT(Audio/MIDI)",✅,3페달 (GP Response),(45W+25W+40W) x 2
