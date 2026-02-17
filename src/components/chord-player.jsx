@@ -111,8 +111,11 @@ export default function ChordPlayer() {
   };
 
   const findChord = (codeName) => {
-    const found = chords.find(c => c.fullName === codeName);
-    console.log(`"${codeName}" →`, found ? `발견! (${found.key})` : '❌ 없음');
+    // 대소문자 무시 검색
+    const found = chords.find(c => c.fullName.toLowerCase() === codeName.toLowerCase());
+    if (!found) {
+      console.warn(`코드 못 찾음: "${codeName}" (대소문자 확인 필요)`);
+    }
     return found;
   };
 
@@ -123,13 +126,18 @@ export default function ChordPlayer() {
       const chord = findChord(name);
       if (chord) {
         const svgPath = nameToSvg(chord.fullName);
-        console.log(`${chord.fullName} → ${svgPath}`);
+        console.log(`${name} → ${svgPath}`);
         return { ...chord, svgPath };
       }
       return null;
     }).filter(Boolean);
     
     setSelectedChords(found);
+    
+    // 검색 결과가 없으면 경고
+    if (found.length === 0 && names.length > 0) {
+      console.warn('입력한 코드:', names, '/ 사용 가능한 코드 예시:', chords.slice(0, 5).map(c => c.fullName));
+    }
   };
 
   const noteToFreq = (noteName) => {
@@ -152,61 +160,65 @@ export default function ChordPlayer() {
     if (isPlaying) return;
     setIsPlaying(true);
     
-    await Tone.start();
-    
-    // 실제 피아노 샘플 사용 (Salamander Piano)
-    const piano = new Tone.Sampler({
-      urls: {
-        A0: "A0.mp3",
-        C1: "C1.mp3",
-        "D#1": "Ds1.mp3",
-        "F#1": "Fs1.mp3",
-        A1: "A1.mp3",
-        C2: "C2.mp3",
-        "D#2": "Ds2.mp3",
-        "F#2": "Fs2.mp3",
-        A2: "A2.mp3",
-        C3: "C3.mp3",
-        "D#3": "Ds3.mp3",
-        "F#3": "Fs3.mp3",
-        A3: "A3.mp3",
-        C4: "C4.mp3",
-        "D#4": "Ds4.mp3",
-        "F#4": "Fs4.mp3",
-        A4: "A4.mp3",
-        C5: "C5.mp3",
-        "D#5": "Ds5.mp3",
-        "F#5": "Fs5.mp3",
-        A5: "A5.mp3",
-        C6: "C6.mp3",
-        "D#6": "Ds6.mp3",
-        "F#6": "Fs6.mp3",
-        A6: "A6.mp3",
-        C7: "C7.mp3",
-        "D#7": "Ds7.mp3",
-        "F#7": "Fs7.mp3",
-        A7: "A7.mp3",
-        C8: "C8.mp3"
-      },
-      release: 1,
-      baseUrl: "https://tonejs.github.io/audio/salamander/"
-    }).toDestination();
-    
-    // 샘플 로딩 대기
-    await Tone.loaded();
-    
-    const notes = chord.key.split(',').map(n => {
-      const freq = noteToFreq(n.trim());
-      if (!freq) return null;
-      return Tone.Frequency(freq, "hz").toNote();
-    }).filter(Boolean);
-    
-    piano.triggerAttackRelease(notes, "2n");
-    
-    setTimeout(() => {
-      piano.dispose();
+    try {
+      // iOS Safari 호환성
+      await Tone.start();
+      
+      const piano = new Tone.Sampler({
+        urls: {
+          A0: "A0.mp3",
+          C1: "C1.mp3",
+          "D#1": "Ds1.mp3",
+          "F#1": "Fs1.mp3",
+          A1: "A1.mp3",
+          C2: "C2.mp3",
+          "D#2": "Ds2.mp3",
+          "F#2": "Fs2.mp3",
+          A2: "A2.mp3",
+          C3: "C3.mp3",
+          "D#3": "Ds3.mp3",
+          "F#3": "Fs3.mp3",
+          A3: "A3.mp3",
+          C4: "C4.mp3",
+          "D#4": "Ds4.mp3",
+          "F#4": "Fs4.mp3",
+          A4: "A4.mp3",
+          C5: "C5.mp3",
+          "D#5": "Ds5.mp3",
+          "F#5": "Fs5.mp3",
+          A5: "A5.mp3",
+          C6: "C6.mp3",
+          "D#6": "Ds6.mp3",
+          "F#6": "Fs6.mp3",
+          A6: "A6.mp3",
+          C7: "C7.mp3",
+          "D#7": "Ds7.mp3",
+          "F#7": "Fs7.mp3",
+          A7: "A7.mp3",
+          C8: "C8.mp3"
+        },
+        release: 1,
+        baseUrl: "https://tonejs.github.io/audio/salamander/"
+      }).toDestination();
+      
+      await Tone.loaded();
+      
+      const notes = chord.key.split(',').map(n => {
+        const freq = noteToFreq(n.trim());
+        if (!freq) return null;
+        return Tone.Frequency(freq, "hz").toNote();
+      }).filter(Boolean);
+      
+      piano.triggerAttackRelease(notes, "2n");
+      
+      setTimeout(() => {
+        piano.dispose();
+        setIsPlaying(false);
+      }, 2500);
+    } catch (error) {
+      console.error('재생 오류:', error);
       setIsPlaying(false);
-    }, 2500);
+    }
   };
 
   // 연속 재생
@@ -214,64 +226,68 @@ export default function ChordPlayer() {
     if (isPlayingSequence || selectedChords.length === 0) return;
     setIsPlayingSequence(true);
     
-    await Tone.start();
-    
-    const piano = new Tone.Sampler({
-      urls: {
-        A0: "A0.mp3",
-        C1: "C1.mp3",
-        "D#1": "Ds1.mp3",
-        "F#1": "Fs1.mp3",
-        A1: "A1.mp3",
-        C2: "C2.mp3",
-        "D#2": "Ds2.mp3",
-        "F#2": "Fs2.mp3",
-        A2: "A2.mp3",
-        C3: "C3.mp3",
-        "D#3": "Ds3.mp3",
-        "F#3": "Fs3.mp3",
-        A3: "A3.mp3",
-        C4: "C4.mp3",
-        "D#4": "Ds4.mp3",
-        "F#4": "Fs4.mp3",
-        A4: "A4.mp3",
-        C5: "C5.mp3",
-        "D#5": "Ds5.mp3",
-        "F#5": "Fs5.mp3",
-        A5: "A5.mp3",
-        C6: "C6.mp3",
-        "D#6": "Ds6.mp3",
-        "F#6": "Fs6.mp3",
-        A6: "A6.mp3",
-        C7: "C7.mp3",
-        "D#7": "Ds7.mp3",
-        "F#7": "Fs7.mp3",
-        A7: "A7.mp3",
-        C8: "C8.mp3"
-      },
-      release: 1,
-      baseUrl: "https://tonejs.github.io/audio/salamander/"
-    }).toDestination();
-    
-    await Tone.loaded();
-    
-    const now = Tone.now();
-    
-    selectedChords.forEach((chord, index) => {
-      const notes = chord.key.split(',').map(n => {
-        const freq = noteToFreq(n.trim());
-        if (!freq) return null;
-        return Tone.Frequency(freq, "hz").toNote();
-      }).filter(Boolean);
+    try {
+      await Tone.start();
       
-      // 각 코드를 1초 간격으로 재생
-      piano.triggerAttackRelease(notes, "1n", now + index * 1.2);
-    });
-    
-    setTimeout(() => {
-      piano.dispose();
+      const piano = new Tone.Sampler({
+        urls: {
+          A0: "A0.mp3",
+          C1: "C1.mp3",
+          "D#1": "Ds1.mp3",
+          "F#1": "Fs1.mp3",
+          A1: "A1.mp3",
+          C2: "C2.mp3",
+          "D#2": "Ds2.mp3",
+          "F#2": "Fs2.mp3",
+          A2: "A2.mp3",
+          C3: "C3.mp3",
+          "D#3": "Ds3.mp3",
+          "F#3": "Fs3.mp3",
+          A3: "A3.mp3",
+          C4: "C4.mp3",
+          "D#4": "Ds4.mp3",
+          "F#4": "Fs4.mp3",
+          A4: "A4.mp3",
+          C5: "C5.mp3",
+          "D#5": "Ds5.mp3",
+          "F#5": "Fs5.mp3",
+          A5: "A5.mp3",
+          C6: "C6.mp3",
+          "D#6": "Ds6.mp3",
+          "F#6": "Fs6.mp3",
+          A6: "A6.mp3",
+          C7: "C7.mp3",
+          "D#7": "Ds7.mp3",
+          "F#7": "Fs7.mp3",
+          A7: "A7.mp3",
+          C8: "C8.mp3"
+        },
+        release: 1,
+        baseUrl: "https://tonejs.github.io/audio/salamander/"
+      }).toDestination();
+      
+      await Tone.loaded();
+      
+      const now = Tone.now();
+      
+      selectedChords.forEach((chord, index) => {
+        const notes = chord.key.split(',').map(n => {
+          const freq = noteToFreq(n.trim());
+          if (!freq) return null;
+          return Tone.Frequency(freq, "hz").toNote();
+        }).filter(Boolean);
+        
+        piano.triggerAttackRelease(notes, "1n", now + index * 1.2);
+      });
+      
+      setTimeout(() => {
+        piano.dispose();
+        setIsPlayingSequence(false);
+      }, selectedChords.length * 1200 + 2000);
+    } catch (error) {
+      console.error('연속 재생 오류:', error);
       setIsPlayingSequence(false);
-    }, selectedChords.length * 1200 + 2000);
+    }
   };
 
   if (loading) {
@@ -448,14 +464,21 @@ export default function ChordPlayer() {
                     padding: '10px',
                     fontSize: '14px',
                     fontWeight: '600',
-                    background: isPlaying ? 'var(--sl-color-gray-5)' : 'var(--sl-color-accent)',
-                    color: 'var(--sl-color-text-invert)',
+                    background: isPlaying ? 'var(--sl-color-gray-5)' : '#86cecb',
+                    color: '#ffffff',
                     border: 'none',
                     borderRadius: '6px',
-                    cursor: isPlaying ? 'not-allowed' : 'pointer'
+                    cursor: isPlaying ? 'not-allowed' : 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '6px'
                   }}
                 >
-                  {isPlaying ? '재생 중...' : '🔊 소리 듣기'}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                    <path fill="#ffffff" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m-2 14.5v-9l6 4.5z"/>
+                  </svg>
+                  {isPlaying ? '재생 중...' : '소리 듣기'}
                 </button>
               </div>
             ))}
