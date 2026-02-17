@@ -284,22 +284,46 @@ export default function ChordPlayer() {
 
   return (
     <div style={{ padding: '20px', color: 'var(--sl-color-text)' }}>
-      <div style={{ marginBottom: '30px', borderBottom: '1px solid var(--sl-color-hairline)', paddingBottom: '20px' }}>
-        <h1 style={{ fontSize: '28px', fontWeight: '700', marginBottom: '10px', color: 'var(--sl-color-white)' }}>
-          🎹 피아노 코드 출력기
+      <div style={{ marginBottom: '30px', borderBottom: '1px solid rgba(128, 128, 128, 0.3)', paddingBottom: '20px' }}>
+        <h1 style={{ 
+          fontSize: '28px', 
+          fontWeight: '700', 
+          marginBottom: '10px', 
+          color: '#86cecb',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '12px'
+        }}>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16" style={{ flexShrink: 0 }}>
+            <path fill="#86cecb" d="M13.5 2h-12C.673 2 0 2.673 0 3.5v9c0 .827.673 1.5 1.5 1.5h12c.827 0 1.5-.673 1.5-1.5v-9c0-.827-.673-1.5-1.5-1.5M11 13H8V9a1 1 0 0 0 1-1V3h1v5a1 1 0 0 0 1 1zM5 8V3h1v5a1 1 0 0 0 1 1v4H4V9a1 1 0 0 0 1-1m-4 4.5v-9c0-.275.225-.5.5-.5H2v5a1 1 0 0 0 1 1v4H1.5a.5.5 0 0 1-.5-.5m13 0c0 .275-.225.5-.5.5H12V9a1 1 0 0 0 1-1V3h.5c.275 0 .5.225.5.5z"/>
+          </svg>
+          피아노 코드 플레이어 사용 방법
         </h1>
-        <p style={{ color: 'var(--sl-color-gray-3)', fontSize: '14px' }}>
+        <p style={{ color: 'var(--sl-color-gray-3)', fontSize: '14px', marginBottom: '12px' }}>
           코드를 입력하면 건반 이미지와 함께 소리를 들을 수 있습니다 (총 {chords.length}개)
         </p>
+        <div style={{ 
+          display: 'flex', 
+          alignItems: 'flex-start', 
+          gap: '8px',
+          fontSize: '13px',
+          color: '#FF6F61',
+          lineHeight: '1.5'
+        }}>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32" style={{ flexShrink: 0, marginTop: '2px' }}>
+            <path fill="#FF6F61" d="M10 8a6 6 0 0 1 12 0c0 3.523-1.986 8.536-3.16 11.19C18.346 20.31 17.227 21 16 21s-2.345-.69-2.84-1.81C11.985 16.536 10 11.522 10 8m6 22a3.5 3.5 0 1 0 0-7a3.5 3.5 0 0 0 0 7"/>
+          </svg>
+          <span>Tip: 코드를 입력할 때 반드시 하이픈(-)이나 공백으로 구분하세요. ex. C-G-Am-F / C G Am F</span>
+        </div>
       </div>
 
       <form onSubmit={handleSubmit} style={{ marginBottom: '30px' }}>
-        <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', alignItems: 'center' }}>
           <input
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="예: C-G-Am-F 또는 C G Am F"
+            placeholder="ex. C-G-Am-F 또는 C G Am F"
             style={{
               flex: 1,
               minWidth: '300px',
@@ -317,18 +341,16 @@ export default function ChordPlayer() {
               padding: '12px 24px',
               fontSize: '16px',
               fontWeight: '600',
-              background: 'var(--sl-color-accent-high)',
-              color: 'var(--sl-color-text-invert)',
+              background: '#86cecb',
+              color: '#ffffff',
               border: 'none',
               borderRadius: '8px',
-              cursor: 'pointer'
+              cursor: 'pointer',
+              whiteSpace: 'nowrap'
             }}
           >
-            표시하기
+            코드 확인
           </button>
-        </div>
-        <div style={{ marginTop: '8px', fontSize: '13px', color: 'var(--sl-color-gray-3)' }}>
-          💡 Tip: 하이픈(-)이나 공백으로 구분하세요. 예: C-G-Am-F
         </div>
       </form>
 
@@ -344,15 +366,21 @@ export default function ChordPlayer() {
                   padding: '12px 32px',
                   fontSize: '16px',
                   fontWeight: '600',
-                  background: isPlayingSequence ? 'var(--sl-color-gray-5)' : 'var(--sl-color-accent-high)',
-                  color: 'var(--sl-color-text-invert)',
+                  background: isPlayingSequence ? 'var(--sl-color-gray-5)' : '#86cecb',
+                  color: '#ffffff',
                   border: 'none',
                   borderRadius: '8px',
                   cursor: isPlayingSequence ? 'not-allowed' : 'pointer',
-                  boxShadow: '0 2px 8px rgba(0,0,0,0.2)'
+                  boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px'
                 }}
               >
-                {isPlayingSequence ? `🎵 재생 중... (${selectedChords.length}개)` : `🎹 전체 연속 재생 (${selectedChords.length}개)`}
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                  <path fill="#ffffff" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m-2 14.5v-9l6 4.5z"/>
+                </svg>
+                {isPlayingSequence ? `재생 중... (${selectedChords.length}개)` : `전체 연속 재생 (${selectedChords.length}개)`}
               </button>
               <div style={{ marginTop: '8px', fontSize: '13px', color: 'var(--sl-color-gray-3)' }}>
                 각 코드가 1.2초 간격으로 순서대로 재생됩니다
