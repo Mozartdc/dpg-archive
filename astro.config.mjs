@@ -1,11 +1,13 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import react from '@astrojs/react';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 export default defineConfig({
   site: 'https://dpg-archive.vercel.app',
   integrations: [
-    react(), // 리액트 통합
+    react(),
     starlight({
       title: '디지털 피아노 갤러리 아카이브',
       customCss: [
@@ -40,4 +42,8 @@ export default defineConfig({
       ],
     }),
   ],
+  markdown: {
+    remarkPlugins: [remarkMath],
+    rehypePlugins: [rehypeKatex]
+  }
 });

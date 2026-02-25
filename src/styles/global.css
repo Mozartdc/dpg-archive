@@ -1,3 +1,6 @@
+/* KaTeX 수식 렌더링 CSS */
+@import 'katex/dist/katex.min.css';
+
 /* src/styles/global.css - Pantone Edition */
 
 /* ============================================================
