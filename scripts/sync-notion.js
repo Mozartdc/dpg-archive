@@ -283,7 +283,12 @@ function richTextToHtml(richTextArray) {
     if (txt.trim().length === 0) return txt;
 
     if (t.annotations.code) {
+      // $...$ 또는 $$...$$ 수식이면 code 태그 없이 그대로 출력
+      if (/^\$\$[\s\S]+\$\$$/.test(txt.trim()) || /^\$[^$]+\$$/.test(txt.trim())) {
+        // txt 그대로 유지 (KaTeX가 렌더링)
+      } else {
       txt = `<code style="background: rgba(135,131,120,0.15); color: #EB5757; padding: 2px 5px; border-radius: 3px;">${txt}</code>`;
+      }
     }
     if (t.annotations.bold)          txt = `<strong>${txt}</strong>`;
     if (t.annotations.italic)        txt = `<em>${txt}</em>`;
