@@ -277,6 +277,8 @@ function richTextToHtml(richTextArray) {
 
     let txt = t.plain_text || '';
 
+
+
     if (t.href) {
       txt = `<a href="${t.href}" target="_blank" style="color: inherit; text-decoration: underline;">${txt}</a>`;
     }
@@ -287,7 +289,7 @@ function richTextToHtml(richTextArray) {
       if (/^\$\$[\s\S]+\$\$$/.test(txt.trim()) || /^\$[^$]+\$$/.test(txt.trim())) {
         // txt 그대로 유지 (KaTeX가 렌더링)
       } else {
-      txt = `<code style="background: rgba(135,131,120,0.15); color: #EB5757; padding: 2px 5px; border-radius: 3px;">${txt}</code>`;
+        txt = `<code style="background: rgba(135,131,120,0.15); color: #EB5757; padding: 2px 5px; border-radius: 3px;">${txt}</code>`;
       }
     }
     if (t.annotations.bold)          txt = `<strong>${txt}</strong>`;
