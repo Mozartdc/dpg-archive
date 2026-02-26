@@ -270,6 +270,11 @@ function richTextToHtml(richTextArray) {
   if (!richTextArray || richTextArray.length === 0) return "";
 
   return richTextArray.map(t => {
+    // 인라인 수식
+    if (t.type === 'equation') {
+      return `$${t.equation.expression}$`;
+    }
+
     let txt = t.plain_text || '';
 
     if (t.href) {
@@ -504,6 +509,10 @@ async function convertToMarkdown(blocks, indent = "") {
               }
         break;
       }
+
+      case 'equation':
+        output.push(`$$\n${content.expression}\n$$\n\n`);
+        break;
 
       case 'divider': output.push(`---\n\n`); break;
       case 'code':    output.push(`\`\`\`${content.language}\n${text}\n\`\`\`\n\n`); break;

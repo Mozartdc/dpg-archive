@@ -12,6 +12,7 @@ export default defineConfig({
       title: '디지털 피아노 갤러리 아카이브',
       customCss: [
         './src/styles/global.css',
+        './src/styles/katex.css',
       ],
       sidebar: [
         {
