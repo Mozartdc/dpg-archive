@@ -369,7 +369,10 @@ async function convertToMarkdown(blocks, indent = "") {
         // 진짜 내용이 없으면 아예 출력하지 않음 (빈 p태그 생성 방지)
         if (!plain) break;
 
-        if (blockColorStyle) {
+        // 수식이 포함된 paragraph는 순수 마크다운으로 출력 (rehype-katex 처리를 위해)
+        if (/\$/.test(text)) {
+          output.push(`${indent}${plain}\n\n`);
+        } else if (blockColorStyle) {
           output.push(`${indent}<p class="${blockColorStyle}" style="margin: 0 0 1em 0;">${text}</p>\n\n`);
         } else {
           output.push(`${indent}<p style="margin: 0 0 1em 0;">${text}</p>\n\n`);
