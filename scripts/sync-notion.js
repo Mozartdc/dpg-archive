@@ -183,15 +183,7 @@ async function fetchAllChildren(blockId, depth = 0) {
 // ═══════════════════════════════════════════════════════════════
 
 async function getMusescoreHeight(url) {
-  try {
-    const oembedUrl = `https://musescore.com/services/oembed?url=${encodeURIComponent(url)}&format=json`;
-    const res = await fetch(oembedUrl);
-    if (!res.ok) return 450;
-    const data = await res.json();
-    return data.height || 450;
-  } catch (e) {
-    return 450;
-  }
+  return 394;
 }
 
 
@@ -478,6 +470,13 @@ async function convertToMarkdown(blocks, indent = "") {
 <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
   <iframe src="${rawUrl}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
 </div>\n\n`);
+        }
+        else if (rawUrl && rawUrl.includes('spotify.com')) {
+          // 스포티파이: track=152px, 그 외(앨범/플레이리스트)=352px
+          const spotifyHeight = rawUrl.includes('/track/') ? 152 : 352;
+          // open.spotify.com/track/xxx → open.spotify.com/embed/track/xxx
+          const spotifyEmbed = rawUrl.includes('/embed/') ? rawUrl : rawUrl.replace('open.spotify.com/', 'open.spotify.com/embed/');
+          output.push(`\n<iframe src="${spotifyEmbed}" width="100%" height="${spotifyHeight}" frameborder="0" style="border-radius: 12px; display: block; margin: 1rem 0;" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>\n\n`);
         }
         else {
           output.push(`\n<iframe src="${rawUrl}" width="100%" height="450" frameborder="0"></iframe>\n\n`);
