@@ -1,7 +1,7 @@
 ---
 title: "롤랜드 FP-30X 디지털 피아노"
 date: 2026-03-04
-lastEdited: 2026-03-04
+lastEdited: 2026-03-07
 tags:
   - "롤랜드 디지털피아노"
   - "Roland 디지털피아노"
@@ -21,18 +21,9 @@ sidebar:
 
 <p style="margin: 0 0 1em 0;">2020년 말 Roland가 FP-X 시리즈를 발표했고, FP-30X는2021년 1월 출시함.</p>
 
+<p style="margin: 0 0 1em 0;">코스모스에서는 2021 02 22에 정식수입함.</p>
+
 <img src="/images/롤랜드-FP-30X-디지털-피아노-1.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
-
-<p style="margin: 0 0 1em 0;">디자인
-외형은 FP-30과 거의 동일한 수준으로 이어짐. 본체가 큰 편이고 휴대용이라기보다는 집에서 쓰는 용도에 가깝다는 평가임. 후면 연결 단자가 늘어난 만큼 두께감이 유지된 것으로 보인다고 설명함. 색상은 흰색과 검정색 2가지이며, 흰색은 스탠드와 조합했을 때 외형이 깔끔하다는 언급이 있음.</p>
-
-<p style="margin: 0 0 1em 0;">검정색 무광 플라스틱은 손톱으로 스치면 하얀 자국이 남는 편인데 실제 스크래치가 아니라 물기 있는 천이나 손으로 닦으면 지워진다고 함. 큰 문제는 아니지만 외관을 깔끔하게 유지하기 번거롭다는 불만이 있음. 그 외 마감과 조립 품질은 안정적이라고 평가함.</p>
-
-<p style="margin: 0 0 1em 0;">조작부는 FP-30에서 그대로 가져온 구조임. 다만 라벨 디자인이 텍스트와 기호가 섞여 있던 FP-30보다 일관성이 좋아 보여서 외형은 더 정돈된 인상이라고 함. 전면 버튼은 13개이며 다수 버튼에 백라이트가 있어 어두운 환경에서도 상태 확인이 쉬움.</p>
-
-<p style="margin: 0 0 1em 0;">다만 버튼 수가 충분하지 않아 대부분 기능을 버튼과 건반 조합으로 접근해야 하고, 이 방식이 번거롭다는 불만이 반복됨. 예를 들어 피아노 음색을 바꾸려면 Piano 버튼을 누른 채 지정된 건반을 눌러야 하는데, 매핑을 외우지 않으면 매뉴얼을 봐야 한다고 함. 대신 건반 뒤쪽에 자주 쓰는 기능 일부는 인쇄 힌트가 있어 트랜스포즈나 메트로놈 설정 정도는 어느 정도 커버된다고 함.</p>
-
-<p style="margin: 0 0 1em 0;">볼륨 조작 방식이 가장 불편하다고 지적함. 버튼 2개로 볼륨을 올리고 내리며, 5개의 LED로 대략적인 단계만 보여 주는데 실제 볼륨 단계는 100단계라 현재 값이 정확히 어디인지 알기 어렵다고 함. 외부 앱 연결 없이는 더 답답하다는 얘기임. 연습용이면 큰 문제는 아니지만 공연처럼 즉석 조작이 필요한 상황에서는 단점이 될 수 있다고 말함.</p>
 
 
 ### 건반 / 사운드
@@ -43,62 +34,127 @@ sidebar:
 
 <p style="margin: 0 0 1em 0;">사운드는 Roland의 SuperNATURAL 음원 엔진을 사용함. 샘플링과 물리 모델링을 결합한 방식임. FP-30X는 내부 칩셋의 개선으로 전작보다 음색과 동시발음 증가로 사운드도 전반적으로 개선됨.</p>
 
-<p style="margin: 0 0 1em 0;">피아노 음색
-기본 콘서트 그랜드 성향은 FP-30과 비슷하지만 FP-30X 쪽이 더 따뜻하고 깊이가 있다고 함. FP-30은 중역이 약간 빠져 얇게 들리는 느낌이 있었는데 FP-30X는 그 부분이 개선된 인상이라고 비교함. 기본 콘서트 그랜드는 중립적이고 깨끗한 톤이라 연습용으로 적합하다고 평가함. 다만 Roland의 SuperNATURAL이 밝게 들린다고 느끼는 사람도 있는데, 이는 취향 차이며 Ambience와 Brilliance로 어느 정도 조정 가능하다고 함. 업라이트 피아노 계열 프리셋도 몇 가지 포함되어 있고, 하프시코드 프리셋 2개도 있다고 언급함.</p>
+<img src="/images/롤랜드-FP-30X-디지털-피아노-2.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-<p style="margin: 0 0 1em 0;">Piano Designer
-FP-30X의 피아노 음색은 앱을 통해 더 깊게 조정할 수 있다고 설명함. 본체 조작만으로는 해당 파라미터에 접근하기 어렵고, Bluetooth로 연결한 앱에서 조정하는 구조라고 말함. 조정 가능한 항목 예시는 다음과 같음. Lid String Resonance Damper Resonance Key Touch Key Off Resonance Temperament 단일 음별 볼륨 단일 음별 캐릭터 단일 음별 튜닝. 앱 UI는 다소 불편하지만 선택지가 있다는 점은 긍정적으로 봄.</p>
 
-<p style="margin: 0 0 1em 0;">기타 음색
-일렉 피아노는 Rhodes Wurly 계열이 괜찮고, FM 계열이나 CP80 스타일도 레이어용으로 좋다고 함. 오르간 사운드는 FP-30에서 기타 카테고리였는데 FP-30X에서는 더 전면에 배치된 느낌이며, 로터리 스피커 효과도 있고 속도는 fast slow 프리셋 2단으로 바꿀 수 있다고 함. 스트링 베이스 코러스 같은 기타 음색은 단독으로 대단하진 않지만 레이어나 스플릿 용도로는 충분하다고 함. 전체적으로 음색 추가가 단순히 숫자 늘리기가 아니라 구성이 꽤 실용적으로 늘었다는 평가임.</p>
+### 디자인 및 조작부
 
-<p style="margin: 0 0 1em 0;">이펙트
-이펙트는 사실상 Ambience와 Brilliance만 조정 가능하다고 함. Ambience는 홀 리버브 계열로 10단계 프리셋이 있으며 값을 올릴수록 공간이 커지는 대신 반사감 때문에 소리가 탁해질 수 있다고 설명함. Brilliance는 고역을 올리는 성향의 EQ로 보이며 설정 범위가 크지 않고 기본적으로 끄는 쪽이 자연스럽다고 느꼈다고 함. 오르간 계열은 로터리 효과가 기본으로 들어가 있고 버튼으로 fast slow 전환이 가능함. 코러스 같은 이펙트가 더 있었으면 좋았겠지만 큰 단점으로 보진 않음.</p>
+<p style="margin: 0 0 1em 0;">외형은 전작인 FP-30과 거의 동일한 수준인데, 후면 연결 단자가 늘어남. 색상은 흰색과 검정색 2가지로 출시함.</p>
 
-<p style="margin: 0 0 1em 0;">폴리포니
-폴리포니는 동시에 울릴 수 있는 음의 개수이며, 스테레오 샘플 레이어 페달 리버브 듀얼 모드 등에서 소비가 늘어난다고 설명함. FP-30X는 256음으로 FP-30의 128음 대비 두 배이며, 실제 연주에서 한계에 걸릴 일은 거의 없을 것이라고 함.</p>
+<p style="margin: 0 0 1em 0;">검정색 무광 플라스틱은 손톱으로 스치면 하얀 자국이 남는데 스크래치가 아니라 손으로 닦으면 지워짐.</p>
 
-<p style="margin: 0 0 1em 0;">스피커
-스피커는 11W x 2로 FP-30과 동일 출력이지만 체감 음질은 더 좋았다고 함. 하단 발사 구조라 책상 같은 평평한 면에서는 반사 영향을 받을 수 있다고 말함. 대신 사용 환경에 따라 스피커 최적화 옵션이 있고 off stand desk 3가지로 조정 가능하다고 함. 연습에는 충분하지만 공연이면 외부 앰프가 낫다는 평임.</p>
+<p style="margin: 0 0 1em 0;">조작부는 전작 FP-30의 라벨 디자인을 개선해 일관성있고 깔끔함.  전면 버튼은 13개이며 일부 버튼에 백라이트가 있어 어두운 환경에서도 상태 확인이 쉬움.</p>
 
-<p style="margin: 0 0 1em 0;">기능
-본체 조작 또는 Bluetooth 연결 앱을 통해 여러 설정을 조정할 수 있다고 설명함. 주요 기능으로 트랜스포즈 메트로놈 박자 강박 패턴 볼륨 톤 마스터 튜닝 415.3Hz에서 466.2Hz 등을 언급함.</p>
+<p style="margin: 0 0 1em 0;">FP-10보다 버튼 수가 많지만 여전히 대부분 기능을 버튼과 건반 조합으로 접근해야 하고, 매핑을 외우지 않으면 매뉴얼을 봐야 사용할 수 있음. </p>
 
-<p style="margin: 0 0 1em 0;">모드
-Dual 레이어는 2개 음색을 동시에 쓸 수 있으나 같은 카테고리 내 2개 레이어는 안 되는 제한이 있다고 함. Split은 왼손 베이스 오른손 건반 같은 구성에 쓰며 분할점도 설정 가능하다고 함. Twin Piano Duo는 동일 음역으로 반을 나눠 레슨용으로 쓰는 모드라고 설명함.</p>
+<p style="margin: 0 0 1em 0;">볼륨 조작 방식이 가장 아쉬운데, 버튼 2개로 볼륨을 올리고 내리며, 5개의 LED로 대략적인 단계만 보여 주는데 실제 볼륨 단계는 100단계라 현재 값이 정확히 어디인지 알기 어려움. 이 문제는 Roland Piano App으로 봐야 알 수 있음.</p>
 
-<p style="margin: 0 0 1em 0;">녹음 재생
-내장 레코딩은 1트랙 MIDI만 가능해서 기능적으로 단순하다고 평가함. 데모곡을 덮어쓰는 방식은 지원하지 않으며, 본체에 저장 가능한 곡 수가 제한적이라 여러 곡을 다루려면 USB 메모리를 쓰는 편이 낫다고 함. WAV MP3 같은 오디오로 저장은 안 된다고 설명함. 내장곡 30곡과 음색 데모도 포함되어 프리셋 미리듣기에 좋다고 함.</p>
+<p style="margin: 0 0 1em 0;">보면대는 기본 포함이며, 전용 스탠드(KSC-70)를 별도로 구매할 수 있음. 전용 스탠드와 함께 사용할 경우 3페달 유닛(KPD-70)도 장착 가능함.</p>
 
-<p style="margin: 0 0 1em 0;">앱 Bluetooth Audio
-FP-30X는 Bluetooth Audio를 추가로 지원한다고 설명함. 기존 모델은 Bluetooth MIDI 중심이었는데, FP-30X에서는 오디오까지 가능해졌다는 점을 장점으로 언급함. 리뷰에서는 당시 기준으로 Roland의 동반 앱을 통해 원격 제어 리듬 반주 GM2 계열 보너스 음색 접근 같은 기능이 있다고 설명함. 다만 앱 완성도는 아쉽고 기기 호환 이슈가 있을 수 있다고 말함.</p>
+<p style="margin: 0 0 1em 0;">전면 패널에는 13개의 버튼이 배치되어 있으며 대부분의 기능은 버튼 조합이나 버튼+건반 입력으로 설정함. 주요 기능은 건반 뒤쪽에 간단한 안내가 인쇄되어 있지만 세부 설정은 설명서를 참고해야 함.</p>
 
-<p style="margin: 0 0 1em 0;">연결성
-FP-30X에서 가장 큰 개선으로 스테레오 6.3mm 라인아웃 추가를 꼽음. 공연이나 외부 앰프 연결에서 훨씬 실용적이라고 평가함. 전면에 헤드폰 단자 6.3mm 3.5mm가 있어 변환 젠더 없이 2명이 동시에 헤드폰 사용 가능하다고 함. USB Computer Type B는 오디오와 MIDI를 모두 지원해 오디오 인터페이스 없이 DAW로 직접 녹음할 수 있다고 설명함. USB Type A는 USB 메모리 연결에 쓰고, 녹음 데이터 저장에도 사용된다고 언급함.</p>
+<p style="margin: 0 0 1em 0;">후면에는 전원 어댑터 단자와 페달 입력 단자가 있음. 기본 구성은 DP-2 페달 스위치이며, 연속 값을 지원하는 DP-10 페달도 사용할 수 있음. 전용 3페달 유닛(KPD-70)을 연결하면 Damper, Sostenuto, Soft 페달을 모두 사용할 수 있음.</p>
 
-<p style="margin: 0 0 1em 0;">페달 단자는 2개로 설명함. Damper 페달 입력과 3페달 유닛 포트가 있으며, 3페달 유닛은 별도 구매라고 함. Aux In은 없어서 반주 트랙 재생은 USB나 Bluetooth Audio 쪽을 쓰게 된다고 함.</p>
+<img src="/images/롤랜드-FP-30X-디지털-피아노-3.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-<p style="margin: 0 0 1em 0;">구성품과 옵션
-기본 구성품은 보면대 DP-2 스위치 페달 AC 어댑터 매뉴얼로 설명함. 포함된 DP-2는 기본형이라 더 실제 페달 감각을 원하면 다른 댐퍼 페달을 고려하라고 말함. 3페달 구성을 원하면 전용 3페달 시스템이 필요하며 가구형 스탠드와 조합되는 구조를 언급함. 스탠드는 기본 미포함이며 전용 스탠드 또는 일반 X Z 스탠드 사용 가능하다고 함.</p>
+<p style="margin: 0 0 1em 0;">오디오 출력은 스테레오 6.3mm 라인 아웃(L/Mono, R) 단자가 별도로 제공됨. 외부 스피커나 앰프에 직접 연결할 수 있어 라이브 연주나 녹음 환경에서도 사용 가능함.</p>
 
-<p style="margin: 0 0 1em 0;">총평
-FP-30X는 FP-30 대비 전반적으로 업그레이드된 모델이라는 평가임. 핵심 강점은 PHA-4 Standard 건반과 개선된 피아노 사운드 그리고 라인아웃 추가 같은 연결성 강화로 정리됨. 단점은 이펙트 확장성이 약하고, 버튼 기반 조작이 번거로우며, 앱 완성도가 아쉬울 수 있다는 부분임. 그럼에도 연습용과 범용 디지털 피아노로서는 균형이 좋다고 결론 내림.</p>
+<p style="margin: 0 0 1em 0;">전면에는 6.3mm와 3.5mm 두 종류의 헤드폰 단자가 있으며 동시에 두 개의 헤드폰을 연결할 수 있음.</p>
 
-<p style="margin: 0 0 1em 0;">원하시면 위 내용을 FP-10 파이널 형식처럼 더 압축해서
-요약 한 줄
-디자인 및 조작부
-건반
-사운드
-기능 및 연결
-FP-10 대비 포지션
-이렇게 재구성해 드릴 수도 있음.</p>
+<p style="margin: 0 0 1em 0;">헤드폰 사용 시 내장 스피커 차단 여부를 설정할 수 있으며, 스피커 출력 모드는 Stand, Desk 등 설치 환경에 맞게 조정 가능함.</p>
+
+<p style="margin: 0 0 1em 0;">후면에는 컴퓨터 연결용 USB Type-B 단자와 USB 메모리용 USB Type-A 단자가 있음. USB-B는 MIDI와 오디오 인터페이스 기능을 함께 지원하며, USB-A 단자를 통해 MIDI 파일이나 오디오 파일(WAV, MP3)을 재생하거나 MIDI 녹음을 저장할 수 있음.</p>
+
+<p style="margin: 0 0 1em 0;">Bluetooth 기능도 지원함. Bluetooth MIDI와 Bluetooth Audio를 모두 지원해 스마트폰이나 태블릿과 무선 연결이 가능하며 Roland Piano App과 연동해 다양한 설정을 조정할 수 있음.</p>
+
+<p style="margin: 0 0 1em 0;">전체적으로 FP-30X는 FP-10과 기본 플랫폼을 공유하지만, 라인 출력 단자 추가, USB 메모리 지원, Bluetooth Audio 지원, 3페달 유닛 지원 등 연결성과 확장 기능이 크게 강화된 모델임.</p>
+
+
+### 타 브랜드 비교 모델
+
+<p style="margin: 0 0 1em 0;">Yamaha P-225, Kawai ES120</p>
+
+
+### Roland FP-30X 상세 사양
+
+
+| Item | Specification |
+| --- | --- |
+| Keyboard | 88건 PHA-4 Standard (Escapement, Ivory Feel) |
+| Polyphony | 256음 |
+| Sound Engine | SuperNATURAL Piano |
+| Total Tones | 321 |
+| Front Panel Tones | 56 |
+| App Tones | Roland Piano App 사용 시 321 |
+| Speakers | 12 cm ×2 |
+| Amplification | 11 W ×2 |
+| Bluetooth Audio | Bluetooth 3.0 (SCMS-T 지원) |
+| Bluetooth MIDI | Bluetooth 4.0 |
+| Compatible Apps | Roland Piano App, Piano Designer |
+| MIDI Playback | Standard MIDI Files Format 0,1 |
+| Audio Playback | WAV 44.1 kHz 16bit / MP3 64–320 kbps (USB 메모리 필요, 32GB 이하) |
+| Recorder | Standard MIDI File Format 0, 1곡, 1파트, 약 500KB |
+| Internal Songs | 30곡 |
+| Touch Sensitivity | 5단계 + Fixed |
+| Master Tuning | 415.3–466.2 Hz (0.1 Hz 단위) |
+| Effects | Ambience, Brilliance |
+| Organ Effect | Rotary Speaker |
+| Piano Designer | Lid, String Resonance, Damper Resonance, Key Off Resonance, Single Note Tuning, Volume, Character, Temperament |
+| Functions | Metronome, Transpose, Dual, Split, Twin Piano |
+| Other Functions | Tone Demo, Speaker Auto Mute, Speaker Switch, Auto Off |
+| Pedal | Damper 입력 (옵션 페달 사용 시 연속 감지) |
+| Pedal Unit | 3페달 유닛 지원 (Damper, Sostenuto, Soft) |
+| Line Out | 6.3 mm L/Mono, R |
+| USB Computer | USB Type-B (USB MIDI / Audio) |
+| USB Memory | USB Type-A |
+| Headphone | 6.3 mm ×1, 3.5 mm ×1 |
+| Power | AC 어댑터 |
+| Power Consumption | 최대 16W |
+| Dimensions | 1300 × 284 × 151 mm |
+| Weight | 14.8 kg |
+
+
+### Roland Piano App과 FP-30X
+
+<p style="margin: 0 0 1em 0;">Roland Piano App은 Bluetooth MIDI 또는 USB MIDI로 FP-30X와 연결해 다음 기능을 제공함.</p>
+
+<p style="margin: 0 0 1em 0;">줄바꿈을 정리하면 이렇게 쓰는 게 자연스럽습니다.</p>
+
+<p style="margin: 0 0 1em 0;">기능 제어</p>
+
+<p style="margin: 0 0 1em 0;">트랜스포즈 설정, 스플릿 및 레이어 설정, 건반 터치 감도 설정, Ambience·Brilliance 이펙트 조절</p>
+
+<p style="margin: 0 0 1em 0;">사운드 탐색</p>
+
+<p style="margin: 0 0 1em 0;">전면 패널에서 접근하기 어려운 음색을 앱에서 빠르게 선택 가능</p>
+
+<p style="margin: 0 0 1em 0;">Piano Designer</p>
+
+<p style="margin: 0 0 1em 0;">피아노 음색 세부 설정 가능 (Lid, String Resonance, Damper Resonance, Key Off Resonance, Temperament, Single Note Tuning, Single Note Character)</p>
+
+<p style="margin: 0 0 1em 0;">메트로놈 제어</p>
+
+<p style="margin: 0 0 1em 0;">시각 메트로놈 표시</p>
+
+<p style="margin: 0 0 1em 0;">녹음 재생</p>
+
+<p style="margin: 0 0 1em 0;">MIDI 연주 녹음 및 재생</p>
+
+<p style="margin: 0 0 1em 0;">내장곡 학습</p>
+
+<p style="margin: 0 0 1em 0;">내장곡 악보 표시, 한 손 연습 기능</p>
+
+- 주의점
+<p style="margin: 0 0 1em 0;">Roland Piano App에서 피아노를 찾지 못하는 경우가 있음. 이 경우 스마트폰 Bluetooth 연결을 해제한 뒤 Roland Piano App 내부에서 직접 연결해야 정상 인식됨.</p>
+
+<p style="margin: 0 0 1em 0;">Android 기기에서는 기종이나 OS 버전에 따라 Bluetooth 연결이 원활하지 않을 수 있음.</p>
 
 ---
 
 
 <div class="notion-callout-gray" style="padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #e5e7eb; line-height: 1.6;">
   <div>이 글은 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a> 의 글을 복사한 것입니다. 관련 질문이나 문의는 우리 갤러리를 방문해주세요.</div>
-  <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;"><img src="/images/롤랜드-FP-30X-디지털-피아노-2.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+  <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;"><img src="/images/롤랜드-FP-30X-디지털-피아노-4.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 </div>
 </div>
