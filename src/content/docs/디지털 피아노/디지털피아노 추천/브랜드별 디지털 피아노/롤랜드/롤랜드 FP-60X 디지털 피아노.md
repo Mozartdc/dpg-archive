@@ -155,12 +155,36 @@ sidebar:
 
 <p style="margin: 0 0 1em 0;">Android 기기에서는 기종이나 OS 버전에 따라 Bluetooth 연결 안정성이 다를 수 있음.</p>
 
+
+<a href="https://play.google.com/store/apps/details?id=jp.co.roland.RolandPianoApp&pcampaignid=web_share" target="_blank" style="display: flex; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; overflow: hidden; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+  <div style="padding: 12px 16px; flex: 1; min-width: 0;">
+    <div style="font-size: 14px; font-weight: 600; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #111827;">Roland Piano App - Google Play 앱</div>
+    <div style="font-size: 12px; color: #6b7280; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 6px;">Roland 피아노의 창의력을 마음껏 발휘하십시오.</div>
+    <div style="font-size: 11px; color: #9ca3af; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">https://play.google.com/store/apps/details?id=jp.co.roland.RolandPianoApp&pcampaignid=web_share</div>
+  </div>
+  <div style="width: 140px; min-width: 140px; background: #f3f4f6; overflow: hidden;">
+    <img src="/images/롤랜드-FP-60X-디지털-피아노-5.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+  </div>
+</a>
+
+
+<a href="https://apps.apple.com/kr/app/roland-piano-app/id1610462043" target="_blank" style="display: flex; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; overflow: hidden; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+  <div style="padding: 12px 16px; flex: 1; min-width: 0;">
+    <div style="font-size: 14px; font-weight: 600; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #111827;">Roland Piano App 앱 - App Store</div>
+    <div style="font-size: 12px; color: #6b7280; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 6px;">App Store에서 Roland Corporation의 Roland Piano App 앱을 다운로드하십시오. 스크린샷, 평가 및 리뷰, 사용자 팁 및 Roland Piano App 앱과 비슷한 다른 앱을 볼 수 있습니다.</div>
+    <div style="font-size: 11px; color: #9ca3af; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">https://apps.apple.com/kr/app/roland-piano-app/id1610462043</div>
+  </div>
+  <div style="width: 140px; min-width: 140px; background: #f3f4f6; overflow: hidden;">
+    <img src="/images/롤랜드-FP-60X-디지털-피아노-6.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+  </div>
+</a>
+
 ---
 
 
 <div class="notion-callout-gray" style="padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #e5e7eb; line-height: 1.6;">
   <div>이 글은 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a> 의 글을 복사한 것입니다. 관련 질문이나 문의는 우리 갤러리를 방문해주세요.</div>
-  <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;"><img src="/images/롤랜드-FP-60X-디지털-피아노-5.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+  <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;"><img src="/images/롤랜드-FP-60X-디지털-피아노-7.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 </div>
 </div>
