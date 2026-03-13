@@ -1,7 +1,7 @@
 ---
 title: "i. 화음과 화성"
 date: 2026-01-30
-lastEdited: 2026-02-08
+lastEdited: 2026-03-13
 tags:
   - "화성학"
   - "음악이론"
@@ -44,7 +44,9 @@ sidebar:
 <p style="margin: 0 0 1em 0;">각각 영어로 triad, 7th chord, 9th chord라고 부름.</p>
 
 
-<iframe src="https://musescore.com/user/101405068/scores/31347032/embed" style="width:100%; height:450px !important; border:none; display: block;" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
+<iframe src="https://musescore.com/user/101405068/scores/31347032/embed" style="width:100%; height:394px !important; border:none; display: block;" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
+
+<p style="margin: 0 0 1em 0;">" height="394"</p>
 
 <p style="margin: 0 0 1em 0;">3화음은 클래식 화음의 가장 기본이고, 완전하고 안정적인 상태라서 3개 모였다는 것 자체가 이름이 됨.</p>
 
@@ -52,9 +54,7 @@ sidebar:
 
 <p style="margin: 0 0 1em 0;">4개음이지만 4화음이라고 하지 않고 근음에서 7번째 칸에 쌓았다고 해서 7화음으로 부름.</p>
 
-<p style="margin: 0 0 1em 0;">9화음도 같은 이유임.</p>
-
----
+<p style="margin: 0 0 1em 0;">9화음도 같은 원리임.</p>
 
 ---
 
