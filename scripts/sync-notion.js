@@ -186,6 +186,116 @@ async function getMusescoreHeight(url) {
   return 394;
 }
 
+function getParagraphPlainText(block) {
+  if (!block || block.type !== 'paragraph') return '';
+  return (block.paragraph?.rich_text || [])
+    .map((item) => item.plain_text || '')
+    .join('')
+    .trim();
+}
+
+function getBookmarkUrl(block) {
+  return block?.type === 'bookmark' ? block.bookmark?.url || '' : '';
+}
+
+function findSourceBookmarkUrl(blocks) {
+  const supportedPatterns = [
+    /https?:\/\/viva\.pressbooks\.pub\/openmusictheory\/chapter\//i,
+  ];
+
+  for (let i = blocks.length - 1; i >= 0; i--) {
+    const url = getBookmarkUrl(blocks[i]);
+    if (url && supportedPatterns.some((pattern) => pattern.test(url))) {
+      return url;
+    }
+  }
+
+  return null;
+}
+
+function normalizeMusescoreUrl(rawUrl) {
+  if (!rawUrl || !rawUrl.includes('musescore.com')) return null;
+
+  const match = rawUrl.match(/(musescore\.com\/user\/\d+\/scores\/\d+(\/s\/[\w-]+)?)/);
+  if (!match) return null;
+
+  const canonicalPath = match[0];
+  const scoreIdMatch = canonicalPath.match(/\/scores\/(\d+)/);
+
+  return {
+    embedUrl: `https://${canonicalPath}/embed`,
+    scoreId: scoreIdMatch ? scoreIdMatch[1] : null,
+  };
+}
+
+const sourceMusescoreCache = new Map();
+
+async function fetchSourceMusescoreHeights(sourceUrl) {
+  if (!sourceUrl) return [];
+  if (sourceMusescoreCache.has(sourceUrl)) {
+    return sourceMusescoreCache.get(sourceUrl);
+  }
+
+  try {
+    const response = await fetch(sourceUrl, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7',
+      },
+      redirect: 'follow',
+    });
+
+    if (!response.ok) {
+      sourceMusescoreCache.set(sourceUrl, []);
+      return [];
+    }
+
+    const html = await response.text();
+    const matches = [...html.matchAll(/<iframe\b[^>]*>[\s\S]*?<\/iframe>|<iframe\b[^>]*\/?>/gi)];
+    const entries = [];
+
+    for (const match of matches) {
+      const tag = match[0];
+      const srcMatch = tag.match(/\bsrc="([^"]*musescore\.com[^"]*)"/i);
+      const heightMatch = tag.match(/\bheight="(\d+)"/i);
+      if (!srcMatch || !heightMatch) continue;
+
+      const normalized = normalizeMusescoreUrl(srcMatch[1]);
+      if (!normalized) continue;
+
+      entries.push({
+        embedUrl: normalized.embedUrl,
+        scoreId: normalized.scoreId,
+        height: Number(heightMatch[1]),
+      });
+    }
+
+    sourceMusescoreCache.set(sourceUrl, entries);
+    return entries;
+  } catch (error) {
+    sourceMusescoreCache.set(sourceUrl, []);
+    return [];
+  }
+}
+
+function resolveMusescoreHeightFromSource(rawUrl, sourceEntries) {
+  if (!Array.isArray(sourceEntries) || sourceEntries.length === 0) return null;
+
+  const normalized = normalizeMusescoreUrl(rawUrl);
+  if (!normalized) return null;
+
+  const byEmbedUrl = sourceEntries.find((entry) => entry.embedUrl === normalized.embedUrl);
+  if (byEmbedUrl) return byEmbedUrl.height;
+
+  if (normalized.scoreId) {
+    const byScoreId = sourceEntries.find((entry) => entry.scoreId === normalized.scoreId);
+    if (byScoreId) return byScoreId.height;
+  }
+
+  return null;
+}
+
 
 // ═══════════════════════════════════════════════════════════════
 // 6. 북마크 OG 메타 조회
@@ -327,10 +437,11 @@ function getBlockColorStyle(content) {
 // 9. 마크다운 변환
 // ═══════════════════════════════════════════════════════════════
 
-async function convertToMarkdown(blocks, indent = "") {
+async function convertToMarkdown(blocks, indent = "", context = {}) {
   let output = [];
 
-  for (const block of blocks) {
+  for (let i = 0; i < blocks.length; i++) {
+    const block = blocks[i];
     const type = block.type;
     const content = block[type];
 
@@ -340,7 +451,7 @@ async function convertToMarkdown(blocks, indent = "") {
     }
 
     const childrenMd = (type !== 'table') && block.children_content
-      ? await convertToMarkdown(block.children_content, indent + "  ")
+      ? await convertToMarkdown(block.children_content, indent + "  ", context)
       : "";
 
     // 여기서는 이제 inline style 대신 class 이름이 반환됨
@@ -457,8 +568,22 @@ async function convertToMarkdown(blocks, indent = "") {
           const match = rawUrl.match(/(musescore\.com\/user\/\d+\/scores\/\d+(\/s\/[\w-]+)?)/);
           if (match) {
             const embedUrl = `https://${match[0]}/embed`;
-            const realHeight = await getMusescoreHeight(rawUrl);
-            output.push(`\n<iframe src="${embedUrl}" style="width:100%; height:${realHeight}px !important; border:none; display: block;" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>\n\n`);
+            let realHeight = await getMusescoreHeight(rawUrl);
+            const nextBlock = blocks[i + 1];
+            const nextPlainText = getParagraphPlainText(nextBlock);
+            const sizeMatch = nextPlainText.match(/width\s*=\s*"([^"]+)"\s+height\s*=\s*"(\d+)"/i);
+
+            if (sizeMatch) {
+              realHeight = Number(sizeMatch[2]);
+              i += 1;
+            } else {
+              const sourceHeight = resolveMusescoreHeightFromSource(rawUrl, context.sourceMusescoreHeights);
+              if (sourceHeight) {
+                realHeight = sourceHeight;
+              }
+            }
+
+            output.push(`\n<div class="notion-embed notion-embed--musescore" style="--musescore-height:${realHeight}px;"><iframe src="${embedUrl}" style="width:100%; height:${realHeight}px !important; border:none; display:block;" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe></div>\n\n`);
           } else {
             output.push(`\n[🔗 악보 링크](${rawUrl})\n\n`);
           }
@@ -671,7 +796,9 @@ async function syncNotion() {
         console.log(`   📄 [변환] "${title}" (순서: ${order})`);
 
         const blocks = await fetchAllChildren(page.id);
-        let markdown = await convertToMarkdown(blocks);
+        const sourceBookmarkUrl = findSourceBookmarkUrl(blocks);
+        const sourceMusescoreHeights = sourceBookmarkUrl ? await fetchSourceMusescoreHeights(sourceBookmarkUrl) : [];
+        let markdown = await convertToMarkdown(blocks, "", { sourceMusescoreHeights });
 
         // 이미지 경로 교체
         const imageRegex = /<img src="(https:\/\/[^"]+)"/g;

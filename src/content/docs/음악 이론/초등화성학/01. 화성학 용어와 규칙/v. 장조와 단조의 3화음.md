@@ -21,9 +21,7 @@ sidebar:
 <p style="margin: 0 0 1em 0;">이렇게 만들어진 화음은 로마자 숫자로 순서대로 이름을 붙이는데, 3화음의 성질(장, 단, 증, 감)을 한눈에 알 수 있도록 대문자와 소문자, 그리고 기호를 구별하여 표시함.</p>
 
 
-<iframe src="https://musescore.com/user/101405068/scores/31445273/s/Iwy6-E/embed" style="width:100%; height:394px !important; border:none; display: block;" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
-
-<p style="margin: 0 0 1em 0;">width="100%" height="394" </p>
+<div class="notion-embed notion-embed--musescore" style="--musescore-height:394px;"><iframe src="https://musescore.com/user/101405068/scores/31445273/s/Iwy6-E/embed" style="width:100%; height:394px !important; border:none; display:block;" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe></div>
 
 <p style="margin: 0 0 1em 0;">장3화음 (Major)은 대문자 
 단3화음 (Minor)은 소문자

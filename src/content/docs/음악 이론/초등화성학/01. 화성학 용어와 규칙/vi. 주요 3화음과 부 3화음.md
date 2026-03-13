@@ -17,9 +17,7 @@ sidebar:
 <p style="margin: 0 0 1em 0;">각 조성의 7개의 3화음에서 <strong>화음의 근음이 으뜸음과 ‘완전 5도’ 관계에 있으면 주요 3화음임. </strong>나머지는 모두 부3화음이 됨.</p>
 
 
-<iframe src="https://musescore.com/user/101405068/scores/31138439/embed" style="width:100%; height:394px !important; border:none; display: block;" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
-
-<p style="margin: 0 0 1em 0;">width="100%" height="394" </p>
+<div class="notion-embed notion-embed--musescore" style="--musescore-height:394px;"><iframe src="https://musescore.com/user/101405068/scores/31138439/embed" style="width:100%; height:394px !important; border:none; display:block;" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe></div>
 
 
 | 구분 | 해당 화음 | 논리 |

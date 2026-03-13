@@ -44,7 +44,7 @@ sidebar:
 <p style="margin: 0 0 1em 0;">각각 영어로 triad, 7th chord, 9th chord라고 부름.</p>
 
 
-<iframe src="https://musescore.com/user/101405068/scores/31347032/embed" style="width:100%; height:394px !important; border:none; display: block;" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
+<div class="notion-embed notion-embed--musescore" style="--musescore-height:394px;"><iframe src="https://musescore.com/user/101405068/scores/31347032/embed" style="width:100%; height:394px !important; border:none; display:block;" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe></div>
 
 <p style="margin: 0 0 1em 0;">" height="394"</p>
 
