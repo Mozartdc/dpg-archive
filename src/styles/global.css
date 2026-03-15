@@ -92,14 +92,31 @@ a[rel="next"] .label {
    3. 사이드바 (Pantone 컬러 적용)
    ============================================================ */
 
-#starlight__sidebar summary .large,
-#starlight__sidebar summary,
-#starlight__sidebar a {
+#starlight__sidebar a,
+#starlight__sidebar summary {
   font-weight: 400 !important;
   font-size: 0.9rem !important;
   color: var(--sl-color-gray-3);
   line-height: 1.8 !important;
   border: none !important;
+}
+
+/* 문서 링크(md 파일)는 기존 크기/굵기 유지 */
+#starlight__sidebar a {
+  font-size: 0.9rem !important;
+  font-weight: 400 !important;
+}
+
+/* 하위 폴더는 문서보다 아주 약간만 크게 */
+#starlight__sidebar details > summary .large {
+  font-size: 0.95rem !important;
+  font-weight: 500 !important;
+}
+
+/* 최상위 폴더는 한 단계 더 강조 */
+#starlight__sidebar ul.top-level > li > details > summary .large {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
 }
 
 #starlight__sidebar ul,
