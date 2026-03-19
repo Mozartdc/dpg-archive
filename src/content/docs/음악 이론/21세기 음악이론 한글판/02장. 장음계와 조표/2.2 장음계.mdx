@@ -12,6 +12,8 @@ sidebar:
   order: 9999
 ---
 
+import AudioPlayer from '../../../../../components/AudioPlayer.astro';
+
 
 <h3 class="notion-text-gray"><span class="notion-text-purple">Music Theory for the 21st-Century
 Classroom</span></h3>
@@ -33,7 +35,7 @@ Classroom</span></h3>
 
 <img src="/images/2.2-장음계-1.svg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-<audio controls preload="metadata" style="width: 100%; margin: 1rem 0;"><source src="https://musictheory.pugetsound.edu/mt21c/external/images/unit1/MajorScale-D-major-scale-audio.mp3" type="audio/mpeg" />브라우저가 오디오 재생을 지원하지 않습니다.</audio>
+<AudioPlayer src={"https://musictheory.pugetsound.edu/mt21c/external/images/unit1/MajorScale-D-major-scale-audio.mp3"} />
 
 <p style="margin: 0 0 1em 0;">음계를 구성할 때는 음 이름을 순서대로 써야 함. 같은 음이 두 번 나오거나 중간 음을 생략하면 틀림. (ex. D–E–G–G → X)</p>
 
