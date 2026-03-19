@@ -271,6 +271,12 @@ a[rel="next"] .label {
 @media (max-width: 768px) {
   .sl-markdown-content .notion-columns {
     flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .sl-markdown-content .notion-column {
+    width: 100%;
   }
 }
 

@@ -16,7 +16,7 @@ sidebar:
 
 ---
 
-<p style="margin: 0 0 1em 0;">각 조성의 7개의 3화음에서 <strong>화음의 근음이 으뜸음과 ‘완전 5도’ 관계에 있으면 주요 3화음임. </strong>나머지는 모두 부3화음이 됨.</p>
+각 조성의 7개의 3화음에서 <strong>화음의 근음이 으뜸음과 ‘완전 5도’ 관계에 있으면 주요 3화음임. </strong>나머지는 모두 부3화음이 됨.
 
 
 
@@ -28,12 +28,15 @@ sidebar:
 | 주요 3화음 | I, IV, V | <strong>근음이 으뜸음과 ‘완전 5도’ 관계</strong> |
 | 부 3화음 | ii, iii, vi, vii° | 그 외 |
 
-<p style="margin: 0 0 1em 0;">C장조를 기준으로 으뜸음 C(도)를 기준으로 거리를 재보면, </p>
+C장조를 기준으로 으뜸음 C(도)를 기준으로 거리를 재보면, 
 
 - <strong>V (</strong>근음 <strong>G): </strong>C에서 <strong>완전 5도 위</strong>
+
 - <strong>IV (</strong>근음 <strong>F): </strong>C에서 <strong>완전 5도 아래</strong>
+
 - <strong>I (</strong>근음 C<strong>): </strong>기준점
-<p style="margin: 0 0 1em 0;">이렇게 이해하면, 장조와 단조 모두 해결됨.</p>
+
+이렇게 이해하면, 장조와 단조 모두 해결됨.
 
 
 

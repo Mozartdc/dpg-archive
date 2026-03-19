@@ -16,20 +16,20 @@ sidebar:
 
 ---
 
-<p style="margin: 0 0 1em 0;">장음계와 화성 단음계의 각 음을 근음으로 하여 3도씩 쌓아 올리면, 총 7개의 기본 3화음이 만들어짐.</p>
+장음계와 화성 단음계의 각 음을 근음으로 하여 3도씩 쌓아 올리면, 총 7개의 기본 3화음이 만들어짐.
 
-<p style="margin: 0 0 1em 0;"><strong>화음의 표기 규칙</strong></p>
+<strong>화음의 표기 규칙</strong>
 
-<p style="margin: 0 0 1em 0;">이렇게 만들어진 화음은 로마자 숫자로 순서대로 이름을 붙이는데, 3화음의 성질(장, 단, 증, 감)을 한눈에 알 수 있도록 대문자와 소문자, 그리고 기호를 구별하여 표시함.</p>
+이렇게 만들어진 화음은 로마자 숫자로 순서대로 이름을 붙이는데, 3화음의 성질(장, 단, 증, 감)을 한눈에 알 수 있도록 대문자와 소문자, 그리고 기호를 구별하여 표시함.
 
 
 
 <div class="notion-embed notion-embed--musescore" style="--musescore-height:394px;"><iframe src="https://musescore.com/user/101405068/scores/31445273/s/Iwy6-E/embed" style="width:100%; height:394px !important; border:none; display:block;" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe></div>
 
-<p style="margin: 0 0 1em 0;">장3화음 (Major)은 대문자 
+장3화음 (Major)은 대문자 
 단3화음 (Minor)은 소문자
 증3화음 (Augmented)은 대문자 옆에 + 
-감3화음 (Diminished)은 소문자 옆에 ° </p>
+감3화음 (Diminished)은 소문자 옆에 ° 
 
 
 | 기호<br>(장/단/증/감) | 한글 | 영문 |
@@ -42,10 +42,10 @@ sidebar:
 | <strong>vi / VI</strong> | 버금가온화음 | Submediant Triad |
 | <strong>vii° / vii°</strong> | 이끔화음 | Leading-tone Triad |
 
-<p style="margin: 0 0 1em 0;">장은 Major니까 대문자, 
+장은 Major니까 대문자, 
 단은 minor니까 소문자, 
 증(Aug)은 더해져서 +, 
-감(Dim)은 비어서(0) °라고 외우면 됨.</p>
+감(Dim)은 비어서(0) °라고 외우면 됨.
 
 ---
 

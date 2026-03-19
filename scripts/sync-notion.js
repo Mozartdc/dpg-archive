@@ -502,13 +502,14 @@ async function convertToMarkdown(blocks, indent = "", context = {}) {
         // 진짜 내용이 없으면 아예 출력하지 않음 (빈 p태그 생성 방지)
         if (!plain) break;
 
-        // 수식이 포함된 paragraph는 순수 마크다운으로 출력 (rehype-katex 처리를 위해)
+        // MDX에서 raw <p>는 리스트/블록 경계와 충돌하기 쉬워서 피한다.
+        // 일반 문단은 마크다운 문단으로, 색상 문단만 안전한 block div로 출력한다.
         if (/\$/.test(text)) {
           output.push(`${indent}${plain}\n\n`);
         } else if (blockColorStyle) {
-          output.push(`${indent}<p class="${blockColorStyle}" style="margin: 0 0 1em 0;">${text}</p>\n\n`);
+          output.push(`${indent}<div class="${blockColorStyle}" style="margin: 0 0 1em 0;">${text}</div>\n\n`);
         } else {
-          output.push(`${indent}<p style="margin: 0 0 1em 0;">${text}</p>\n\n`);
+          output.push(`${indent}${text}\n\n`);
         }
         break;
       }
@@ -527,8 +528,12 @@ async function convertToMarkdown(blocks, indent = "", context = {}) {
         break;
       }
 
-      case 'bulleted_list_item':  output.push(`${indent}- ${text}\n${childrenMd}`); break;
-      case 'numbered_list_item':  output.push(`${indent}1. ${text}\n${childrenMd}`); break;
+      case 'bulleted_list_item':
+        output.push(`${indent}- ${text}\n${childrenMd}${childrenMd && !childrenMd.endsWith('\n') ? '\n' : ''}\n`);
+        break;
+      case 'numbered_list_item':
+        output.push(`${indent}1. ${text}\n${childrenMd}${childrenMd && !childrenMd.endsWith('\n') ? '\n' : ''}\n`);
+        break;
       case 'quote':               output.push(`> ${text}\n\n`); break;
 
       // ── callout (✅ 수정 5: class 기반 및 배경색 제거) ──

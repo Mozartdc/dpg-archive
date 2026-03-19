@@ -16,9 +16,9 @@ sidebar:
 
 ---
 
-<p style="margin: 0 0 1em 0;"><strong>화음</strong></p>
+<strong>화음</strong>
 
-<p style="margin: 0 0 1em 0;">화음은 높이가 다른 두개 이상의 음이 동시에 울리는 소리임</p>
+화음은 높이가 다른 두개 이상의 음이 동시에 울리는 소리임
 
 
 
@@ -27,41 +27,41 @@ sidebar:
   <iframe src="https://youtube.com/embed/sN3dCvn7w3Y?si=NWmBwdhQPfnmbH8R" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<p style="margin: 0 0 1em 0;"><strong>화성</strong></p>
+<strong>화성</strong>
 
-<p style="margin: 0 0 1em 0;">화성은 음이나 화음이 어떻게 이어지고 섞이는지를 설명하는 원리임.</p>
+화성은 음이나 화음이 어떻게 이어지고 섞이는지를 설명하는 원리임.
 
 
 
 <img src="/images/i.-화음과-화성-1.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-<p style="margin: 0 0 1em 0;">영어로는 Harmony라고 함.</p>
+영어로는 Harmony라고 함.
 
-<p style="margin: 0 0 1em 0;">화음을 만들 때는 먼저 근음을 정하고 그것을 기준으로 3도씩 건너뛰며 위로 쌓으면 됨.</p>
+화음을 만들 때는 먼저 근음을 정하고 그것을 기준으로 3도씩 건너뛰며 위로 쌓으면 됨.
 
-<p style="margin: 0 0 1em 0;">근음은 영어로 Root이고, 도를 근음으로 쌓으면 도 화음(C코드)이 되고, 솔을 근음으로 쌓으면 솔 화음(G코드)이 됨.</p>
+근음은 영어로 Root이고, 도를 근음으로 쌓으면 도 화음(C코드)이 되고, 솔을 근음으로 쌓으면 솔 화음(G코드)이 됨.
 
-<p style="margin: 0 0 1em 0;">3개를 쌓으면 3화음이라 부르고,</p>
+3개를 쌓으면 3화음이라 부르고,
 
-<p style="margin: 0 0 1em 0;">4개를 쌓으면 7화음,</p>
+4개를 쌓으면 7화음,
 
-<p style="margin: 0 0 1em 0;">5개를 쌓으면 9화음이라고 부름.</p>
+5개를 쌓으면 9화음이라고 부름.
 
-<p style="margin: 0 0 1em 0;">각각 영어로 triad, 7th chord, 9th chord라고 부름.</p>
+각각 영어로 triad, 7th chord, 9th chord라고 부름.
 
 
 
 <div class="notion-embed notion-embed--musescore" style="--musescore-height:394px;"><iframe src="https://musescore.com/user/101405068/scores/31347032/embed" style="width:100%; height:394px !important; border:none; display:block;" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe></div>
 
-<p style="margin: 0 0 1em 0;">" height="394"</p>
+" height="394"
 
-<p style="margin: 0 0 1em 0;">3화음은 클래식 화음의 가장 기본이고, 완전하고 안정적인 상태라서 3개 모였다는 것 자체가 이름이 됨.</p>
+3화음은 클래식 화음의 가장 기본이고, 완전하고 안정적인 상태라서 3개 모였다는 것 자체가 이름이 됨.
 
-<p style="margin: 0 0 1em 0;">이외에는 음이 몇 개냐보다는 어디에 쌓았느냐가 중요해서</p>
+이외에는 음이 몇 개냐보다는 어디에 쌓았느냐가 중요해서
 
-<p style="margin: 0 0 1em 0;">4개음이지만 4화음이라고 하지 않고 근음에서 7번째 칸에 쌓았다고 해서 7화음으로 부름.</p>
+4개음이지만 4화음이라고 하지 않고 근음에서 7번째 칸에 쌓았다고 해서 7화음으로 부름.
 
-<p style="margin: 0 0 1em 0;">9화음도 같은 원리임.</p>
+9화음도 같은 원리임.
 
 ---
 
