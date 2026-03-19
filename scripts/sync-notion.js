@@ -216,6 +216,11 @@ function getAudioUrlFromParagraph(block) {
   return /\.mp3(?:$|[?#])/i.test(candidate.trim()) ? candidate.trim() : null;
 }
 
+function renderAudioPlayerMdx(audioUrl, title = '') {
+  const titleProp = title ? ` title={${JSON.stringify(title)}}` : '';
+  return `<AudioPlayer src={${JSON.stringify(audioUrl)}}${titleProp} />\n\n`;
+}
+
 function findSourceBookmarkUrl(blocks) {
   const supportedPatterns = [
     /https?:\/\/viva\.pressbooks\.pub\/openmusictheory\/chapter\//i,
@@ -480,7 +485,8 @@ async function convertToMarkdown(blocks, indent = "", context = {}) {
       case 'paragraph': {
         const audioUrl = getAudioUrlFromParagraph(block);
         if (audioUrl) {
-          output.push(`${indent}<audio controls preload="metadata" style="width: 100%; margin: 1rem 0;"><source src="${audioUrl}" type="audio/mpeg" />브라우저가 오디오 재생을 지원하지 않습니다.</audio>\n\n`);
+          context.usesAudioPlayer = true;
+          output.push(`${indent}${renderAudioPlayerMdx(audioUrl)}`);
           break;
         }
 
@@ -589,10 +595,8 @@ async function convertToMarkdown(blocks, indent = "", context = {}) {
         const caption = content.caption?.map(t => t.plain_text).join("") || "";
 
         if (audioUrl) {
-          output.push(`<audio controls preload="metadata" style="width: 100%; margin: 1rem 0;"><source src="${audioUrl}" type="audio/mpeg" />브라우저가 오디오 재생을 지원하지 않습니다.</audio>\n\n`);
-          if (caption) {
-            output.push(`<p style="margin: -0.5rem 0 1rem 0; font-size: 0.95rem; color: #6b7280;">${caption}</p>\n\n`);
-          }
+          context.usesAudioPlayer = true;
+          output.push(renderAudioPlayerMdx(audioUrl, caption));
         }
         break;
       }
@@ -836,7 +840,8 @@ async function syncNotion() {
         const blocks = await fetchAllChildren(page.id);
         const sourceBookmarkUrl = findSourceBookmarkUrl(blocks);
         const sourceMusescoreHeights = sourceBookmarkUrl ? await fetchSourceMusescoreHeights(sourceBookmarkUrl) : [];
-        let markdown = await convertToMarkdown(blocks, "", { sourceMusescoreHeights });
+        const renderContext = { sourceMusescoreHeights, usesAudioPlayer: false };
+        let markdown = await convertToMarkdown(blocks, "", renderContext);
 
         // 이미지 경로 교체
         const imageRegex = /<img src="(https:\/\/[^"]+)"/g;
@@ -856,10 +861,32 @@ async function syncNotion() {
         }
         markdown = newMarkdown;
 
+        let imports = '';
+        let extension = '.md';
+
+        if (renderContext.usesAudioPlayer) {
+          const audioPlayerPath = path.join(__dirname, '..', 'src', 'components', 'AudioPlayer.astro');
+          let relativeImportPath = path.relative(categoryFolder, audioPlayerPath).replace(/\\/g, '/');
+          if (!relativeImportPath.startsWith('.')) {
+            relativeImportPath = `./${relativeImportPath}`;
+          }
+          imports = `import AudioPlayer from '${relativeImportPath}';\n\n`;
+          extension = '.mdx';
+        }
+
         // ✅ Frontmatter 생성 시 order 전달
         const frontmatter = buildFrontmatter(title, tags, createdTime, lastEdited, order);
-        const filename = `${sanitizeName(title)}.md`;
-        fs.writeFileSync(path.join(categoryFolder, filename), frontmatter + markdown, 'utf-8');
+        const baseFilename = sanitizeName(title);
+        const filename = `${baseFilename}${extension}`;
+        const filePath = path.join(categoryFolder, filename);
+        const alternateExtension = extension === '.mdx' ? '.md' : '.mdx';
+        const alternateFilePath = path.join(categoryFolder, `${baseFilename}${alternateExtension}`);
+
+        if (fs.existsSync(alternateFilePath)) {
+          fs.unlinkSync(alternateFilePath);
+        }
+
+        fs.writeFileSync(filePath, frontmatter + imports + markdown, 'utf-8');
 
       } catch (e) {
         console.error(`❌ 에러: ${e.message}`);

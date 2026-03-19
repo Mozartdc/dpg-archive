@@ -1,0 +1,38 @@
+---
+interface Props {
+  src: string;
+  title?: string;
+}
+
+const { src, title } = Astro.props;
+---
+
+<div class="audio-player not-content">
+  {title && <p class="audio-player__title">{title}</p>}
+  <audio controls preload="metadata">
+    <source src={src} type="audio/mpeg" />
+    브라우저가 오디오 재생을 지원하지 않습니다.
+  </audio>
+</div>
+
+<style>
+  .audio-player {
+    margin: 1.25rem 0;
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--sl-color-bg) 82%, var(--sl-color-gray-6));
+  }
+
+  .audio-player__title {
+    margin: 0 0 0.65rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--sl-color-text);
+  }
+
+  .audio-player audio {
+    display: block;
+    width: 100%;
+  }
+ </style>
