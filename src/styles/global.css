@@ -251,11 +251,17 @@ a[rel="next"] .label {
   gap: 1.5rem;
   margin: 1.5rem 0;
   align-items: flex-start;
+  max-width: 100%;
 }
 
 .sl-markdown-content .notion-column {
-  flex: 1;
+  flex: 1 1 0;
   min-width: 0;
+  max-width: 100%;
+}
+
+.sl-markdown-content .notion-column > * {
+  max-width: 100%;
 }
 
 .sl-markdown-content .notion-column > *:first-child {
@@ -264,6 +270,7 @@ a[rel="next"] .label {
 
 .sl-markdown-content .notion-column img {
   width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -277,6 +284,7 @@ a[rel="next"] .label {
 
   .sl-markdown-content .notion-column {
     width: 100%;
+    max-width: 100%;
   }
 }
 
