@@ -218,7 +218,7 @@ function getAudioUrlFromParagraph(block) {
 
 function renderAudioPlayerMdx(audioUrl, title = '') {
   const titleProp = title ? ` title={${JSON.stringify(title)}}` : '';
-  return `<AudioPlayer src={${JSON.stringify(audioUrl)}}${titleProp} />\n\n`;
+  return `\n\n<AudioPlayer src={${JSON.stringify(audioUrl)}}${titleProp} />\n\n`;
 }
 
 function findSourceBookmarkUrl(blocks) {
@@ -538,25 +538,22 @@ async function convertToMarkdown(blocks, indent = "", context = {}) {
         const colorKey = calloutColor.replace('_background', '');
         const calloutClass = `notion-callout-${colorKey}`;
 
-        if (icon) {
-          output.push(`
-<div class="${calloutClass}" style="padding: 20px; border-radius: 8px; display: flex; flex-direction: column; gap: 10px; margin: 20px 0; border: 1px solid #e5e7eb;">
-  <div style="display: flex; gap: 12px; align-items: baseline;">
-    <div style="font-size: 18px; line-height: 1; flex-shrink: 0; transform: translateY(2px);">${icon}</div>
-    <div style="flex: 1; min-width: 0; line-height: 1.6;">${text}</div>
-  </div>
-  ${childrenMd ? `<div style="margin-top: 10px; width: 100%; display: flex; flex-direction: column; gap: 10px;">${childrenMd}</div>` : ''}
-</div>
+        output.push(`\n\n<div class="${calloutClass}" style="padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #e5e7eb; line-height: 1.6;">\n`);
 
-  ${childrenMd ? `<div style="margin-top: 10px; width: 100%; display: flex; flex-direction: column; gap: 10px;">${childrenMd}</div>` : ''}
-</div>\n\n`);
-        } else {
-          output.push(`
-<div class="${calloutClass}" style="padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #e5e7eb; line-height: 1.6;">
-  ${text ? `<div>${text}</div>` : ''}
-  ${childrenMd ? `<div style="${text ? 'margin-top: 10px; ' : ''}display: flex; flex-direction: column; gap: 10px;">${childrenMd}</div>` : ''}
-</div>\n\n`);
+        if (icon) {
+          output.push(`  <div style="display: flex; gap: 12px; align-items: baseline;">\n`);
+          output.push(`    <div style="font-size: 18px; line-height: 1; flex-shrink: 0; transform: translateY(2px);">${icon}</div>\n`);
+          output.push(`    <div style="flex: 1; min-width: 0; line-height: 1.6;">${text}</div>\n`);
+          output.push(`  </div>\n`);
+        } else if (text) {
+          output.push(`  <div>${text}</div>\n`);
         }
+
+        if (childrenMd && childrenMd.trim()) {
+          output.push(`  <div style="${text ? 'margin-top: 10px; ' : ''}display: flex; flex-direction: column; gap: 10px;">${childrenMd}</div>\n`);
+        }
+
+        output.push(`</div>\n\n`);
         break;
       }
 
@@ -585,7 +582,7 @@ async function convertToMarkdown(blocks, indent = "", context = {}) {
       case 'image': {
         const imgUrl = content.type === 'external' ? content.external.url : content.file.url;
         const caption = content.caption?.map(t => t.plain_text).join("") || "";
-        output.push(`<img src="${imgUrl}" alt="${caption}" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />\n\n`);
+        output.push(`\n\n<img src="${imgUrl}" alt="${caption}" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />\n\n`);
         break;
       }
 
@@ -625,7 +622,7 @@ async function convertToMarkdown(blocks, indent = "", context = {}) {
               }
             }
 
-            output.push(`\n<div class="notion-embed notion-embed--musescore" style="--musescore-height:${realHeight}px;"><iframe src="${embedUrl}" style="width:100%; height:${realHeight}px !important; border:none; display:block;" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe></div>\n\n`);
+            output.push(`\n\n<div class="notion-embed notion-embed--musescore" style="--musescore-height:${realHeight}px;"><iframe src="${embedUrl}" style="width:100%; height:${realHeight}px !important; border:none; display:block;" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe></div>\n\n`);
           } else {
             output.push(`\n[🔗 악보 링크](${rawUrl})\n\n`);
           }
@@ -633,7 +630,7 @@ async function convertToMarkdown(blocks, indent = "", context = {}) {
         else if (rawUrl && (rawUrl.includes('youtube.com') || rawUrl.includes('youtu.be'))) {
           if (rawUrl.includes('watch?v=')) rawUrl = rawUrl.replace('watch?v=', 'embed/');
           else if (rawUrl.includes('youtu.be/')) rawUrl = rawUrl.replace('youtu.be/', 'youtube.com/embed/');
-          output.push(`
+          output.push(`\n\n
 <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
   <iframe src="${rawUrl}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
 </div>\n\n`);
@@ -643,10 +640,10 @@ async function convertToMarkdown(blocks, indent = "", context = {}) {
           const spotifyHeight = rawUrl.includes('/track/') ? 152 : 352;
           // open.spotify.com/track/xxx → open.spotify.com/embed/track/xxx
           const spotifyEmbed = rawUrl.includes('/embed/') ? rawUrl : rawUrl.replace('open.spotify.com/', 'open.spotify.com/embed/');
-          output.push(`\n<iframe src="${spotifyEmbed}" width="100%" height="${spotifyHeight}" frameborder="0" style="border-radius: 12px; display: block; margin: 1rem 0;" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>\n\n`);
+          output.push(`\n\n<iframe src="${spotifyEmbed}" width="100%" height="${spotifyHeight}" frameborder="0" style="border-radius: 12px; display: block; margin: 1rem 0;" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>\n\n`);
         }
         else {
-          output.push(`\n<iframe src="${rawUrl}" width="100%" height="450" frameborder="0"></iframe>\n\n`);
+          output.push(`\n\n<iframe src="${rawUrl}" width="100%" height="450" frameborder="0"></iframe>\n\n`);
         }
         break;
       }
@@ -663,6 +660,8 @@ async function convertToMarkdown(blocks, indent = "", context = {}) {
         const bDescription = meta.description || '';
         const bImage       = meta.image || null;
 
+        output.push(`\n\n`);
+
         if (bImage) {
           output.push(`
 <a href="${bUrl}" target="_blank" style="display: flex; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; overflow: hidden; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
@@ -674,15 +673,16 @@ async function convertToMarkdown(blocks, indent = "", context = {}) {
   <div style="width: 140px; min-width: 140px; background: #f3f4f6; overflow: hidden;">
     <img src="${bImage}" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
   </div>
-</a>\n\n`);
+</a>`);
         } else {
   output.push(`
 <a href="${bUrl}" target="_blank" style="display: block; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; padding: 16px; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
   <div style="font-size: 14px; font-weight: 600; margin-bottom: 6px; color: #111827;">🔗 ${bTitle}</div>
   ${bDescription ? `<div style="font-size: 12px; color: #6b7280; line-height: 1.5; margin-bottom: 8px;">${bDescription}</div>` : ''}
   <div style="font-size: 11px; color: #9ca3af; word-break: break-all;">${bUrl}</div>
-</a>\n\n`);
+</a>`);
               }
+        output.push(`\n\n`);
         break;
       }
 
@@ -693,7 +693,12 @@ async function convertToMarkdown(blocks, indent = "", context = {}) {
       case 'divider': output.push(`---\n\n`); break;
       case 'code':    output.push(`\`\`\`${content.language}\n${text}\n\`\`\`\n\n`); break;
       case 'toggle':
-        output.push(`\n<details>\n<summary>${text}</summary>\n\n${childrenMd}\n</details>\n\n`);
+        output.push(`\n\n<details>\n\n`);
+        output.push(`<summary>${text}</summary>\n\n`);
+        if (childrenMd && childrenMd.trim()) {
+          output.push(childrenMd);
+        }
+        output.push(`\n\n</details>\n\n`);
         break;
 
       default:
