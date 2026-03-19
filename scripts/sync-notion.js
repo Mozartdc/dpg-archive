@@ -198,6 +198,24 @@ function getBookmarkUrl(block) {
   return block?.type === 'bookmark' ? block.bookmark?.url || '' : '';
 }
 
+function getAudioUrlFromParagraph(block) {
+  if (!block || block.type !== 'paragraph') return null;
+
+  const richText = block.paragraph?.rich_text || [];
+  if (richText.length !== 1) return null;
+
+  const item = richText[0];
+  const candidate =
+    item?.href ||
+    item?.text?.link?.url ||
+    item?.plain_text ||
+    '';
+
+  if (!candidate) return null;
+
+  return /\.mp3(?:$|[?#])/i.test(candidate.trim()) ? candidate.trim() : null;
+}
+
 function findSourceBookmarkUrl(blocks) {
   const supportedPatterns = [
     /https?:\/\/viva\.pressbooks\.pub\/openmusictheory\/chapter\//i,
@@ -460,6 +478,12 @@ async function convertToMarkdown(blocks, indent = "", context = {}) {
     switch (type) {
 // ── paragraph (✅ 수정: 유령 문자 제거 로직 강화) ──
       case 'paragraph': {
+        const audioUrl = getAudioUrlFromParagraph(block);
+        if (audioUrl) {
+          output.push(`${indent}<audio controls preload="metadata" style="width: 100%; margin: 1rem 0;"><source src="${audioUrl}" type="audio/mpeg" />브라우저가 오디오 재생을 지원하지 않습니다.</audio>\n\n`);
+          break;
+        }
+
         // 다시 수정함
         const plain = (text || '')
           .replace(/<br\s*\/?>/gi, '')
