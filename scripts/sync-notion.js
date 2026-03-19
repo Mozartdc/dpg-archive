@@ -583,6 +583,20 @@ async function convertToMarkdown(blocks, indent = "", context = {}) {
         break;
       }
 
+      // ── audio ──
+      case 'audio': {
+        const audioUrl = content.type === 'external' ? content.external.url : content.file?.url;
+        const caption = content.caption?.map(t => t.plain_text).join("") || "";
+
+        if (audioUrl) {
+          output.push(`<audio controls preload="metadata" style="width: 100%; margin: 1rem 0;"><source src="${audioUrl}" type="audio/mpeg" />브라우저가 오디오 재생을 지원하지 않습니다.</audio>\n\n`);
+          if (caption) {
+            output.push(`<p style="margin: -0.5rem 0 1rem 0; font-size: 0.95rem; color: #6b7280;">${caption}</p>\n\n`);
+          }
+        }
+        break;
+      }
+
       // ── video / embed ──
       case 'video':
       case 'embed': {
