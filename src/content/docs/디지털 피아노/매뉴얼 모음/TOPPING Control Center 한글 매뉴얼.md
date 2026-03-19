@@ -110,15 +110,14 @@ USB 케이블 길이는 2m 이하 권장
 
 <img src="/images/TOPPING-Control-Center-한글-매뉴얼-1.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-1. <strong>상단 제어 바:</strong> 시스템 설정, Workspace, Sample Rate, Buffer Size 등을 포함한 전체 상단 영역
-1. <strong>Input 섹션:</strong> 물리적 입력 IN1 및 IN2의 하드웨어 설정 영역
-1. <strong>Mixer 섹션:</strong> 입력 채널과 DAW 재생 신호(Playback)를 믹싱하는 영역
-1. <strong>Loopback 섹션:</strong> 컴퓨터 신호를 다시 입력으로 보내는 루프백 설정 영역
-1. <strong>Output 섹션:</strong> 하드웨어 출력 Output 1+2 및 헤드폰 출력을 설정하는 영역
-1. <strong>Monitor Mix 섹션:</strong> 입력과 재생 신호 간의 모니터링 믹스 비율 및 Phone Out 볼륨, Gain 등을 조절하는 우측 하단 영역
+1. <span class="notion-text-blue"><strong>상단 제어 바</strong></span><strong>:</strong> 시스템 설정, Workspace, Sample Rate, Buffer Size 등을 포함한 전체 상단 영역
+1. <span class="notion-text-green"><strong>Input 섹션</strong></span><strong>:</strong> 물리적 입력 IN1 및 IN2의 하드웨어 설정 영역
+1. <span class="notion-text-orange"><strong>Mixer 섹션</strong></span><strong>:</strong> 입력 채널과 DAW 재생 신호(Playback)를 믹싱하는 영역
+1. <span class="notion-text-red"><strong>Loopback 섹션</strong></span><strong>:</strong> 컴퓨터 신호를 다시 입력으로 보내는 루프백 설정 영역
+1. <span class="notion-text-purple"><strong>Output 섹션</strong></span><strong>:</strong> 하드웨어 출력 Output 1+2 및 헤드폰 출력을 설정하는 영역
+1. <span class="notion-text-yellow"><strong>Monitor Mix 섹션</strong></span><strong>:</strong> 입력과 재생 신호 간의 모니터링 믹스 비율 및 Phone Out 볼륨, Gain 등을 조절하는 우측 하단 영역
 <p style="margin: 0 0 1em 0;">ToppingPro는 E1x2 OTG, E2x2 OTG, E2x2, E4x4 Pre, E8x8 Pre에서 공통으로 사용함.
-모델별 차이는 입력 수, 출력 수, 믹서 수, 루프백 채널 수에 있음.
-이 가이드에서는 E2x2를 기본으로 ToppingPro의 기능을 설명함.</p>
+모델별로 입력 채널 수, 출력 채널 수, 믹서 수, 루프백 채널 수에 차이가 있음. 이 가이드에서는 E2x2를 기본으로 ToppingPro의 기능을 설명함.</p>
 
 
 ### 기본 조작
@@ -139,9 +138,7 @@ USB 케이블 길이는 2m 이하 권장
 기기의 하드웨어 입력을 설정하는 영역임.</p>
 
 <p style="margin: 0 0 1em 0;">믹서 섹션
-하드웨어 입력과 DAW 재생 신호를 하나의 출력으로 섞는 영역임.</p>
-
-<p style="margin: 0 0 1em 0;">출력마다 별도로 믹스를 설정할 수 있으므로, 예를 들어 헤드폰 출력마다 다른 믹스를 보낼 수 있음.</p>
+하드웨어 입력과 DAW 재생 신호를 하나의 출력으로 섞는 영역임. 출력마다 별도로 믹스를 설정할 수 있으므로, 예를 들어 헤드폰 출력마다 다른 믹스를 보낼 수 있음.</p>
 
 <p style="margin: 0 0 1em 0;">루프백 섹션
 입력 신호와 컴퓨터 신호를 다시 컴퓨터로 보내 녹음 등에 사용할 수 있는 영역임.</p>
@@ -162,10 +159,14 @@ USB 케이블 길이는 2m 이하 권장
 
 <p style="margin: 0 0 1em 0;">E1x2 OTG 또는 E2x2 OTG의 OTG 포트에 모바일 기기를 연결하면 ToppingPro에서 관련 채널이 활성화됨. 이 상태에서는 모바일 기기의 오디오를 컴퓨터에서 녹음할 수 있고, 반대로 컴퓨터 오디오를 모바일 기기로 보낼 수도 있음.</p>
 
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-2.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
 ---
 
 
 ## 3. 입력 섹션
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-3.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 
 ### 채널 이름
@@ -223,6 +224,8 @@ USB 케이블 길이는 2m 이하 권장
 
 ## 4. 믹서 섹션
 
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-4.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
 
 ### 믹서 탭
 
@@ -279,6 +282,8 @@ USB 케이블 길이는 2m 이하 권장
 
 
 ## 5. 루프백 섹션
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-5.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 
 ### 채널 이름
@@ -398,6 +403,8 @@ USB 케이블 길이는 2m 이하 권장
 
 ## 7. 기타 설정
 
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-6.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
 
 ### 작업 공간 저장 및 불러오기
 
@@ -405,7 +412,11 @@ USB 케이블 길이는 2m 이하 권장
 사용 환경이 바뀌면 미리 저장해 둔 설정을 빠르게 불러올 수 있음.</p>
 
 - New Workspace / Save Workspace as: 해당 항목을 클릭한 뒤 작업 공간 이름을 입력하고 Enter 키를 누름.
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-7.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
 - 전원이 꺼진 상태에서(제어 소프트웨어에 연결하지 않은 상태에서) 자동으로 이 설정을 불러오도록 할 수 있음.
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-8.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
 
 ### 샘플레이트
 
@@ -430,6 +441,8 @@ USB 케이블 길이는 2m 이하 권장
 
 
 ## 8. 시스템 설정
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-9.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 
 ### 시스템 설정 항목
@@ -481,10 +494,18 @@ USB 케이블 길이는 2m 이하 권장
 
 <p style="margin: 0 0 1em 0;">Check for updates를 클릭한 뒤 아래 항목 중 하나를 선택함.</p>
 
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-10.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
 - Update firmware
 - Manually updating
 <p style="margin: 0 0 1em 0;">Update firmware를 선택하면 공식 웹사이트의 최신 펌웨어로 자동 업데이트함.
 ToppingPro가 스스로 다시 시작되면 펌웨어 업그레이드가 완료된 것임.
 Manually updating을 선택할 수도 있음.
 이 경우 먼저 공식 웹사이트에서 펌웨어 파일을 내려받은 뒤 안내 절차에 따라 진행함.</p>
+
+<p style="margin: 0 0 1em 0;">Update firmware를 선택하면 공식 웹사이트에 있는 최신 펌웨어로 자동 업데이트됩됨. 업데이트가 끝나고 ToppingPro가 자동으로 다시 시작해야 펌웨어 업그레이드가 완료됨.</p>
+
+<p style="margin: 0 0 1em 0;">또는 Manually updating을 선택해 수동으로 업데이트할 수도 있음. 이 경우에는 먼저 공식 웹사이트에서 펌웨어 파일을 내려받은 다음, 안내에 따라 설치하면 됨.</p>
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-11.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
