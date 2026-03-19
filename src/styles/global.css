@@ -246,6 +246,34 @@ a[rel="next"] .label {
   height: var(--musescore-height, 420px) !important;
 }
 
+.sl-markdown-content .notion-columns {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  align-items: flex-start;
+}
+
+.sl-markdown-content .notion-column {
+  flex: 1;
+  min-width: 0;
+}
+
+.sl-markdown-content .notion-column > *:first-child {
+  margin-top: 0;
+}
+
+.sl-markdown-content .notion-column img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .sl-markdown-content .notion-columns {
+    flex-direction: column;
+  }
+}
+
 /* ============================================================
    5. 제목 스타일 (Pantone 컬러)
    ============================================================ */

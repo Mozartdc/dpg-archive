@@ -8,6 +8,8 @@ sidebar:
   order: 9999
 ---
 
+
+
 <img src="/images/E2x2-OTG-한글-매뉴얼-0.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 
@@ -26,6 +28,8 @@ sidebar:
 
 
 ## 1. 구성품 목록
+
+
 
 <img src="/images/E2x2-OTG-한글-매뉴얼-1.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
@@ -71,6 +75,8 @@ sidebar:
 
 
 ### 전면 패널
+
+
 
 <img src="/images/E2x2-OTG-한글-매뉴얼-2.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
@@ -122,6 +128,8 @@ sidebar:
 
 ### 후면 패널
 
+
+
 <img src="/images/E2x2-OTG-한글-매뉴얼-3.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 1. LINE OUT 
@@ -145,7 +153,11 @@ sidebar:
 1. 전원 스위치
   <p style="margin: 0 0 1em 0;">기기의 전원을 켜고 끄는 스위치임.</p>
 
+
+
 <img src="/images/E2x2-OTG-한글-매뉴얼-4.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+
 
 <img src="/images/E2x2-OTG-한글-매뉴얼-5.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
@@ -162,7 +174,11 @@ sidebar:
 
 ### 연결
 
+
+
 <img src="/images/E2x2-OTG-한글-매뉴얼-6.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+
 
 <img src="/images/E2x2-OTG-한글-매뉴얼-7.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
@@ -187,6 +203,8 @@ sidebar:
 ## 5. TOPPING Professional Control Center
 
 <p style="margin: 0 0 1em 0;">TOPPING Professional Control Center의 사용 가이드 다운로드 링크</p>
+
+
 
 
 <a href="https://download.topping.pro/downloads/ToppingPro%20V1.6.pdf" target="_blank" style="display: block; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; padding: 16px; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">

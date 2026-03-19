@@ -10,6 +10,8 @@ sidebar:
   order: 9999
 ---
 
+
+
 <img src="/images/v.-장조와-단조의-3화음-0.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 ---
@@ -19,6 +21,7 @@ sidebar:
 <p style="margin: 0 0 1em 0;"><strong>화음의 표기 규칙</strong></p>
 
 <p style="margin: 0 0 1em 0;">이렇게 만들어진 화음은 로마자 숫자로 순서대로 이름을 붙이는데, 3화음의 성질(장, 단, 증, 감)을 한눈에 알 수 있도록 대문자와 소문자, 그리고 기호를 구별하여 표시함.</p>
+
 
 
 <div class="notion-embed notion-embed--musescore" style="--musescore-height:394px;"><iframe src="https://musescore.com/user/101405068/scores/31445273/s/Iwy6-E/embed" style="width:100%; height:394px !important; border:none; display:block;" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe></div>
@@ -47,9 +50,12 @@ sidebar:
 ---
 
 
+
 <div class="notion-callout-gray" style="padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #e5e7eb; line-height: 1.6;">
   <div>이 글은 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a>의 글을 복사한 것입니다. 관련 질문이나 문의는 우리 갤러리를 방문해주세요.</div>
-  <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;"><img src="/images/v.-장조와-단조의-3화음-1.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+  <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;">
+
+<img src="/images/v.-장조와-단조의-3화음-1.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 </div>
 </div>

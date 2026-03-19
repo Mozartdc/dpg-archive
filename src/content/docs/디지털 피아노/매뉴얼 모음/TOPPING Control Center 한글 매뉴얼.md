@@ -47,6 +47,8 @@ sidebar:
 
 1. TOPPING 공식 다운로드 페이지에서 ToppingPro 다운로드.
 
+
+
 <a href="https://download.topping.pro/control_software/TOPPING%20Professional%20Control%20Center%20V1.13%20Setup.zip" target="_blank" style="display: block; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; padding: 16px; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
   <div style="font-size: 14px; font-weight: 600; margin-bottom: 6px; color: #111827;">🔗 https://download.topping.pro/control_software/TOPPING%20Professional%20Control%20Center%20V1.13%20Setup.zip</div>
   
@@ -54,6 +56,84 @@ sidebar:
 </a>
 
 1. 설치 프로그램을 실행하고 화면 안내에 따라 설치. 
+
+
+<div class="notion-columns">
+
+<div class="notion-column">
+
+
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-0.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+
+
+</div>
+
+<div class="notion-column">
+
+
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-1.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+
+
+</div>
+
+</div>
+
+
+
+<div class="notion-columns">
+
+<div class="notion-column">
+
+
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-2.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+
+
+</div>
+
+<div class="notion-column">
+
+
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-3.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+
+
+</div>
+
+</div>
+
+
+
+<div class="notion-columns">
+
+<div class="notion-column">
+
+
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-4.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+
+
+</div>
+
+<div class="notion-column">
+
+
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-5.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+
+
+</div>
+
+</div>
+
 1. 기기를 연결함.
   - <strong>E8x8 Pre</strong>: 전원을 연결한 뒤, 동봉된 USB 케이블로 PC와 E8x8 Pre의 USB 포트 중 하나를 연결함.
   - <strong>그 외 모델</strong>: 동봉된 USB 케이블로 PC와 본체의 USB-C 포트를 연결함
@@ -65,6 +145,8 @@ sidebar:
 
 1. TOPPING 공식 다운로드 페이지에서 ToppingPro 다운로드.
 
+
+
 <a href="https://www.topping.pro/downloads/TOPPING_Professional_Control_Center_V1_09.dmg" target="_blank" style="display: block; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; padding: 16px; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
   <div style="font-size: 14px; font-weight: 600; margin-bottom: 6px; color: #111827;">🔗 https://www.topping.pro/downloads/TOPPING_Professional_Control_Center_V1_09.dmg</div>
   
@@ -72,7 +154,9 @@ sidebar:
 </a>
 
 1. ToppingPro를 Applications 폴더로 드래그.
-<img src="/images/TOPPING-Control-Center-한글-매뉴얼-0.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-6.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 1. 기기를 연결.
   - <strong>E8x8 Pre</strong>: 전원을 연결한 뒤, 동봉된 USB 케이블로 PC와 E8x8 Pre의 USB 포트 중 하나를 연결함.
@@ -83,6 +167,32 @@ sidebar:
 ### 실행되지 않을 때 확인할 사항
 
 <p style="margin: 0 0 1em 0;">ToppingPro가 정상적으로 표시되지 않는 경우.</p>
+
+
+
+<div class="notion-columns">
+
+<div class="notion-column">
+
+
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-7.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+
+
+</div>
+
+<div class="notion-column">
+
+
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-8.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+
+
+</div>
+
+</div>
 
 <p style="margin: 0 0 1em 0;"><strong>E8x8 Pre</strong></p>
 
@@ -108,7 +218,9 @@ USB 케이블 길이는 2m 이하 권장
 
 ### 개요
 
-<img src="/images/TOPPING-Control-Center-한글-매뉴얼-1.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-9.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 1. <span class="notion-text-blue"><strong>상단 제어 바</strong></span><strong>:</strong> 시스템 설정, Workspace, Sample Rate, Buffer Size 등을 포함한 전체 상단 영역
 1. <span class="notion-text-green"><strong>Input 섹션</strong></span><strong>:</strong> 물리적 입력 IN1 및 IN2의 하드웨어 설정 영역
@@ -159,14 +271,18 @@ USB 케이블 길이는 2m 이하 권장
 
 <p style="margin: 0 0 1em 0;">E1x2 OTG 또는 E2x2 OTG의 OTG 포트에 모바일 기기를 연결하면 ToppingPro에서 관련 채널이 활성화됨. 이 상태에서는 모바일 기기의 오디오를 컴퓨터에서 녹음할 수 있고, 반대로 컴퓨터 오디오를 모바일 기기로 보낼 수도 있음.</p>
 
-<img src="/images/TOPPING-Control-Center-한글-매뉴얼-2.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-10.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 ---
 
 
 ## 3. 입력 섹션
 
-<img src="/images/TOPPING-Control-Center-한글-매뉴얼-3.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-11.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 
 ### 채널 이름
@@ -224,7 +340,9 @@ USB 케이블 길이는 2m 이하 권장
 
 ## 4. 믹서 섹션
 
-<img src="/images/TOPPING-Control-Center-한글-매뉴얼-4.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-12.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 
 ### 믹서 탭
@@ -283,7 +401,9 @@ USB 케이블 길이는 2m 이하 권장
 
 ## 5. 루프백 섹션
 
-<img src="/images/TOPPING-Control-Center-한글-매뉴얼-5.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-13.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 
 ### 채널 이름
@@ -403,7 +523,9 @@ USB 케이블 길이는 2m 이하 권장
 
 ## 7. 기타 설정
 
-<img src="/images/TOPPING-Control-Center-한글-매뉴얼-6.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-14.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 
 ### 작업 공간 저장 및 불러오기
@@ -412,10 +534,14 @@ USB 케이블 길이는 2m 이하 권장
 사용 환경이 바뀌면 미리 저장해 둔 설정을 빠르게 불러올 수 있음.</p>
 
 - New Workspace / Save Workspace as: 해당 항목을 클릭한 뒤 작업 공간 이름을 입력하고 Enter 키를 누름.
-<img src="/images/TOPPING-Control-Center-한글-매뉴얼-7.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-15.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 - 전원이 꺼진 상태에서(제어 소프트웨어에 연결하지 않은 상태에서) 자동으로 이 설정을 불러오도록 할 수 있음.
-<img src="/images/TOPPING-Control-Center-한글-매뉴얼-8.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-16.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 
 ### 샘플레이트
@@ -442,7 +568,9 @@ USB 케이블 길이는 2m 이하 권장
 
 ## 8. 시스템 설정
 
-<img src="/images/TOPPING-Control-Center-한글-매뉴얼-9.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-17.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 
 ### 시스템 설정 항목
@@ -494,7 +622,9 @@ USB 케이블 길이는 2m 이하 권장
 
 <p style="margin: 0 0 1em 0;">Check for updates를 클릭한 뒤 아래 항목 중 하나를 선택함.</p>
 
-<img src="/images/TOPPING-Control-Center-한글-매뉴얼-10.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-18.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 - Update firmware
 - Manually updating
@@ -507,5 +637,7 @@ Manually updating을 선택할 수도 있음.
 
 <p style="margin: 0 0 1em 0;">또는 Manually updating을 선택해 수동으로 업데이트할 수도 있음. 이 경우에는 먼저 공식 웹사이트에서 펌웨어 파일을 내려받은 다음, 안내에 따라 설치하면 됨.</p>
 
-<img src="/images/TOPPING-Control-Center-한글-매뉴얼-11.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+
+<img src="/images/TOPPING-Control-Center-한글-매뉴얼-19.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 

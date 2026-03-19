@@ -17,9 +17,13 @@ sidebar:
   order: 9999
 ---
 
+
+
 <img src="/images/롤랜드-FP-60X-디지털-피아노-0.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 <p style="margin: 0 0 1em 0;">2021년 1월 11일 Roland가 FP-X 시리즈를 공식 발표했고, 글로벌 출시는 2021년 2월부터 시작됨. 국내에서는 코스모스악기가 2021년 02월 22일 FP-60X를 정식 수입함.</p>
+
+
 
 <img src="/images/롤랜드-FP-60X-디지털-피아노-1.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
@@ -36,6 +40,8 @@ sidebar:
 
 <p style="margin: 0 0 1em 0;">실제 피아노 음색은 FP-30X와 매우 유사한 계열로 평가되는 경우가 많으며, 헤드폰 환경에서는 두 모델의 차이를 크게 느끼기 어렵다는 의견도 있음. 다만 FP-60X는 더 큰 하우징과 전면 스피커 구조를 사용하기 때문에 스피커로 연주할 때는 공간감과 음압에서 차이가 발생함.</p>
 
+
+
 <img src="/images/롤랜드-FP-60X-디지털-피아노-2.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 
@@ -49,6 +55,8 @@ sidebar:
 
 <p style="margin: 0 0 1em 0;">버튼 조작감은 탄성 코일 스프링을 넣어서 눌렀을 때 반응이 좋고, 버튼 아래 라벨도 고대비 색상과 읽기 쉬운 글꼴을 써서 가독성이 좋음.</p>
 
+
+
 <img src="/images/롤랜드-FP-60X-디지털-피아노-3.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 <p style="margin: 0 0 1em 0;">특히, 페이더와 슬라이더가 잘 만들어졌음. 적당한 저항감이 있어서 미세 조정이 편하고, 레이어 음색 간 밸런스를 잡을 때 배치가 잘 되어 있음.</p>
@@ -58,6 +66,8 @@ sidebar:
 <p style="margin: 0 0 1em 0;">좌측 상단의 3밴드 EQ 페이더도 훌륭함. 이런 기능은 다른 디피에도 넣어 줬으면 좋겠음. EQ는 소리의 주파수 밸런스를 바로 만질 수 있게 해 주는데, 메뉴 다이브 없이 전면에서 바로 조절할 수 있다는 점이 연주중에 큰 도움이 됨.</p>
 
 <p style="margin: 0 0 1em 0;"><strong>보면대는 기본 포함이며 전용 스탠드(KSC-72)를 별도로 구매할 수 있음. 전용 스탠드와 함께 사용할 경우 3페달 유닛(KPD-90)을 장착해 Damper, Sostenuto, Soft 페달을 모두 사용할 수 있음.</strong></p>
+
+
 
 <img src="/images/롤랜드-FP-60X-디지털-피아노-4.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
@@ -156,6 +166,8 @@ sidebar:
 <p style="margin: 0 0 1em 0;">Android 기기에서는 기종이나 OS 버전에 따라 Bluetooth 연결 안정성이 다를 수 있음.</p>
 
 
+
+
 <a href="https://play.google.com/store/apps/details?id=jp.co.roland.RolandPianoApp&pcampaignid=web_share" target="_blank" style="display: flex; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; overflow: hidden; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
   <div style="padding: 12px 16px; flex: 1; min-width: 0;">
     <div style="font-size: 14px; font-weight: 600; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #111827;">Roland Piano App - Google Play 앱</div>
@@ -166,6 +178,8 @@ sidebar:
     <img src="/images/롤랜드-FP-60X-디지털-피아노-5.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
   </div>
 </a>
+
+
 
 
 <a href="https://apps.apple.com/kr/app/roland-piano-app/id1610462043" target="_blank" style="display: flex; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; overflow: hidden; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
@@ -182,9 +196,12 @@ sidebar:
 ---
 
 
+
 <div class="notion-callout-gray" style="padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #e5e7eb; line-height: 1.6;">
   <div>이 글은 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a>의 글을 복사한 것입니다. 관련 질문이나 문의는 우리 갤러리를 방문해주세요.</div>
-  <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;"><img src="/images/롤랜드-FP-60X-디지털-피아노-7.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+  <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;">
+
+<img src="/images/롤랜드-FP-60X-디지털-피아노-7.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 </div>
 </div>

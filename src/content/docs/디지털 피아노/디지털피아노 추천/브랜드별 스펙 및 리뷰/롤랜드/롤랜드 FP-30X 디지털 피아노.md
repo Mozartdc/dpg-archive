@@ -17,11 +17,15 @@ sidebar:
   order: 9999
 ---
 
+
+
 <img src="/images/롤랜드-FP-30X-디지털-피아노-0.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 <p style="margin: 0 0 1em 0;">2020년 말 Roland가 FP-X 시리즈를 발표했고, FP-30X는2021년 1월 출시함.</p>
 
 <p style="margin: 0 0 1em 0;">코스모스에서는 2021 02 22에 정식수입함.</p>
+
+
 
 <img src="/images/롤랜드-FP-30X-디지털-피아노-1.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
@@ -33,6 +37,8 @@ sidebar:
 <p style="margin: 0 0 1em 0;">벨로시티 커브는 5가지 프리셋 설정으로 반응을 조정할 수 있음.</p>
 
 <p style="margin: 0 0 1em 0;">사운드는 Roland의 SuperNATURAL 음원 엔진을 사용함. 샘플링과 물리 모델링을 결합한 방식임. FP-30X는 내부 칩셋의 개선으로 전작보다 음색과 동시발음 증가로 사운드도 전반적으로 개선됨.</p>
+
+
 
 <img src="/images/롤랜드-FP-30X-디지털-피아노-2.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
@@ -54,6 +60,8 @@ sidebar:
 <p style="margin: 0 0 1em 0;">전면 패널에는 13개의 버튼이 배치되어 있으며 대부분의 기능은 버튼 조합이나 버튼+건반 입력으로 설정함. 주요 기능은 건반 뒤쪽에 간단한 안내가 인쇄되어 있지만 세부 설정은 설명서를 참고해야 함.</p>
 
 <p style="margin: 0 0 1em 0;">후면에는 전원 어댑터 단자와 페달 입력 단자가 있음. 기본 구성은 DP-2 페달 스위치이며, 연속 값을 지원하는 DP-10 페달도 사용할 수 있음. 전용 3페달 유닛(KPD-70)을 연결하면 Damper, Sostenuto, Soft 페달을 모두 사용할 수 있음.</p>
+
+
 
 <img src="/images/롤랜드-FP-30X-디지털-피아노-3.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
@@ -150,6 +158,8 @@ sidebar:
 <p style="margin: 0 0 1em 0;">Android 기기에서는 기종이나 OS 버전에 따라 Bluetooth 연결이 원활하지 않을 수 있음.</p>
 
 
+
+
 <a href="https://play.google.com/store/apps/details?id=jp.co.roland.RolandPianoApp&pcampaignid=web_share" target="_blank" style="display: flex; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; overflow: hidden; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
   <div style="padding: 12px 16px; flex: 1; min-width: 0;">
     <div style="font-size: 14px; font-weight: 600; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #111827;">Roland Piano App - Google Play 앱</div>
@@ -160,6 +170,8 @@ sidebar:
     <img src="/images/롤랜드-FP-30X-디지털-피아노-4.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
   </div>
 </a>
+
+
 
 
 <a href="https://apps.apple.com/kr/app/roland-piano-app/id1610462043" target="_blank" style="display: flex; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; overflow: hidden; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
@@ -176,9 +188,12 @@ sidebar:
 ---
 
 
+
 <div class="notion-callout-gray" style="padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #e5e7eb; line-height: 1.6;">
   <div>이 글은 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a>의 글을 복사한 것입니다. 관련 질문이나 문의는 우리 갤러리를 방문해주세요.</div>
-  <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;"><img src="/images/롤랜드-FP-30X-디지털-피아노-6.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+  <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;">
+
+<img src="/images/롤랜드-FP-30X-디지털-피아노-6.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 </div>
 </div>

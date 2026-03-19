@@ -17,6 +17,8 @@ sidebar:
   order: 9999
 ---
 
+
+
 <img src="/images/롤랜드-FP-90X-디지털-피아노-0.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 <p style="margin: 0 0 1em 0;">2021년 1월 11일 Roland가 FP-X 시리즈를 공식 발표했고, 글로벌 출시는 2021년 2월부터 시작됨. 국내에서는 코스모스악기가 2021년 02월 22일 FP-90X를 정식 수입함.</p>
@@ -26,17 +28,23 @@ sidebar:
 
 <p style="margin: 0 0 1em 0;">FP-90X는 PHA-50 하이브리드 액션을 사용함. 목재 코어와 플라스틱 외장을 결합한 구조로, FP-30X와 FP-60X보다 한 단계 높은 건반임. 실제 타건 시 무게감과 반응이 더 자연스럽고, 키 스틱 길이도 길어 건반 안쪽을 눌렀을 때 확실하게 편하게 느껴짐. 이스케이프먼트 구현으로 건반을 누르는 도중 그랜드 피아노에서 느껴지는 미세한 노치감이 느껴짐.</p>
 
+
+
 <img src="/images/롤랜드-FP-90X-디지털-피아노-1.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 <p style="margin: 0 0 1em 0;">PHA-4에서 업그레이드 하는 경우 건반이 더 가벼워 진 느낌이 들겠지만, 균형감과 피벗 길이, 응답성은 더 뛰어나 전체적인 타건감이 확실히 상위 건반이라는 느낌임. </p>
 
 <p style="margin: 0 0 1em 0;">PHA-4보다 건반이 가볍고, 균형감과 피벗 길이, 응답성은 더 뛰어나 전체적으로 균형잡힌 타건감임. 표면은 인조 상아와 흑단 질감을 적용해 시각적으로나 촉각으로나 모두 상급기다운 마감임.</p>
 
+
+
 <img src="/images/롤랜드-FP-90X-디지털-피아노-2.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 <p style="margin: 0 0 1em 0;">벨로시티 반응은 Key Touch 100단계를 지원하며, 별도로 Hammer Response도 100단계로 조절 가능함. FP-60X도 Key Touch 100단계와 Hammer Response 조절이 가능하지만, FP-90X는 건반 자체가 달라 동일 선상에서 비교하기는 어려움. 기본 연주감부터 이미 차이가 나기 때문에, 실제 체감 타건감은 FP-60X보다 확실히 체감할 수 있음.</p>
 
 <p style="margin: 0 0 1em 0;">사운드는 Roland의 PureAcoustic Piano Modeling과 SuperNATURAL 두 가지 엔진을 함께 사용함. 어쿠스틱 피아노 음색은 PureAcoustic 엔진으로, 그 외 대부분의 음색은 SuperNATURAL 엔진이 담당함. PureAcoustic는 샘플 재생이 아니라 모델링 기반이라, 건반 반응과 공명 표현이 더 자연스럽고 완성도가 높음.</p>
+
+
 
 <img src="/images/롤랜드-FP-90X-디지털-피아노-3.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
@@ -49,6 +57,8 @@ sidebar:
 
 <p style="margin: 0 0 1em 0;">본체 마감은 무광 플라스틱 중심이지만 내부 프레임 강성이 높고, 전체 구조가 매우 단단함. 힘을 줘도 바디가 쉽게 비틀리거나 휘는 느낌이 없고, 실제로 만졌을 때 FP-60X보다도 한 단계 더 묵직하고 안정적인 인상을 줌.</p>
 
+
+
 <img src="/images/롤랜드-FP-90X-디지털-피아노-4.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 <p style="margin: 0 0 1em 0;">FP-90X는 대부분의 기능에 전용 버튼이나 페이더가 배치되어 있고, 나머지 세부 설정은 LCD 화면을 통해 직접 접근 가능함. FP-30X처럼 버튼과 건반 조합을 외워야 하는 구조가 아니고, FP-60X보다도 조금 더 완성된 조작 편이를 갖춤.</p>
@@ -57,13 +67,19 @@ sidebar:
 
 <p style="margin: 0 0 1em 0;">특히 페이더와 슬라이더 구성이 뛰어남. 볼륨은 전용 페이더로 조절하고, 레이어 및 스플릿 시 파트별 음량도 전면 페이더로 바로 조정 가능함. 좌측 상단의 3밴드 EQ도 전면에서 직접 조절할 수 있어, 연주중에도 소리를 빠르게 만지기에 적합함.</p>
 
+
+
 <img src="/images/롤랜드-FP-90X-디지털-피아노-5.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 <p style="margin: 0 0 1em 0;">FP-90X는 4스피커 구조를 사용함. 메인 스피커는 25W x 2, 트위터는 5W x 2 구성으로, FP-60X의 13W x 2보다 출력과 고역 재생이 훨씬 강함. 전면 발사 방식이라 직접음 전달도 더 좋고, 일반적인 가정집 방 크기(3~4평)의 공간까지 충분히 채울 수 있을 정도의 출력임.</p>
 
+
+
 <img src="/images/롤랜드-FP-90X-디지털-피아노-6.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 <p style="margin: 0 0 1em 0;">보면대는 기본 포함이며 전용 스탠드(KSC-90)를 별도로 구매할 수 있음. 전용 스탠드와 함께 사용할 경우 3페달 유닛(KPD-90)을 장착해 Damper, Sostenuto, Soft 페달을 모두 사용할 수 있음. 바닥형 3페달 유닛인 RPU-3도 사용 가능함. 기본 구성은 DP-10 댐퍼 페달이며 하프 페달과 연속 페달을 지원함. </p>
+
+
 
 <img src="/images/롤랜드-FP-90X-디지털-피아노-7.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
@@ -168,6 +184,8 @@ sidebar:
 <p style="margin: 0 0 1em 0;">Android 기기에서는 기종이나 OS 버전에 따라 Bluetooth 연결 안정성이 다를 수 있음.</p>
 
 
+
+
 <a href="https://apps.apple.com/kr/app/roland-piano-app/id1610462043" target="_blank" style="display: flex; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; overflow: hidden; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
   <div style="padding: 12px 16px; flex: 1; min-width: 0;">
     <div style="font-size: 14px; font-weight: 600; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #111827;">Roland Piano App 앱 - App Store</div>
@@ -178,6 +196,8 @@ sidebar:
     <img src="/images/롤랜드-FP-90X-디지털-피아노-8.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
   </div>
 </a>
+
+
 
 
 <a href="https://play.google.com/store/apps/details?id=jp.co.roland.RolandPianoApp&pcampaignid=web_share" target="_blank" style="display: flex; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; overflow: hidden; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
@@ -194,9 +214,12 @@ sidebar:
 ---
 
 
+
 <div class="notion-callout-gray" style="padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #e5e7eb; line-height: 1.6;">
   <div>이 글은 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a>의 글을 복사한 것입니다. 관련 질문이나 문의는 우리 갤러리를 방문해주세요.</div>
-  <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;"><img src="/images/롤랜드-FP-90X-디지털-피아노-10.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+  <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;">
+
+<img src="/images/롤랜드-FP-90X-디지털-피아노-10.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 </div>
 </div>

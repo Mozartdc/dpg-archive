@@ -10,6 +10,8 @@ sidebar:
   order: 9999
 ---
 
+
+
 <img src="/images/i.-화음과-화성-0.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 ---
@@ -19,6 +21,8 @@ sidebar:
 <p style="margin: 0 0 1em 0;">화음은 높이가 다른 두개 이상의 음이 동시에 울리는 소리임</p>
 
 
+
+
 <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
   <iframe src="https://youtube.com/embed/sN3dCvn7w3Y?si=NWmBwdhQPfnmbH8R" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
 </div>
@@ -26,6 +30,8 @@ sidebar:
 <p style="margin: 0 0 1em 0;"><strong>화성</strong></p>
 
 <p style="margin: 0 0 1em 0;">화성은 음이나 화음이 어떻게 이어지고 섞이는지를 설명하는 원리임.</p>
+
+
 
 <img src="/images/i.-화음과-화성-1.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
@@ -44,6 +50,7 @@ sidebar:
 <p style="margin: 0 0 1em 0;">각각 영어로 triad, 7th chord, 9th chord라고 부름.</p>
 
 
+
 <div class="notion-embed notion-embed--musescore" style="--musescore-height:394px;"><iframe src="https://musescore.com/user/101405068/scores/31347032/embed" style="width:100%; height:394px !important; border:none; display:block;" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe></div>
 
 <p style="margin: 0 0 1em 0;">" height="394"</p>
@@ -59,9 +66,12 @@ sidebar:
 ---
 
 
+
 <div class="notion-callout-gray" style="padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #e5e7eb; line-height: 1.6;">
   <div>이 글은 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a>의 글을 복사한 것입니다. 관련 질문이나 문의는 우리 갤러리를 방문해주세요.</div>
-  <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;"><img src="/images/i.-화음과-화성-2.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+  <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;">
+
+<img src="/images/i.-화음과-화성-2.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 </div>
 </div>

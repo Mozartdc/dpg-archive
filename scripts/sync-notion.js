@@ -586,6 +586,35 @@ async function convertToMarkdown(blocks, indent = "", context = {}) {
         break;
       }
 
+      // ── column list / column ──
+      case 'column_list': {
+        const columns = block.children_content || [];
+        if (columns.length === 0) break;
+
+        output.push(`\n\n<div class="notion-columns">\n\n`);
+
+        for (const column of columns) {
+          if (column.type !== 'column') continue;
+
+          const columnChildren = column.children_content || [];
+          if (columnChildren.length === 0) continue;
+
+          output.push(`<div class="notion-column">\n\n`);
+          const columnContent = await convertToMarkdown(columnChildren, indent, context);
+          output.push(columnContent);
+          output.push(`\n\n</div>\n\n`);
+        }
+
+        output.push(`</div>\n\n`);
+        break;
+      }
+
+      case 'column':
+        if (childrenMd && childrenMd.trim()) {
+          output.push(childrenMd);
+        }
+        break;
+
       // ── audio ──
       case 'audio': {
         const audioUrl = content.type === 'external' ? content.external.url : content.file?.url;
