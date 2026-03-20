@@ -247,17 +247,20 @@ a[rel="next"] .label {
 }
 
 .sl-markdown-content .notion-columns {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(var(--notion-columns, 1), minmax(0, 1fr));
   gap: 1.5rem;
   margin: 1.5rem 0;
-  align-items: flex-start;
+  align-items: start;
+  width: 100%;
   max-width: 100%;
 }
 
 .sl-markdown-content .notion-column {
-  flex: 1 1 0;
   min-width: 0;
+  width: 100%;
   max-width: 100%;
+  overflow: hidden;
 }
 
 .sl-markdown-content .notion-column > * {
@@ -269,22 +272,16 @@ a[rel="next"] .label {
 }
 
 .sl-markdown-content .notion-column img {
-  width: 100%;
-  max-width: 100%;
+  width: 100% !important;
+  max-width: 100% !important;
   height: auto;
   display: block;
 }
 
 @media (max-width: 768px) {
   .sl-markdown-content .notion-columns {
-    flex-direction: column;
-    align-items: stretch;
+    grid-template-columns: 1fr;
     gap: 1rem;
-  }
-
-  .sl-markdown-content .notion-column {
-    width: 100%;
-    max-width: 100%;
   }
 }
 

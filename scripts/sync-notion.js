@@ -596,13 +596,16 @@ async function convertToMarkdown(blocks, indent = "", context = {}) {
         const columns = block.children_content || [];
         if (columns.length === 0) break;
 
-        output.push(`\n\n<div class="notion-columns">\n\n`);
+        const nonEmptyColumns = columns.filter(
+          (column) => column.type === 'column' && (column.children_content || []).length > 0
+        );
 
-        for (const column of columns) {
-          if (column.type !== 'column') continue;
+        if (nonEmptyColumns.length === 0) break;
 
+        output.push(`\n\n<div class="notion-columns" style="--notion-columns:${nonEmptyColumns.length};">\n\n`);
+
+        for (const column of nonEmptyColumns) {
           const columnChildren = column.children_content || [];
-          if (columnChildren.length === 0) continue;
 
           output.push(`<div class="notion-column">\n\n`);
           const columnContent = await convertToMarkdown(columnChildren, indent, context);
