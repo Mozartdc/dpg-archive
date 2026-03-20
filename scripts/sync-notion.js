@@ -782,7 +782,7 @@ async function downloadImage(url, filepathWithoutExt) {
 // 11. Frontmatter 생성 (✅ 업데이트: 순서 속성 추가)
 // ═══════════════════════════════════════════════════════════════
 
-function buildFrontmatter(title, tags, createdTime, lastEditedTime, order) {
+function buildFrontmatter(title, tags, createdTime, lastEditedTime, order, notionPageId) {
   let fm = `---\ntitle: "${title.replace(/"/g, '\\"')}"\n`;
 
   if (createdTime) {
@@ -790,6 +790,9 @@ function buildFrontmatter(title, tags, createdTime, lastEditedTime, order) {
   }
   if (lastEditedTime) {
     fm += `lastEdited: ${lastEditedTime.slice(0, 10)}\n`;
+  }
+  if (notionPageId) {
+    fm += `notionPageId: "${notionPageId}"\n`;
   }
   if (tags && tags.length > 0) {
     fm += `tags:\n`;
@@ -808,6 +811,60 @@ function buildFrontmatter(title, tags, createdTime, lastEditedTime, order) {
 
 function sanitizeName(name) {
   return name.replace(/[<>:"/\\|?*]/g, '').trim();
+}
+function readFileSafe(filePath) {
+  try {
+    return fs.readFileSync(filePath, 'utf-8');
+  } catch {
+    return '';
+  }
+}
+
+function getStoredNotionPageId(contents) {
+  if (!contents) return null;
+
+  const frontmatterMatch = contents.match(/^---\n([\s\S]*?)\n---/);
+  if (frontmatterMatch) {
+    const notionPageIdMatch = frontmatterMatch[1].match(/(?:^|\n)notionPageId:\s*"([^"\n]+)"/);
+    if (notionPageIdMatch) return notionPageIdMatch[1];
+  }
+
+  const legacyMarkerMatch = contents.match(/notion-sync: page-id=([a-f0-9-]+)/i);
+  return legacyMarkerMatch ? legacyMarkerMatch[1] : null;
+}
+
+function normalizeLegacyStem(name) {
+  return name
+    .normalize('NFC')
+    .replace(/\.(md|mdx)$/i, '')
+    .replace(/\s+/g, ' ')
+    .replace(/^0+(\d+)(\.)/, '$1$2')
+    .trim()
+    .toLowerCase();
+}
+
+function removeLegacySyncedVariants(categoryFolder, pageId, baseFilename, currentExtension) {
+  const entries = fs.readdirSync(categoryFolder, { withFileTypes: true });
+  const targetStem = normalizeLegacyStem(baseFilename);
+
+  for (const entry of entries) {
+    if (!entry.isFile()) continue;
+
+    const ext = path.extname(entry.name).toLowerCase();
+    if (ext !== '.md' && ext !== '.mdx') continue;
+
+    const entryPath = path.join(categoryFolder, entry.name);
+    const sameTargetPath = entry.name === `${baseFilename}${currentExtension}`;
+    if (sameTargetPath) continue;
+
+    const contents = readFileSafe(entryPath);
+    const hasSamePageMarker = getStoredNotionPageId(contents) === pageId;
+    const sameLegacyStem = normalizeLegacyStem(entry.name) === targetStem;
+
+    if (hasSamePageMarker || sameLegacyStem) {
+      fs.unlinkSync(entryPath);
+    }
+  }
 }
 
 
@@ -917,12 +974,14 @@ async function syncNotion() {
         }
 
         // ✅ Frontmatter 생성 시 order 전달
-        const frontmatter = buildFrontmatter(title, tags, createdTime, lastEdited, order);
+        const frontmatter = buildFrontmatter(title, tags, createdTime, lastEdited, order, page.id);
         const baseFilename = sanitizeName(title);
         const filename = `${baseFilename}${extension}`;
         const filePath = path.join(categoryFolder, filename);
         const alternateExtension = extension === '.mdx' ? '.md' : '.mdx';
         const alternateFilePath = path.join(categoryFolder, `${baseFilename}${alternateExtension}`);
+
+        removeLegacySyncedVariants(categoryFolder, page.id, baseFilename, extension);
 
         if (fs.existsSync(alternateFilePath)) {
           fs.unlinkSync(alternateFilePath);
