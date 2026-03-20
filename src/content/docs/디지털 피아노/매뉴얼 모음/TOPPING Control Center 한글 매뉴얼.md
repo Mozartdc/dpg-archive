@@ -73,7 +73,7 @@ TOPPING Professional Control Center(이하 ToppingPro)를 설치 및 실행 가�
 
 
 
-<div class="notion-columns">
+<div class="notion-columns" style="--notion-columns:2;">
 
 <div class="notion-column">
 
@@ -99,7 +99,7 @@ TOPPING Professional Control Center(이하 ToppingPro)를 설치 및 실행 가�
 
 
 
-<div class="notion-columns">
+<div class="notion-columns" style="--notion-columns:2;">
 
 <div class="notion-column">
 
@@ -125,7 +125,7 @@ TOPPING Professional Control Center(이하 ToppingPro)를 설치 및 실행 가�
 
 
 
-<div class="notion-columns">
+<div class="notion-columns" style="--notion-columns:2;">
 
 <div class="notion-column">
 
@@ -197,7 +197,7 @@ ToppingPro가 정상적으로 표시되지 않는 경우.
 
 
 
-<div class="notion-columns">
+<div class="notion-columns" style="--notion-columns:2;">
 
 <div class="notion-column">
 
