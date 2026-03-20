@@ -280,8 +280,8 @@ a[rel="next"] .label {
 
 @media (max-width: 768px) {
   .sl-markdown-content .notion-columns {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
   }
 }
 

@@ -602,12 +602,12 @@ async function convertToMarkdown(blocks, indent = "", context = {}) {
 
         if (nonEmptyColumns.length === 0) break;
 
-        output.push(`\n\n<div class="notion-columns" style="--notion-columns:${nonEmptyColumns.length};">\n\n`);
+        output.push(`\n\n<div class="notion-columns" style="--notion-columns:${nonEmptyColumns.length}; display:grid; grid-template-columns:repeat(${nonEmptyColumns.length}, minmax(0, 1fr)); gap:1.5rem; margin:1.5rem 0; align-items:start; width:100%; max-width:100%;">\n\n`);
 
         for (const column of nonEmptyColumns) {
           const columnChildren = column.children_content || [];
 
-          output.push(`<div class="notion-column">\n\n`);
+          output.push(`<div class="notion-column" style="min-width:0; width:100%; max-width:100%; overflow:hidden;">\n\n`);
           const columnContent = await convertToMarkdown(columnChildren, indent, context);
           output.push(columnContent);
           output.push(`\n\n</div>\n\n`);
@@ -714,7 +714,7 @@ async function convertToMarkdown(blocks, indent = "", context = {}) {
         } else {
   output.push(`
 <a href="${bUrl}" target="_blank" style="display: block; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; padding: 16px; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
-  <div style="font-size: 14px; font-weight: 600; margin-bottom: 6px; color: #111827;">🔗 ${bTitle}</div>
+  <div style="font-size: 14px; font-weight: 600; margin-bottom: 6px; color: #111827; word-break: break-all; overflow-wrap: anywhere;">🔗 ${bTitle}</div>
   ${bDescription ? `<div style="font-size: 12px; color: #6b7280; line-height: 1.5; margin-bottom: 8px;">${bDescription}</div>` : ''}
   <div style="font-size: 11px; color: #9ca3af; word-break: break-all;">${bUrl}</div>
 </a>`);
