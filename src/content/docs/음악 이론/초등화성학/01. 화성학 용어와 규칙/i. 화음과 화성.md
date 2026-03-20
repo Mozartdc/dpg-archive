@@ -2,6 +2,7 @@
 title: "i. 화음과 화성"
 date: 2026-01-30
 lastEdited: 2026-03-13
+notionPageId: "2f826dfb-cd79-80ff-bd87-ddeff908d08f"
 tags:
   - "화성학"
   - "음악이론"

@@ -2,6 +2,7 @@
 title: "롤랜드 FP-60X 디지털 피아노"
 date: 2026-03-08
 lastEdited: 2026-03-08
+notionPageId: "31d26dfb-cd79-80bf-a099-d7feae94d051"
 tags:
   - "롤랜드 디지털피아노"
   - "Roland 디지털피아노"

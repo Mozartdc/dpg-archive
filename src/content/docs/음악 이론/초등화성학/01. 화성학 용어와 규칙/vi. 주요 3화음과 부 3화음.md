@@ -2,6 +2,7 @@
 title: "vi. 주요 3화음과 부 3화음"
 date: 2026-02-03
 lastEdited: 2026-03-13
+notionPageId: "2fc26dfb-cd79-8051-96d0-f2e72aeb32db"
 tags:
   - "화성학"
   - "음악이론"

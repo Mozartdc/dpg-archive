@@ -2,6 +2,7 @@
 title: "E2x2 OTG 한글 매뉴얼"
 date: 2026-03-17
 lastEdited: 2026-03-19
+notionPageId: "32626dfb-cd79-80ff-8543-fc85b6d6cfab"
 tags:
   - "토핑 매뉴얼"
 sidebar:

@@ -2,6 +2,7 @@
 title: "v. 장조와 단조의 3화음"
 date: 2026-01-30
 lastEdited: 2026-03-13
+notionPageId: "2f826dfb-cd79-80ee-81be-ce1fed26bbee"
 tags:
   - "화성학"
   - "음악이론"
