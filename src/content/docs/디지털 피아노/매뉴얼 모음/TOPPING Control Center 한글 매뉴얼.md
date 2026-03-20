@@ -64,7 +64,7 @@ TOPPING Professional Control Center(이하 ToppingPro)를 설치 및 실행 가�
 
 
 <a href="https://download.topping.pro/control_software/TOPPING%20Professional%20Control%20Center%20V1.13%20Setup.zip" target="_blank" style="display: block; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; padding: 16px; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
-  <div style="font-size: 14px; font-weight: 600; margin-bottom: 6px; color: #111827;">🔗 https://download.topping.pro/control_software/TOPPING%20Professional%20Control%20Center%20V1.13%20Setup.zip</div>
+  <div style="font-size: 14px; font-weight: 600; margin-bottom: 6px; color: #111827; word-break: break-all; overflow-wrap: anywhere;">🔗 https://download.topping.pro/control_software/TOPPING%20Professional%20Control%20Center%20V1.13%20Setup.zip</div>
   
   <div style="font-size: 11px; color: #9ca3af; word-break: break-all;">https://download.topping.pro/control_software/TOPPING%20Professional%20Control%20Center%20V1.13%20Setup.zip</div>
 </a>
@@ -73,9 +73,9 @@ TOPPING Professional Control Center(이하 ToppingPro)를 설치 및 실행 가�
 
 
 
-<div class="notion-columns" style="--notion-columns:2;">
+<div class="notion-columns" style="--notion-columns:2; display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:1.5rem; margin:1.5rem 0; align-items:start; width:100%; max-width:100%;">
 
-<div class="notion-column">
+<div class="notion-column" style="min-width:0; width:100%; max-width:100%; overflow:hidden;">
 
 
 
@@ -85,7 +85,7 @@ TOPPING Professional Control Center(이하 ToppingPro)를 설치 및 실행 가�
 
 </div>
 
-<div class="notion-column">
+<div class="notion-column" style="min-width:0; width:100%; max-width:100%; overflow:hidden;">
 
 
 
@@ -99,9 +99,9 @@ TOPPING Professional Control Center(이하 ToppingPro)를 설치 및 실행 가�
 
 
 
-<div class="notion-columns" style="--notion-columns:2;">
+<div class="notion-columns" style="--notion-columns:2; display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:1.5rem; margin:1.5rem 0; align-items:start; width:100%; max-width:100%;">
 
-<div class="notion-column">
+<div class="notion-column" style="min-width:0; width:100%; max-width:100%; overflow:hidden;">
 
 
 
@@ -111,7 +111,7 @@ TOPPING Professional Control Center(이하 ToppingPro)를 설치 및 실행 가�
 
 </div>
 
-<div class="notion-column">
+<div class="notion-column" style="min-width:0; width:100%; max-width:100%; overflow:hidden;">
 
 
 
@@ -125,9 +125,9 @@ TOPPING Professional Control Center(이하 ToppingPro)를 설치 및 실행 가�
 
 
 
-<div class="notion-columns" style="--notion-columns:2;">
+<div class="notion-columns" style="--notion-columns:2; display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:1.5rem; margin:1.5rem 0; align-items:start; width:100%; max-width:100%;">
 
-<div class="notion-column">
+<div class="notion-column" style="min-width:0; width:100%; max-width:100%; overflow:hidden;">
 
 
 
@@ -137,7 +137,7 @@ TOPPING Professional Control Center(이하 ToppingPro)를 설치 및 실행 가�
 
 </div>
 
-<div class="notion-column">
+<div class="notion-column" style="min-width:0; width:100%; max-width:100%; overflow:hidden;">
 
 
 
@@ -169,7 +169,7 @@ TOPPING Professional Control Center(이하 ToppingPro)를 설치 및 실행 가�
 
 
 <a href="https://www.topping.pro/downloads/TOPPING_Professional_Control_Center_V1_09.dmg" target="_blank" style="display: block; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; padding: 16px; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
-  <div style="font-size: 14px; font-weight: 600; margin-bottom: 6px; color: #111827;">🔗 https://www.topping.pro/downloads/TOPPING_Professional_Control_Center_V1_09.dmg</div>
+  <div style="font-size: 14px; font-weight: 600; margin-bottom: 6px; color: #111827; word-break: break-all; overflow-wrap: anywhere;">🔗 https://www.topping.pro/downloads/TOPPING_Professional_Control_Center_V1_09.dmg</div>
   
   <div style="font-size: 11px; color: #9ca3af; word-break: break-all;">https://www.topping.pro/downloads/TOPPING_Professional_Control_Center_V1_09.dmg</div>
 </a>
@@ -197,9 +197,9 @@ ToppingPro가 정상적으로 표시되지 않는 경우.
 
 
 
-<div class="notion-columns" style="--notion-columns:2;">
+<div class="notion-columns" style="--notion-columns:2; display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:1.5rem; margin:1.5rem 0; align-items:start; width:100%; max-width:100%;">
 
-<div class="notion-column">
+<div class="notion-column" style="min-width:0; width:100%; max-width:100%; overflow:hidden;">
 
 
 
@@ -209,7 +209,7 @@ ToppingPro가 정상적으로 표시되지 않는 경우.
 
 </div>
 
-<div class="notion-column">
+<div class="notion-column" style="min-width:0; width:100%; max-width:100%; overflow:hidden;">
 
 
 

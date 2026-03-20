@@ -239,7 +239,7 @@ TOPPING Professional Control Center의 사용 가이드 다운로드 링크
 
 
 <a href="https://download.topping.pro/downloads/ToppingPro%20V1.6.pdf" target="_blank" style="display: block; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; padding: 16px; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
-  <div style="font-size: 14px; font-weight: 600; margin-bottom: 6px; color: #111827;">🔗 https://download.topping.pro/downloads/ToppingPro%20V1.6.pdf</div>
+  <div style="font-size: 14px; font-weight: 600; margin-bottom: 6px; color: #111827; word-break: break-all; overflow-wrap: anywhere;">🔗 https://download.topping.pro/downloads/ToppingPro%20V1.6.pdf</div>
   
   <div style="font-size: 11px; color: #9ca3af; word-break: break-all;">https://download.topping.pro/downloads/ToppingPro%20V1.6.pdf</div>
 </a>
