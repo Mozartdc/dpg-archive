@@ -1,8 +1,8 @@
 ---
-title: "롤랜드 LX5 디지털 피아노"
-date: 2026-03-26
+title: "롤랜드 LX6 디지털 피아노"
+date: 2026-03-28
 lastEdited: 2026-03-28
-notionPageId: "32f26dfb-cd79-802e-99ab-d54e07be295f"
+notionPageId: "33126dfb-cd79-809d-8490-e07fb718cb64"
 tags:
   - "롤랜드 디지털피아노"
   - "Roland 디지털피아노"
@@ -20,63 +20,65 @@ sidebar:
 
 
 
-<img src="/images/롤랜드-LX5-디지털-피아노-0.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+<img src="/images/롤랜드-LX6-디지털-피아노-0.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-LX-5는 2024년 3월 12일 Roland가 공식 발표한 모델로 LX700 시리즈를 개편한 LX 라인업의 엔트리 모델로 기존 LX705의 후속기임. 국내에서는 코스모스악기가 비슷한 시기에 정식 수입함.
+LX6는 2024년 3월 12일 Roland가 공식 발표한 모델로 LX700 시리즈를 개편한 LX모델로 기존 LX706의 후속기임. 국내에서는 코스모스악기가 비슷한 시기에 정식 수입함.
+
+LX6는 LX 시리즈의 중간 모델이지만, 단순히 LX5와 LX9 사이의 중간 모델이 아니라 LX9와 같은 건반 계열과 같은 음원 구조를 공유하는 상급기종임.
 
 
 
-<img src="/images/롤랜드-LX5-디지털-피아노-1.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+<img src="/images/롤랜드-LX6-디지털-피아노-1.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 
 ### 건반 / 사운드
 
-LX5는 HP704와 같은 PHA-50 하이브리드 건반을 사용함. 흰 건반 측면에 목재를 쓰고 내부는 플라스틱 구조로,  PHA-4 Standard보다 키 밸런스와 응답성이 더 안정적이고 타건 소음도 적은 편임. Escapement를 지원하며, 아주 천천히 누를 때 미세한 노치감도 구현함. Ebony Ivory Feel과 고정밀 센싱 구조도 적용됨.
+LX6는 Hybrid Grand Keyboard를 사용함. LX5의 PHA-50과는 다른 계열로, Roland의 플래시그십 키베드임. 긴 피벗 구조와 Escapement, Ebony Ivory Feel, High Precision Sensing으로 LX9과 같은 액션임.
 
-다만 같은 PHA-50이라도 음원차이, 섀시 구조, 스피커 공진, 센서 처리 방식이 달라 실제 연주감에는 차이가 있음. 특히 LX5에는 Dynamic Sensor Acceleration이 추가되어, 터치 변화와 반복 타건의 뉘앙스를 더 세밀하게 읽을 수 있어 입력 반응과 표현력에서 차이가 느껴짐. 또 바닥 타건음도 예전보다 줄었고, 전체적인 움직임도 조금 더 부드러움.
+PHA4에서 PHA-50, Hybrid Grand Keyboard 으로 올수록 건반이 가벼워지는데, 긴 피벗 구조 덕분에 건반 안쪽부터 바깥쪽까지 전체 영역에서 자연스럽고 편안한 연주감이 유지되고, 무게 배분과 벨로시티 곡선이 잘 맞춰져 있어 가볍다는 느낌보다는 자연스러운 컨트롤과 균형감이 느껴짐.
 
-사운드는 기존 HP704까지의 SuperNATURAL Piano Modeling이 아니라, Roland의 Piano Reality Modeling을 사용함. 이전 PureAcoustic나 SuperNATURAL보다 처리 속도와 계산 능력이 더 개선된 구조로, 전작보다 터치 변화에 따른 반응이 더 연속적이고 공명 표현도 더 자연스러움.
 
-Roland 특유의 음색 성향은 남아 있지만, 이전보다 훨씬 자연스럽고 정돈된 느낌임. 동시발음은 피아노 음색에 한해 사실상 무제한이고, 다른 음색은 최대 256음임.
 
-총 음색은 324개이며, Grand 4, Upright 5, Classical 5, <a href="http://e.piano/" target="_blank" style="color: inherit; text-decoration: underline;">E.Piano</a> 12, Organ 12, Other 286으로 구성됨.
+<img src="/images/롤랜드-LX6-디지털-피아노-2.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-특히 LX5는 이전 세대보다 Soundboard Type 체감 차이가 더 크고, Hammer Noise나 Cabinet Resonance 같은 항목도 개선되어 Piano Designer의 활용 가치가 커짐.
+전작에 비해 트리플 센서 데이터를 해석하는 알고리즘이 개선되어, 건반을 누른 뒤 음원 엔진으로 입력이 전달되는 시간이 줄어 체감상 입력 반응이 더 빠르고, 연타나 pp구현도 더 정교해짐.
+
+사운드는 Piano Reality Modeling을 사용함. 기존 PureAcoustic나 SuperNATURAL과는 다른 최신 모델링 엔진으로, 샘플 기반이 아니라 피아노 음색을 실시간으로 생성하는 구조임. 그래서 연주 강약에 따른 반응이 더 연속적이고, 이전 세대보다 음이 더 선명하고 정교함.
+
+
+
+<img src="/images/롤랜드-LX6-디지털-피아노-3.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+Piano Reality Modeling 엔진은 단순히 이름만 바뀐 것이 아니라 완전히 다시 설계된 모델임. 특히 예전 모델링 계열에서 자주 나오던 날카롭다거나 빈 듯한 불만을 개선하고, 중역대가 더 풍부하고 따뜻해짐. LX6의 중역 표현이 유난히 좋고, 전체적으로 더 풍성하고 자연스러움. 
+
+피아노 음색은 무제한 동시발음을 지원하고, 다른 음색은 최대 256음임. 실제 연주에서 폴리포니 부족으로 불편할 일은 없음.
 
 
 ### 디자인 및 조작부
 
-LX5는 LX 시리즈 중 가장 작은 캐비닛을 사용하는 모델이지만, 구조 자체는 HP 라인보다 상위임. 외형은 전통적인 콘솔형 스타일을 유지하면서도 크기를 줄인 편임.
+LX6는 LX5보다 큰 캐비닛과 더 큰 스피커 구성을 사용하고, 조작부는 Smart Panel 기반임. 터치 패널과 화면 중심 구조이고, 패널 표시를 꺼서 외형을 더 깔끔하게 유지할 수 있음. 재생과 녹음 관련 조작도 직관적이라 편이성과 조작성이 좋아짐.
 
 
 
-<img src="/images/롤랜드-LX5-디지털-피아노-2.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+<img src="/images/롤랜드-LX6-디지털-피아노-4.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-LX 라인업에서는 구 LX705와 달리 스피커 박스를 스탠드 쪽에서 분리하고, 스피커 배치와 그릴 구조를 다시 설계함. 그래서 캐비닛 크기 대비 음장감과 투사력이 더 좋아짐.
-
-조작부는 기존 물리 버튼 중심 구조 대신 Smart Panel 기반의 터치 조작으로 변경함. 외형이 훨씬 깔끔하고 현대적이지만, HP704처럼 버튼과 노브를 바로 만지며 조작하는 방식보다 직관성은 떨어짐. 디스플레이는 128 x 64 그래픽 LCD를 사용함.
+LX6는 5스피커와 5앰프 구조를 사용함. 단순히 스피커 수만 늘린 것이 아니라, 각 스피커를 더 독립적으로 제어할 수 있게 앰프까지 붙여, 음의 분리감과 선명도, 디테일을 높임. 실제로도 소리가 더 가깝고 직접적으로 들리며, 풍부해졌다는 평가가 많음.
 
 
 
-<img src="/images/롤랜드-LX5-디지털-피아노-3.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+<img src="/images/롤랜드-LX6-디지털-피아노-5.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-스피커는 Piano Reality Projection 구조를 사용하며, 4스피커 시스템임. 캐비닛 및 공간 스피커를 포함한 2웨이 구조로, 24W x 2와 21W x 2 출력을 사용함. 기존 LX705보다 전체 출력이 늘었고, 특히 트위터 쪽 표현력이 강화되어 고역대가 전작보다 맑고 디테일과 공명 표현이 더 잘 느껴짐.
+구성은 메인 캐비닛 스피커 25cm 1개, 근접 스피커 12cm와 8cm 조합 2개, 공간 스피커 2.5cm 돔 트위터 2개임. 출력은 32W 1개, 21W 2개, 21W 2개로 구성됨. 
 
-매장에서는 체감하기 어렵지만, 집처럼 조용한 공간에서는 보면대를 세웠을 때 고역 디테일과 공간감 차이가 느껴짐.
-
-
-
-<img src="/images/롤랜드-LX5-디지털-피아노-4.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
-
-LX5는 Bluetooth Audio와 MIDI를 지원하고, USB 메모리, USB MIDI Audio, 스테레오 오디오 입력, 라인 아웃, 2개의 헤드폰 단자를 제공함. 외부 기기 음악을 피아노 스피커로 무선 재생할 수 있고, Roland Piano App과 연동해 설정 변경, 악보 보기, 녹음, 메트로놈, 리듬 패턴 기능 등을 사용할 수 있음. (메트로놈엔 80개의 리듬 패턴이 제공됨)
+헤드폰 사용 시에는 Piano Reality Headphones Ambience를 지원하고, Bluetooth Audio와 MIDI도 지원함. Roland Piano App 연동, 메트로놈, 녹음 기능, Twin Piano, 리듬 패턴 80개 등 디지털 기능도 충분히 갖추고 있음. Bluetooth 연결 안정성도 예전 Roland보다 좋아졌다는 평가가 있음.
 
 
 ### 타 브랜드 비교 모델
 
-Kawai CA501, Yamaha CLP-845, Casio GP-510, Korg G1 Air
+Yamaha CLP-875, Kawai CA701, Casio GP-510 계열이 직접 비교 대상임.
 
 
-### <strong>Roland LX-5 상세 스펙</strong>
+### LX6 상세 스펙
 
 
 | <strong>항목</strong> | <strong>내용</strong> |
@@ -86,11 +88,11 @@ Kawai CA501, Yamaha CLP-845, Casio GP-510, Korg G1 Air
 | 음색 수 | 총 324음색 |
 | 음색 구성 | Grand 4, Upright 5, Classical 5, E.Piano 12, Organ 12, Other 286 |
 | 앰비언스 | Piano Reality Ambience, Studio, Lounge, Concert Hall, Cathedral, Depth 11단계 |
-| 건반 | PHA-50 Hybrid Keyboard, 88건 해머 액션, Escapement, Ebony Ivory Feel, High Precision Sensing |
+| 건반 | Hybrid Grand Keyboard, 88건 해머 액션, Escapement, Ebony Ivory Feel, High Precision Sensing |
 | 페달 | Damper Progressive Damper Action, 연속 감지 및 Damper Modeling 지원, Soft 연속 감지 및 기능 할당, Sostenuto 기능 할당 및 Muffler Pedal 기능 |
 | 스피커 시스템 | Piano Reality Projection |
-| 스피커 구성 | Cabinet Spatial Speakers 12cm 2.5cm 코액셜 x2, Near-field Speakers 8cm x2 |
-| 출력 | 24W x2, 21W x2 |
+| 스피커 구성 | Cabinet Speaker 25cm x1, Near-field Speakers 12cm 8cm 조합 x2, Spatial Speakers 2.5cm x2 |
+| 출력 | 32W x1, 21W x2, 21W x2 |
 | 헤드폰 | Piano Reality Headphones Ambience |
 | 터치 감도 | Key Touch 100단계, Fixed |
 | 해머 반응 | Off 포함 10단계 |
@@ -104,20 +106,20 @@ Kawai CA501, Yamaha CLP-845, Casio GP-510, Korg G1 Air
 | 오디오 재생 | WAV 44.1kHz 16bit, MP3 64부터 320kbps, USB 메모리 32GB 이하 |
 | MIDI 레코더 | 100곡, 3파트, 곡당 약 500KB |
 | 오디오 레코더 | 200곡, 곡당 약 80분 |
-| 블루투스 | Bluetooth 5.0, A2DP Audio, GATT MIDI over BLE, SBC, SCMS-T |
+| 블루투스 | Bluetooth 5.0, A2DP Audio, GATT MIDI over Bluetooth Low Energy, SBC, SCMS-T |
 | 호환 앱 | Roland Piano App |
 | 기능 | 메트로놈, 리듬 패턴 80개, Dual, Split, Twin Piano Individual Mode, Transpose, Speaker Auto Mute, Volume Limit, Panel Lock, Panel Off, Auto Off |
 | 디스플레이 | 그래픽 LCD 128 x 64 |
-| 연결 단자 | DC In, Audio In 3.5mm, Output L Mono R 6.3mm, USB Computer USB B MIDI Audio, USB Memory USB A, Headphone 3.5mm 1개, 6.3mm 1개 |
+| 연결 단자 | DC In, Audio In 3.5mm, Output L Mono R 6.3mm, USB Computer USB B MIDI Audio, USB Memory USB A, Headphone 3.5mm 1개 6.3mm 1개 |
 | 전원 | AC 어댑터 |
-| 소비 전력 | 최대 31W, 평균 연주 약 17W, 무음 대기 약 16W, 자동 전원 꺼짐 모드 0.2W |
+| 소비 전력 | 최대 28W, 평균 연주 약 19W, 무음 대기 약 18W, 자동 전원 꺼짐 모드 0.2W |
 | 캐비닛 | 악보 받침대 악보 홀더 포함, 슬라이드 건반 덮개, Keyboard Lid Switch |
 | 구성품 | 매뉴얼, Roland Piano Masterpieces, 안전 안내문, 조립 설명서, AC 어댑터, 전원 케이블, 헤드폰 훅 |
-| 크기 | 1383 x 468 x 1039mm |
-| 무게 | 74.0kg, 유광 블랙 75.5kg |
+| 크기 | 1383 x 493 x 1118mm |
+| 무게 | 87.0kg, 유광 블랙 88.5kg |
 
 
-### <strong>Roland Piano App과 LX-5</strong>
+### Roland Piano App과 LX6
 
 
 | <strong>항목</strong> | <strong>내용</strong> |
@@ -143,7 +145,7 @@ Kawai CA501, Yamaha CLP-845, Casio GP-510, Korg G1 Air
     <div style="font-size: 11px; color: #9ca3af; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">https://play.google.com/store/apps/details?id=jp.co.roland.RolandPianoApp&pcampaignid=web_share</div>
   </div>
   <div style="width: 140px; min-width: 140px; background: #f3f4f6; overflow: hidden;">
-    <img src="/images/롤랜드-LX5-디지털-피아노-5.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+    <img src="/images/롤랜드-LX6-디지털-피아노-6.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
   </div>
 </a>
 
@@ -157,7 +159,7 @@ Kawai CA501, Yamaha CLP-845, Casio GP-510, Korg G1 Air
     <div style="font-size: 11px; color: #9ca3af; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">https://apps.apple.com/kr/app/roland-piano-app/id1610462043</div>
   </div>
   <div style="width: 140px; min-width: 140px; background: #f3f4f6; overflow: hidden;">
-    <img src="/images/롤랜드-LX5-디지털-피아노-6.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+    <img src="/images/롤랜드-LX6-디지털-피아노-7.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
   </div>
 </a>
 
@@ -169,7 +171,7 @@ Kawai CA501, Yamaha CLP-845, Casio GP-510, Korg G1 Air
   <div>이 글은 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a>의 글을 복사한 것입니다. 관련 질문이나 문의는 우리 갤러리를 방문해주세요.</div>
   <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;">
 
-<img src="/images/롤랜드-LX5-디지털-피아노-7.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+<img src="/images/롤랜드-LX6-디지털-피아노-8.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 </div>
 </div>
