@@ -194,7 +194,7 @@ Android 기기에서는 기종이나 OS 버전에 따라 Bluetooth 연결 안정
     <div style="font-size: 11px; color: #9ca3af; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">https://apps.apple.com/kr/app/roland-piano-app/id1610462043</div>
   </div>
   <div style="width: 140px; min-width: 140px; background: #f3f4f6; overflow: hidden;">
-    <img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0a/2d/54/0a2d54e7-2d20-e228-23c7-1b3434478e98/Placeholder.mill/1200x630wa.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+    <img src="/images/롤랜드-FP-90X-디지털-피아노-8.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
   </div>
 </a>
 
@@ -208,7 +208,7 @@ Android 기기에서는 기종이나 OS 버전에 따라 Bluetooth 연결 안정
     <div style="font-size: 11px; color: #9ca3af; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">https://play.google.com/store/apps/details?id=jp.co.roland.RolandPianoApp&pcampaignid=web_share</div>
   </div>
   <div style="width: 140px; min-width: 140px; background: #f3f4f6; overflow: hidden;">
-    <img src="/images/롤랜드-FP-90X-디지털-피아노-8.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+    <img src="/images/롤랜드-FP-90X-디지털-피아노-9.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
   </div>
 </a>
 
@@ -220,7 +220,7 @@ Android 기기에서는 기종이나 OS 버전에 따라 Bluetooth 연결 안정
   <div>이 글은 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a>의 글을 복사한 것입니다. 관련 질문이나 문의는 우리 갤러리를 방문해주세요.</div>
   <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;">
 
-<img src="/images/롤랜드-FP-90X-디지털-피아노-9.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+<img src="/images/롤랜드-FP-90X-디지털-피아노-10.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 </div>
 </div>
