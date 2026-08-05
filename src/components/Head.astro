@@ -46,6 +46,13 @@ const structuredData = Astro.url.pathname === '/'
 {!hasMeta('twitter:description') && <meta name="twitter:description" content={description} />}
 {!hasMeta('twitter:image') && <meta name="twitter:image" content={imageUrl} />}
 <script type="application/ld+json" set:html={JSON.stringify(structuredData).replace(/</g, '\\u003c')}></script>
+<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-LHDK3ZNNYX"></script>
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LHDK3ZNNYX');
+</script>
 <script
   is:inline
   async
