@@ -119,6 +119,11 @@ a[rel="next"] .label {
   font-weight: 600 !important;
 }
 
+/* 음악 이론의 독립 도구 링크를 최상위 카테고리와 같은 굵기로 표시 */
+#starlight__sidebar a[href$="/chord-player/"] {
+  font-weight: 600 !important;
+}
+
 #starlight__sidebar ul,
 #starlight__sidebar li {
   border-left: none !important;

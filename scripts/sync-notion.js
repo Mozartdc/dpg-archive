@@ -13,6 +13,10 @@ const DATABASE_ID = process.env.NOTION_DATABASE_ID;
 const API_KEY = process.env.NOTION_API_KEY;
 const DOCS_PATH = path.join(__dirname, '..', 'src', 'content', 'docs');
 const IMAGES_PATH = path.join(__dirname, '..', 'public', 'images');
+const EXCLUDED_NOTION_PAGE_IDS = new Set([
+  // 사이트에서 제거한 가와이 라인업 인덱스 페이지
+  '35e26dfb-cd79-80dc-b0ad-c09ee5223f7d',
+]);
 
 
 
@@ -898,6 +902,8 @@ async function syncNotion() {
 
     for (const page of allPages) {
       try {
+        if (EXCLUDED_NOTION_PAGE_IDS.has(page.id)) continue;
+
         const title       = page.properties['제목']?.title?.map(t => t.plain_text).join("") || 'Untitled';
         const category    = page.properties['카테고리']?.select?.name;
         const status      = page.properties['상태']?.status?.name;
