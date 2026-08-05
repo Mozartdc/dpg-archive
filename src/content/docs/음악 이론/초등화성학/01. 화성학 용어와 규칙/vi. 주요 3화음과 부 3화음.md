@@ -58,7 +58,7 @@ C장조를 기준으로 으뜸음 C(도)를 기준으로 거리를 재보면,
   <div>이 글은 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a>의 글을 복사한 것입니다. 관련 질문이나 문의는 우리 갤러리를 방문해주세요.</div>
   <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;">
 
-<img src="/images/vi.-주요-3화음과-부-3화음-1.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+<img src="" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 </div>
 </div>
