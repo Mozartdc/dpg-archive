@@ -1,0 +1,88 @@
+---
+import DefaultPagination from '@astrojs/starlight/components/Pagination.astro';
+
+const { entry } = Astro.locals.starlightRoute;
+const showYamahaP225Link = entry.data.title === '야마하 P-225 디지털 피아노';
+---
+
+{
+	showYamahaP225Link && (
+		<section class="affiliate-card" aria-labelledby="yamaha-p225-affiliate-title">
+			<p class="affiliate-card__eyebrow">관련 상품</p>
+			<h2 id="yamaha-p225-affiliate-title">야마하 P-225 판매 페이지</h2>
+			<p class="affiliate-card__description">
+				가격과 구성품, 판매자 정보는 구매 전에 상품 페이지에서 확인하면 됨.
+			</p>
+			<a
+				class="affiliate-card__link"
+				href="https://link.coupang.com/a/fWzlTuhiDY"
+				target="_blank"
+				rel="sponsored noopener noreferrer"
+			>
+				쿠팡에서 P-225 확인하기
+			</a>
+			<p class="affiliate-card__disclosure">
+				이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
+			</p>
+		</section>
+	)
+}
+
+<DefaultPagination />
+
+<style>
+	.affiliate-card {
+		margin-block: 2.5rem 1.5rem;
+		padding: 1.25rem;
+		border: 1px solid var(--sl-color-gray-5);
+		border-radius: 0.75rem;
+		background: color-mix(in srgb, var(--sl-color-bg-nav) 88%, var(--sl-color-accent-low));
+	}
+
+	.affiliate-card__eyebrow {
+		margin: 0 0 0.35rem;
+		color: var(--sl-color-gray-3);
+		font-size: var(--sl-text-xs);
+		font-weight: 700;
+		letter-spacing: 0.06em;
+	}
+
+	.affiliate-card h2 {
+		margin: 0;
+		font-size: var(--sl-text-xl);
+	}
+
+	.affiliate-card__description {
+		margin: 0.55rem 0 1rem;
+		color: var(--sl-color-gray-2);
+		font-size: var(--sl-text-sm);
+	}
+
+	.affiliate-card__link {
+		display: inline-flex;
+		align-items: center;
+		min-height: 2.6rem;
+		padding: 0.6rem 0.9rem;
+		border-radius: 0.45rem;
+		background: var(--sl-color-accent-high);
+		color: var(--sl-color-black);
+		font-weight: 700;
+		text-decoration: none;
+	}
+
+	.affiliate-card__link:hover {
+		filter: brightness(0.94);
+	}
+
+	.affiliate-card__link:focus-visible {
+		outline: 3px solid var(--sl-color-text-accent);
+		outline-offset: 3px;
+	}
+
+	.affiliate-card__disclosure {
+		margin: 0.8rem 0 0;
+		color: var(--sl-color-gray-3);
+		font-size: var(--sl-text-xs);
+		line-height: 1.55;
+	}
+</style>

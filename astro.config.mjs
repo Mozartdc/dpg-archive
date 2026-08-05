@@ -4,12 +4,16 @@ import react from '@astrojs/react';
 import { starlightKatex } from 'starlight-katex';
 
 export default defineConfig({
-  site: 'https://dpg-archive.vercel.app',
+  site: 'https://www.dpinside.org',
   integrations: [
     react(),
     starlight({
       title: '디지털 피아노 갤러리 아카이브',
       plugins: [starlightKatex()],
+      components: {
+        Head: './src/components/Head.astro',
+        Pagination: './src/components/Pagination.astro',
+      },
       customCss: [
         './src/styles/global.css',
       ],
