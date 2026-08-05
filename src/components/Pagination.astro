@@ -28,7 +28,56 @@ const showYamahaP225Link = entry.data.title === '야마하 P-225 디지털 피�
 	)
 }
 
+<section class="affiliate-banner" aria-labelledby="coupang-accessories-title">
+	<p class="affiliate-banner__eyebrow">추천 액세서리</p>
+	<p id="coupang-accessories-title" class="affiliate-banner__title">디지털피아노 관련 액세서리</p>
+	<coupang-banner class="affiliate-banner__viewport">
+		<iframe
+			title="쿠팡 디지털피아노 액세서리 상품"
+			src="https://ads-partners.coupang.com/widgets.html?id=1014436&template=carousel&trackingCode=AF2017234&subId=&width=680&height=140&tsource="
+			width="680"
+			height="140"
+			frameborder="0"
+			scrolling="no"
+			referrerpolicy="unsafe-url"
+			browsingtopics
+		></iframe>
+	</coupang-banner>
+	<p class="affiliate-banner__disclosure">
+		이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
+	</p>
+</section>
+
 <DefaultPagination />
+
+<script>
+	class CoupangBanner extends HTMLElement {
+		resizeObserver?: ResizeObserver;
+
+		connectedCallback() {
+			const iframe = this.querySelector('iframe');
+			if (!iframe) return;
+
+			const resize = () => {
+				const scale = Math.min(1, this.clientWidth / 680);
+				iframe.style.transform = `scale(${scale})`;
+				this.style.height = `${140 * scale}px`;
+			};
+
+			this.resizeObserver = new ResizeObserver(resize);
+			this.resizeObserver.observe(this);
+			resize();
+		}
+
+		disconnectedCallback() {
+			this.resizeObserver?.disconnect();
+		}
+	}
+
+	if (!customElements.get('coupang-banner')) {
+		customElements.define('coupang-banner', CoupangBanner);
+	}
+</script>
 
 <style>
 	.affiliate-card {
@@ -80,6 +129,49 @@ const showYamahaP225Link = entry.data.title === '야마하 P-225 디지털 피�
 	}
 
 	.affiliate-card__disclosure {
+		margin: 0.8rem 0 0;
+		color: var(--sl-color-gray-3);
+		font-size: var(--sl-text-xs);
+		line-height: 1.55;
+	}
+
+	.affiliate-banner {
+		margin-block: 2.5rem 1.5rem;
+		padding-block: 1rem;
+		border-block: 1px solid var(--sl-color-gray-5);
+	}
+
+	.affiliate-banner__eyebrow {
+		margin: 0 0 0.25rem;
+		color: var(--sl-color-gray-3);
+		font-size: var(--sl-text-xs);
+		font-weight: 700;
+		letter-spacing: 0.06em;
+	}
+
+	.affiliate-banner__title {
+		margin: 0 0 0.8rem;
+		color: var(--sl-color-text);
+		font-size: var(--sl-text-base);
+		font-weight: 700;
+	}
+
+	.affiliate-banner__viewport {
+		display: block;
+		width: 100%;
+		max-width: 680px;
+		height: 140px;
+		margin-inline: auto;
+		overflow: hidden;
+	}
+
+	.affiliate-banner__viewport iframe {
+		display: block;
+		border: 0;
+		transform-origin: top left;
+	}
+
+	.affiliate-banner__disclosure {
 		margin: 0.8rem 0 0;
 		color: var(--sl-color-gray-3);
 		font-size: var(--sl-text-xs);
