@@ -9,6 +9,12 @@ export default defineConfig({
     react(),
     starlight({
       title: '디지털 피아노 갤러리 아카이브',
+      locales: {
+        root: {
+          label: '한국어',
+          lang: 'ko-KR',
+        },
+      },
       plugins: [starlightKatex()],
       components: {
         Head: './src/components/Head.astro',
@@ -42,6 +48,10 @@ export default defineConfig({
           label: '음악 이야기',
           collapsed: true,
           autogenerate: { directory: '음악 이야기' }
+        },
+        {
+          label: '개인정보 및 추적 기술 안내',
+          link: '/privacy/'
         },
       ],
     }),

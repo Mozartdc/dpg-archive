@@ -17,6 +17,12 @@ const EXCLUDED_NOTION_PAGE_IDS = new Set([
   // 사이트에서 제거한 가와이 라인업 인덱스 페이지
   '35e26dfb-cd79-80dc-b0ad-c09ee5223f7d',
 ]);
+const EXCLUDED_NOTION_PAGE_TITLES = new Set([
+  '내 몸 사용 설명서',
+  '내몸 사용 설명서',
+  'ToppingPro V1.6_페이지_15_이미지_0003',
+  'ToppingPro V1.6_페이지_15_이미지_0003',
+]);
 
 
 
@@ -905,6 +911,8 @@ async function syncNotion() {
         if (EXCLUDED_NOTION_PAGE_IDS.has(page.id)) continue;
 
         const title       = page.properties['제목']?.title?.map(t => t.plain_text).join("") || 'Untitled';
+        if (EXCLUDED_NOTION_PAGE_TITLES.has(title.normalize('NFC'))) continue;
+
         const category    = page.properties['카테고리']?.select?.name;
         const status      = page.properties['상태']?.status?.name;
         const createdTime = page.created_time;

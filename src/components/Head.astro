@@ -1,8 +1,51 @@
 ---
 import DefaultHead from '@astrojs/starlight/components/Head.astro';
+
+const { entry, head } = Astro.locals.starlightRoute;
+const title = entry.data.title;
+const fallbackDescription = `${title}의 핵심 내용과 관련 자료를 정리한 디지털 피아노 갤러리 아카이브 글입니다.`;
+const description = entry.data.description || fallbackDescription;
+const canonicalUrl = head.find(({ tag, attrs }) => tag === 'link' && attrs?.rel === 'canonical')?.attrs?.href;
+const imageUrl = new URL('/images/logo2.png', Astro.site || Astro.url).href;
+const hasMeta = (name: string) => head.some(({ tag, attrs }) => tag === 'meta' && attrs?.name === name);
+const hasProperty = (property: string) => head.some(({ tag, attrs }) => tag === 'meta' && attrs?.property === property);
+const structuredData = Astro.url.pathname === '/'
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: '디지털 피아노 갤러리 아카이브',
+      url: canonicalUrl,
+      description,
+      inLanguage: 'ko-KR',
+    }
+  : {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: title,
+      description,
+      url: canonicalUrl,
+      primaryImageOfPage: {
+        '@type': 'ImageObject',
+        url: imageUrl,
+      },
+      inLanguage: 'ko-KR',
+      isPartOf: {
+        '@type': 'WebSite',
+        name: '디지털 피아노 갤러리 아카이브',
+        url: 'https://www.dpinside.org/',
+      },
+    };
 ---
 
 <DefaultHead {...Astro.props} />
+<meta name="google-site-verification" content="pMPsucBczv5-Wk1R3BOOhkDRCToEFYAeyOpw7pr_spE" />
+{!hasMeta('description') && <meta name="description" content={description} />}
+{!hasProperty('og:description') && <meta property="og:description" content={description} />}
+{!hasProperty('og:image') && <meta property="og:image" content={imageUrl} />}
+{!hasMeta('twitter:title') && <meta name="twitter:title" content={title} />}
+{!hasMeta('twitter:description') && <meta name="twitter:description" content={description} />}
+{!hasMeta('twitter:image') && <meta name="twitter:image" content={imageUrl} />}
+<script type="application/ld+json" set:html={JSON.stringify(structuredData).replace(/</g, '\\u003c')}></script>
 <script
   is:inline
   async
