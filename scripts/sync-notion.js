@@ -401,6 +401,12 @@ async function fetchBookmarkMeta(url) {
 // 7. RichText → HTML (✅ 수정 1: CSS 클래스 사용)
 // ═══════════════════════════════════════════════════════════════
 
+function normalizeMarkdownMathDelimiters(text) {
+  return text
+    .replace(/\\\[([\s\S]*?)\\\]/g, (_, expression) => `$$${expression}$$`)
+    .replace(/\\\(([\s\S]*?)\\\)/g, (_, expression) => `$${expression}$`);
+}
+
 function richTextToHtml(richTextArray) {
   if (!richTextArray || richTextArray.length === 0) return "";
 
@@ -410,7 +416,7 @@ function richTextToHtml(richTextArray) {
       return `$${t.equation.expression}$`;
     }
 
-    let txt = t.plain_text || '';
+    let txt = normalizeMarkdownMathDelimiters(t.plain_text || '');
 
 
 
