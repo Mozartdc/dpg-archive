@@ -187,16 +187,9 @@ Android 기기에서는 기종이나 OS 버전에 따라 Bluetooth 연결이 원
   </div>
 </a>
 
----
 
 
+<img src="/images/롤랜드-FP-30X-디지털-피아노-6.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-<div class="notion-callout-gray" style="padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #e5e7eb; line-height: 1.6;">
-  <div>이 글은 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a>의 글을 복사한 것입니다. 관련 질문이나 문의는 우리 갤러리를 방문해주세요.</div>
-  <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;">
-
-<img src="" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
-
-</div>
-</div>
+이 글은 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a> 의 글을 복사한 것입니다. 관련 질문이나 문의는 우리 갤러리를 방문해주세요.
 
