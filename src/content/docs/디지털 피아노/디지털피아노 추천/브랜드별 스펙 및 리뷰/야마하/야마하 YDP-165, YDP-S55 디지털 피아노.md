@@ -169,9 +169,3 @@ YDP-165 YDP-S55 차이점
   </div>
 </a>
 
-
-
-<img src="/images/야마하-YDP-165,-YDP-S55-디지털-피아노-10.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
-
-이 글은 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a> 의 글을 복사한 것입니다. 관련 질문이나 문의는 우리 갤러리를 방문해주세요.
-
