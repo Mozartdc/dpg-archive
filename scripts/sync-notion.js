@@ -1078,6 +1078,26 @@ function getStoredNotionPageId(contents) {
   return legacyMarkerMatch ? legacyMarkerMatch[1] : null;
 }
 
+function preserveMt21cSourceLink(existingContents, generatedMarkdown, categoryFolder) {
+  if (!categoryFolder.normalize('NFC').includes('21세기 음악이론 한글판')) {
+    return generatedMarkdown;
+  }
+
+  const sourceUrl = existingContents.match(
+    /https:\/\/musictheory\.pugetsound\.edu\/mt21c\/[A-Za-z0-9_-]+\.html/,
+  )?.[0];
+  if (!sourceUrl || generatedMarkdown.includes(sourceUrl)) return generatedMarkdown;
+
+  const section = getStoredTitle(existingContents)?.match(/^(\d+(?:\.\d+)+)/)?.[1] || '';
+  const sourceCard = `<a href="${sourceUrl}" target="_blank" class="mt21c-source-link">\n  <strong>🔗 원문${section ? ` ${section}` : ''}</strong>\n  <span>${sourceUrl}</span>\n</a>`;
+  const trailingDivider = /\n---\s*$/;
+
+  if (trailingDivider.test(generatedMarkdown)) {
+    return generatedMarkdown.replace(trailingDivider, `\n\n${sourceCard}\n\n---\n`);
+  }
+  return `${generatedMarkdown.trimEnd()}\n\n${sourceCard}\n`;
+}
+
 function normalizeLegacyStem(name) {
   return name
     .normalize('NFC')
@@ -1247,6 +1267,8 @@ async function syncNotion() {
           fs.unlinkSync(alternateFilePath);
         }
 
+        const existingContents = readFileSafe(filePath) || readFileSafe(alternateFilePath);
+        markdown = preserveMt21cSourceLink(existingContents, markdown, categoryFolder);
         fs.writeFileSync(filePath, frontmatter + imports + markdown, 'utf-8');
 
       } catch (e) {
