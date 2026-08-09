@@ -15,7 +15,7 @@ tags:
   - "가성비 디지털피아노"
   - "입문용 디지털피아노"
 sidebar:
-  order: 9999
+  order: 5
 ---
 
 
@@ -33,7 +33,7 @@ FP-90X는 PHA-50 하이브리드 액션을 사용함. 목재 코어와 플라스
 
 <img src="/images/롤랜드-FP-90X-디지털-피아노-1.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-PHA-4에서 업그레이드 하는 경우 건반이 더 가벼워 진 느낌이 들겠지만, 균형감과 피벗 길이, 응답성은 더 뛰어나 전체적인 타건감이 확실히 상위 건반이라는 느낌임. 
+PHA-4에서 업그레이드 하는 경우 건반이 더 가벼워 진 느낌이 들겠지만, 균형감과 피벗 길이, 응답성은 더 뛰어나 전체적인 타건감이 확실히 상위 건반이라는 느낌임.
 
 PHA-4보다 건반이 가볍고, 균형감과 피벗 길이, 응답성은 더 뛰어나 전체적으로 균형잡힌 타건감임. 표면은 인조 상아와 흑단 질감을 적용해 시각적으로나 촉각으로나 모두 상급기다운 마감임.
 
@@ -78,7 +78,7 @@ FP-90X는 4스피커 구조를 사용함. 메인 스피커는 25W x 2, 트위터
 
 <img src="/images/롤랜드-FP-90X-디지털-피아노-6.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-보면대는 기본 포함이며 전용 스탠드(KSC-90)를 별도로 구매할 수 있음. 전용 스탠드와 함께 사용할 경우 3페달 유닛(KPD-90)을 장착해 Damper, Sostenuto, Soft 페달을 모두 사용할 수 있음. 바닥형 3페달 유닛인 RPU-3도 사용 가능함. 기본 구성은 DP-10 댐퍼 페달이며 하프 페달과 연속 페달을 지원함. 
+보면대는 기본 포함이며 전용 스탠드(KSC-90)를 별도로 구매할 수 있음. 전용 스탠드와 함께 사용할 경우 3페달 유닛(KPD-90)을 장착해 Damper, Sostenuto, Soft 페달을 모두 사용할 수 있음. 바닥형 3페달 유닛인 RPU-3도 사용 가능함. 기본 구성은 DP-10 댐퍼 페달이며 하프 페달과 연속 페달을 지원함.
 
 
 
@@ -211,4 +211,3 @@ Android 기기에서는 기종이나 OS 버전에 따라 Bluetooth 연결 안정
     <img src="/images/롤랜드-FP-90X-디지털-피아노-9.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
   </div>
 </a>
-

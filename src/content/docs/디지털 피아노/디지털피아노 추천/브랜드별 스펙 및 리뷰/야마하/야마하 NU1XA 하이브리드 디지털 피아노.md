@@ -4,7 +4,7 @@ date: 2026-05-07
 lastEdited: 2026-05-07
 notionPageId: "35926dfb-cd79-8068-ad91-e10968ea33d2"
 sidebar:
-  order: 9999
+  order: 9
 ---
 
 
@@ -33,7 +33,7 @@ NU1X와 가장 크게 달라진 부분은 센서임. NU1XA에는 새로 개발�
 
 <img src="/images/야마하-NU1XA-하이브리드-디지털-피아노-3.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-진짜 업라이트 액션인데 실제 건반과 해머 구조는 그대로 두고, 센서가 읽은 타건 속도를 소리 크기와 톤 변화로 바꾸는 반응값을 조절하는 방식으로 Hard, Medium, Soft 같은 터치 감도를 구현함. 즉, 건반 터치 무게 조절이 아니라, 타건 속도 반응 조절임. 
+진짜 업라이트 액션인데 실제 건반과 해머 구조는 그대로 두고, 센서가 읽은 타건 속도를 소리 크기와 톤 변화로 바꾸는 반응값을 조절하는 방식으로 Hard, Medium, Soft 같은 터치 감도를 구현함. 즉, 건반 터치 무게 조절이 아니라, 타건 속도 반응 조절임.
 
 
 
@@ -44,9 +44,9 @@ NU1XA는 댐퍼, 소스테누토, 소프트 3페달이고, 하프페달을 지�
 
 이 부분도 전작와 차이가 큰데, NU1XA에 GrandTouch 페달을 넣어 업라이트 액션 기반 모델이지만, 페달 감각은 그랜드 피아노 쪽 반응을 목표로 설계함.
 
-사운드는 Yamaha CFX와 Bösendorfer Imperial 두 피아노를 중심으로 구성됨. NU1XA는 새 CFX 샘플링과 새 Bösendorfer Imperial 샘플링을 넣었고, 두 음색 모두 바이노럴 샘플링을 지원함. 최대 동시발음은 256음이고, VRM과 Grand Expression Modeling도 들어감. Key-off Samples, Smooth Release, IAC, Stereophonic Optimizer도 지원함. 음색 수는 28개임. 
+사운드는 Yamaha CFX와 Bösendorfer Imperial 두 피아노를 중심으로 구성됨. NU1XA는 새 CFX 샘플링과 새 Bösendorfer Imperial 샘플링을 넣었고, 두 음색 모두 바이노럴 샘플링을 지원함. 최대 동시발음은 256음이고, VRM과 Grand Expression Modeling도 들어감. Key-off Samples, Smooth Release, IAC, Stereophonic Optimizer도 지원함. 음색 수는 28개임.
 
-NU1XA는 업라이트형 캐비닛이고, 크기는 1501 x 462 x 1024mm임. 무게는 마감에 따라 108kg ~111kg로 차이가 있음. 
+NU1XA는 업라이트형 캐비닛이고, 크기는 1501 x 462 x 1024mm임. 무게는 마감에 따라 108kg ~111kg로 차이가 있음.
 
 스피커는 16cm + 2.5cm 조합을 좌우로 넣고, 앰프는 40W + 45W x 2 구성임. 전작과의 출력차이는 거의 없지만, 새로 설계한 사운드 시스템이 들어가 전반적으로 업그레이드 모델임.
 
@@ -199,4 +199,3 @@ NU1XA는 타사 직접 비교 모델이 없음.
     <img src="/images/야마하-NU1XA-하이브리드-디지털-피아노-8.png" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
   </div>
 </a>
-

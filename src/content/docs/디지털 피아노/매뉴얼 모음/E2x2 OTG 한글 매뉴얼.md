@@ -6,7 +6,7 @@ notionPageId: "32626dfb-cd79-80ff-8543-fc85b6d6cfab"
 tags:
   - "토핑 매뉴얼"
 sidebar:
-  order: 9999
+  order: 2
 ---
 
 
@@ -155,7 +155,7 @@ E2x2 OTG 본체 1개, Type-A to Type-C 케이블 1개, Type-C to Type-C 케이�
 
 <img src="/images/E2x2-OTG-한글-매뉴얼-3.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-1. LINE OUT 
+1. LINE OUT
   6.35mm TRS 밸런스 출력 잭임. 액티브 스피커나 앰프를 연결함.
 
 
@@ -241,7 +241,7 @@ TOPPING Professional Control Center의 사용 가이드 다운로드 링크
 
 <a href="https://download.topping.pro/downloads/ToppingPro%20V1.6.pdf" target="_blank" style="display: block; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; padding: 16px; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
   <div style="font-size: 14px; font-weight: 600; margin-bottom: 6px; color: #111827; word-break: break-all; overflow-wrap: anywhere;">🔗 https://download.topping.pro/downloads/ToppingPro%20V1.6.pdf</div>
-  
+
   <div style="font-size: 11px; color: #9ca3af; word-break: break-all;">https://download.topping.pro/downloads/ToppingPro%20V1.6.pdf</div>
 </a>
 
@@ -533,4 +533,3 @@ SNR @A-wt: 144dB
 커넥터 형식: Optical OUT
 
 *모든 수치는 TOPPING 연구실 측정값임.
-

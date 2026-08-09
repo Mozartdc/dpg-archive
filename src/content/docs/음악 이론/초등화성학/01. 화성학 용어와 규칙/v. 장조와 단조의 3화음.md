@@ -8,7 +8,7 @@ tags:
   - "음악이론"
   - "피아노"
 sidebar:
-  order: 9999
+  order: 6
 ---
 
 
@@ -27,10 +27,10 @@ sidebar:
 
 <div class="notion-embed notion-embed--musescore" style="--musescore-height:394px;"><iframe src="https://musescore.com/user/101405068/scores/31445273/s/Iwy6-E/embed" style="width:100%; height:394px !important; border:none; display:block;" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe></div>
 
-장3화음 (Major)은 대문자 
+장3화음 (Major)은 대문자
 단3화음 (Minor)은 소문자
-증3화음 (Augmented)은 대문자 옆에 + 
-감3화음 (Diminished)은 소문자 옆에 ° 
+증3화음 (Augmented)은 대문자 옆에 +
+감3화음 (Diminished)은 소문자 옆에 °
 
 
 | 기호<br>(장/단/증/감) | 한글 | 영문 |
@@ -43,8 +43,7 @@ sidebar:
 | <strong>vi / VI</strong> | 버금가온화음 | Submediant Triad |
 | <strong>vii° / vii°</strong> | 이끔화음 | Leading-tone Triad |
 
-장은 Major니까 대문자, 
-단은 minor니까 소문자, 
-증(Aug)은 더해져서 +, 
+장은 Major니까 대문자,
+단은 minor니까 소문자,
+증(Aug)은 더해져서 +,
 감(Dim)은 비어서(0) °라고 외우면 됨.
-

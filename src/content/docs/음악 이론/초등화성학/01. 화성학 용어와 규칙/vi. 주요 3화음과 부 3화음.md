@@ -8,7 +8,7 @@ tags:
   - "음악이론"
   - "피아노"
 sidebar:
-  order: 9999
+  order: 7
 ---
 
 
@@ -29,7 +29,7 @@ sidebar:
 | 주요 3화음 | I, IV, V | <strong>근음이 으뜸음과 ‘완전 5도’ 관계</strong> |
 | 부 3화음 | ii, iii, vi, vii° | 그 외 |
 
-C장조를 기준으로 으뜸음 C(도)를 기준으로 거리를 재보면, 
+C장조를 기준으로 으뜸음 C(도)를 기준으로 거리를 재보면,
 
 - <strong>V (</strong>근음 <strong>G): </strong>C에서 <strong>완전 5도 위</strong>
 
@@ -44,9 +44,8 @@ C장조를 기준으로 으뜸음 C(도)를 기준으로 거리를 재보면,
 <div class="notion-callout-green" style="padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #e5e7eb; line-height: 1.6;">
   <div style="display: flex; gap: 12px; align-items: baseline;">
     <div style="font-size: 18px; line-height: 1; flex-shrink: 0; transform: translateY(2px);">ℹ️</div>
-    <div style="flex: 1; min-width: 0; line-height: 1.6;">subdominent(버금딸림음)을 <strong>으뜸음에서 4도 위</strong>라고 외우면 나중에 심화단계에서 헷갈림. 여기서 sub는 서브 메뉴의 서브가 아니라, <strong>Sub</strong>way 할 때 쓰는 아래(Under)라는 뜻임. 
+    <div style="flex: 1; min-width: 0; line-height: 1.6;">subdominent(버금딸림음)을 <strong>으뜸음에서 4도 위</strong>라고 외우면 나중에 심화단계에서 헷갈림. 여기서 sub는 서브 메뉴의 서브가 아니라, <strong>Sub</strong>way 할 때 쓰는 아래(Under)라는 뜻임.
 <strong>버금딸림음은 으뜸음에서 '아래로 5칸' 내려간 것임.
 </strong>그래서 F(파)가 되는데, 악보에 그리면 너무 낮아지니까 보기 편하라고 한 옥타브 올려서 <strong>C 옆에(4도 위)</strong> 그린 것임. <strong>버금딸림음은 으뜸은의 4도위, dominent의 sub가 아님.</strong></div>
   </div>
 </div>
-

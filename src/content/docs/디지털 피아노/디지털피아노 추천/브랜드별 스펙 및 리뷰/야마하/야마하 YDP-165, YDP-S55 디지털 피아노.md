@@ -4,7 +4,7 @@ date: 2026-04-14
 lastEdited: 2026-04-14
 notionPageId: "34226dfb-cd79-806a-96a8-c90ac0c0b366"
 sidebar:
-  order: 9999
+  order: 6
 ---
 
 
@@ -20,7 +20,7 @@ YDP-165와 YDP-S55는 2022년 4월에 나온 Yamaha Arius 시리즈 모델로, �
 
 ### 건반 사운드
 
-YDP-165와 YDP-S55는 GH3 건반을 사용함. 88건 풀웨이티드 구조에 synthetic ebony ivory keytops가 들어가고, 터치 감도는 Hard, Medium, Soft, Fixed 4단계임. GH3는 Yamaha 중급형 이상에서 오래 써 온 액션이라 기본기가 꽤 탄탄한 편이고, 같은 가격대에서는 비교적 사실적인 건반으로 평가받는 편임. 
+YDP-165와 YDP-S55는 GH3 건반을 사용함. 88건 풀웨이티드 구조에 synthetic ebony ivory keytops가 들어가고, 터치 감도는 Hard, Medium, Soft, Fixed 4단계임. GH3는 Yamaha 중급형 이상에서 오래 써 온 액션이라 기본기가 꽤 탄탄한 편이고, 같은 가격대에서는 비교적 사실적인 건반으로 평가받는 편임.
 
 트리플 센서 구조라 빠른 반복 타건에서 GHS보다 확실히 유리하고, 건반 표면 질감도 손에 땀이 나는 사람에게는 꽤 도움이 됨. 다만 전반적인 무게감은 다소 무거운 편이라, 가볍고 빠른 터치를 좋아하는 사람에게는 답답하게 느껴질 수 있음. 그래도 YDP-145와 S35의 GHS와 비교하면 확실히 한 단계 위 액션이라고 체감 할 수 있음.
 
@@ -39,13 +39,13 @@ YDP-165는 전형적인 콘솔형 가정용 디지털피아노 디자인임. 크
 
 <img src="/images/야마하-YDP-165,-YDP-S55-디지털-피아노-3.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-YDP-S55는 슬림형 모델임. 크기는 1353 x 309 x 792mm, 무게는 40kg으로 더 얇고 깊이가 짧아서 좁은 공간에서 활용도가 좋음. 뚜껑과 보면대를 하나로 합친 구조라 닫아 두면 훨씬 단정하게 보이고, 디자인은 전통적인 가구형보다는 좀 더 모던한 느낌임. 
+YDP-S55는 슬림형 모델임. 크기는 1353 x 309 x 792mm, 무게는 40kg으로 더 얇고 깊이가 짧아서 좁은 공간에서 활용도가 좋음. 뚜껑과 보면대를 하나로 합친 구조라 닫아 두면 훨씬 단정하게 보이고, 디자인은 전통적인 가구형보다는 좀 더 모던한 느낌임.
 
 
 
 <img src="/images/야마하-YDP-165,-YDP-S55-디지털-피아노-4.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-내부와 모든 기능은 YDP-165와 YDP-S55가 동일하므로 선택 기준은 외형과 공간 활용성만 생각하면 됨. 두 모델 모두 3페달 일체형이고 Damper는 하프페달을 지원함. 금속 페달이라 밟는 느낌도 너무 가볍지 않은 편임. 
+내부와 모든 기능은 YDP-165와 YDP-S55가 동일하므로 선택 기준은 외형과 공간 활용성만 생각하면 됨. 두 모델 모두 3페달 일체형이고 Damper는 하프페달을 지원함. 금속 페달이라 밟는 느낌도 너무 가볍지 않은 편임.
 
 
 
@@ -168,4 +168,3 @@ YDP-165 YDP-S55 차이점
     <img src="/images/야마하-YDP-165,-YDP-S55-디지털-피아노-9.png" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
   </div>
 </a>
-

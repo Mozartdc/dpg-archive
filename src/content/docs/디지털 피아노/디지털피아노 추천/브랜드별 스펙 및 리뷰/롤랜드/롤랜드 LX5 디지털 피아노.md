@@ -15,7 +15,7 @@ tags:
   - "가성비 디지털피아노"
   - "입문용 디지털피아노"
 sidebar:
-  order: 9999
+  order: 8
 ---
 
 
@@ -160,4 +160,3 @@ Kawai CA501, Yamaha CLP-845, Casio GP-510, Korg G1 Air
     <img src="/images/롤랜드-LX5-디지털-피아노-6.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
   </div>
 </a>
-

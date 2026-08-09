@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
+import { slug as githubSlug } from 'github-slugger';
 import { syncPianoDB } from './sync-pianos.js';
 
 
@@ -13,6 +14,59 @@ const DATABASE_ID = process.env.NOTION_DATABASE_ID;
 const API_KEY = process.env.NOTION_API_KEY;
 const DOCS_PATH = path.join(__dirname, '..', 'src', 'content', 'docs');
 const IMAGES_PATH = path.join(__dirname, '..', 'public', 'images');
+const REPAIR_GENERATED_DOCS_ONLY = process.argv.includes('--repair-generated-docs-only');
+const REWRITE_INTERNAL_LINKS_ONLY = process.argv.includes('--rewrite-internal-links-only');
+let notionPageRouteMap = new Map();
+let notionPageOrderMap = new Map();
+let notionTitleOrderMap = new Map();
+const TITLE_ORDER_OVERRIDES = new Map([
+  ['카시오 PX-S1100 디지털 피아노', 2],
+  ['카시오 PX-S3100 디지털 피아노', 3],
+  ['카시오 PX-S5000 디지털 피아노', 4],
+  ['카시오 PX-S6000 디지털 피아노', 5],
+  ['카시오 PX-S7000 디지털 피아노', 6],
+  ['카시오 AP-S200 / AP-300 디지털 피아노', 7],
+  ['카시오 AP-S450 / 550 디지털 피아노', 8],
+  ['카시오 AP-750 디지털 피아노', 9],
+  ['카시오 GP-310 디지털 피아노', 10],
+  ['카시오 GP-510 디지털 피아노', 11],
+  ['가와이 ES60 디지털 피아노', 2],
+  ['가와이 ES120 디지털 피아노', 3],
+  ['가와이 ES520 디지털 피아노', 4],
+  ['가와이 CX102, 202, 302 디지털 피아노', 5],
+  ['가와이 CN201, CN301 디지털 피아노', 6],
+  ['가와이 CA401/501 디지털 피아노', 7],
+  ['가와이 CA701 디지털 피아노', 8],
+  ['롤랜드 FP-10 디지털 피아노', 2],
+  ['롤랜드 FP-30X 디지털 피아노', 3],
+  ['롤랜드 FP-60X 디지털 피아노', 4],
+  ['롤랜드 FP-90X 디지털 피아노', 5],
+  ['F701/RP701 디지털 피아노', 6],
+  ['롤랜드 HP702 / HP704 디지털 피아노', 7],
+  ['롤랜드 LX5 디지털 피아노', 8],
+  ['롤랜드 LX6 디지털 피아노', 9],
+  ['롤랜드 LX9 디지털 피아노', 10],
+  ['야마하 P-145 디지털 피아노', 2],
+  ['야마하 P-225 디지털 피아노', 3],
+  ['야마하 P-525 디지털 피아노', 4],
+  ['야마하 YDP 145 / S35 디지털 피아노', 5],
+  ['야마하 YDP-165, YDP-S55 디지털 피아노', 6],
+  ['야마하 CLP-825,835,845 디지털 피아노', 7],
+  ['야마하 CLP-875, 885 디지털 피아노', 8],
+  ['야마하 NU1XA 하이브리드 디지털 피아노', 9],
+  ['야마하 N1X 하이브리드 디지털 피아노', 10],
+  ['야마하 N3x 하이브리드 디지털 피아노', 11],
+  ['E2x2 OTG 한글 매뉴얼', 2],
+  ['TOPPING Control Center 한글 매뉴얼', 3],
+  ['i. 화음과 화성', 2],
+  ['v. 장조와 단조의 3화음', 6],
+  ['vi. 주요 3화음과 부 3화음', 7],
+].map(([title, order]) => [normalizeTitleKey(title), order]));
+const LEGACY_NOTION_ROUTE_OVERRIDES = new Map([
+  ['3b326dfbcd798113a15af80548c1cb66', '/음악-이론/open-music-theory/01-기초편/15-음정/'],
+  ['3b326dfbcd79811c8e09decb0de56c39', '/음악-이론/open-music-theory/01-기초편/20-통주저음/'],
+  ['3b426dfbcd79816d8ae5d7615b7a4785', '/음악-이론/21세기-음악이론-한글판/29장-반음계적-화성의-성부-진행/292-차용화음의-성부-진행/'],
+]);
 const EXCLUDED_NOTION_PAGE_IDS = new Set([
   // 사이트에서 제거한 가와이 라인업 인덱스 페이지
   '35e26dfb-cd79-80dc-b0ad-c09ee5223f7d',
@@ -98,6 +152,176 @@ function findFolderPath(startPath, targetFolderName) {
     }
   }
   return null;
+}
+
+function normalizeNotionId(id) {
+  return String(id || '').replace(/-/g, '').toLowerCase();
+}
+
+function routeForDocumentPath(documentPath) {
+  const relativePath = path.relative(DOCS_PATH, documentPath).replace(/\.mdx?$/i, '');
+  const routeSegments = relativePath
+    .split(path.sep)
+    .map((segment) => githubSlug(segment.normalize('NFC')))
+    .filter(Boolean);
+  return `/${routeSegments.join('/')}/`;
+}
+
+function collectDocumentPaths(directoryPath, output = []) {
+  if (!fs.existsSync(directoryPath)) return output;
+  for (const entry of fs.readdirSync(directoryPath, { withFileTypes: true })) {
+    const entryPath = path.join(directoryPath, entry.name);
+    if (entry.isDirectory()) collectDocumentPaths(entryPath, output);
+    else if (/\.mdx?$/i.test(entry.name)) output.push(entryPath);
+  }
+  return output;
+}
+
+function pageOrder(page, title) {
+  const storedOrder = page.properties['순서']?.number;
+  if (storedOrder !== undefined && storedOrder !== null && storedOrder < 9999) {
+    return storedOrder;
+  }
+
+  const override = TITLE_ORDER_OVERRIDES.get(normalizeTitleKey(title));
+  if (override !== undefined) return override;
+
+  const numberMatch = title.trim().match(/^(\d+)(?:\.(\d+))?/);
+  if (!numberMatch) return 9999;
+  const localNumber = Number(numberMatch[2] || numberMatch[1]);
+  return Number.isFinite(localNumber) ? localNumber + 1 : 9999;
+}
+
+function normalizeTitleKey(title) {
+  return String(title || '')
+    .normalize('NFC')
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}]+/gu, '');
+}
+
+function getStoredTitle(contents) {
+  const frontmatterMatch = contents.match(/^---\n([\s\S]*?)\n---/);
+  if (!frontmatterMatch) return null;
+  const titleMatch = frontmatterMatch[1].match(/(?:^|\n)title:\s*["']?([^"'\n]+)["']?/);
+  return titleMatch ? titleMatch[1].trim() : null;
+}
+
+function buildNotionPageMaps(allPages) {
+  const routeMap = new Map();
+  const orderMap = new Map();
+  const titleOrderMap = new Map();
+  const titleRouteMap = new Map();
+
+  for (const documentPath of collectDocumentPaths(DOCS_PATH)) {
+    const contents = readFileSafe(documentPath);
+    const pageId = getStoredNotionPageId(contents);
+    const title = getStoredTitle(contents);
+    if (title) titleRouteMap.set(normalizeTitleKey(title), routeForDocumentPath(documentPath));
+    if (pageId) routeMap.set(normalizeNotionId(pageId), routeForDocumentPath(documentPath));
+  }
+
+  for (const page of allPages) {
+    const pageId = normalizeNotionId(page.id);
+    const title = page.properties['제목']?.title?.map((text) => text.plain_text).join('') || '';
+    const category = page.properties['카테고리']?.select?.name;
+    if (!title) continue;
+
+    const order = pageOrder(page, title);
+    orderMap.set(pageId, order);
+    titleOrderMap.set(normalizeTitleKey(title), order);
+    if (routeMap.has(pageId)) continue;
+
+    const existingTitleRoute = titleRouteMap.get(normalizeTitleKey(title));
+    if (existingTitleRoute) {
+      routeMap.set(pageId, existingTitleRoute);
+      continue;
+    }
+    if (!category) continue;
+
+    const categoryFolder = findFolderPath(DOCS_PATH, category);
+    if (!categoryFolder) continue;
+    const documentPath = path.join(categoryFolder, `${sanitizeName(title)}.md`);
+    routeMap.set(pageId, routeForDocumentPath(documentPath));
+  }
+
+  return { routeMap, orderMap, titleOrderMap };
+}
+
+function internalRouteForNotionHref(href) {
+  try {
+    const url = new URL(href);
+    if (!/(^|\.)notion\.(?:com|so)$/i.test(url.hostname)) return null;
+    const matches = url.pathname.match(/[0-9a-f]{32}|[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}/gi);
+    if (!matches?.length) return null;
+    const pageId = normalizeNotionId(matches.at(-1));
+    return notionPageRouteMap.get(pageId) || LEGACY_NOTION_ROUTE_OVERRIDES.get(pageId) || null;
+  } catch {
+    return null;
+  }
+}
+
+function isNotionHref(href) {
+  try {
+    return /(^|\.)notion\.(?:com|so)$/i.test(new URL(href).hostname);
+  } catch {
+    return false;
+  }
+}
+
+function repairGeneratedDocuments({ rewriteOrders = true } = {}) {
+  let changedDocuments = 0;
+  let rewrittenLinks = 0;
+  let rewrittenOrders = 0;
+
+  for (const documentPath of collectDocumentPaths(DOCS_PATH)) {
+    const original = fs.readFileSync(documentPath, 'utf8');
+    let markdown = original.replace(
+      /<a\s+href="(https:\/\/[^"\s]*notion\.(?:com|so)[^"\s]*)"[^>]*>([\s\S]*?)<\/a>/gi,
+      (match, href, label) => {
+        const route = internalRouteForNotionHref(href);
+        if (!route) return label;
+        rewrittenLinks++;
+        return `<a href="${route}" style="color: inherit; text-decoration: underline;">${label}</a>`;
+      },
+    );
+
+    markdown = markdown.replace(
+      /https:\/\/[^\s)"'>]*notion\.(?:com|so)[^\s)"'>]*/gi,
+      (href) => {
+        const route = internalRouteForNotionHref(href);
+        if (!route) return href;
+        rewrittenLinks++;
+        return route;
+      },
+    );
+
+    if (rewriteOrders) {
+      const pageId = normalizeNotionId(getStoredNotionPageId(markdown));
+      const title = getStoredTitle(markdown) || path.basename(documentPath, path.extname(documentPath));
+      let order = notionPageOrderMap.get(pageId) ?? notionTitleOrderMap.get(normalizeTitleKey(title));
+      if (order === undefined || order >= 9999) {
+        const numberMatch = title.match(/^(?:레슨\s*)?(\d+)(?:\.(\d+))?/i);
+        if (numberMatch) order = Number(numberMatch[2] || numberMatch[1]) + 1;
+      }
+      if (order !== undefined && order < 9999) {
+        markdown = markdown.replace(
+          /(sidebar:\s*\n\s*order:\s*)[^\n]+/,
+          (match, prefix) => {
+            if (match === `${prefix}${order}`) return match;
+            rewrittenOrders++;
+            return `${prefix}${order}`;
+          },
+        );
+      }
+    }
+
+    if (markdown !== original) {
+      fs.writeFileSync(documentPath, markdown, 'utf8');
+      changedDocuments++;
+    }
+  }
+
+  console.log(`🧭 생성 문서 ${changedDocuments}개 복구: 내부 링크 ${rewrittenLinks}개, 순서 ${rewrittenOrders}개`);
 }
 
 
@@ -421,7 +645,12 @@ function richTextToHtml(richTextArray) {
 
 
     if (t.href) {
-      txt = `<a href="${t.href}" target="_blank" style="color: inherit; text-decoration: underline;">${txt}</a>`;
+      const internalRoute = internalRouteForNotionHref(t.href);
+      if (internalRoute) {
+        txt = `<a href="${internalRoute}" style="color: inherit; text-decoration: underline;">${txt}</a>`;
+      } else if (!isNotionHref(t.href)) {
+        txt = `<a href="${t.href}" target="_blank" style="color: inherit; text-decoration: underline;">${txt}</a>`;
+      }
     }
     if (txt.trim().length === 0) return txt;
 
@@ -912,6 +1141,18 @@ async function syncNotion() {
 
     console.log(`\n✅ 총 ${allPages.length}개의 페이지 발견.\n`);
 
+    const pageMaps = buildNotionPageMaps(allPages);
+    notionPageRouteMap = pageMaps.routeMap;
+    notionPageOrderMap = pageMaps.orderMap;
+    notionTitleOrderMap = pageMaps.titleOrderMap;
+    console.log(`🔗 내부 링크 경로 ${notionPageRouteMap.size}개 준비 완료.\n`);
+
+    if (REPAIR_GENERATED_DOCS_ONLY || REWRITE_INTERNAL_LINKS_ONLY) {
+      repairGeneratedDocuments({ rewriteOrders: !REWRITE_INTERNAL_LINKS_ONLY });
+      console.log('\n✨ 생성 문서 링크·순서 복구 완료!');
+      return;
+    }
+
     for (const page of allPages) {
       try {
         if (EXCLUDED_NOTION_PAGE_IDS.has(page.id)) continue;
@@ -925,8 +1166,7 @@ async function syncNotion() {
         const lastEdited  = page.last_edited_time;
 
         // ✅ 순서 속성 가져오기 (값이 없으면 9999로 설정하여 맨 뒤로 보냄)
-        const orderProp = page.properties['순서'];
-        const order = (orderProp?.number !== undefined && orderProp?.number !== null) ? orderProp.number : 9999;
+        const order = pageOrder(page, title);
 
         // tags 추출
         let tags = [];

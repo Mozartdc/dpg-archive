@@ -4,7 +4,7 @@ date: 2026-05-06
 lastEdited: 2026-05-06
 notionPageId: "35826dfb-cd79-806e-b11c-fae25756c314"
 sidebar:
-  order: 9999
+  order: 11
 ---
 
 
@@ -52,7 +52,7 @@ N3X의 페달이 전통적인 그랜드 피아노처럼 보이는 3페달 리라
 
 <img src="/images/야마하-N3x-하이브리드-디지털-피아노-5.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-실제 그랜드처럼 보면대를 눕히면 스피커 소리가 더 막힘 없이 올라오고, 보면대를 세우면 소리가 일부 가려지는 느낌도 구현함. 
+실제 그랜드처럼 보면대를 눕히면 스피커 소리가 더 막힘 없이 올라오고, 보면대를 세우면 소리가 일부 가려지는 느낌도 구현함.
 
 N3X는 Spatial Acoustic Speaker System과 Soundboard Resonator를 사용함.
 
@@ -62,7 +62,7 @@ N3X는 Spatial Acoustic Speaker System과 Soundboard Resonator를 사용함.
 
 <img src="/images/야마하-N3x-하이브리드-디지털-피아노-6.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-여기에 사운드보드 레조네이터가 들어가 스피커 소리에 맞춰 평판을 울려서 본체 상부 쪽 울림을 보강하고, 소리가 더 넓게 퍼지게 함.  
+여기에 사운드보드 레조네이터가 들어가 스피커 소리에 맞춰 평판을 울려서 본체 상부 쪽 울림을 보강하고, 소리가 더 넓게 퍼지게 함.
 
 N3X는 스피커가 중심이고, 사운드보드 레조네이터는 스피커 소리에 물리적인 울림을 더하는 장치임. 가와이의 Novus12 처럼 향판이 직접 소리를 내는 구조는 아님.
 
@@ -208,4 +208,3 @@ Kawai Novus NV12
     <img src="/images/야마하-N3x-하이브리드-디지털-피아노-10.png" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
   </div>
 </a>
-

@@ -4,7 +4,7 @@ date: 2026-04-26
 lastEdited: 2026-04-29
 notionPageId: "34e26dfb-cd79-8009-b9bd-dc9688c4f78a"
 sidebar:
-  order: 9999
+  order: 10
 ---
 
 
@@ -185,4 +185,3 @@ Kawai NV10S
     <img src="/images/야마하-N1X-하이브리드-디지털-피아노-7.png" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
   </div>
 </a>
-
