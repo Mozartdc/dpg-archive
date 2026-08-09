@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "/디지털-피아노/디지털피아노-추천/브랜드별-스펙-및-리뷰/:path*",
-      "destination": "/디지털-피아노/브랜드별-스펙-및-리뷰/:path*",
-      "permanent": true
-    }
-  ]
-}

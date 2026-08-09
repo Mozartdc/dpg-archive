@@ -2,9 +2,50 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import react from '@astrojs/react';
 import { starlightKatex } from 'starlight-katex';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { slug as githubSlug } from 'github-slugger';
+
+const projectRoot = path.dirname(fileURLToPath(import.meta.url));
+const brandReviewRoot = path.join(
+  projectRoot,
+  'src',
+  'content',
+  'docs',
+  '디지털 피아노',
+  '브랜드별 스펙 및 리뷰',
+);
+
+function collectBrandReviewRedirects(directory = brandReviewRoot, redirects = {}) {
+  for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+    const entryPath = path.join(directory, entry.name);
+    if (entry.isDirectory()) {
+      collectBrandReviewRedirects(entryPath, redirects);
+      continue;
+    }
+    if (!/\.mdx?$/i.test(entry.name)) continue;
+
+    const relativeDocumentPath = path
+      .relative(brandReviewRoot, entryPath)
+      .replace(/\.mdx?$/i, '');
+    const routeSuffix = relativeDocumentPath
+      .split(path.sep)
+      .map((segment) => githubSlug(segment.normalize('NFC')))
+      .filter(Boolean)
+      .join('/');
+
+    redirects[`/디지털-피아노/디지털피아노-추천/브랜드별-스펙-및-리뷰/${routeSuffix}`] =
+      `/디지털-피아노/브랜드별-스펙-및-리뷰/${routeSuffix}`;
+  }
+  return redirects;
+}
+
+const brandReviewRedirects = collectBrandReviewRedirects();
 
 export default defineConfig({
   site: 'https://www.dpinside.org',
+  redirects: brandReviewRedirects,
   integrations: [
     react(),
     starlight({
