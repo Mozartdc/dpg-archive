@@ -16,6 +16,11 @@ const DOCS_PATH = path.join(__dirname, '..', 'src', 'content', 'docs');
 const IMAGES_PATH = path.join(__dirname, '..', 'public', 'images');
 const REPAIR_GENERATED_DOCS_ONLY = process.argv.includes('--repair-generated-docs-only');
 const REWRITE_INTERNAL_LINKS_ONLY = process.argv.includes('--rewrite-internal-links-only');
+const CATEGORY_PATHS = new Map([
+  ['바로크·고전', ['음악 이야기', '피아노 음악사', '바로크, 고전']],
+  ['낭만·그 이후', ['음악 이야기', '피아노 음악사', '낭만, 그 이후']],
+  ['작곡가 이야기', ['음악 이야기', '피아노 음악사', '작곡가 이야기']],
+]);
 let notionPageRouteMap = new Map();
 let notionPageOrderMap = new Map();
 let notionTitleOrderMap = new Map();
@@ -154,6 +159,23 @@ function findFolderPath(startPath, targetFolderName) {
   return null;
 }
 
+function findCategoryFolder(category) {
+  const pathSegments = CATEGORY_PATHS.get(category.normalize('NFC'));
+  if (!pathSegments) return findFolderPath(DOCS_PATH, category);
+
+  let currentPath = DOCS_PATH;
+  for (const segment of pathSegments) {
+    if (!fs.existsSync(currentPath)) return null;
+    const normalizedSegment = segment.normalize('NFC');
+    const child = fs.readdirSync(currentPath, { withFileTypes: true })
+      .find((entry) => entry.isDirectory()
+        && entry.name.normalize('NFC') === normalizedSegment);
+    if (!child) return null;
+    currentPath = path.join(currentPath, child.name);
+  }
+  return currentPath;
+}
+
 function normalizeNotionId(id) {
   return String(id || '').replace(/-/g, '').toLowerCase();
 }
@@ -238,7 +260,7 @@ function buildNotionPageMaps(allPages) {
     }
     if (!category) continue;
 
-    const categoryFolder = findFolderPath(DOCS_PATH, category);
+    const categoryFolder = findCategoryFolder(category);
     if (!categoryFolder) continue;
     const documentPath = path.join(categoryFolder, `${sanitizeName(title)}.md`);
     routeMap.set(pageId, routeForDocumentPath(documentPath));
@@ -1211,7 +1233,7 @@ async function syncNotion() {
         if (status?.trim() !== '시작 전') continue;
         if (!category) continue;
 
-        const categoryFolder = findFolderPath(DOCS_PATH, category);
+        const categoryFolder = findCategoryFolder(category);
         if (!categoryFolder) continue;
 
         console.log(`   📄 [변환] "${title}" (순서: ${order})`);
