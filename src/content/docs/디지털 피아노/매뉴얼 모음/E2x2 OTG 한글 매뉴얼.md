@@ -1,7 +1,7 @@
 ---
 title: "E2x2 OTG 한글 매뉴얼"
 date: 2026-03-17
-lastEdited: 2026-03-19
+lastEdited: 2026-08-09
 notionPageId: "32626dfb-cd79-80ff-8543-fc85b6d6cfab"
 tags:
   - "토핑 매뉴얼"
@@ -533,4 +533,34 @@ SNR @A-wt: 144dB
 커넥터 형식: Optical OUT
 
 *모든 수치는 TOPPING 연구실 측정값임.
+
+이 글은 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a> 의 글을 복사한 것입니다. 관련 질문이나 문의는 우리 갤러리를 방문해주세요. 
+
+
+
+<div class="notion-columns" style="--notion-columns:3; display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:1.5rem; margin:1.5rem 0; align-items:start; width:100%; max-width:100%;">
+
+<div class="notion-column" style="min-width:0; width:100%; max-width:100%; overflow:hidden;">
+
+
+
+</div>
+
+<div class="notion-column" style="min-width:0; width:100%; max-width:100%; overflow:hidden;">
+
+
+
+<img src="/images/E2x2-OTG-한글-매뉴얼-8.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+
+
+
+</div>
+
+<div class="notion-column" style="min-width:0; width:100%; max-width:100%; overflow:hidden;">
+
+
+
+</div>
+
+</div>
 
