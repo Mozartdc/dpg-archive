@@ -31,7 +31,7 @@ LX9는 2024년 3월 12일 Roland가 공식 발표한 모델로, LX700 시리즈�
 
 ### 건반 / 사운드
 
-LX9는 Hybrid Grand Keyboard를 사용하며, Haptic Key Vibration이 추가된 것이 LX6 이하 모델과의 가장 큰 차이점 중 하나임. 건반은Escapement, Ebony Ivory Feel, High Precision Sensing을 갖추고 있어 어쿠스틱 그랜드에 가까운 긴 피벗으로 안정적이고 자연스러운 컨트롤과 균형감이 느껴짐.
+LX9는 Hybrid Grand Keyboard를 사용하며, Haptic Key Vibration이 추가된 것이 LX6 이하 모델과의 가장 큰 차이점 중 하나임. 건반은Escapement, Ebony Ivory Feel, High Precision Sensing을 갖추고 있어 어쿠스틱 그랜드에 가까운 긴 피벗으로 안정적이고 자연스러운 컨트롤과 균형감이 느껴짐. 
 
 여기에 Haptic Key Vibration이 더해져, 단순히 건반을 누르는 감각만이 아니라 연주 중 손끝으로 전해지는 미세한 물리적 반응까지 보강함. 그런데, 이 기능은 해머가 현을 때리는 충격이 아니라, 실제 피아노에서 현과 사운드보드, 바디가 울리며 건반과 액션을 통해 손끝으로 전달되는 미세한 공명감을 재현한 것임. 이 기능이 LX6와 가장 큰 차이점임.
 
@@ -64,7 +64,7 @@ LX9는 LX 라인업의 플래그십답게 가장 큰 캐비닛을 사용함. 높
 
 <img src="/images/롤랜드-LX9-디지털-피아노-5.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-스피커는 Piano Reality Projection 시스템으로 LX9의 차별점 중 하나임. 8스피커, 4웨이 구성으로 Cabinet Speakers 25cm x2, Near-field Speakers 12cm와 8cm 조합 x2, Center Near-field Speakers 8cm x2, Spatial Speakers 2.5cm x2를 사용함. 출력은 33W x2, 21W x2, 13W x2, 14W x2로 합산 160W가 넘는 대형 구조임.
+스피커는 Piano Reality Projection 시스템으로 LX9의 차별점 중 하나임. 8스피커, 4웨이 구성으로 Cabinet Speakers 25cm x2, Near-field Speakers 12cm와 8cm 조합 x2, Center Near-field Speakers 8cm x2, Spatial Speakers 2.5cm x2를 사용함. 출력은 33W x2, 21W x2, 13W x2, 14W x2로 합산 160W가 넘는 대형 구조임. 
 
 LX9는 단순히 스피커 숫자만 많은 것이 아니라, 상단과 중앙, 캐비닛 내부를 나눠 각 요소를 따로 재생하는 구조라 공간감과 직접음, 공명 표현을 동시에 노리는 모델임. LX6보다 체급 차이가 확실하고, 큰 공간도 훨씬 여유 있게 울릴 수 있음.
 
@@ -166,3 +166,4 @@ LX9는 Yamaha CLP-885, Kawai CA901, Casio GP-510BP 이 비교는 각 브랜드�
     <img src="/images/롤랜드-LX9-디지털-피아노-7.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
   </div>
 </a>
+

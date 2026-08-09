@@ -66,11 +66,11 @@ TOPPING Professional Control Center(이하 ToppingPro)를 설치 및 실행 가�
 
 <a href="https://download.topping.pro/control_software/TOPPING%20Professional%20Control%20Center%20V1.13%20Setup.zip" target="_blank" style="display: block; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; padding: 16px; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
   <div style="font-size: 14px; font-weight: 600; margin-bottom: 6px; color: #111827; word-break: break-all; overflow-wrap: anywhere;">🔗 https://download.topping.pro/control_software/TOPPING%20Professional%20Control%20Center%20V1.13%20Setup.zip</div>
-
+  
   <div style="font-size: 11px; color: #9ca3af; word-break: break-all;">https://download.topping.pro/control_software/TOPPING%20Professional%20Control%20Center%20V1.13%20Setup.zip</div>
 </a>
 
-1. 설치 프로그램을 실행하고 화면 안내에 따라 설치.
+1. 설치 프로그램을 실행하고 화면 안내에 따라 설치. 
 
 
 
@@ -171,7 +171,7 @@ TOPPING Professional Control Center(이하 ToppingPro)를 설치 및 실행 가�
 
 <a href="https://www.topping.pro/downloads/TOPPING_Professional_Control_Center_V1_09.dmg" target="_blank" style="display: block; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; margin: 16px 0; padding: 16px; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
   <div style="font-size: 14px; font-weight: 600; margin-bottom: 6px; color: #111827; word-break: break-all; overflow-wrap: anywhere;">🔗 https://www.topping.pro/downloads/TOPPING_Professional_Control_Center_V1_09.dmg</div>
-
+  
   <div style="font-size: 11px; color: #9ca3af; word-break: break-all;">https://www.topping.pro/downloads/TOPPING_Professional_Control_Center_V1_09.dmg</div>
 </a>
 
@@ -745,3 +745,4 @@ Update firmware를 선택하면 공식 웹사이트에 있는 최신 펌웨어�
 
 
 <img src="/images/TOPPING-Control-Center-한글-매뉴얼-20.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+

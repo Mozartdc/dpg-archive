@@ -49,7 +49,7 @@ PHA4에서 PHA-50, Hybrid Grand Keyboard 으로 올수록 건반이 가벼워지
 
 <img src="/images/롤랜드-LX6-디지털-피아노-3.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-Piano Reality Modeling 엔진은 단순히 이름만 바뀐 것이 아니라 완전히 다시 설계된 모델임. 특히 예전 모델링 계열에서 자주 나오던 날카롭다거나 빈 듯한 불만을 개선하고, 중역대가 더 풍부하고 따뜻해짐. LX6의 중역 표현이 유난히 좋고, 전체적으로 더 풍성하고 자연스러움.
+Piano Reality Modeling 엔진은 단순히 이름만 바뀐 것이 아니라 완전히 다시 설계된 모델임. 특히 예전 모델링 계열에서 자주 나오던 날카롭다거나 빈 듯한 불만을 개선하고, 중역대가 더 풍부하고 따뜻해짐. LX6의 중역 표현이 유난히 좋고, 전체적으로 더 풍성하고 자연스러움. 
 
 피아노 음색은 무제한 동시발음을 지원하고, 다른 음색은 최대 256음임. 실제 연주에서 폴리포니 부족으로 불편할 일은 없음.
 
@@ -68,7 +68,7 @@ LX6는 5스피커와 5앰프 구조를 사용함. 단순히 스피커 수만 늘
 
 <img src="/images/롤랜드-LX6-디지털-피아노-5.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-구성은 메인 캐비닛 스피커 25cm 1개, 근접 스피커 12cm와 8cm 조합 2개, 공간 스피커 2.5cm 돔 트위터 2개임. 출력은 32W 1개, 21W 2개, 21W 2개로 구성됨.
+구성은 메인 캐비닛 스피커 25cm 1개, 근접 스피커 12cm와 8cm 조합 2개, 공간 스피커 2.5cm 돔 트위터 2개임. 출력은 32W 1개, 21W 2개, 21W 2개로 구성됨. 
 
 헤드폰 사용 시에는 Piano Reality Headphones Ambience를 지원하고, Bluetooth Audio와 MIDI도 지원함. Roland Piano App 연동, 메트로놈, 녹음 기능, Twin Piano, 리듬 패턴 80개 등 디지털 기능도 충분히 갖추고 있음. Bluetooth 연결 안정성도 예전 Roland보다 좋아졌다는 평가가 있음.
 
@@ -162,3 +162,4 @@ Yamaha CLP-875, Kawai CA701, Casio GP-510 계열이 직접 비교 대상임.
     <img src="/images/롤랜드-LX6-디지털-피아노-7.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
   </div>
 </a>
+
