@@ -1,0 +1,22 @@
+{
+  "post_no": 3548,
+  "source_file": "낭만·그 이후/039-17.2. 라흐마니노프의 전주곡, 회화적 연습곡, 협주곡.md",
+  "title": "17.2. 라흐마니노프의 전주곡, 회화적 연습곡, 협주곡",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/039-17.2. 라흐마니노프의 전주곡, 회화적 연습곡, 협주곡.md",
+      "paragraph": "라흐마니노프는 이 곡들의 구체적인 그림이 무엇인지 밝히지는 않았음. ... Op.39의 붉은 두건을 쓴 소녀와 늑대를 묘사했다는 6번 A단조나, 바다와 갈매기를 그렸다는 2번 A단조 등이 유명함.",
+      "issue_type": "ambiguous",
+      "original": "구체적인 그림이 무엇인지 밝히지는 않았음",
+      "proposed": null,
+      "reason": "바로 뒤에서 두 곡의 소재를 특정해 적고 있어 한 문단 안에서 서술이 서로 어긋남. 관현악 편곡을 맡은 레스피기에게는 소재를 알려 주었다는 서술이 있어 ‘공개적으로는 밝히지 않았다’는 뜻일 가능성이 있음. 확인이 필요함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "low",
+      "changes_meaning": true,
+      "applied": false
+    }
+  ]
+}

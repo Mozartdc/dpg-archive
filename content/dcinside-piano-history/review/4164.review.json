@@ -1,0 +1,78 @@
+{
+  "post_no": 4164,
+  "source_file": "작곡가 이야기/011-작곡가들의 수입 (살리에리).md",
+  "title": "작곡가들의 수입 (살리에리)",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "작곡가 이야기/011-작곡가들의 수입 (살리에리).md",
+      "paragraph": "살리에리의 수입은 사실 이 힌마디로 정리가 됨.",
+      "issue_type": "typo",
+      "original": "이 힌마디로",
+      "proposed": "이 한마디로",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/011-작곡가들의 수입 (살리에리).md",
+      "paragraph": "따지면 생전엔 대우를 잘 빋았지만 남긴 음악이 현대에 큰 인기가 없을 뿐",
+      "issue_type": "typo",
+      "original": "대우를 잘 빋았지만",
+      "proposed": "대우를 잘 받았지만",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/011-작곡가들의 수입 (살리에리).md",
+      "paragraph": "살리에이에 대힌 연구가 부족해 정확한 금액을 알 순 없음.",
+      "issue_type": "typo",
+      "original": "살리에이에 대힌",
+      "proposed": "살리에리에 대한",
+      "reason": "인명 오타와 글자 오타가 겹침.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/011-작곡가들의 수입 (살리에리).md",
+      "paragraph": "살리에리가 작곡으로 챙긴 수익은 대략 다음과 같습니다.",
+      "issue_type": "awkward_expression",
+      "original": "다음과 같습니다.",
+      "proposed": "다음과 같음.",
+      "reason": "글 전체가 음슴체인데 이 문장만 존댓말로 바뀌어 있음. 문체를 바꾸자는 제안이 아니라 글쓴이 본래 어조로 되돌리는 범위임.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "작곡가 이야기/011-작곡가들의 수입 (살리에리).md",
+      "paragraph": "장작과 양초, 와인이 죽을 때까지 황실로 부터 제공되었음.",
+      "issue_type": "typo",
+      "original": "황실로 부터",
+      "proposed": "황실로부터",
+      "reason": "조사 띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

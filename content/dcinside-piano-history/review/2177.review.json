@@ -1,0 +1,22 @@
+{
+  "post_no": 2177,
+  "source_file": "바로크·고전/021-5.3. 소나타 형식의 기원과 초기 발전 과정.md",
+  "title": "5.3. 소나타 형식의 기원과 초기 발전 과정",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/021-5.3. 소나타 형식의 기원과 초기 발전 과정.md",
+      "paragraph": "여기서 중요한 진화의 단서는 순환 이진 형식(Rounded Binary Form)’에서 나타남.",
+      "issue_type": "typo",
+      "original": "순환 이진 형식(Rounded Binary Form)’에서",
+      "proposed": "‘순환 이진 형식(Rounded Binary Form)’에서",
+      "reason": "닫는 작은따옴표만 있고 여는 따옴표가 빠짐.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

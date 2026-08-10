@@ -1,0 +1,50 @@
+{
+  "post_no": 4231,
+  "source_file": "작곡가 이야기/013-작곡가들의 수입 (체르니).md",
+  "title": "작곡가들의 수입 (체르니)",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "작곡가 이야기/013-작곡가들의 수입 (체르니).md",
+      "paragraph": "비엔나에서 가장 비싼 레슨비를 받으며 활동힘.(유일하게 무료러 가르친 제자가 프람츠 리스트임.)",
+      "issue_type": "typo",
+      "original": "활동힘.(유일하게 무료러 가르친 제자가 프람츠 리스트임.)",
+      "proposed": "활동함. (유일하게 무료로 가르친 제자가 프란츠 리스트임.)",
+      "reason": "한 문장에 글자 오타가 세 군데 있음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/013-작곡가들의 수입 (체르니).md",
+      "paragraph": "이 건물을 짓는데 가장 많은 돈을 낸 건 ... 건물을 짓는데 중요한 종잣돈이 된 건",
+      "issue_type": "typo",
+      "original": "짓는데",
+      "proposed": "짓는 데",
+      "reason": "의존명사 띄어쓰기. 같은 글에 두 번 나옴.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "작곡가 이야기/013-작곡가들의 수입 (체르니).md",
+      "paragraph": "다른 작곡가들이 귀족이나 왕실로 부터 고정적인 후원에 의존한 반면",
+      "issue_type": "typo",
+      "original": "왕실로 부터",
+      "proposed": "왕실로부터",
+      "reason": "조사 띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

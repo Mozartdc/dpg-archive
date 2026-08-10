@@ -1,0 +1,50 @@
+{
+  "post_no": 1435,
+  "source_file": "작곡가 이야기/003-베토벤의 유전체로부터의 단상.md",
+  "title": "베토벤의 유전체로부터의 단상",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "작곡가 이야기/003-베토벤의 유전체로부터의 단상.md",
+      "paragraph": "유전적으로 소질이 있는지를 점수화한 걸 배토벤 유전체에 대입해봤더니…",
+      "issue_type": "typo",
+      "original": "배토벤",
+      "proposed": "베토벤",
+      "reason": "인명 오타. 같은 글의 다른 부분은 모두 베토벤으로 적고 있음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/003-베토벤의 유전체로부터의 단상.md",
+      "paragraph": "환경적 요인이나 윤리작 의식이 필요하다",
+      "issue_type": "typo",
+      "original": "윤리작 의식",
+      "proposed": "윤리적 의식",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/003-베토벤의 유전체로부터의 단상.md",
+      "paragraph": "박자 감각 유전자 점수가 9~11퍼센타일! 그러니까 하위권이다.",
+      "issue_type": "awkward_expression",
+      "original": "하위권이다.",
+      "proposed": "하위권임.",
+      "reason": "글 전체가 음슴체인데 이 문장만 평서형 종결임. 다만 뒤이어 나오는 인용 성격의 문장들도 평서형이라 의도된 어조일 수 있어 확인 후 판단이 필요함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "low",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

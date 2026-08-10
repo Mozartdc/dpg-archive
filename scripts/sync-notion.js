@@ -17,7 +17,9 @@ const IMAGES_PATH = path.join(__dirname, '..', 'public', 'images');
 const REPAIR_GENERATED_DOCS_ONLY = process.argv.includes('--repair-generated-docs-only');
 const REWRITE_INTERNAL_LINKS_ONLY = process.argv.includes('--rewrite-internal-links-only');
 const CATEGORY_PATHS = new Map([
+  ['바로크, 고전', ['음악 이야기', '피아노 음악사', '바로크, 고전']],
   ['바로크·고전', ['음악 이야기', '피아노 음악사', '바로크, 고전']],
+  ['낭만, 그 이후', ['음악 이야기', '피아노 음악사', '낭만, 그 이후']],
   ['낭만·그 이후', ['음악 이야기', '피아노 음악사', '낭만, 그 이후']],
   ['작곡가 이야기', ['음악 이야기', '피아노 음악사', '작곡가 이야기']],
 ]);
@@ -352,22 +354,42 @@ function repairGeneratedDocuments({ rewriteOrders = true } = {}) {
 // ═══════════════════════════════════════════════════════════════
 
 async function fetchNotion(endpoint, method = 'GET', body = null) {
-  await new Promise(resolve => setTimeout(resolve, 50));
-  const response = await fetch(`https://api.notion.com/v1${endpoint}`, {
-    method,
-    headers: {
-      'Authorization': `Bearer ${API_KEY}`,
-      'Notion-Version': '2022-06-28',
-      'Content-Type': 'application/json',
-    },
-    body: body ? JSON.stringify(body) : null,
-  });
-  if (!response.ok) {
-    if (response.status === 404) return { results: [], status: 404 };
-    const err = await response.text();
-    throw new Error(`API 오류 (${response.status}): ${err}`);
+  const maxAttempts = 4;
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    await new Promise(resolve => setTimeout(resolve, 50));
+    try {
+      const response = await fetch(`https://api.notion.com/v1${endpoint}`, {
+        method,
+        headers: {
+          'Authorization': `Bearer ${API_KEY}`,
+          'Notion-Version': '2022-06-28',
+          'Content-Type': 'application/json',
+        },
+        body: body ? JSON.stringify(body) : null,
+      });
+      if (response.ok) return response.json();
+      if (response.status === 404) return { results: [], status: 404 };
+
+      const err = (await response.text()).slice(0, 500);
+      const retryable = response.status === 429 || response.status >= 500;
+      if (!retryable || attempt === maxAttempts) {
+        throw new Error(`API 오류 (${response.status}): ${err}`);
+      }
+      const retryAfter = Number(response.headers.get('retry-after'));
+      const delay = Number.isFinite(retryAfter) && retryAfter > 0
+        ? retryAfter * 1000
+        : 500 * (2 ** (attempt - 1));
+      console.warn(`      ⚠️  Notion API ${response.status}, ${delay}ms 뒤 재시도 (${attempt}/${maxAttempts})`);
+      await new Promise(resolve => setTimeout(resolve, delay));
+    } catch (error) {
+      const isApiError = /^API 오류/.test(error.message || '');
+      if (isApiError || attempt === maxAttempts) throw error;
+      const delay = 500 * (2 ** (attempt - 1));
+      console.warn(`      ⚠️  Notion 네트워크 오류, ${delay}ms 뒤 재시도 (${attempt}/${maxAttempts})`);
+      await new Promise(resolve => setTimeout(resolve, delay));
+    }
   }
-  return response.json();
+  throw new Error(`Notion API 재시도 소진: ${method} ${endpoint}`);
 }
 
 
@@ -1077,7 +1099,7 @@ function buildFrontmatter(title, tags, createdTime, lastEditedTime, order, notio
 
 
 function sanitizeName(name) {
-  return name.replace(/[<>:"/\\|?*]/g, '').trim();
+  return name.replace(/[<>:"/\\|?*]/g, '').trim().replace(/[. ]+$/g, '');
 }
 function readFileSafe(filePath) {
   try {
@@ -1195,6 +1217,8 @@ async function syncNotion() {
       return;
     }
 
+    const pageErrors = [];
+
     for (const page of allPages) {
       try {
         if (EXCLUDED_NOTION_PAGE_IDS.has(page.id)) continue;
@@ -1230,7 +1254,7 @@ async function syncNotion() {
           }
         }
 
-        if (status?.trim() !== '시작 전') continue;
+        if (!['시작 전', '완료'].includes(status?.trim())) continue;
         if (!category) continue;
 
         const categoryFolder = findCategoryFolder(category);
@@ -1295,15 +1319,21 @@ async function syncNotion() {
 
       } catch (e) {
         console.error(`❌ 에러: ${e.message}`);
+        pageErrors.push(`${page.id}: ${e.message}`);
       }
     }
 
     await syncPianoDB();
+
+    if (pageErrors.length > 0) {
+      throw new Error(`페이지 변환 실패 ${pageErrors.length}건: ${pageErrors.join(' | ')}`);
+    }
     
     console.log('\n✨ 동기화 완료!');
 
   } catch (error) {
     console.error('\n❌ 치명적 에러:', error.message);
+    process.exitCode = 1;
   }
 }
 

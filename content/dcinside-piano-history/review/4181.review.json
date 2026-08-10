@@ -1,0 +1,92 @@
+{
+  "post_no": 4181,
+  "source_file": "작곡가 이야기/008-작곡가들의 수입 (모차르트).md",
+  "title": "작곡가들의 수입 (모차르트)",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "작곡가 이야기/008-작곡가들의 수입 (모차르트).md",
+      "paragraph": "평민인 모차르트는 성 마르크스 묘지의 공용 구덩이에 뭍힘.",
+      "issue_type": "typo",
+      "original": "뭍힘",
+      "proposed": "묻힘",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/008-작곡가들의 수입 (모차르트).md",
+      "paragraph": "오페라 공연이 금지 된 사순절 시기에 텅빈 극장을 이용해서 금지되지 않은 기악 공연을 하먄 되겠다는 아이디어",
+      "issue_type": "typo",
+      "original": "하먄 되겠다는",
+      "proposed": "하면 되겠다는",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/008-작곡가들의 수입 (모차르트).md",
+      "paragraph": "그래서 피이노 협주곡 20번은 공연이 시작 1시간 전에서야 악보가 완성되서",
+      "issue_type": "typo",
+      "original": "피이노 협주곡",
+      "proposed": "피아노 협주곡",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/008-작곡가들의 수입 (모차르트).md",
+      "paragraph": "모차르트 재단의 설립 기반 자금이 만들어진 것임. / 콘스텐체나 두 아들이 모차르트의 유품을",
+      "issue_type": "typo",
+      "original": "콘스텐체",
+      "proposed": "콘스탄체",
+      "reason": "같은 글 안에서 콘스탄체와 콘스텐체가 섞여 있음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "작곡가 이야기/008-작곡가들의 수입 (모차르트).md",
+      "paragraph": "황제 요제프 2세가 비엔나를 떠나지 않는 조건으로 매년 지급한800 굴덴. ... 아카데미 콘서트 티켓 수입.1,500굴덴",
+      "issue_type": "typo",
+      "original": "지급한800 굴덴 ... 티켓 수입.1,500굴덴",
+      "proposed": "지급한 800굴덴 ... 티켓 수입 1,500굴덴",
+      "reason": "숫자 앞 띄어쓰기 누락과 불필요한 마침표.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "작곡가 이야기/008-작곡가들의 수입 (모차르트).md",
+      "paragraph": "콘스탄체가 모차르트의 유산에 본인의 노력을 더해 벌어들은 금액은",
+      "issue_type": "typo",
+      "original": "벌어들은",
+      "proposed": "벌어들인",
+      "reason": "활용 오류.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

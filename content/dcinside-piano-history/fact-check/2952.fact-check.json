@@ -1,0 +1,24 @@
+{
+  "post_no": 2952,
+  "stage": 2,
+  "checked_at": "2026-08-10T04:12:17.139Z",
+  "revisited_at": "2026-08-10T22:00:00.000Z",
+  "checks": [
+    {
+      "original_claim": "최초로 피아노 연주회에서 악보 없이 '암보 연주'를 본격적으로 도입하고, 이 전통이 현대까지 표준으로 자리잡음.(1830년대 후반으로 추정)",
+      "verdict": "confirmed_error",
+      "proposed": "최초로 ... 도입하고 → 가장 먼저 ... 도입한 인물 중 한 명으로 꼽히며 (3021번과 동일하게 완화된 표현으로 통일)",
+      "source_1_url": "https://www.researchgate.net/publication/274072211_Performing_from_Memory_Historical_Roots",
+      "source_1_title": "Performing from Memory: Historical Roots - ResearchGate",
+      "source_1_support": "Clara Schumann was among the first pianists to perform from memory (age 13, 1837 Beethoven Op.57), but the 'first' claim is historically contested — Clara herself disputed Liszt's rival claim to the honor.",
+      "source_2_url": "https://www.chambermusicsociety.org/about-the-music/composers/clara-schumann",
+      "source_2_title": "Clara Schumann - Chamber Music Society of Lincoln Center",
+      "source_2_support": "Corroborates Clara as an early pioneer of memorized performance, framed as 'one of the first' rather than an uncontested 'the first'.",
+      "reasoning": "재검증(2회차, 모순쌍 2952↔3021): 3021번은 '최초의 피아니스트 중 한 명'으로 신중하게 서술하는 반면 2952번은 '최초로'라고 단정. 실제로는 리스트 등과 최초 주장이 역사적으로 다투어지는 사안이라 단정적 서술은 부정확. 3021의 완화된 표현에 맞춰 2952만 수정. B군, 2건 독립 출처(사학계 논쟁 확인).",
+      "confidence": "medium",
+      "paired_posts": [3021],
+      "changes_meaning": false,
+      "criteria_group": "B"
+    }
+  ]
+}

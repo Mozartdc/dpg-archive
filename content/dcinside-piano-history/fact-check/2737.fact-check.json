@@ -1,0 +1,24 @@
+{
+  "post_no": 2737,
+  "stage": 2,
+  "checked_at": "2026-08-10T04:12:17.145Z",
+  "checks": [
+    {
+      "post_no": 2737,
+      "original_claim": "빌헬름 헨젤(멘델스존의 처남)작. 펠릭스 멘델스존의 초상화.",
+      "verdict": "confirmed_error",
+      "proposed": "빌헬름 헨젤(멘델스존의 매형)작. 펠릭스 멘델스존의 초상화.",
+      "source_1_url": "https://www.britannica.com/biography/Fanny-Mendelssohn",
+      "source_1_title": "Encyclopædia Britannica — Fanny Mendelssohn",
+      "source_1_support": "\"the eldest sister ... of the composer Felix Mendelssohn\" / \"Fanny married the Prussian court painter Wilhelm Hensel in 1829.\"",
+      "source_2_url": null,
+      "source_2_title": null,
+      "source_2_support": null,
+      "reasoning": "A군(가족관계). 파니는 펠릭스의 손위 누나이고 헨젤은 그 남편이므로 펠릭스에게는 매형(자형)임. 처남은 아내의 남자 형제를 뜻해 관계가 반대로 적힘.",
+      "confidence": "high",
+      "paired_posts": [],
+      "changes_meaning": true,
+      "criteria_group": "A"
+    }
+  ]
+}

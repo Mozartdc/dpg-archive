@@ -1,0 +1,22 @@
+{
+  "post_no": 2205,
+  "source_file": "바로크·고전/023-6.1. 건반 소나타의 아버지- 초기, 중기, 후기 소나타의 양식적 변화.md",
+  "title": "6.1. 건반 소나타의 아버지: 초기, 중기, 후기 소나타의 양식적 변화",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/023-6.1. 건반 소나타의 아버지- 초기, 중기, 후기 소나타의 양식적 변화.md",
+      "paragraph": "<하이든이 거의 30년 동안 작곡과 음악 감독으로 활동한 에스테르하자 궁전(헝가리 페르퇴에도, 에이스터하자)>",
+      "issue_type": "typo",
+      "original": "헝가리 페르퇴에도",
+      "proposed": "헝가리 페르퇴드",
+      "reason": "에스테르하자 궁전이 있는 지명은 Fertőd로 페르퇴드로 적음. 조사 ‘에도’가 붙은 것처럼 보이나 문맥상 지명 표기 오류로 판단함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

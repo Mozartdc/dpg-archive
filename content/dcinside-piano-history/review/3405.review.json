@@ -1,0 +1,36 @@
+{
+  "post_no": 3405,
+  "source_file": "낭만·그 이후/033-16.1. 드뷔시의 새로운 화성 체계 (온음음계, 5음음계).md",
+  "title": "16.1. 드뷔시의 새로운 화성 체계 (온음음계, 5음음계)",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/033-16.1. 드뷔시의 새로운 화성 체계 (온음음계, 5음음계).md",
+      "paragraph": "화성의 기능으로부터의 해방 바흐부터 브람스에 이르기까지의 전통 화성법에서, 모든 화음은 명확한 기능(으뜸화음, 딸림화음 등)을 가지며",
+      "issue_type": "awkward_expression",
+      "original": "화성의 기능으로부터의 해방 바흐부터",
+      "proposed": null,
+      "reason": "앞의 ‘화성의 기능으로부터의 해방’은 뒤에 이어지는 다른 항목들과 같은 소제목인데 줄바꿈 없이 본문과 붙어 한 문장처럼 읽힘. 문단 구조를 바꾸지 않는 범위라 확인만 요청함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/033-16.1. 드뷔시의 새로운 화성 체계 (온음음계, 5음음계).md",
+      "paragraph": "화음은 음악의 문법이 아니라, 물감과 같이 대하며, 새로운 음계와 선법을 사용하고",
+      "issue_type": "grammar",
+      "original": "화음은 음악의 문법이 아니라, 물감과 같이 대하며",
+      "proposed": "화음을 음악의 문법이 아니라 물감과 같이 대하며",
+      "reason": "주격 조사가 붙어 있어 뒤의 서술어 ‘대하며’와 호응하지 않음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

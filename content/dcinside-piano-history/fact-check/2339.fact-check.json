@@ -1,0 +1,24 @@
+{
+  "post_no": 2339,
+  "stage": 2,
+  "checked_at": "2026-08-10T04:12:17.139Z",
+  "revisited_at": "2026-08-10T22:00:00.000Z",
+  "checks": [
+    {
+      "original_claim": "요제프 손레이트너의 의뢰로 모차르트의 여동생 마리아 안나의 자료를 바탕에 그린 것",
+      "verdict": "confirmed_error",
+      "proposed": "모차르트의 여동생 마리아 안나 → 모차르트의 누나 마리아 안나",
+      "source_1_url": "https://en.wikipedia.org/wiki/Maria_Anna_Mozart",
+      "source_1_title": "Maria Anna Mozart - Wikipedia",
+      "source_1_support": "Maria Anna 'Nannerl' Mozart (b. 1751) was Wolfgang's older sister, four and a half years his senior (Wolfgang b. 1756).",
+      "source_2_url": "https://www.encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/mozart-maria-anna-1751-1829",
+      "source_2_title": "Mozart, Maria Anna (1751-1829) - Encyclopedia.com",
+      "source_2_support": "Confirms birth year 1751, older sibling of Wolfgang Amadeus Mozart (b. 1756).",
+      "reasoning": "재검증(2회차): 이전 회차에서 Britannica AI 요약 문제로 확보 실패했던 항목. 이번엔 위키백과+Encyclopedia.com 교차 확인으로 마리아 안나(난네를)가 모차르트보다 4.5세 위인 누나임을 확인. A군, 2건 독립 출처.",
+      "confidence": "high",
+      "paired_posts": [],
+      "changes_meaning": false,
+      "criteria_group": "A"
+    }
+  ]
+}

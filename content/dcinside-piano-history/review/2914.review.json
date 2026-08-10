@@ -1,0 +1,36 @@
+{
+  "post_no": 2914,
+  "source_file": "낭만·그 이후/009-11.4. 쇼팽의 소나타와 콘체르토.md",
+  "title": "11.4. 쇼팽의 소나타와 콘체르토",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/009-11.4. 쇼팽의 소나타와 콘체르토.md",
+      "paragraph": "특히4악장 피날레는 피아노 소나타 역사상 가장 충격적이고 독창적인 악장 중 하나임.",
+      "issue_type": "typo",
+      "original": "특히4악장",
+      "proposed": "특히 4악장",
+      "reason": "띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/009-11.4. 쇼팽의 소나타와 콘체르토.md",
+      "paragraph": "이에 비해 소나타 3번 B단조, Op.58는 좀 더 고전적인 형식에 가까우면서도",
+      "issue_type": "grammar",
+      "original": "Op.58는",
+      "proposed": "Op.58은",
+      "reason": "받침 있는 숫자 뒤 보조사 오류.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

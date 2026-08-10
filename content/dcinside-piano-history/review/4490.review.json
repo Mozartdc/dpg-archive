@@ -1,0 +1,50 @@
+{
+  "post_no": 4490,
+  "source_file": "작곡가 이야기/021-작곡가들의 수입 (리스트 3).md",
+  "title": "작곡가들의 수입 (리스트 3)",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "작곡가 이야기/021-작곡가들의 수입 (리스트 3).md",
+      "paragraph": "리스트가 17세 무렵 그녀에게 피아노를 가르치다 사귀게 더ㅣ었는데",
+      "issue_type": "typo",
+      "original": "사귀게 더ㅣ었는데",
+      "proposed": "사귀게 되었는데",
+      "reason": "입력이 깨져 자모가 남은 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/021-작곡가들의 수입 (리스트 3).md",
+      "paragraph": "영국 리스트 협회 저널에 정식 논문으로 실렸고, 자세한된 이야기는 아래 링크에 있음.",
+      "issue_type": "typo",
+      "original": "자세한된 이야기는",
+      "proposed": "자세한 이야기는",
+      "reason": "글자가 덧붙은 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "작곡가 이야기/021-작곡가들의 수입 (리스트 3).md",
+      "paragraph": "마리 다구는 리스트와 사귀기 전부터 쇼팽의 연인 조르주 상드와 친한 괸계였고",
+      "issue_type": "typo",
+      "original": "친한 괸계였고",
+      "proposed": "친한 관계였고",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    }
+  ]
+}

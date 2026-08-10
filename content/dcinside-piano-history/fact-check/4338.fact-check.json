@@ -1,0 +1,41 @@
+{
+  "post_no": 4338,
+  "stage": 2,
+  "checked_at": "2026-08-10T06:02:32.620Z",
+  "checks": [
+    {
+      "post_no": 4338,
+      "original_claim": "베토벤 사망 1주년(1823년 3월26일 콘서트) 무렵 친구들의 도움으로 연 공연이 큰 성공을 거둔 때임.",
+      "verdict": "confirmed_error",
+      "proposed": "베토벤 사망 1주년(1828년 3월 26일 콘서트) 무렵 친구들의 도움으로 연 공연이 큰 성공을 거둔 때임.",
+      "source_1_url": "https://www.britannica.com/biography/Franz-Schubert/Last-years",
+      "source_1_title": "Encyclopædia Britannica, \"Last years of Franz Schubert\" (집필: Maurice J.E. Brown, Schubert: A Critical Biography 저자)",
+      "source_1_support": "\"The only public concert Schubert gave took place on March 26, 1828. It was both artistically and financially a success, and the impecunious composer was at last able to buy himself a piano.\"라고 명시함. 원문이 말한 ‘친구들의 도움으로 연 공연’과 ‘성공’, ‘피아노 구입’ 서술이 모두 이 1828년 연주회를 가리킴.",
+      "source_2_url": "https://www.chambermusicsociety.org/about-the-music/composers/franz-schubert",
+      "source_2_title": "Chamber Music Society of Lincoln Center, \"Who Was Franz Schubert?\" (집필: Christopher H. Gibbs)",
+      "source_2_support": "\"Schubert was deeply affected by Beethoven's death on March 26, 1827, and was a torchbearer at his funeral three days later. On the first anniversary of Beethoven's death, he presented the only public concert of his career devoted entirely to his own music. The centerpiece was the premiere of his Piano Trio in E-flat, D. 929, Op. 100.\"라고 적음. 베토벤 사망일이 1827년 3월 26일이므로 1주년은 1828년이고, 원문이 프로그램으로 든 ‘피아노 트리오 2번 D.929’가 이 연주회의 중심 곡이었다는 점도 일치함.",
+      "reasoning": "두 출처는 서로 다른 필자와 기관이 작성했고 상대를 인용하지 않음. 베토벤 사망일(1827년 3월 26일)과 1주년 연주회(1828년 3월 26일)가 양쪽에서 일치하며, 원문이 함께 적은 프로그램(D.929 초연)도 1828년 연주회의 것임. 1823년은 베토벤 생전이라 ‘사망 1주년’이 성립할 수 없음.",
+      "confidence": "high",
+      "paired_posts": [],
+      "changes_meaning": true
+    },
+    {
+      "post_no": 4338,
+      "original_claim": "공연 수익금 800굴덴은 매독 치료비, 친구들과의 파티, 충동적 사치 등으로 빠르게 써버리고 피아노 한 번 못 사보고 그 해 12월 장티푸스로 사망함.",
+      "verdict": "insufficient_evidence",
+      "proposed": null,
+      "source_1_url": "https://www.britannica.com/biography/Franz-Schubert/Last-years",
+      "source_1_title": "Encyclopædia Britannica, \"Last years of Franz Schubert\"",
+      "source_1_support": "\"In October he developed typhoid fever as a result of drinking tainted water. His last days were spent in the company of his brother and several close friends.\"라고 하여 발병이 10월임을 밝히나, 사망 월일은 이 페이지에 나오지 않음. 또한 같은 문단이 1828년 3월 연주회 뒤 \"the impecunious composer was at last able to buy himself a piano\"라고 적어, 원문의 ‘피아노 한 번 못 사보고’와도 상충함.",
+      "source_2_url": null,
+      "source_2_title": null,
+      "source_2_support": null,
+      "reasoning": "사망 월(12월 여부)을 직접 밝힌 독립 출처를 두 건 확보하지 못해 판정을 보류함. 다만 확보한 출처 한 건이 ‘연주회 수익으로 피아노를 샀다’고 적고 있어 원문의 ‘피아노 한 번 못 사보고’ 부분과 어긋남. 이 대목은 사망일과 별개로 재확인이 필요함. 이번 회차에 재시도했으나 비용 제한(주장당 최대 2회) 안에서 근거를 확보하지 못함.",
+      "confidence": "low",
+      "paired_posts": [],
+      "changes_meaning": true,
+      "revisited_at": "2026-08-10T22:00:00.000Z",
+      "revisit_note": "3회차 재검증: Britannica('at last able to buy himself a piano')와 반대로, 별도 검색 결과(Brigham Larson Pianos 등)는 'Schubert never actually owned a piano'라고 명시해 출처 간에도 정면으로 상충함. 상충하는 권위 있는 서술 2건이 있는 것으로, 어느 한쪽을 채택할 근거가 부족해 insufficient_evidence로 유지함. 본문 수정하지 않음."
+    }
+  ]
+}

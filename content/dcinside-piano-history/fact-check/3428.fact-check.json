@@ -1,0 +1,24 @@
+{
+  "post_no": 3428,
+  "stage": 2,
+  "checked_at": "2026-08-10T04:12:17.139Z",
+  "revisited_at": "2026-08-10T22:00:00.000Z",
+  "checks": [
+    {
+      "original_claim": "1945년 바르샤바 봉기 당시 독일군에 의해 도난당했던 쇼팽의 심장",
+      "verdict": "confirmed_error",
+      "proposed": "1945년 바르샤바 봉기 → 1944년 바르샤바 봉기 (반환은 1945년 10월 17일)",
+      "source_1_url": "https://www.timesofisrael.com/chopins-heart-survives-the-nazis-undergoes-secret-examination/",
+      "source_1_title": "Chopin's heart survives the Nazis - Times of Israel",
+      "source_1_support": "During the Warsaw Uprising (which began 1 August 1944), a German officer removed the heart on 9 September 1944 for safekeeping; it was returned to Warsaw on 17 October 1945.",
+      "source_2_url": "https://www.1944.pl/en/article/on-a-mission-to-save-chopin-s-heart-in-1944,5690.html",
+      "source_2_title": "On a mission to save Chopin's Heart in 1944 - Warsaw Rising Museum",
+      "source_2_support": "Confirms the Warsaw Uprising and removal of the heart occurred in 1944; return occurred in 1945.",
+      "reasoning": "재검증(2회차): 원문이 봉기 연도(1944)와 심장 반환 연도(1945)를 혼동함(원래 review 단계에서 예상한 대로). 봉기 연도만 1944로 정정. A군, 2건 독립 출처.",
+      "confidence": "high",
+      "paired_posts": [],
+      "changes_meaning": false,
+      "criteria_group": "A"
+    }
+  ]
+}

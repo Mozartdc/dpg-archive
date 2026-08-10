@@ -1,0 +1,22 @@
+{
+  "post_no": 3094,
+  "source_file": "낭만·그 이후/018-13.2. 프란츠 리스트의 혁신적 피아노 기법.md",
+  "title": "13.2. 프란츠 리스트의 혁신적 피아노 기법",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/018-13.2. 프란츠 리스트의 혁신적 피아노 기법.md",
+      "paragraph": "리스트는 피아노를 건반 악기로만 보지않고, 10개의 손가락으로 연주하는 하나의 오케스트라로 표현함.",
+      "issue_type": "typo",
+      "original": "보지않고",
+      "proposed": "보지 않고",
+      "reason": "띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

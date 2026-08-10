@@ -1,0 +1,50 @@
+{
+  "post_no": 3676,
+  "source_file": "낭만·그 이후/044-18.2. 12음 기법의 창안과 피아노 모음곡.md",
+  "title": "18.2. 12음 기법의 창안과 피아노 모음곡",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/044-18.2. 12음 기법의 창안과 피아노 모음곡.md",
+      "paragraph": "쇤비르크는 자신의 혁신이 과거와의 단절이 아닌 독일 전통 음악의 연장선상있다는 것을 증명하고 싶어했음.",
+      "issue_type": "typo",
+      "original": "쇤비르크는 ... 연장선상있다는",
+      "proposed": "쇤베르크는 ... 연장선상에 있다는",
+      "reason": "인명 오타와 조사 누락이 한 문장에 겹침.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/044-18.2. 12음 기법의 창안과 피아노 모음곡.md",
+      "paragraph": "12개 반음을 자신이 원하는 순서대로 한 번씩만 사용하여 하나의 기본 음렬(prime form)을 만듬.",
+      "issue_type": "typo",
+      "original": "만듬",
+      "proposed": "만듦",
+      "reason": "‘만들다’의 명사형 표기 오류.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/044-18.2. 12음 기법의 창안과 피아노 모음곡.md",
+      "paragraph": "논리적이고 정교한 구조를 만들어낼 수 있는 질서있는 시스템임을 증명하고자 했음.",
+      "issue_type": "typo",
+      "original": "질서있는",
+      "proposed": "질서 있는",
+      "reason": "띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "low",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

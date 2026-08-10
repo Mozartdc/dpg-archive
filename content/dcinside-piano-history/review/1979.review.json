@@ -1,0 +1,36 @@
+{
+  "post_no": 1979,
+  "source_file": "바로크·고전/006-2.1. 바르톨로메오 크리스토포리와 피아노포르테의 발명.md",
+  "title": "2.1. 바르톨로메오 크리스토포리와 피아노포르테의 발명",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/006-2.1. 바르톨로메오 크리스토포리와 피아노포르테의 발명.md",
+      "paragraph": "현존하는 가장 오래된 피아노로 ... 세 대의 피아노 중 한 대(뉴욕 메트로 폴리탄 박물관)",
+      "issue_type": "typo",
+      "original": "뉴욕 메트로 폴리탄 박물관",
+      "proposed": "뉴욕 메트로폴리탄 박물관",
+      "reason": "고유명사 띄어쓰기 오류.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "바로크·고전/006-2.1. 바르톨로메오 크리스토포리와 피아노포르테의 발명.md",
+      "paragraph": "1700년경.피아노의 역사는 이탈리아 피렌체의 악기 장인, 바르톨로메오 크리스토포리",
+      "issue_type": "typo",
+      "original": "1700년경.피아노의 역사는",
+      "proposed": "1700년경. 피아노의 역사는",
+      "reason": "마침표 뒤 공백 누락.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    }
+  ]
+}

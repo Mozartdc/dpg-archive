@@ -1,0 +1,50 @@
+{
+  "post_no": 3599,
+  "source_file": "낭만·그 이후/041-17.4. 스크리아빈의 피아노 소나타.md",
+  "title": "17.4. 스크리아빈의 피아노 소나타",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/041-17.4. 스크리아빈의 피아노 소나타.md",
+      "paragraph": "피아노 : 다닐 트리노포보프",
+      "issue_type": "typo",
+      "original": "다닐 트리노포보프",
+      "proposed": "다닐 트리포노프",
+      "reason": "피아니스트 이름 오타. 같은 문서 모음의 다른 글에서는 모두 다닐 트리포노프로 적고 있음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/041-17.4. 스크리아빈의 피아노 소나타.md",
+      "paragraph": "흑색 미사(Black Mass)백색 미사와 반대되는 작품으로",
+      "issue_type": "typo",
+      "original": "(Black Mass)백색 미사와",
+      "proposed": "(Black Mass). 백색 미사와",
+      "reason": "괄호와 다음 문장이 붙어 한 낱말처럼 읽힘.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/041-17.4. 스크리아빈의 피아노 소나타.md",
+      "paragraph": "- 소나타 4번\n법열의 시, 그의 작곡 양식 전환을 보여주는 중요한 작품으로",
+      "issue_type": "factual_error",
+      "original": "소나타 4번 / 법열의 시",
+      "proposed": null,
+      "reason": "법열의 시(Le Poème de l’extase)는 관현악곡 Op.54의 제목이고, 소나타 4번에는 그런 부제가 붙지 않는다는 서술이 일반적임. 뒤이어 소나타 5번을 설명하며 ‘교향곡 법열의 시에서 인용한’이라 적고 있어 같은 글 안에서도 두 작품이 뒤섞인 것으로 보임. 검증 대상으로 올림.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    }
+  ]
+}

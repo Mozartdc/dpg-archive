@@ -1,0 +1,64 @@
+{
+  "post_no": 2157,
+  "source_file": "바로크·고전/020-5.2. J.C. 바흐와 런던 피아니즘의 형성.md",
+  "title": "5.2. J.C. 바흐와 런던 피아니즘의 형성",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/020-5.2. J.C. 바흐와 런던 피아니즘의 형성.md",
+      "paragraph": "그의 유려한 선율 작법과 명쾌한 형식 구조는 모차르트의 초기 피아노 협주곡에 여오ㅑㅇ을 주었다고 평가됨.",
+      "issue_type": "typo",
+      "original": "여오ㅑㅇ을 주었다고",
+      "proposed": "영향을 주었다고",
+      "reason": "입력이 깨져 자모가 섞인 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "바로크·고전/020-5.2. J.C. 바흐와 런던 피아니즘의 형성.md",
+      "paragraph": "그는 1768년 런던에서 피아노를 사용하여 공개 독주회를 연 인물로 기록되어 있음. (일부이선 이것이 최초의 피아노포르테 공개 독주회라고 하기도 함.)",
+      "issue_type": "typo",
+      "original": "(일부이선",
+      "proposed": "(일부에선",
+      "reason": "조사 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "바로크·고전/020-5.2. J.C. 바흐와 런던 피아니즘의 형성.md",
+      "paragraph": "파드레 마르티니(Padre Martini) 밑에서 공부하며 이탈리아 오페라의 작법을 배웠고. 특히 노래하듯 자연스럽고 아름다운 선율",
+      "issue_type": "typo",
+      "original": "배웠고. 특히",
+      "proposed": "배웠고, 특히",
+      "reason": "연결어미 뒤에 마침표가 찍혀 문장이 끊김.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "바로크·고전/020-5.2. J.C. 바흐와 런던 피아니즘의 형성.md",
+      "paragraph": "당시 런던에서는 츠룸페(Zumpe)와 같은 독일 출신 제작자들이 만든 사각형 피아노(square piano)가 큰 인기를 끌고 있었는데",
+      "issue_type": "typo",
+      "original": "츠룸페(Zumpe)",
+      "proposed": "춤페(Zumpe)",
+      "reason": "독일어 인명 Zumpe의 통용 표기는 춤페임.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

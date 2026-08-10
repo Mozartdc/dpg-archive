@@ -1,0 +1,24 @@
+{
+  "post_no": 2672,
+  "stage": 2,
+  "checked_at": "2026-08-10T04:12:17.139Z",
+  "revisited_at": "2026-08-10T22:00:00.000Z",
+  "checks": [
+    {
+      "original_claim": "아내 콘스탄체가 본인과 닮았다고 인정한 1783년 요제프 랑게의 미완성 초상화 (이미지 설명은 1789년으로 상충)",
+      "verdict": "confirmed_error",
+      "proposed": "이미지 캡션의 단일 연도 표기 → 1783년경 시작해 1789년경 캔버스를 확장한 미완성 초상화",
+      "source_1_url": "http://michaelorenz.blogspot.com/2012/09/joseph-langes-mozart-portrait.html",
+      "source_1_title": "Michael Lorenz: Joseph Lange's Mozart Portrait",
+      "source_1_support": "Lange painted the unfinished portrait of Mozart in 1782-83.",
+      "source_2_url": "https://www.themorgan.org/exhibitions/online/mozart/438",
+      "source_2_title": "An Unfinished Portrait - The Morgan Library & Museum",
+      "source_2_support": "작은 원작은 1783년까지 거슬러 올라갈 수 있고, 캔버스를 확장해 몸과 피아노를 더한 작업은 1789년경 진행됐다고 설명함.",
+      "reasoning": "재검증(3회차): 1783년과 1789년은 서로 배타적인 제작 연도가 아니라 서로 다른 제작 단계를 가리킴. Morgan Library 설명에 따라 초기 초상과 이후 확장을 함께 적어 내부 모순을 해소함.",
+      "confidence": "high",
+      "paired_posts": [],
+      "changes_meaning": false,
+      "criteria_group": "A"
+    }
+  ]
+}

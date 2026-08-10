@@ -1,0 +1,24 @@
+{
+  "post_no": 2603,
+  "stage": 2,
+  "checked_at": "2026-08-10T04:12:17.139Z",
+  "revisited_at": "2026-08-10T22:00:00.000Z",
+  "checks": [
+    {
+      "original_claim": "1795년에 출판된 첫 작품인 피아노 소나타 작품 2 세 곡",
+      "verdict": "confirmed_error",
+      "proposed": "1795년에 출판된 → 1796년에 출판된 (작곡은 1795년, 출판은 1796년 3월)",
+      "source_1_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._1_(Beethoven)",
+      "source_1_title": "Piano Sonata No. 1 (Beethoven) - Wikipedia",
+      "source_1_support": "Written 1795, dedicated to Haydn, published simultaneously with sonatas No.2 and No.3 in 1796.",
+      "source_2_url": "https://interlude.hk/beethoven-and-his-op-2/",
+      "source_2_title": "Beethoven and his Op. 2 - Interlude",
+      "source_2_support": "Confirms Op.2 sonatas published March 1796.",
+      "reasoning": "재검증(2회차): 작곡 연도(1795)와 출판 연도(1796)가 혼동됨. A군, 2건 독립 출처. 동일 문장의 평서형 '포함하고 있다.'는 음슴체 복구 지시(4건) 대상이라 '포함하고 있음.'으로 함께 수정함.",
+      "confidence": "high",
+      "paired_posts": [],
+      "changes_meaning": false,
+      "criteria_group": "A"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "post_no": 3428,
+  "source_file": "낭만·그 이후/010-쇼팽의 생매장 공포증.md",
+  "title": "쇼팽의 생매장 공포증",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/010-쇼팽의 생매장 공포증.md",
+      "paragraph": "1945년 바르샤바 봉기 당시 독일군에 의해 도난당했던 쇼팽의 심장이 바르샤바로 반환되는 모습",
+      "issue_type": "factual_error",
+      "original": "1945년 바르샤바 봉기 당시",
+      "proposed": null,
+      "reason": "바르샤바 봉기는 1944년 8~10월에 일어난 사건임. 심장이 반환된 해가 1945년이라 봉기 연도와 반환 연도가 한 문장에서 섞였을 가능성이 큼. 검증 대상으로 올림.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/010-쇼팽의 생매장 공포증.md",
+      "paragraph": "콜레라 유행 시기에는 위생상의 이유로 시신을 가능한 한 빨리 매장했기때문임.",
+      "issue_type": "typo",
+      "original": "매장했기때문임",
+      "proposed": "매장했기 때문임",
+      "reason": "의존명사 띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/010-쇼팽의 생매장 공포증.md",
+      "paragraph": "그는 임종 며칠 전, 정신이 또렷할 때 친구들에게 “파스키에비치…가게 해다오.”",
+      "issue_type": "grammar",
+      "original": "친구들에게 “…해다오.”",
+      "proposed": null,
+      "reason": "인용문 뒤에 ‘말함’ 같은 서술어가 빠져 문장이 끝나지 않음. 문장을 나누거나 합치지 않는 범위에서 고치기 어려워 수정안은 제시하지 않고 확인만 요청함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/010-쇼팽의 생매장 공포증.md",
+      "paragraph": "폴란드인들은 그의 애국심이 죽음조차 넘어선 것이라고 자랑스럽게 말 할 수 있게 된 것임.",
+      "issue_type": "typo",
+      "original": "말 할 수 있게",
+      "proposed": "말할 수 있게",
+      "reason": "띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "post_no": 1415,
+  "source_file": "작곡가 이야기/006-베토벤 편지 모음집.md",
+  "title": "베토벤 편지 모음집",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "작곡가 이야기/006-베토벤 편지 모음집.md",
+      "paragraph": "아래 링크 가서 회원 가입하면 15간 대출 가능하고 온러인으로 열람 가능.",
+      "issue_type": "typo",
+      "original": "15간 대출 가능하고 온러인으로",
+      "proposed": "15일간 대출 가능하고 온라인으로",
+      "reason": "글자 누락과 오타가 한 문장에 겹침.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "작곡가 이야기/006-베토벤 편지 모음집.md",
+      "paragraph": "두본째는",
+      "issue_type": "typo",
+      "original": "두본째는",
+      "proposed": "두 번째는",
+      "reason": "글자 오타와 띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/006-베토벤 편지 모음집.md",
+      "paragraph": "이 책은 편지 쁀 아니라 당시 나누었던 대화도 있는데",
+      "issue_type": "typo",
+      "original": "편지 쁀 아니라",
+      "proposed": "편지뿐 아니라",
+      "reason": "글자 오타와 조사 띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/006-베토벤 편지 모음집.md",
+      "paragraph": "이것도 회원가잊하면 15일 대여 가능",
+      "issue_type": "typo",
+      "original": "회원가잊하면",
+      "proposed": "회원 가입하면",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/006-베토벤 편지 모음집.md",
+      "paragraph": "새번째 Project Gutenberg이 편짖하 Beethoven’s Letters",
+      "issue_type": "typo",
+      "original": "새번째 ... 편짖하",
+      "proposed": "세 번째 ... 편집한",
+      "reason": "글자 오타가 두 군데 있음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "작곡가 이야기/006-베토벤 편지 모음집.md",
+      "paragraph": "루트비히 노엘이 수집한 베토벤의 편지를 한정으로 번역한 것임.",
+      "issue_type": "ambiguous",
+      "original": "루트비히 노엘이 수집한 ... 한정으로 번역한",
+      "proposed": null,
+      "reason": "편지를 모은 인물은 Ludwig Nohl로 통상 ‘놀’로 적음. 또한 ‘한정으로 번역한’이 무엇을 한정했다는 뜻인지 문맥에서 파악되지 않음. 원문 의도 확인 전에는 수정안을 제시하지 않음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

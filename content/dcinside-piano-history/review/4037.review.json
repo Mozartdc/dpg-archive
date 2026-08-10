@@ -1,0 +1,92 @@
+{
+  "post_no": 4037,
+  "source_file": "낭만·그 이후/059-22.2. 찰스 아이브스의 실험적 피아노 음악과 콩코드 소나타.md",
+  "title": "22.2. 찰스 아이브스의 실험적 피아노 음악과 콩코드 소나타",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/059-22.2. 찰스 아이브스의 실험적 피아노 음악과 콩코드 소나타.md",
+      "paragraph": "아이브스큰 독특한 이력을 가지고 있는데, 성공한 보험 회사 임원으로 일하며",
+      "issue_type": "typo",
+      "original": "아이브스큰",
+      "proposed": "아이브스는",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/059-22.2. 찰스 아이브스의 실험적 피아노 음악과 콩코드 소나타.md",
+      "paragraph": "이것은 아이브스기 음악으로 돈을 벌 필요가 없었기에",
+      "issue_type": "typo",
+      "original": "아이브스기",
+      "proposed": "아이브스가",
+      "reason": "조사 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/059-22.2. 찰스 아이브스의 실험적 피아노 음악과 콩코드 소나타.md",
+      "paragraph": "후대에선 이를 수십년 앞선 선구안있다고 평가함.",
+      "issue_type": "grammar",
+      "original": "수십년 앞선 선구안있다고",
+      "proposed": "수십 년 앞선 선구안이 있다고",
+      "reason": "띄어쓰기와 조사 누락이 겹쳐 문장이 성립하지 않음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/059-22.2. 찰스 아이브스의 실험적 피아노 음악과 콩코드 소나타.md",
+      "paragraph": "토속성을 실험하면서 선구자의 길을 걸었다. ... 업계에서 호평을 받으면서 상당한 인정을 받았다.",
+      "issue_type": "awkward_expression",
+      "original": "걸었다. / 받았다.",
+      "proposed": "걸었음. / 받았음.",
+      "reason": "글 전체가 음슴체인데 이 두 문장만 평서형 종결로 바뀌어 있음. 문체를 바꾸자는 제안이 아니라 글쓴이 본래 어조로 되돌리는 범위임.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/059-22.2. 찰스 아이브스의 실험적 피아노 음악과 콩코드 소나타.md",
+      "paragraph": "이를 해석하고 연주하기 위해 피아노 음악은 연주자는 극도의 난해함을 토로함.",
+      "issue_type": "grammar",
+      "original": "피아노 음악은 연주자는 극도의 난해함을 토로함",
+      "proposed": null,
+      "reason": "한 문장에 주격 조사가 두 번 나와 주어가 겹치고, 무엇이 난해하다는 것인지 불명확함. 문장을 나누지 않는 범위에서 고치기 어려워 확인만 요청함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/059-22.2. 찰스 아이브스의 실험적 피아노 음악과 콩코드 소나타.md",
+      "paragraph": "찰스 아이브스(Charles Ives, 1874-1954)는 전편의 카웰과 동료이자 스승이기도 함.",
+      "issue_type": "ambiguous",
+      "original": "카웰과 동료이자 스승이기도 함",
+      "proposed": null,
+      "reason": "아이브스는 카웰을 후원하고 교류한 사이로 알려져 있으나, 카웰이 사사한 인물로는 찰스 시거 등이 거론됨. ‘스승’이라는 표현이 사제 관계를 뜻한다면 사실과 다를 수 있어 확인이 필요함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    }
+  ]
+}

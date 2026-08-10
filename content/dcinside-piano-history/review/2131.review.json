@@ -1,0 +1,36 @@
+{
+  "post_no": 2131,
+  "source_file": "바로크·고전/019-5.1. 다감 양식과 C.P.E. 바흐.md",
+  "title": "5.1. 다감 양식과 C.P.E. 바흐",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/019-5.1. 다감 양식과 C.P.E. 바흐.md",
+      "paragraph": "개인의 내면적이고 주관적인 감정을 ‘솔직하도 자연스럽게’ 표현하고자 하는",
+      "issue_type": "typo",
+      "original": "‘솔직하도 자연스럽게’",
+      "proposed": "‘솔직하고 자연스럽게’",
+      "reason": "연결어미 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "바로크·고전/019-5.1. 다감 양식과 C.P.E. 바흐.md",
+      "paragraph": "올바른 클라비어 연주법에 관한 소고(Versuch über die wahre Art das Clavier zu spielen, 1753)는 ... 피아노포르테를 독립적이고 구별되는 악기로 처음 명확히 언급한 저술임.",
+      "issue_type": "unsupported_claim",
+      "original": "피아노포르테를 독립적이고 구별되는 악기로 처음 명확히 언급한 저술임",
+      "proposed": null,
+      "reason": "‘처음’이라는 최초성 주장인데 근거가 제시돼 있지 않음. 마페이의 1711년 기사가 이미 피아노포르테를 다뤘다는 서술이 같은 문서 2.3절에 있어 내부적으로도 상충함. 원문 확인 전에는 수정하지 않고 근거 보강만 권함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    }
+  ]
+}

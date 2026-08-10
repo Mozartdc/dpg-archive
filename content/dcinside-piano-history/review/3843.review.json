@@ -1,0 +1,36 @@
+{
+  "post_no": 3843,
+  "source_file": "낭만·그 이후/051-20. 신고전주의와 객관주의.md",
+  "title": "20. 신고전주의와 객관주의",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/051-20. 신고전주의와 객관주의.md",
+      "paragraph": "이 사조의 근본적인 지향점은 객관주의(ivity)에 있음.",
+      "issue_type": "typo",
+      "original": "객관주의(ivity)",
+      "proposed": "객관주의(objectivity)",
+      "reason": "영어 단어가 깨져 앞부분이 잘림.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/051-20. 신고전주의와 객관주의.md",
+      "paragraph": "에릭사티는 이전 세대의 작곡가지만, 이 곡이 신고전주의의 아이디어를 제공하고, 앞으로 나타날 음악적 흐름을 예언한 작품이리고 평가됨.",
+      "issue_type": "typo",
+      "original": "에릭사티는 ... 작품이리고",
+      "proposed": "에릭 사티는 ... 작품이라고",
+      "reason": "인명 띄어쓰기와 어미 오타가 한 문장에 겹침.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

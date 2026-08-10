@@ -1,0 +1,36 @@
+{
+  "post_no": 3130,
+  "source_file": "낭만·그 이후/021-13.5. 헝가리 광시곡과 민족성.md",
+  "title": "13.5. 헝가리 광시곡과 민족성",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/021-13.5. 헝가리 광시곡과 민족성.md",
+      "paragraph": "피아노로 옮겨온 집시 악단 리스트는 이 집시 악단의 소리와 연주 스타일을 피아노 한 대로 재현하고자 함.",
+      "issue_type": "awkward_expression",
+      "original": "피아노로 옮겨온 집시 악단 리스트는 이 집시 악단의",
+      "proposed": null,
+      "reason": "앞의 ‘피아노로 옮겨온 집시 악단’은 소제목으로 보이는데 줄바꿈 없이 다음 문장과 붙어 한 문장처럼 읽힘. 문단 구조를 바꾸지 않는 범위에서 판단하기 어려워 확인만 요청함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/021-13.5. 헝가리 광시곡과 민족성.md",
+      "paragraph": "그 가장 대표적인 결과물이 바로 헝가리 광시곡(Hungarian Rhapsodies)연작임.",
+      "issue_type": "typo",
+      "original": "(Hungarian Rhapsodies)연작임",
+      "proposed": "(Hungarian Rhapsodies) 연작임",
+      "reason": "괄호 뒤 띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "low",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

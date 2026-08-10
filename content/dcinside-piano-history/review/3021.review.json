@@ -1,0 +1,50 @@
+{
+  "post_no": 3021,
+  "source_file": "낭만·그 이후/014-12.3. 클라라 슈만과 여성 작곡가.md",
+  "title": "12.3. 클라라 슈만과 여성 작곡가",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/014-12.3. 클라라 슈만과 여성 작곡가.md",
+      "paragraph": "남편의 음악을 세상에 알린 가장 해석자였고, 후대의 요하네스 브람스에게는",
+      "issue_type": "grammar",
+      "original": "가장 해석자였고",
+      "proposed": "가장 뛰어난 해석자였고",
+      "reason": "‘가장’ 뒤 형용사가 빠져 문장이 성립하지 않음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/014-12.3. 클라라 슈만과 여성 작곡가.md",
+      "paragraph": "여섯 개의 가곡, op.13등은 그녀의 섬세한 시정과 세련된 피아니즘을 잘 보여주는 수작이.",
+      "issue_type": "typo",
+      "original": "수작이.",
+      "proposed": "수작임.",
+      "reason": "어미가 잘려 문장이 끝나지 않음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/014-12.3. 클라라 슈만과 여성 작곡가.md",
+      "paragraph": "여섯 개의 가곡, op.13등은",
+      "issue_type": "typo",
+      "original": "op.13등은",
+      "proposed": "Op.13 등은",
+      "reason": "작품번호 표기가 같은 문단의 다른 곳과 다르고 의존명사 띄어쓰기가 빠짐.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

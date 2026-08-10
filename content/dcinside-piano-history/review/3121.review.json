@@ -1,0 +1,78 @@
+{
+  "post_no": 3121,
+  "source_file": "낭만·그 이후/019-13.3. 초절기교 연습곡.md",
+  "title": "13.3. 초절기교 연습곡",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/019-13.3. 초절기교 연습곡.md",
+      "paragraph": "바이마르 시절의 리스트가 불필요하거나 비효과적인 기교를 덜어내고 구조를 다듬었고 이것이 현자 연주되는 버전임.",
+      "issue_type": "typo",
+      "original": "현자 연주되는",
+      "proposed": "현재 연주되는",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/019-13.3. 초절기교 연습곡.md",
+      "paragraph": "자신의 연습곡이 단순한 테크닉 학습를 넘어 ‘음악’임을 명확히 함.",
+      "issue_type": "typo",
+      "original": "테크닉 학습를",
+      "proposed": "테크닉 학습을",
+      "reason": "받침 있는 말 뒤 목적격 조사 오류.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/019-13.3. 초절기교 연습곡.md",
+      "paragraph": "약 26년에 걸쳐 세 번의 개정을 거치며 리스트의 예술적 성숙 과정을 반영하고 있다는데 의미가 있음.",
+      "issue_type": "ambiguous",
+      "original": "세 번의 개정을 거치며",
+      "proposed": null,
+      "reason": "이어지는 본문은 1826·1837·1852년의 세 판본을 들고 있어 개정 횟수는 두 번으로 읽힘. 판본 수와 개정 횟수가 뒤섞였을 수 있어 확인이 필요함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/019-13.3. 초절기교 연습곡.md",
+      "paragraph": "반영하고 있다는데 의미가 있음.",
+      "issue_type": "typo",
+      "original": "있다는데 의미가",
+      "proposed": "있다는 데 의미가",
+      "reason": "의존명사 띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/019-13.3. 초절기교 연습곡.md",
+      "paragraph": "모든 종류의 기술적 한계에 의도적으로 접근했기때문에 음악이라기보다는 순수한 테크닉  연구에 더 큰 목적을 둔 작품임.",
+      "issue_type": "typo",
+      "original": "접근했기때문에 ... 테크닉  연구",
+      "proposed": "접근했기 때문에 ... 테크닉 연구",
+      "reason": "의존명사 띄어쓰기와 공백 두 칸.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

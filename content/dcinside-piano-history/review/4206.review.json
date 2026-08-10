@@ -1,0 +1,64 @@
+{
+  "post_no": 4206,
+  "source_file": "작곡가 이야기/012-작곡가들의 수입 (베토벤).md",
+  "title": "작곡가들의 수입 (베토벤)",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "작곡가 이야기/012-작곡가들의 수입 (베토벤).md",
+      "paragraph": "1815년, 영국의 아서 웰슬리 웰링턴 공작이 나폴레옹을 워털루 전투에서 완전히 몰락시키자 베토벤은 웰링턴의 승리 (Wellington's Victory)를 작곡해 무대에 올림.",
+      "issue_type": "factual_error",
+      "original": "1815년 ... 워털루 전투에서 완전히 몰락시키자",
+      "proposed": null,
+      "reason": "웰링턴의 승리(Op.91)는 1813년 비토리아 전투의 승전을 기린 곡으로, 같은 문단 아래에서도 초연을 1813년 12월로 적고 있어 앞뒤가 맞지 않음. 워털루 전투는 1815년으로 작품 성립보다 늦음. 검증 대상으로 올림.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": true,
+      "applied": false
+    },
+    {
+      "source_file": "작곡가 이야기/012-작곡가들의 수입 (베토벤).md",
+      "paragraph": "친구인 맬첼(메트로놈 돚거 발명자)가 ... 사실 멜첼이 개발중이던 자동 연주 기계(판하르모니콘)에",
+      "issue_type": "typo",
+      "original": "맬첼 ... 멜첼",
+      "proposed": null,
+      "reason": "같은 글 안에서 같은 인물의 표기가 맬첼과 멜첼로 갈림. 통용 표기가 여럿이라 어느 쪽으로 통일할지는 확인이 필요함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "작곡가 이야기/012-작곡가들의 수입 (베토벤).md",
+      "paragraph": "‘그 곡의 아이디어는 내가 낸 거니 수익을 절반을 내놓으라‘고 소송을 함.",
+      "issue_type": "grammar",
+      "original": "수익을 절반을 내놓으라",
+      "proposed": "수익의 절반을 내놓으라",
+      "reason": "목적격 조사가 겹쳐 문장이 성립하지 않음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/012-작곡가들의 수입 (베토벤).md",
+      "paragraph": "교향곡 7번의 반응은 미적지근했다고함.",
+      "issue_type": "typo",
+      "original": "미적지근했다고함",
+      "proposed": "미적지근했다고 함",
+      "reason": "띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

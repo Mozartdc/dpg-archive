@@ -1,0 +1,50 @@
+{
+  "post_no": 2568,
+  "source_file": "바로크·고전/035-8.2. 18세기 후반 피아노 제작 기술(빈 액션 vs영국 식 액션).md",
+  "title": "8.2. 18세기 후반 피아노 제작 기술(빈 액션 vs영국 식 액션)",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/035-8.2. 18세기 후반 피아노 제작 기술(빈 액션 vs영국 식 액션).md",
+      "paragraph": "오케스트라적인 음향을 추구했던 이들의 음악은 영국식 피아노를 특징을 잘 활용했음.",
+      "issue_type": "grammar",
+      "original": "영국식 피아노를 특징을",
+      "proposed": "영국식 피아노의 특징을",
+      "reason": "목적격 조사가 겹쳐 호응이 깨짐.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "바로크·고전/035-8.2. 18세기 후반 피아노 제작 기술(빈 액션 vs영국 식 액션).md",
+      "paragraph": "빠른 반응 속도는 고르고  빠른 스케일 연주에 최적화 됨.",
+      "issue_type": "typo",
+      "original": "고르고  빠른 스케일 연주에 최적화 됨",
+      "proposed": "고르고 빠른 스케일 연주에 최적화됨",
+      "reason": "공백 두 칸과 접미사 띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "바로크·고전/035-8.2. 18세기 후반 피아노 제작 기술(빈 액션 vs영국 식 액션).md",
+      "paragraph": "‘영국 식 액션(English Action)’임.",
+      "issue_type": "awkward_expression",
+      "original": "영국 식 액션",
+      "proposed": null,
+      "reason": "같은 문서에서 ‘빈 식’과 ‘빈식’, ‘영국 식’과 ‘영국식’이 뒤섞여 있음. 접미사 ‘-식’은 붙여 쓰는 것이 표준이나 제목에도 같은 표기가 있어 제목을 건드리지 않는 범위에서 본문 통일 여부만 검토 대상으로 남김.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "low",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

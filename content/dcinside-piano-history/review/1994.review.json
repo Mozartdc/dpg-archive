@@ -1,0 +1,36 @@
+{
+  "post_no": 1994,
+  "source_file": "바로크·고전/007-2.2. 초기 피아노포르테의 음향적 특성과 연주법.md",
+  "title": "2.2. 초기 피아노포르테의 음향적 특성과 연주법",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/007-2.2. 초기 피아노포르테의 음향적 특성과 연주법.md",
+      "paragraph": "전체으론 투명하고 타악기적인 명료함을 지니면서도",
+      "issue_type": "typo",
+      "original": "전체으론",
+      "proposed": "전체적으론",
+      "reason": "조사 결합 오류.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "바로크·고전/007-2.2. 초기 피아노포르테의 음향적 특성과 연주법.md",
+      "paragraph": "감정의 섬세한 변화를 중심으로 하는 감정양식의 대표적 작곡가로 평가됨",
+      "issue_type": "ambiguous",
+      "original": "감정양식",
+      "proposed": null,
+      "reason": "같은 사조를 1.2절에서는 다감양식(Empfindsamer Stil)으로 적었는데 여기서는 감정양식으로 적어 표기가 갈림. 번역명이 여러 가지인 용어라 원문 표현을 유지하고 통일 여부만 검토 대상으로 남김.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

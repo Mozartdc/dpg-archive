@@ -1,0 +1,24 @@
+{
+  "post_no": 2017,
+  "stage": 2,
+  "checked_at": "2026-08-10T04:12:17.135Z",
+  "revisited_at": "2026-08-10T22:00:00.000Z",
+  "checks": [
+    {
+      "original_claim": "1729년 그녀가 스페인 왕비가 되자 마드리드로 함께 이주하여 여생을 그곳에서 보냄.",
+      "verdict": "confirmed_error",
+      "proposed": "1729년 그녀가 스페인 왕비가 되자 → 1729년 그녀가 스페인 왕세자비(아스투리아스 공비)가 되자",
+      "source_1_url": "https://en.wikipedia.org/wiki/Barbara_of_Portugal",
+      "source_1_title": "Barbara of Portugal - Wikipedia",
+      "source_1_support": "Married Prince of Asturias (later Ferdinand VI) on 20 January 1729 and received the title Princess of Asturias that day; became Queen of Spain only in 1746 upon Ferdinand's accession.",
+      "source_2_url": "https://www.museodelprado.es/en/the-collection/art-work/barbara-de-braganza-princess-of-asturias/b84c305c-0890-407b-babe-c97cd330f374",
+      "source_2_title": "Bárbara de Braganza, Princess of Asturias - Museo del Prado",
+      "source_2_support": "Prado catalogue confirms her 1729 title as Princess of Asturias.",
+      "reasoning": "재검증(2회차, 모순쌍 2017↔4407): 4407은 '스페인 왕세자와 결혼'으로 정확히 서술하나, 2017은 같은 시점(1729년)을 '왕비가 되자'로 서술해 모순. 사료상 그녀는 1729년 결혼 시 아스투리아스 공비(왕세자비)였고 왕비는 1746년 즉위 후. 2017만 수정, 4407은 원문 유지. A군, 2건 독립 출처.",
+      "confidence": "high",
+      "paired_posts": [4407],
+      "changes_meaning": false,
+      "criteria_group": "A"
+    }
+  ]
+}

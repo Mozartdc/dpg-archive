@@ -1,0 +1,36 @@
+{
+  "post_no": 2672,
+  "source_file": "작곡가 이야기/004-모차르트의 두개골로(추정) 3D 얼굴 복원.md",
+  "title": "모차르트의 두개골로(추정) 3D 얼굴 복원",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "작곡가 이야기/004-모차르트의 두개골로(추정) 3D 얼굴 복원.md",
+      "paragraph": "아내 콘스탄체가 본인과 닮았다고 인정한 1783년 요제프 랑게의 미완성 초상화를 비교하여 복원함. ... 요제프 랑게. 1789년 작 미완성 초상화,",
+      "issue_type": "factual_error",
+      "original": "1783년 요제프 랑게의 미완성 초상화 / 요제프 랑게. 1789년 작",
+      "proposed": null,
+      "reason": "같은 글 안에서 랑게의 미완성 초상 제작 연도를 본문은 1783년, 이미지 설명은 1789년으로 서로 다르게 적고 있음. 자료에 따라 1782~83년과 1789년이 함께 거론되는 그림이라 어느 쪽을 따를지 확인이 필요함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    },
+    {
+      "source_file": "작곡가 이야기/004-모차르트의 두개골로(추정) 3D 얼굴 복원.md",
+      "paragraph": "물론 이 이야기가 100%추적 가능한 사실은 아님.",
+      "issue_type": "typo",
+      "original": "100%추적",
+      "proposed": "100% 추적",
+      "reason": "기호 뒤 띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "low",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

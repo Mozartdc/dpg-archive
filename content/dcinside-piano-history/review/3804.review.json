@@ -1,0 +1,36 @@
+{
+  "post_no": 3804,
+  "source_file": "낭만·그 이후/050-19.4. 레오시 야나체크의 피아노 음악.md",
+  "title": "19.4. 레오시 야나체크의 피아노 음악",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/050-19.4. 레오시 야나체크의 피아노 음악.md",
+      "paragraph": "소나타 1905년 10월 1일 (Sonata 1. X. 1905)> (1905)",
+      "issue_type": "typo",
+      "original": "(Sonata 1. X. 1905)> (1905)",
+      "proposed": "(Sonata 1. X. 1905) (1905)",
+      "reason": "닫는 꺾쇠만 남아 있는 표기 오류.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/050-19.4. 레오시 야나체크의 피아노 음악.md",
+      "paragraph": "총 10곡과 추가 2곡으로 이루어진 모음곡.",
+      "issue_type": "ambiguous",
+      "original": "총 10곡과 추가 2곡",
+      "proposed": null,
+      "reason": "‘수풀이 우거진 오솔길에서’는 1집 10곡에 2집 여러 곡이 더해지는 구성으로, 판본에 따라 2집의 곡 수를 다르게 세는 서술이 있음. 어느 판본을 기준으로 삼았는지 확인이 필요해 오류로 단정하지 않음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "low",
+      "changes_meaning": true,
+      "applied": false
+    }
+  ]
+}

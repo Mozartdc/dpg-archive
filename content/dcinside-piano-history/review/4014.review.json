@@ -1,0 +1,78 @@
+{
+  "post_no": 4014,
+  "source_file": "낭만·그 이후/058-22.1. 헨리 카웰의 톤 클러스터와 스트링 피아노.md",
+  "title": "22.1. 헨리 카웰의 톤 클러스터와 스트링 피아노",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/058-22.1. 헨리 카웰의 톤 클러스터와 스트링 피아노.md",
+      "paragraph": "**톤 클러스터 (Tone Cluster): 주먹과 팔뚝의 사용하는 연주**",
+      "issue_type": "grammar",
+      "original": "주먹과 팔뚝의 사용하는 연주",
+      "proposed": "주먹과 팔뚝을 사용하는 연주",
+      "reason": "목적격 조사 자리에 관형격 조사가 들어감.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/058-22.1. 헨리 카웰의 톤 클러스터와 스트링 피아노.md",
+      "paragraph": "현을 직접 민져서 연주하는 기법 (String Piano)",
+      "issue_type": "typo",
+      "original": "민져서",
+      "proposed": "만져서",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/058-22.1. 헨리 카웰의 톤 클러스터와 스트링 피아노.md",
+      "paragraph": "이 외에더 마나우난의 조류 (The Tides of Manaunaun)라는 곡은 왼손의 손바닥괴 팔꿈치, 팔뚝을 파도치듯 누르면서",
+      "issue_type": "typo",
+      "original": "이 외에더 ... 손바닥괴",
+      "proposed": "이 외에도 ... 손바닥과",
+      "reason": "한 문장에 글자 오타가 두 군데 있음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/058-22.1. 헨리 카웰의 톤 클러스터와 스트링 피아노.md",
+      "paragraph": "연주 할 때  팔의 근육 긴장도를 조절하여",
+      "issue_type": "typo",
+      "original": "연주 할 때  팔의",
+      "proposed": "연주할 때 팔의",
+      "reason": "띄어쓰기 오류와 공백 두 칸.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/058-22.1. 헨리 카웰의 톤 클러스터와 스트링 피아노.md",
+      "paragraph": "존 케이지(John Cage)의 프리페어드 피아노(Prepared Piano)탄생에 영향을 미침.",
+      "issue_type": "typo",
+      "original": "(Prepared Piano)탄생에",
+      "proposed": "(Prepared Piano) 탄생에",
+      "reason": "괄호 뒤 띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

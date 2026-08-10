@@ -1,0 +1,36 @@
+{
+  "post_no": 2952,
+  "source_file": "낭만·그 이후/015-클라라 슈만이 현대 피아니스트와 연주회 문화에 미친 결정적인 영향.md",
+  "title": "클라라 슈만이 현대 피아니스트와 연주회 문화에 미친 결정적인 영향",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/015-클라라 슈만이 현대 피아니스트와 연주회 문화에 미친 결정적인 영향.md",
+      "paragraph": "최초로 피아노 연주회에서 악보 없이 '암보 연주'를 본격적으로 도입하고, 이 전통이 현대까지 표준으로 자리잡음.(1830년대 후반으로 추정)",
+      "issue_type": "unsupported_claim",
+      "original": "최초로 피아노 연주회에서 악보 없이 '암보 연주'를 본격적으로 도입하고",
+      "proposed": null,
+      "reason": "암보 연주의 정착은 클라라 슈만과 리스트 양쪽에 함께 돌리는 서술이 많음. 같은 문서 모음의 12.3절에서는 ‘최초의 피아니스트 중 한 명’으로 완화해 적고 있어 두 글이 서로 어긋남. 최초성 주장은 근거 확인이 필요해 기록만 남김.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/015-클라라 슈만이 현대 피아니스트와 연주회 문화에 미친 결정적인 영향.md",
+      "paragraph": "현대적 연주회 편성 및 concepts의 기반을 닦음.",
+      "issue_type": "awkward_expression",
+      "original": "연주회 편성 및 concepts의 기반",
+      "proposed": "연주회 편성과 구성 개념의 기반",
+      "reason": "한 문장 안에 영어 단어가 그대로 섞여 앞뒤 표기와 어긋남.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "low",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

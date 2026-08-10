@@ -1,0 +1,22 @@
+{
+  "post_no": 2017,
+  "source_file": "바로크·고전/010-3.1. 도메니코 스카를라티의 소나타와 이베리아 반도의 영향.md",
+  "title": "3.1. 도메니코 스카를라티의 소나타와 이베리아 반도의 영향",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/010-3.1. 도메니코 스카를라티의 소나타와 이베리아 반도의 영향.md",
+      "paragraph": "그는 1719년부터 포르투갈의 공주 마리아 바르바라를 섬기기 시작했고, 1729년 그녀가 스페인 왕비가 되자 마드리드로 함께 이주하여 여생을 그곳에서 보냄.",
+      "issue_type": "factual_error",
+      "original": "1729년 그녀가 스페인 왕비가 되자",
+      "proposed": null,
+      "reason": "1729년에 마리아 바르바라가 얻은 지위는 왕비가 아니라 아스투리아스 공비임. 남편 페르난도가 즉위해 왕비가 된 시점은 1746년으로 보는 서술이 일반적임. 스카를라티의 마드리드 이주 자체는 1729년이 맞아 연도가 아니라 칭호가 문제인 대목임. 독립 출처 2건 확인 전까지 본문은 수정하지 않음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    }
+  ]
+}

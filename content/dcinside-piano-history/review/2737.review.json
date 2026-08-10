@@ -1,0 +1,64 @@
+{
+  "post_no": 2737,
+  "source_file": "낭만·그 이후/004-10.2 펠릭스 멘델스존 (2).md",
+  "title": "10.2 펠릭스 멘델스존 (2)",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/004-10.2 펠릭스 멘델스존 (2).md",
+      "paragraph": "빌헬름 헨젤(멘델스존의 처남)작. 펠릭스 멘델스존의 초상화.",
+      "issue_type": "factual_error",
+      "original": "빌헬름 헨젤(멘델스존의 처남)",
+      "proposed": null,
+      "reason": "빌헬름 헨젤은 펠릭스의 누나 파니 멘델스존의 남편임. 처남은 아내의 남자 형제를 가리키므로 관계가 반대로 적힘. 누나의 남편이라면 매형(자형)이 맞음. 검증 대상으로 올림.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/004-10.2 펠릭스 멘델스존 (2).md",
+      "paragraph": "작품 전체에 걸쳐 서정적 분위기, 구조적 균형, 살롱 연주에 적합한 접근 방식이 그러남.",
+      "issue_type": "typo",
+      "original": "그러남",
+      "proposed": "드러남",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/004-10.2 펠릭스 멘델스존 (2).md",
+      "paragraph": "반주는 알페지오 또는 화음으로 비교적 단순하게 처리함.",
+      "issue_type": "typo",
+      "original": "알페지오",
+      "proposed": "아르페지오",
+      "reason": "악어 표기 오류. 같은 문서 모음의 다른 글에서는 모두 아르페지오로 적고 있음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/004-10.2 펠릭스 멘델스존 (2).md",
+      "paragraph": "빠르고 가벼운 패시지가 특징임 작품 전체에 걸쳐 서정적 분위기",
+      "issue_type": "typo",
+      "original": "특징임 작품",
+      "proposed": "특징임. 작품",
+      "reason": "문장 끝 마침표 누락으로 두 문장이 붙음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    }
+  ]
+}

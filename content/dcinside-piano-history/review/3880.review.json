@@ -1,0 +1,22 @@
+{
+  "post_no": 3880,
+  "source_file": "낭만·그 이후/052-20.1. 프랑스 6인조(Les Six)와 에릭 사티의 영향.md",
+  "title": "20.1. 프랑스 6인조(Les Six)와 에릭 사티의 영향",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/052-20.1. 프랑스 6인조(Les Six)와 에릭 사티의 영향.md",
+      "paragraph": "그의 피아노 음악(예: '브라질의 추억' 시리즈나 '브라질 무곡(Saudades do Brasil)' 중 일부)",
+      "issue_type": "ambiguous",
+      "original": "'브라질의 추억' 시리즈나 '브라질 무곡(Saudades do Brasil)'",
+      "proposed": null,
+      "reason": "Saudades do Brasil이 곧 ‘브라질의 추억’이라 서로 다른 두 작품처럼 나열돼 있음. 다만 미요에게 브라질 소재 작품이 여럿이라 별개 작품을 가리켰을 여지가 있어 오류로 단정하지 않음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    }
+  ]
+}

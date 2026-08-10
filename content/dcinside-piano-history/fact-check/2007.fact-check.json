@@ -1,0 +1,24 @@
+{
+  "post_no": 2007,
+  "stage": 2,
+  "checked_at": "2026-08-10T04:12:17.135Z",
+  "revisited_at": "2026-08-10T22:00:00.000Z",
+  "checks": [
+    {
+      "original_claim": "이들 중에는 훗날 모차르트가 사랑한 피아노를 만들게 될 요한 안드레아스 슈타인(Johann Andreas Stein)도 있었음. (질버만의 제자로 서술)",
+      "verdict": "confirmed_error",
+      "proposed": "질버만이 길러낸 제자들이 → 질버만 가문의 공방에서 훈련받은 제작자들이",
+      "source_1_url": "https://en.wikipedia.org/wiki/Johann_Andreas_Stein",
+      "source_1_title": "Johann Andreas Stein - Wikipedia",
+      "source_1_support": "Stein worked as a journeyman at the workshop of Johann Andreas Silbermann (Strasbourg, nephew of Gottfried Silbermann) in 1748-49, and separately with Franz Jakob Späth in Regensburg — not directly under Gottfried Silbermann.",
+      "source_2_url": "https://en.wikipedia.org/wiki/Johann_Andreas_Silbermann",
+      "source_2_title": "Johann Andreas Silbermann - Wikipedia",
+      "source_2_support": "Confirms Johann Andreas Silbermann was Gottfried Silbermann's nephew (son of Gottfried's elder brother Andreas), running a separate Strasbourg workshop where Stein trained.",
+      "reasoning": "재검증(2회차): 슈타인은 고트프리트 질버만의 직접 제자가 아니라 조카 요한 안드레아스 질버만(스트라스부르)과 프란츠 야콥 슈페트(레겐스부르크) 밑에서 도제 수업을 받음. 본문이 '질버만이 길러낸 제자들' 중 하나로 슈타인을 서술한 것은 부정확. A군, 2건 독립 출처로 확인.",
+      "confidence": "high",
+      "paired_posts": [],
+      "changes_meaning": false,
+      "criteria_group": "A"
+    }
+  ]
+}

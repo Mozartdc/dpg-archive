@@ -1,0 +1,36 @@
+{
+  "post_no": 3468,
+  "source_file": "낭만·그 이후/036-16.4. 라벨의 주요 피아노 작품.md",
+  "title": "16.4. 라벨의 주요 피아노 작품",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/036-16.4. 라벨의 주요 피아노 작품.md",
+      "paragraph": "이 곡은 리스트의 에스테 장의 분수에서 직접적인 영향을 받았으며",
+      "issue_type": "typo",
+      "original": "리스트의 에스테 장의 분수",
+      "proposed": "리스트의 에스테 별장의 분수",
+      "reason": "리스트의 곡 제목은 Les jeux d’eaux à la Villa d’Este로 ‘에스테 별장’임. ‘별장’에서 한 글자가 빠진 것으로 보임.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/036-16.4. 라벨의 주요 피아노 작품.md",
+      "paragraph": "통보(tombeau)는 바로크 시대에 선배 작곡가를 기리기 위해 쓰던 음악 형식을 의미하며",
+      "issue_type": "awkward_expression",
+      "original": "통보(tombeau)",
+      "proposed": null,
+      "reason": "프랑스어 tombeau를 ‘통보’로 옮기면 한국어에서 널리 쓰이는 다른 낱말과 겹쳐 뜻이 흐려짐. 다만 확립된 역어가 따로 없어 원문 표현을 유지하고 검토 의견만 남김.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "low",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

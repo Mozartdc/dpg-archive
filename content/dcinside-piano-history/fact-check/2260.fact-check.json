@@ -1,0 +1,24 @@
+{
+  "post_no": 2260,
+  "stage": 2,
+  "checked_at": "2026-08-10T04:12:17.135Z",
+  "revisited_at": "2026-08-10T22:00:00.000Z",
+  "checks": [
+    {
+      "original_claim": "소나타 E♭장조 Hob.XVI:52 2악장 (Adagio): E장조까지 매우 멀리 전조하여",
+      "verdict": "confirmed_error",
+      "proposed": "E장조까지 매우 멀리 전조하여 → E♭장조와 매우 먼 E장조로 조바꿈하여",
+      "source_1_url": "https://tonic-chord.com/haydn-piano-sonata-in-eb-major-hob-xvi52-analysis/",
+      "source_1_title": "Haydn: Piano Sonata in Eb Major Hob.XVI:52 Analysis",
+      "source_1_support": "The Adagio's own tonic/home key is E major, a Neapolitan-relationship distant key from the sonata's overall E-flat major — not a modulation occurring within the movement.",
+      "source_2_url": "https://www.hyperion-records.co.uk/dw.asp?dc=W9650_67736",
+      "source_2_title": "Piano Sonata in E flat major, Hob XVI:52 (Haydn) - Hyperion Records",
+      "source_2_support": "Confirms the Adagio is written in the unusual key of E major, described as a deliberate distant-key choice by Haydn.",
+      "reasoning": "재검증(2회차): 2악장은 곡 시작부터 E장조로 쓰여 있으며(악장 자체의 으뜸조), 악장 내부에서 전조해 도달하는 것이 아님. '전조하여'라는 서술이 부정확해 최소 수정. A군, 2건 독립 출처.",
+      "confidence": "high",
+      "paired_posts": [],
+      "changes_meaning": false,
+      "criteria_group": "A"
+    }
+  ]
+}

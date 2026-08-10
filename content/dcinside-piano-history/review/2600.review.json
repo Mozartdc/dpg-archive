@@ -1,0 +1,22 @@
+{
+  "post_no": 2600,
+  "source_file": "바로크·고전/036-9. 루트비히 판 베토벤.md",
+  "title": "9. 루트비히 판 베토벤",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/036-9. 루트비히 판 베토벤.md",
+      "paragraph": "루트비히 판 베토벤(Ludwig van Beethoven)은 음악사 전채를 통틀어 가장 영향력 있고",
+      "issue_type": "typo",
+      "original": "음악사 전채를",
+      "proposed": "음악사 전체를",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    }
+  ]
+}

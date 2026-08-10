@@ -1,0 +1,36 @@
+{
+  "post_no": 2969,
+  "source_file": "작곡가 이야기/015-고전 번외. 카를 체르니의 계보와 현대에 미친 영향.md",
+  "title": "고전 번외. 카를 체르니의 계보와 현대에 미친 영향",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "작곡가 이야기/015-고전 번외. 카를 체르니의 계보와 현대에 미친 영향.md",
+      "paragraph": "첫째, 리스트를 거쳐 한스 뷜로, 페루초 부조니, 블라디미르 드 파흐만 등으로 이어진 라인 ... 레셰티츠키–파흐만",
+      "issue_type": "ambiguous",
+      "original": "블라디미르 드 파흐만",
+      "proposed": null,
+      "reason": "같은 글에서 파흐만을 리스트 계열로 한 번, 레셰티츠키 계열로 한 번 배치해 앞뒤가 어긋남. 계보도 자료 확인이 필요해 오류로 단정하지 않음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    },
+    {
+      "source_file": "작곡가 이야기/015-고전 번외. 카를 체르니의 계보와 현대에 미친 영향.md",
+      "paragraph": "바흐 <평균율 클라비어곡집>의 교정및 학문적 연구와 독일 교육 전통을 뿌리내림.",
+      "issue_type": "typo",
+      "original": "교정및",
+      "proposed": "교정 및",
+      "reason": "띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

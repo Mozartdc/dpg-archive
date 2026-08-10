@@ -1,0 +1,64 @@
+{
+  "post_no": 4506,
+  "source_file": "작곡가 이야기/022-작곡가의 수입 (리스트 4).md",
+  "title": "작곡가의 수입 (리스트 4)",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "작곡가 이야기/022-작곡가의 수입 (리스트 4).md",
+      "paragraph": "그가 나중에 큰일을 할 인물이라고 기쩌하며 바로 결혼을 승낙함.",
+      "issue_type": "typo",
+      "original": "기쩌하며",
+      "proposed": "기뻐하며",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/022-작곡가의 수입 (리스트 4).md",
+      "paragraph": "당시 초급징교가 한 푼도 안 쓰고 100년을 모아야 하는 어마어마한 거금이었음.",
+      "issue_type": "typo",
+      "original": "초급징교가",
+      "proposed": "초급 장교가",
+      "reason": "글자 오타와 띄어쓰기. 같은 문서 모음의 리스트 1편에서는 ‘초급 장교’로 적고 있음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/022-작곡가의 수입 (리스트 4).md",
+      "paragraph": "두 사람은 파리 상류사회의 모범적인 부부였고 에밀을 차근차근 정치적 입지를 디지고 있었는데",
+      "issue_type": "grammar",
+      "original": "에밀을 차근차근 정치적 입지를 디지고",
+      "proposed": "에밀은 차근차근 정치적 입지를 다지고",
+      "reason": "목적격 조사가 겹쳐 문장이 성립하지 않고, ‘다지다’의 오타가 함께 있음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/022-작곡가의 수입 (리스트 4).md",
+      "paragraph": "(제목) 작곡가의 수입 (리스트 4)",
+      "issue_type": "ambiguous",
+      "original": "작곡가의 수입 (리스트 4)",
+      "proposed": null,
+      "reason": "이 연작의 다른 글은 모두 ‘작곡가들의 수입’인데 이 글만 ‘작곡가의 수입’임. 제목은 수정 대상이 아니므로 기록만 남김.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

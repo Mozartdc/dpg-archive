@@ -1,0 +1,24 @@
+{
+  "post_no": 2326,
+  "stage": 2,
+  "checked_at": "2026-08-10T04:12:17.139Z",
+  "revisited_at": "2026-08-10T22:00:00.000Z",
+  "checks": [
+    {
+      "original_claim": "2029년 크리스티 경매에서 400만유로에 낙찰된 모차르트의 13세 무렵 초상화",
+      "verdict": "confirmed_error",
+      "proposed": "2029년 크리스티 경매 → 2019년 크리스티 경매",
+      "source_1_url": "https://feeds.bbci.co.uk/news/world-europe-50585963",
+      "source_1_title": "Mozart childhood portrait sold for €4m at Paris auction - BBC",
+      "source_1_support": "The Cignaroli portrait of 13-year-old Mozart sold at Christie's Paris in November 2019 for €4,031,500.",
+      "source_2_url": "https://edition.cnn.com/style/article/mozart-painting-auction-paris-christies-intl-scli/index.html",
+      "source_2_title": "Mozart portrait sells for $4.4 million at auction - CNN",
+      "source_2_support": "Confirms the 2019 Christie's Paris auction date and ~€4 million sale price.",
+      "reasoning": "재검증(2회차): 미래 연도(2029)는 성립 불가하며 단순 오타로 확인됨. 실제 경매는 2019년 11월 파리 크리스티. A군, 2건 독립 출처.",
+      "confidence": "high",
+      "paired_posts": [],
+      "changes_meaning": false,
+      "criteria_group": "A"
+    }
+  ]
+}

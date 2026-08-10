@@ -1,0 +1,78 @@
+{
+  "post_no": 2603,
+  "source_file": "바로크·고전/037-9.1. 베토벤의 초기 피아노 소나타 (작품 2 ~ 작품 28).md",
+  "title": "9.1. 베토벤의 초기 피아노 소나타 (작품 2 ~ 작품 28)",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/037-9.1. 베토벤의 초기 피아노 소나타 (작품 2 ~ 작품 28).md",
+      "paragraph": "초기 소나타의 모든 특징이 집약된 댜표적은 소나타 8번 C단조 ‘Pathétique(비창)’, Op.13임.",
+      "issue_type": "typo",
+      "original": "댜표적은 소나타",
+      "proposed": "대표적인 소나타",
+      "reason": "글자 오타와 관형형 오류.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "바로크·고전/037-9.1. 베토벤의 초기 피아노 소나타 (작품 2 ~ 작품 28).md",
+      "paragraph": "미뉴에트 대신 스케르초를 도입하는 등 새로운 요소를 포함하고 있다.",
+      "issue_type": "awkward_expression",
+      "original": "포함하고 있다.",
+      "proposed": "포함하고 있음.",
+      "reason": "글 전체가 음슴체인데 이 문장만 평서형 종결로 바뀌어 있음. 문체를 바꾸자는 제안이 아니라 글쓴이 본래 어조로 되돌리는 범위임.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "바로크·고전/037-9.1. 베토벤의 초기 피아노 소나타 (작품 2 ~ 작품 28).md",
+      "paragraph": "1795년에 출판된 첫 작품인 피아노 소나타 작품 2 세 곡은",
+      "issue_type": "factual_error",
+      "original": "1795년에 출판된",
+      "proposed": null,
+      "reason": "작품 2의 세 소나타는 1793~95년에 쓰이고 출판은 1796년 3월로 보는 서술이 일반적임. 작곡 시점과 출판 시점이 섞였을 가능성이 있어 검증 대상으로 올림.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    },
+    {
+      "source_file": "바로크·고전/037-9.1. 베토벤의 초기 피아노 소나타 (작품 2 ~ 작품 28).md",
+      "paragraph": "소나타 14번 C#  단조, Op.27-2은 베토벤이 ... 이또한  역시 형식 실험의 연장선상에 있음.",
+      "issue_type": "typo",
+      "original": "C#  단조, Op.27-2은 ... 이또한  역시",
+      "proposed": "C# 단조, Op.27-2는 ... 이 또한 역시",
+      "reason": "공백 두 칸, 받침 없는 숫자 뒤 조사 오류(2은→2는), 띄어쓰기 오류가 한 문장에 겹침.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "바로크·고전/037-9.1. 베토벤의 초기 피아노 소나타 (작품 2 ~ 작품 28).md",
+      "paragraph": "베토벤 본인의 어느정도 동의가 들어간 것만은 분명해 보임",
+      "issue_type": "typo",
+      "original": "어느정도",
+      "proposed": "어느 정도",
+      "reason": "띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

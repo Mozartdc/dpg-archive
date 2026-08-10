@@ -1,0 +1,64 @@
+{
+  "post_no": 4407,
+  "source_file": "작곡가 이야기/009-작곡가들의 수입 (스카를라티).md",
+  "title": "작곡가들의 수입 (스카를라티)",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "작곡가 이야기/009-작곡가들의 수입 (스카를라티).md",
+      "paragraph": "스카를라티는 건반 소나타에서는 역사살 가장 많은 작품(555곡)을 님겼고",
+      "issue_type": "typo",
+      "original": "역사살 ... 님겼고",
+      "proposed": "역사상 ... 남겼고",
+      "reason": "한 문장에 글자 오타가 두 군데 있음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "작곡가 이야기/009-작곡가들의 수입 (스카를라티).md",
+      "paragraph": "스카를라티는 왕실에서 기장많은 연봉을 받는 음악가였지만",
+      "issue_type": "typo",
+      "original": "기장많은",
+      "proposed": "가장 많은",
+      "reason": "글자 오타와 띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/009-작곡가들의 수입 (스카를라티).md",
+      "paragraph": "빚쟁이들에게 쫒기며 감옥에 갈 위기를 수차례 겪음. ... 그많은 건반 소나타를 작곡한 것임.",
+      "issue_type": "typo",
+      "original": "쫒기며 ... 그많은",
+      "proposed": "쫓기며 ... 그 많은",
+      "reason": "맞춤법과 띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "작곡가 이야기/009-작곡가들의 수입 (스카를라티).md",
+      "paragraph": "keyboard sonata 555곡은 대부분 대물변제곡임.",
+      "issue_type": "unsupported_claim",
+      "original": "555곡은 대부분 대물변제곡임",
+      "proposed": null,
+      "reason": "도박 빚 대납의 대가로 소나타를 썼다는 일화는 버니의 여행기에서 파리넬리 증언으로 전해지지만, 555곡 ‘대부분’이 그렇다는 비율 주장까지 뒷받침하지는 않음. 앞 문단에서 근거로 든 커크패트릭의 왕실 지출 장부 확인이 필요함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    }
+  ]
+}

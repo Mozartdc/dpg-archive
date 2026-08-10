@@ -1,0 +1,22 @@
+{
+  "post_no": 3260,
+  "source_file": "낭만·그 이후/027-15. 낭만주의 시대의 민족주의 경향.md",
+  "title": "15. 낭만주의 시대의 민족주의 경향",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/027-15. 낭만주의 시대의 민족주의 경향.md",
+      "paragraph": "이들의 작품은 낭만주의 피아노 음악을 한층 풍성하고 다채롭게 확장시킴",
+      "issue_type": "typo",
+      "original": "확장시킴",
+      "proposed": "확장시킴.",
+      "reason": "글 마지막 문장에 마침표가 빠짐.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "low",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

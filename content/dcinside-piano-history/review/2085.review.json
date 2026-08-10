@@ -1,0 +1,22 @@
+{
+  "post_no": 2085,
+  "source_file": "바로크·고전/016-4.3. dance suite 영국 모음곡, 프랑스 모음곡, 파르티타.md",
+  "title": "4.3. dance suite 영국 모음곡, 프랑스 모음곡, 파르티타",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/016-4.3. dance suite 영국 모음곡, 프랑스 모음곡, 파르티타.md",
+      "paragraph": "이 모음곡집의 가장 큰 특징은 여섯 개의 모든 모음곡이 이탈리아 협주곡 풍의 길고 화려한 프렐류드로 시작한다는 점임.",
+      "issue_type": "ambiguous",
+      "original": "여섯 개의 모든 모음곡이 이탈리아 협주곡 풍의 길고 화려한 프렐류드로 시작한다는 점",
+      "proposed": null,
+      "reason": "여섯 곡 모두 프렐류드로 시작하는 것은 맞지만, 1번(BWV 806)의 프렐류드는 짧은 전주 성격이라 협주곡 풍의 길고 화려한 악장이라는 설명이 그대로 들어맞지 않는다는 서술이 있음. 다만 개괄적 서술로 볼 여지가 있어 오류로 단정하지 않음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "low",
+      "changes_meaning": true,
+      "applied": false
+    }
+  ]
+}

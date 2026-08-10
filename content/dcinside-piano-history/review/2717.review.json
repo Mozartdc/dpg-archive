@@ -1,0 +1,64 @@
+{
+  "post_no": 2717,
+  "source_file": "작곡가 이야기/002-바로크 번외. 프랑수아 쿠플랭.md",
+  "title": "바로크 번외. 프랑수아 쿠플랭",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "작곡가 이야기/002-바로크 번외. 프랑수아 쿠플랭.md",
+      "paragraph": "프랑수아 쿠플랭(16681733)은 1713~1730년 사이에 네 권의 클라브생 작품집",
+      "issue_type": "typo",
+      "original": "(16681733)",
+      "proposed": "(1668~1733)",
+      "reason": "생몰년 사이 구분 기호가 빠져 여덟 자리 숫자처럼 붙어 있음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/002-바로크 번외. 프랑수아 쿠플랭.md",
+      "paragraph": "표제가 붙은 캐릭터 피스나 인물,장면을 묘사한 곡이 자유롭게 섞여 있음.",
+      "issue_type": "typo",
+      "original": "인물,장면을",
+      "proposed": "인물, 장면을",
+      "reason": "쉼표 뒤 공백 누락.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "작곡가 이야기/002-바로크 번외. 프랑수아 쿠플랭.md",
+      "paragraph": "프랑스식 표제 건반 모음곡이라는 독창적 양식을 만들어냈다는데 큰 의미가 있음.",
+      "issue_type": "typo",
+      "original": "만들어냈다는데 큰",
+      "proposed": "만들어냈다는 데 큰",
+      "reason": "의존명사 띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "작곡가 이야기/002-바로크 번외. 프랑수아 쿠플랭.md",
+      "paragraph": "프랑수아 쿠플랭 / 각각의 오르드(ordre)",
+      "issue_type": "ambiguous",
+      "original": "쿠플랭 / 오르드",
+      "proposed": null,
+      "reason": "같은 인물과 형식을 3.2절에서는 쿠프랭·오르드르로 적어 문서 모음 안에서 표기가 갈림. 통용 표기가 여럿이고 제목에도 쿠플랭이 쓰여 있어 제목을 건드리지 않는 범위에서 통일 여부만 검토 대상으로 남김.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

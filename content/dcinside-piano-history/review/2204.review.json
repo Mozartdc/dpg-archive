@@ -1,0 +1,22 @@
+{
+  "post_no": 2204,
+  "source_file": "바로크·고전/022-6. 프란츠 요제프 하이든, 소나타 형식의 개척자.md",
+  "title": "6. 프란츠 요제프 하이든, 소나타 형식의 개척자",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/022-6. 프란츠 요제프 하이든, 소나타 형식의 개척자.md",
+      "paragraph": "'파파 하이든'의 따뜻하고 견고한 음악 세계를 이야기하고자함.",
+      "issue_type": "typo",
+      "original": "이야기하고자함",
+      "proposed": "이야기하고자 함",
+      "reason": "의존 표현 띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

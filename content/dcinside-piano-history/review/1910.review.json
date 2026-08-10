@@ -1,0 +1,22 @@
+{
+  "post_no": 1910,
+  "source_file": "바로크·고전/002-1.1. 하프시코드의 구조와 음향적 특징.md",
+  "title": "1.1. 하프시코드의 구조와 음향적 특징",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/002-1.1. 하프시코드의 구조와 음향적 특징.md",
+      "paragraph": "플렉트럼의 재료로는 새의 깃대(quill)나 단단한 가죽이 주로 사용되었음.",
+      "issue_type": "awkward_expression",
+      "original": "새의 깃대(quill)",
+      "proposed": "새의 깃촉(quill)",
+      "reason": "quill은 깃털의 단단한 뿌리 부분을 가리키므로 우리말로는 깃촉이 맞음. 깃대는 깃발을 다는 장대를 뜻함. 다만 통용되는 표현일 수 있어 확정하지 않음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "low",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

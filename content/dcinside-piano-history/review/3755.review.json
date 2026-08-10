@@ -1,0 +1,36 @@
+{
+  "post_no": 3755,
+  "source_file": "낭만·그 이후/048-19.2. 벨러 버르토크의 미크로코스모스.md",
+  "title": "19.2. 벨러 버르토크의 미크로코스모스",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/048-19.2. 벨러 버르토크의 미크로코스모스.md",
+      "paragraph": "6권, 총153개의 곡 안에 체계적으로 담아낸 피아노 교육 작품집임.",
+      "issue_type": "typo",
+      "original": "총153개의",
+      "proposed": "총 153개의",
+      "reason": "띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/048-19.2. 벨러 버르토크의 미크로코스모스.md",
+      "paragraph": "피아노 협주곡 2번 (Piano Concerto No. 2(1931)과 같은 작품을 연주하기 위한 준비과정임.",
+      "issue_type": "typo",
+      "original": "(Piano Concerto No. 2(1931)과",
+      "proposed": "(Piano Concerto No. 2, 1931)과",
+      "reason": "괄호가 열리기만 하고 짝이 맞지 않음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

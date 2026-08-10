@@ -1,0 +1,22 @@
+{
+  "post_no": 2059,
+  "source_file": "바로크·고전/014-4.1. 요한 세바스티안 바흐의 건반 음악 개관.md",
+  "title": "4.1. 요한 세바스티안 바흐의 건반 음악 개관",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/014-4.1. 요한 세바스티안 바흐의 건반 음악 개관.md",
+      "paragraph": "바로크 시대 전체의 음악적 성취가 집대성된 하나의 거대한 도서관이라거 할 수 있음.",
+      "issue_type": "typo",
+      "original": "도서관이라거 할 수 있음",
+      "proposed": "도서관이라고 할 수 있음",
+      "reason": "어미 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    }
+  ]
+}

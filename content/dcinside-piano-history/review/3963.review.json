@@ -1,0 +1,50 @@
+{
+  "post_no": 3963,
+  "source_file": "낭만·그 이후/056-21.2. 드미트리 쇼스타코비치의 24개의 전주곡과 푸가.md",
+  "title": "21.2. 드미트리 쇼스타코비치의 24개의 전주곡과 푸가",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/056-21.2. 드미트리 쇼스타코비치의 24개의 전주곡과 푸가.md",
+      "paragraph": "그의 기념비적인 작품 24개의 전주곡과 푸가, Op. 87는 바흐에 대한 헌사이자",
+      "issue_type": "grammar",
+      "original": "Op. 87는",
+      "proposed": "Op. 87은",
+      "reason": "받침 있는 숫자 뒤 보조사 오류.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/056-21.2. 드미트리 쇼스타코비치의 24개의 전주곡과 푸가.md",
+      "paragraph": "이는 작곡가가 자신의 서재에 틀어박혀 바로크와의 교감이며, 시대를 견뎌내기 위한 정신적인 망명이었음.",
+      "issue_type": "grammar",
+      "original": "자신의 서재에 틀어박혀 바로크와의 교감이며",
+      "proposed": null,
+      "reason": "‘틀어박혀’라는 서술어 뒤에 명사구 ‘교감이며’가 바로 이어져 문장이 성립하지 않음. 문장을 나누거나 합치지 않는 범위에서 고치기 어려워 확인만 요청함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/056-21.2. 드미트리 쇼스타코비치의 24개의 전주곡과 푸가.md",
+      "paragraph": "왈츠풍의 전주곡에 이어지는 푸가는 무려 11개의 반음계 음을 사용하는 난해하고 공격적인 주제를 가지고 있어",
+      "issue_type": "ambiguous",
+      "original": "무려 11개의 반음계 음",
+      "proposed": null,
+      "reason": "15번 D♭장조 푸가의 주제를 12음 전부를 쓰는 것으로 설명하는 자료가 있어 11이라는 수가 어긋날 수 있음. 세는 기준에 따라 달라질 여지가 있어 오류로 단정하지 않고 악보 확인 대상으로 남김.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    }
+  ]
+}

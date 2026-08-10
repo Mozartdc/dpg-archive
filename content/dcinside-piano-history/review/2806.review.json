@@ -1,0 +1,22 @@
+{
+  "post_no": 2806,
+  "source_file": "낭만·그 이후/006-11.1. 프레데리크 쇼팽의 새로운 피아노 언어.md",
+  "title": "11.1. 프레데리크 쇼팽의 새로운 피아노 언어",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/006-11.1. 프레데리크 쇼팽의 새로운 피아노 언어.md",
+      "paragraph": "“이는 마치 뛰어난 언변으로 감정에 따라 말의 속도를 조절하듯, 음악에 즉흥적이고 인간적인 숨결을 불어넣었다”라고 표현함.",
+      "issue_type": "unsupported_claim",
+      "original": "“…”라고 표현함.",
+      "proposed": null,
+      "reason": "큰따옴표로 인용하고 ‘표현함’이라 적었으나 말한 사람이 누구인지 밝혀져 있지 않음. 화자가 빠져 있어 인용인지 글쓴이 서술인지 구분되지 않음. 원자료 확인 전에는 수정하지 않고 출처 보강만 권함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

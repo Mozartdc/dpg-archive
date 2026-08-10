@@ -1,0 +1,64 @@
+{
+  "post_no": 4601,
+  "source_file": "작곡가 이야기/023-작곡가들의 수입 (리스트 5).md",
+  "title": "작곡가들의 수입 (리스트 5)",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "작곡가 이야기/023-작곡가들의 수입 (리스트 5).md",
+      "paragraph": "집을 사달라거나 피이노를 사서 보내라는 요구도 있었음.",
+      "issue_type": "typo",
+      "original": "피이노를",
+      "proposed": "피아노를",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/023-작곡가들의 수입 (리스트 5).md",
+      "paragraph": "라며 닥달하기 시작함.",
+      "issue_type": "typo",
+      "original": "닥달하기",
+      "proposed": "닦달하기",
+      "reason": "맞춤법.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "작곡가 이야기/023-작곡가들의 수입 (리스트 5).md",
+      "paragraph": "바그너는 1849년 드레스덴 혁명 가담 건으로 사형 선고가 내려진 지명수배자 였는데",
+      "issue_type": "ambiguous",
+      "original": "사형 선고가 내려진 지명수배자",
+      "proposed": null,
+      "reason": "바그너에게 체포 영장이 발부되고 지명수배된 것은 널리 알려져 있으나, 재판을 거쳐 사형이 선고되었다는 서술은 확인이 필요함. 체포 시 중형이 예상된 상황과 실제 선고가 뒤섞였을 수 있음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    },
+    {
+      "source_file": "작곡가 이야기/023-작곡가들의 수입 (리스트 5).md",
+      "paragraph": "리스트의 지원은 ... 정확 집계는 불가능하며",
+      "issue_type": "typo",
+      "original": "정확 집계는",
+      "proposed": "정확한 집계는",
+      "reason": "관형형 어미 누락.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

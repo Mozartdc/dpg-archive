@@ -1,0 +1,50 @@
+{
+  "post_no": 2465,
+  "source_file": "바로크·고전/031-7.3. 피아노 협주곡 장르의 확립과 발전.md",
+  "title": "7.3. 피아노 협주곡 장르의 확립과 발전",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/031-7.3. 피아노 협주곡 장르의 확립과 발전.md",
+      "paragraph": "’예약 연주회(subion concerts)’를 직접 기획했음.",
+      "issue_type": "typo",
+      "original": "subion concerts",
+      "proposed": "subscription concerts",
+      "reason": "영어 단어가 깨져 subscription의 중간 글자가 빠짐.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "바로크·고전/031-7.3. 피아노 협주곡 장르의 확립과 발전.md",
+      "paragraph": "모차르트는 이 시기에 12곡에 달하는 걸작들을 작곡함. ... (1782: K.413, K.414, K.415 / 1784: K.449, K.450, K.451, K.453, K.456, K.459 / 1785: K.466, K.467 / 1786: K.488, K.491, K.503 ...)",
+      "issue_type": "ambiguous",
+      "original": "12곡에 달하는 걸작들",
+      "proposed": null,
+      "reason": "본문은 12곡이라 적었는데 이어지는 괄호 목록에 적힌 작품 번호는 14개임. 본문과 목록이 서로 맞지 않음. 어느 쪽이 의도인지 원자료 확인이 필요해 수정 제안은 보류함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    },
+    {
+      "source_file": "바로크·고전/031-7.3. 피아노 협주곡 장르의 확립과 발전.md",
+      "paragraph": "1789년 도레스톡(Dora Stock)이 그린 모차르트 초상화.",
+      "issue_type": "typo",
+      "original": "도레스톡(Dora Stock)",
+      "proposed": "도라 슈토크(Dora Stock)",
+      "reason": "독일 화가 Dora Stock의 이름과 성이 붙어 한 단어처럼 적힘.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

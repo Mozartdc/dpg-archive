@@ -1,0 +1,36 @@
+{
+  "post_no": 2616,
+  "source_file": "바로크·고전/038-9.2. 베토벤, 중기의 영웅적 양식.md",
+  "title": "9.2. 베토벤, 중기의 영웅적 양식",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/038-9.2. 베토벤, 중기의 영웅적 양식.md",
+      "paragraph": "영웅주의적 성격이 대표적이기 때문에 이와같이 부르며",
+      "issue_type": "typo",
+      "original": "이와같이",
+      "proposed": "이와 같이",
+      "reason": "띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "바로크·고전/038-9.2. 베토벤, 중기의 영웅적 양식.md",
+      "paragraph": "‘포르테피아노’가 빠르게 확산한것과도 큰 관계가 있음.",
+      "issue_type": "typo",
+      "original": "확산한것과도",
+      "proposed": "확산한 것과도",
+      "reason": "의존명사 띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

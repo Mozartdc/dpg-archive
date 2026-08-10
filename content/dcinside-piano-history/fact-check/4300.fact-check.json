@@ -1,0 +1,24 @@
+{
+  "post_no": 4300,
+  "stage": 2,
+  "checked_at": "2026-08-10T04:12:17.153Z",
+  "checks": [
+    {
+      "post_no": 4300,
+      "original_claim": "프로이센 국왕 빌헬름 4세가 베를린을 예술의 수도로 만들겠다며 멘델스존을 불러 연간 3,000 탈러를 제안함.",
+      "verdict": "confirmed_error",
+      "proposed": "프로이센 국왕 프리드리히 빌헬름 4세가 베를린을 예술의 수도로 만들겠다며 멘델스존을 불러 연간 3,000 탈러를 제안함.",
+      "source_1_url": "https://www.britannica.com/biography/Frederick-William-IV",
+      "source_1_title": "Encyclopædia Britannica — Frederick William IV, king of Prussia",
+      "source_1_support": "\"Frederick William IV was the king of Prussia from 1840 until 1861\" — 멘델스존을 베를린으로 부른 1840년대의 프로이센 국왕은 프리드리히 빌헬름 4세임.",
+      "source_2_url": null,
+      "source_2_title": null,
+      "source_2_support": null,
+      "reasoning": "A군(인명·직위). 프로이센 왕가에 ‘빌헬름 4세’라는 국왕은 없고 해당 시기 재위자는 프리드리히 빌헬름 4세임. 이름 앞부분이 누락된 표기 오류.",
+      "confidence": "high",
+      "paired_posts": [],
+      "changes_meaning": true,
+      "criteria_group": "A"
+    }
+  ]
+}

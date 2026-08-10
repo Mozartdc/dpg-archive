@@ -1,0 +1,36 @@
+{
+  "post_no": 3037,
+  "source_file": "낭만·그 이후/016-13. 프란츠 리스트.md",
+  "title": "13. 프란츠 리스트",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/016-13. 프란츠 리스트.md",
+      "paragraph": "말년의 리스트는 부종, 발열, 백내장으로 고통받았으며, 심장 발작으로 추정되는 원인으로 74세에 세상을 떠남.",
+      "issue_type": "factual_error",
+      "original": "심장 발작으로 추정되는 원인으로",
+      "proposed": null,
+      "reason": "리스트의 사인은 바이로이트 체류 중 걸린 폐렴으로 보는 서술이 일반적임. 심부전이 함께 거론되기도 하나 ‘심장 발작’으로 특정하는 것은 통설과 다를 수 있어 검증 대상으로 올림.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/016-13. 프란츠 리스트.md",
+      "paragraph": "그 후 리스트는 여행을 통해 베토벤, 브람스, 안톤 루빈슈타인, 쇼팽, 슈만, 베를리오즈, 알캉, 힐러, 그리그 등 수많은 동시대 인물들과 교류했음.",
+      "issue_type": "ambiguous",
+      "original": "베토벤 ... 등 수많은 동시대 인물들과 교류했음",
+      "proposed": null,
+      "reason": "베토벤은 리스트가 열여섯이던 1827년에 사망해 ‘교류’라 부를 만한 관계로 보기 어렵고, 1823년 면담 일화도 진위 논란이 있음. 반대로 브람스·그리그는 훨씬 뒤 세대라 한 문장에 묶기 어색함. 다만 넓은 의미의 만남으로 읽을 여지가 있어 오류로 단정하지 않음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "low",
+      "changes_meaning": true,
+      "applied": false
+    }
+  ]
+}

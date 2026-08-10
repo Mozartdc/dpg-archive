@@ -1,0 +1,22 @@
+{
+  "post_no": 3282,
+  "source_file": "낭만·그 이후/028-15.1. 러시아 5인조와 초기 러시아 피아노 음악.md",
+  "title": "15.1. 러시아 5인조와 초기 러시아 피아노 음악",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/028-15.1. 러시아 5인조와 초기 러시아 피아노 음악.md",
+      "paragraph": "이들이 바로 미하일 발라키레프(Mily Balakirev)를 중심으로 한 세자르 쿠이(César Cui), ...",
+      "issue_type": "factual_error",
+      "original": "미하일 발라키레프(Mily Balakirev)",
+      "proposed": "밀리 발라키레프(Mily Balakirev)",
+      "reason": "괄호 안 원어가 Mily인데 한글 표기만 미하일로 적혀 서로 어긋남. 같은 글 뒷부분에서는 ‘밀리 발라키레프’로 적고 있어 내부에서도 표기가 갈림.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": true,
+      "applied": false
+    }
+  ]
+}

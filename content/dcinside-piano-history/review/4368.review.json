@@ -1,0 +1,50 @@
+{
+  "post_no": 4368,
+  "source_file": "작곡가 이야기/017-작곡가들의 수입 (클라라 슈만 1).md",
+  "title": "작곡가들의 수입 (클라라 슈만 1)",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "작곡가 이야기/017-작곡가들의 수입 (클라라 슈만 1).md",
+      "paragraph": "클라랑 가장 큰 수입원은 연주 투어였는데",
+      "issue_type": "typo",
+      "original": "클라랑 가장 큰 수입원",
+      "proposed": "클라라의 가장 큰 수입원",
+      "reason": "조사 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/017-작곡가들의 수입 (클라라 슈만 1).md",
+      "paragraph": "클라라에게 지속적으로 거액을 건냄.",
+      "issue_type": "typo",
+      "original": "건냄",
+      "proposed": "건넴",
+      "reason": "맞춤법.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "작곡가 이야기/017-작곡가들의 수입 (클라라 슈만 1).md",
+      "paragraph": "투어가 없을 때는 비엔나나 베를린의 귀족 자제들을 가르치고,러시아 황제나 영국 여왕에게 받은 보석이나",
+      "issue_type": "typo",
+      "original": "가르치고,러시아",
+      "proposed": "가르치고, 러시아",
+      "reason": "쉼표 뒤 공백 누락.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

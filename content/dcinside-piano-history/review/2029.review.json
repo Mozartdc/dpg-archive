@@ -1,0 +1,36 @@
+{
+  "post_no": 2029,
+  "source_file": "바로크·고전/011-3.2. 프랑수아 쿠프랭과 장 필리프 라모의 클라브생 모음곡.md",
+  "title": "3.2. 프랑수아 쿠프랭과 장 필리프 라모의 클라브생 모음곡",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/011-3.2. 프랑수아 쿠프랭과 장 필리프 라모의 클라브생 모음곡.md",
+      "paragraph": "장 필리프 라모, 이론가이자 극작가 (Jean-Philippe Rameau, 1683-1764)",
+      "issue_type": "factual_error",
+      "original": "이론가이자 극작가",
+      "proposed": "이론가이자 극음악 작곡가",
+      "reason": "극작가는 희곡을 쓰는 사람을 뜻함. 라모가 남긴 것은 오페라와 오페라발레 등 극음악의 악곡이지 대본이 아님. 이미지 설명 한 구절만 바꾸는 범위임.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    },
+    {
+      "source_file": "바로크·고전/011-3.2. 프랑수아 쿠프랭과 장 필리프 라모의 클라브생 모음곡.md",
+      "paragraph": "예를 들어 ‘신비로운 바리케이드’, ‘수녀 모니크’, ‘틱-톡-쇽(시계태엽 소리)’ 등과 같이",
+      "issue_type": "ambiguous",
+      "original": "‘신비로운 바리케이드’",
+      "proposed": null,
+      "reason": "같은 곡(Les Barricades mystérieuses)을 1.3절 영상 설명에서는 ‘수수께끼의 바리케이드’로 적어 번역명이 갈림. 정착된 번역이 여럿인 제목이라 원문 표현을 유지하고 통일 여부만 검토 대상으로 남김.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "low",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

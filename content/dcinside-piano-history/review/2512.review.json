@@ -1,0 +1,50 @@
+{
+  "post_no": 2512,
+  "source_file": "바로크·고전/032-7.4. 환상곡과 변주곡, 모차르트의 즉흥연주와 테크닉.md",
+  "title": "7.4. 환상곡과 변주곡, 모차르트의 즉흥연주와 테크닉",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/032-7.4. 환상곡과 변주곡, 모차르트의 즉흥연주와 테크닉.md",
+      "paragraph": "모처르트의 작품들 중에서도 이러한 즉흥연주의 흔적과 자유로운 상상력이 가장 잘 드러나는 장르",
+      "issue_type": "typo",
+      "original": "모처르트의",
+      "proposed": "모차르트의",
+      "reason": "인명 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "바로크·고전/032-7.4. 환상곡과 변주곡, 모차르트의 즉흥연주와 테크닉.md",
+      "paragraph": "환상곡과 변주곡은 모차르트가 형식적 통제와 즉흥적 상상력을 볼 수 있는 중요한 장르임.",
+      "issue_type": "grammar",
+      "original": "모차르트가 형식적 통제와 즉흥적 상상력을 볼 수 있는",
+      "proposed": "모차르트의 형식적 통제와 즉흥적 상상력을 볼 수 있는",
+      "reason": "주어와 서술어의 호응이 어긋남. 보는 주체는 독자이므로 조사만 바꿈.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "바로크·고전/032-7.4. 환상곡과 변주곡, 모차르트의 즉흥연주와 테크닉.md",
+      "paragraph": "모차르트의 제자였던 요한 네포무크 훔멜은 스승을 “작은 체구에 창백한 얼굴, 유쾌하고 친근한 인상 속에 약간의 우울한 진지함이 담겨 있었으며, 큰 푸른 눈은 밝게 빛났다”고 묘사함.",
+      "issue_type": "unsupported_claim",
+      "original": "요한 네포무크 훔멜은 스승을 ... 묘사함",
+      "proposed": null,
+      "reason": "훔멜의 직접 증언으로 제시돼 있으나 출처가 없음. 모차르트의 외모 묘사는 여러 동시대인의 기록이 섞여 전해지는 대목이라 화자 확인이 필요함. 원 기록 확인 전에는 수정하지 않고 출처 보강만 권함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "post_no": 2287,
+  "source_file": "바로크·고전/026-6.4. 건반악기를 위한 변주곡과 협주곡.md",
+  "title": "6.4. 건반악기를 위한 변주곡과 협주곡",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/026-6.4. 건반악기를 위한 변주곡과 협주곡.md",
+      "paragraph": "이 협주곡의 인기는 마지막 3악장  헝가리풍의 론도(Rondo all'Ungarese)덕분인데",
+      "issue_type": "typo",
+      "original": "3악장  헝가리풍의 론도(Rondo all'Ungarese)덕분인데",
+      "proposed": "3악장 헝가리풍의 론도(Rondo all'Ungarese) 덕분인데",
+      "reason": "공백 두 칸과 조사 앞 공백 누락.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "바로크·고전/026-6.4. 건반악기를 위한 변주곡과 협주곡.md",
+      "paragraph": "그래서 '가정용 살롱 레퍼토리‘라고 부르기도 함.",
+      "issue_type": "typo",
+      "original": "'가정용 살롱 레퍼토리‘라고",
+      "proposed": "‘가정용 살롱 레퍼토리’라고",
+      "reason": "여는 따옴표와 닫는 따옴표 모양이 어긋남.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "low",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

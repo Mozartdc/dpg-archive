@@ -1,0 +1,24 @@
+{
+  "post_no": 3282,
+  "stage": 2,
+  "checked_at": "2026-08-10T04:12:17.139Z",
+  "revisited_at": "2026-08-10T22:00:00.000Z",
+  "checks": [
+    {
+      "original_claim": "이들이 바로 미하일 발라키레프(Mily Balakirev)를 중심으로 한 세자르 쿠이…",
+      "verdict": "confirmed_error",
+      "proposed": "미하일 발라키레프(Mily Balakirev) → 밀리 발라키레프(Mily Balakirev)",
+      "source_1_url": "https://www.britannica.com/biography/Mily-Balakirev",
+      "source_1_title": "Mily Balakirev - Britannica",
+      "source_1_support": "His name is Mily Alexeyevich Balakirev (Милий Алексеевич Балакирев); 'Mily' is the correct given name, not Mikhail.",
+      "source_2_url": "https://en.wikipedia.org/wiki/Mily_Balakirev",
+      "source_2_title": "Mily Balakirev - Wikipedia",
+      "source_2_support": "Confirms given name Mily throughout.",
+      "reasoning": "재검증(2회차): 같은 문서 뒷부분(밀리 발라키레프의 이슬라메이)은 이미 정확한 표기를 쓰고 있어 내부 모순이었음. 앞부분의 '미하일'을 '밀리'로 정정. A군, 2건 독립 출처.",
+      "confidence": "high",
+      "paired_posts": [],
+      "changes_meaning": false,
+      "criteria_group": "A"
+    }
+  ]
+}

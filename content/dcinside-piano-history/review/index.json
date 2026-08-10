@@ -1,0 +1,1176 @@
+{
+  "generatedAt": "2026-08-10T06:02:53.234Z",
+  "stage": "1(검토)·2(사실검증)·3(교정적용)·4(19장 순서)·5(최종검증)·6(보고서) 완료",
+  "note": "1단계 검토 보고서. 원본 Markdown은 수정하지 않음.",
+  "totals": {
+    "reviewedPosts": 124,
+    "totalIssues": 291,
+    "postsWithIssues": 112,
+    "postsClean": 12
+  },
+  "byType": {
+    "typo": 190,
+    "ambiguous": 26,
+    "awkward_expression": 13,
+    "unsupported_claim": 8,
+    "factual_error": 23,
+    "grammar": 31
+  },
+  "byConfidence": {
+    "high": 124,
+    "medium": 142,
+    "low": 25
+  },
+  "changesMeaning": 46,
+  "files": [
+    {
+      "post_no": 2682,
+      "category": "낭만·그 이후",
+      "order": 1,
+      "title": "10. 초기 낭만주의와 캐릭터 피스.",
+      "source_file": "낭만·그 이후/001-10. 초기 낭만주의와 캐릭터 피스.md",
+      "review_file": "review/2682.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 2701,
+      "category": "낭만·그 이후",
+      "order": 2,
+      "title": "10.1 프란츠 슈베르트",
+      "source_file": "낭만·그 이후/002-10.1 프란츠 슈베르트.md",
+      "review_file": "review/2701.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 2729,
+      "category": "낭만·그 이후",
+      "order": 3,
+      "title": "10.2 펠릭스 멘델스존 (1)",
+      "source_file": "낭만·그 이후/003-10.2 펠릭스 멘델스존 (1).md",
+      "review_file": "review/2729.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 2737,
+      "category": "낭만·그 이후",
+      "order": 4,
+      "title": "10.2 펠릭스 멘델스존 (2)",
+      "source_file": "낭만·그 이후/004-10.2 펠릭스 멘델스존 (2).md",
+      "review_file": "review/2737.review.json",
+      "issue_count": 4
+    },
+    {
+      "post_no": 2751,
+      "category": "낭만·그 이후",
+      "order": 5,
+      "title": "11. 프레데리크 쇼팽과 피아노 시학",
+      "source_file": "낭만·그 이후/005-11. 프레데리크 쇼팽과 피아노 시학.md",
+      "review_file": "review/2751.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 2806,
+      "category": "낭만·그 이후",
+      "order": 6,
+      "title": "11.1. 프레데리크 쇼팽의 새로운 피아노 언어",
+      "source_file": "낭만·그 이후/006-11.1. 프레데리크 쇼팽의 새로운 피아노 언어.md",
+      "review_file": "review/2806.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 2827,
+      "category": "낭만·그 이후",
+      "order": 7,
+      "title": "11.2. 쇼팽 에튀드",
+      "source_file": "낭만·그 이후/007-11.2. 쇼팽 에튀드.md",
+      "review_file": "review/2827.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 2884,
+      "category": "낭만·그 이후",
+      "order": 8,
+      "title": "11.3. 마주르카와 폴로네이즈",
+      "source_file": "낭만·그 이후/008-11.3. 마주르카와 폴로네이즈.md",
+      "review_file": "review/2884.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 2914,
+      "category": "낭만·그 이후",
+      "order": 9,
+      "title": "11.4. 쇼팽의 소나타와 콘체르토",
+      "source_file": "낭만·그 이후/009-11.4. 쇼팽의 소나타와 콘체르토.md",
+      "review_file": "review/2914.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 3428,
+      "category": "낭만·그 이후",
+      "order": 10,
+      "title": "쇼팽의 생매장 공포증",
+      "source_file": "낭만·그 이후/010-쇼팽의 생매장 공포증.md",
+      "review_file": "review/3428.review.json",
+      "issue_count": 4
+    },
+    {
+      "post_no": 2942,
+      "category": "낭만·그 이후",
+      "order": 11,
+      "title": "12. 로베르트 슈만",
+      "source_file": "낭만·그 이후/011-12. 로베르트 슈만.md",
+      "review_file": "review/2942.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 2974,
+      "category": "낭만·그 이후",
+      "order": 12,
+      "title": "12.1. 슈만의 캐릭터 피스",
+      "source_file": "낭만·그 이후/012-12.1. 슈만의 캐릭터 피스.md",
+      "review_file": "review/2974.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 3002,
+      "category": "낭만·그 이후",
+      "order": 13,
+      "title": "12.2. 슈만의 환상곡과 대형 작품들",
+      "source_file": "낭만·그 이후/013-12.2. 슈만의 환상곡과 대형 작품들.md",
+      "review_file": "review/3002.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 3021,
+      "category": "낭만·그 이후",
+      "order": 14,
+      "title": "12.3. 클라라 슈만과 여성 작곡가",
+      "source_file": "낭만·그 이후/014-12.3. 클라라 슈만과 여성 작곡가.md",
+      "review_file": "review/3021.review.json",
+      "issue_count": 3
+    },
+    {
+      "post_no": 2952,
+      "category": "낭만·그 이후",
+      "order": 15,
+      "title": "클라라 슈만이 현대 피아니스트와 연주회 문화에 미친 결정적인 영향",
+      "source_file": "낭만·그 이후/015-클라라 슈만이 현대 피아니스트와 연주회 문화에 미친 결정적인 영향.md",
+      "review_file": "review/2952.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 3037,
+      "category": "낭만·그 이후",
+      "order": 16,
+      "title": "13. 프란츠 리스트",
+      "source_file": "낭만·그 이후/016-13. 프란츠 리스트.md",
+      "review_file": "review/3037.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 3071,
+      "category": "낭만·그 이후",
+      "order": 17,
+      "title": "13.1. 니콜로 파가니니가 피아니스트들에게 미친 영향",
+      "source_file": "낭만·그 이후/017-13.1. 니콜로 파가니니가 피아니스트들에게 미친 영향.md",
+      "review_file": "review/3071.review.json",
+      "issue_count": 3
+    },
+    {
+      "post_no": 3094,
+      "category": "낭만·그 이후",
+      "order": 18,
+      "title": "13.2. 프란츠 리스트의 혁신적 피아노 기법",
+      "source_file": "낭만·그 이후/018-13.2. 프란츠 리스트의 혁신적 피아노 기법.md",
+      "review_file": "review/3094.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 3121,
+      "category": "낭만·그 이후",
+      "order": 19,
+      "title": "13.3. 초절기교 연습곡",
+      "source_file": "낭만·그 이후/019-13.3. 초절기교 연습곡.md",
+      "review_file": "review/3121.review.json",
+      "issue_count": 5
+    },
+    {
+      "post_no": 3128,
+      "category": "낭만·그 이후",
+      "order": 20,
+      "title": "13.4. 리스트의 피아노 편곡",
+      "source_file": "낭만·그 이후/020-13.4. 리스트의 피아노 편곡.md",
+      "review_file": "review/3128.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 3130,
+      "category": "낭만·그 이후",
+      "order": 21,
+      "title": "13.5. 헝가리 광시곡과 민족성",
+      "source_file": "낭만·그 이후/021-13.5. 헝가리 광시곡과 민족성.md",
+      "review_file": "review/3130.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 3136,
+      "category": "낭만·그 이후",
+      "order": 22,
+      "title": "14. ‘절대음악’의 가치와 브람스",
+      "source_file": "낭만·그 이후/022-14. ‘절대음악’의 가치와 브람스.md",
+      "review_file": "review/3136.review.json",
+      "issue_count": 0
+    },
+    {
+      "post_no": 3151,
+      "category": "낭만·그 이후",
+      "order": 23,
+      "title": "14.1. 브람스의 초기 피아노 소나타",
+      "source_file": "낭만·그 이후/023-14.1. 브람스의 초기 피아노 소나타.md",
+      "review_file": "review/3151.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 3178,
+      "category": "낭만·그 이후",
+      "order": 24,
+      "title": "14.2. 브람스의 변주곡",
+      "source_file": "낭만·그 이후/024-14.2. 브람스의 변주곡.md",
+      "review_file": "review/3178.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 3211,
+      "category": "낭만·그 이후",
+      "order": 25,
+      "title": "14.3. 브람스, 간주곡과 카프리치오",
+      "source_file": "낭만·그 이후/025-14.3. 브람스, 간주곡과 카프리치오.md",
+      "review_file": "review/3211.review.json",
+      "issue_count": 4
+    },
+    {
+      "post_no": 3223,
+      "category": "낭만·그 이후",
+      "order": 26,
+      "title": "14.4. 브람스의 피아노 협주곡",
+      "source_file": "낭만·그 이후/026-14.4. 브람스의 피아노 협주곡.md",
+      "review_file": "review/3223.review.json",
+      "issue_count": 4
+    },
+    {
+      "post_no": 3260,
+      "category": "낭만·그 이후",
+      "order": 27,
+      "title": "15. 낭만주의 시대의 민족주의 경향",
+      "source_file": "낭만·그 이후/027-15. 낭만주의 시대의 민족주의 경향.md",
+      "review_file": "review/3260.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 3282,
+      "category": "낭만·그 이후",
+      "order": 28,
+      "title": "15.1. 러시아 5인조와 초기 러시아 피아노 음악",
+      "source_file": "낭만·그 이후/028-15.1. 러시아 5인조와 초기 러시아 피아노 음악.md",
+      "review_file": "review/3282.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 3331,
+      "category": "낭만·그 이후",
+      "order": 29,
+      "title": "15.2. 표트르 일리치 차이콥스키",
+      "source_file": "낭만·그 이후/029-15.2. 표트르 일리치 차이콥스키.md",
+      "review_file": "review/3331.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 3359,
+      "category": "낭만·그 이후",
+      "order": 30,
+      "title": "15.3. 보헤미아 악파, 베드르지흐 스메타나와 안토닌 드보르자크",
+      "source_file": "낭만·그 이후/030-15.3. 보헤미아 악파, 베드르지흐 스메타나와 안토닌 드보르자크.md",
+      "review_file": "review/3359.review.json",
+      "issue_count": 3
+    },
+    {
+      "post_no": 3376,
+      "category": "낭만·그 이후",
+      "order": 31,
+      "title": "15.4. 스칸디나비아 악파: 에드바르 그리그",
+      "source_file": "낭만·그 이후/031-15.4. 스칸디나비아 악파- 에드바르 그리그.md",
+      "review_file": "review/3376.review.json",
+      "issue_count": 0
+    },
+    {
+      "post_no": 3393,
+      "category": "낭만·그 이후",
+      "order": 32,
+      "title": "16. 프랑스 인상주의",
+      "source_file": "낭만·그 이후/032-16. 프랑스 인상주의.md",
+      "review_file": "review/3393.review.json",
+      "issue_count": 0
+    },
+    {
+      "post_no": 3405,
+      "category": "낭만·그 이후",
+      "order": 33,
+      "title": "16.1. 드뷔시의 새로운 화성 체계 (온음음계, 5음음계)",
+      "source_file": "낭만·그 이후/033-16.1. 드뷔시의 새로운 화성 체계 (온음음계, 5음음계).md",
+      "review_file": "review/3405.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 3445,
+      "category": "낭만·그 이후",
+      "order": 34,
+      "title": "16.2. 드뷔시의 주요 피아노 작품",
+      "source_file": "낭만·그 이후/034-16.2. 드뷔시의 주요 피아노 작품.md",
+      "review_file": "review/3445.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 3454,
+      "category": "낭만·그 이후",
+      "order": 35,
+      "title": "16.3. 모리스 라벨, 고전적 형식과 인상주의의 결합",
+      "source_file": "낭만·그 이후/035-16.3. 모리스 라벨, 고전적 형식과 인상주의의 결합.md",
+      "review_file": "review/3454.review.json",
+      "issue_count": 0
+    },
+    {
+      "post_no": 3468,
+      "category": "낭만·그 이후",
+      "order": 36,
+      "title": "16.4. 라벨의 주요 피아노 작품",
+      "source_file": "낭만·그 이후/036-16.4. 라벨의 주요 피아노 작품.md",
+      "review_file": "review/3468.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 3495,
+      "category": "낭만·그 이후",
+      "order": 37,
+      "title": "17. 후기 낭만주의와 신비주의",
+      "source_file": "낭만·그 이후/037-17. 후기 낭만주의와 신비주의.md",
+      "review_file": "review/3495.review.json",
+      "issue_count": 0
+    },
+    {
+      "post_no": 3511,
+      "category": "낭만·그 이후",
+      "order": 38,
+      "title": "17.1. 세르게이 라흐마니노프와 러시아 낭만주의",
+      "source_file": "낭만·그 이후/038-17.1. 세르게이 라흐마니노프와 러시아 낭만주의.md",
+      "review_file": "review/3511.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 3548,
+      "category": "낭만·그 이후",
+      "order": 39,
+      "title": "17.2. 라흐마니노프의 전주곡, 회화적 연습곡, 협주곡",
+      "source_file": "낭만·그 이후/039-17.2. 라흐마니노프의 전주곡, 회화적 연습곡, 협주곡.md",
+      "review_file": "review/3548.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 3569,
+      "category": "낭만·그 이후",
+      "order": 40,
+      "title": "17.3. 알렉산드르 스크리아빈",
+      "source_file": "낭만·그 이후/040-17.3. 알렉산드르 스크리아빈.md",
+      "review_file": "review/3569.review.json",
+      "issue_count": 3
+    },
+    {
+      "post_no": 3599,
+      "category": "낭만·그 이후",
+      "order": 41,
+      "title": "17.4. 스크리아빈의 피아노 소나타",
+      "source_file": "낭만·그 이후/041-17.4. 스크리아빈의 피아노 소나타.md",
+      "review_file": "review/3599.review.json",
+      "issue_count": 3
+    },
+    {
+      "post_no": 3622,
+      "category": "낭만·그 이후",
+      "order": 42,
+      "title": "18. 조성의 해체와 제2 빈 악파",
+      "source_file": "낭만·그 이후/042-18. 조성의 해체와 제2 빈 악파.md",
+      "review_file": "review/3622.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 3676,
+      "category": "낭만·그 이후",
+      "order": 44,
+      "title": "18.2. 12음 기법의 창안과 피아노 모음곡",
+      "source_file": "낭만·그 이후/044-18.2. 12음 기법의 창안과 피아노 모음곡.md",
+      "review_file": "review/3676.review.json",
+      "issue_count": 3
+    },
+    {
+      "post_no": 3689,
+      "category": "낭만·그 이후",
+      "order": 45,
+      "title": "18.3. 알반 베르크와 안톤 베베른의 피아노 작품",
+      "source_file": "낭만·그 이후/045-18.3. 알반 베르크와 안톤 베베른의 피아노 작품.md",
+      "review_file": "review/3689.review.json",
+      "issue_count": 3
+    },
+    {
+      "post_no": 3703,
+      "category": "낭만·그 이후",
+      "order": 46,
+      "title": "19. 민속음악의 재발견과 원시주의",
+      "source_file": "낭만·그 이후/046-19. 민속음악의 재발견과 원시주의.md",
+      "review_file": "review/3703.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 3720,
+      "category": "낭만·그 이후",
+      "order": 47,
+      "title": "19.1. 벨러 버르토크와 민속음악",
+      "source_file": "낭만·그 이후/047-19.1. 벨러 버르토크와 민속음악.md",
+      "review_file": "review/3720.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 3755,
+      "category": "낭만·그 이후",
+      "order": 48,
+      "title": "19.2. 벨러 버르토크의 미크로코스모스",
+      "source_file": "낭만·그 이후/048-19.2. 벨러 버르토크의 미크로코스모스.md",
+      "review_file": "review/3755.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 3778,
+      "category": "낭만·그 이후",
+      "order": 49,
+      "title": "19.3. 이고르 스트라빈스키의 원시주의와 피아노",
+      "source_file": "낭만·그 이후/049-19.3. 이고르 스트라빈스키의 원시주의와 피아노.md",
+      "review_file": "review/3778.review.json",
+      "issue_count": 3
+    },
+    {
+      "post_no": 3804,
+      "category": "낭만·그 이후",
+      "order": 50,
+      "title": "19.4. 레오시 야나체크의 피아노 음악",
+      "source_file": "낭만·그 이후/050-19.4. 레오시 야나체크의 피아노 음악.md",
+      "review_file": "review/3804.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 3843,
+      "category": "낭만·그 이후",
+      "order": 51,
+      "title": "20. 신고전주의와 객관주의",
+      "source_file": "낭만·그 이후/051-20. 신고전주의와 객관주의.md",
+      "review_file": "review/3843.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 3880,
+      "category": "낭만·그 이후",
+      "order": 52,
+      "title": "20.1. 프랑스 6인조(Les Six)와 에릭 사티의 영향",
+      "source_file": "낭만·그 이후/052-20.1. 프랑스 6인조(Les Six)와 에릭 사티의 영향.md",
+      "review_file": "review/3880.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 3895,
+      "category": "낭만·그 이후",
+      "order": 53,
+      "title": "20.2. 파울 힌데미트의 음악과 실용음악",
+      "source_file": "낭만·그 이후/053-20.2. 파울 힌데미트의 음악과 실용음악.md",
+      "review_file": "review/3895.review.json",
+      "issue_count": 3
+    },
+    {
+      "post_no": 3902,
+      "category": "낭만·그 이후",
+      "order": 54,
+      "title": "21. 소비에트 연방의 작곡가들",
+      "source_file": "낭만·그 이후/054-21. 소비에트 연방의 작곡가들.md",
+      "review_file": "review/3902.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 3941,
+      "category": "낭만·그 이후",
+      "order": 55,
+      "title": "21.1. 세르게이 프로코피예프의 피아노 소나타와 전쟁소나타",
+      "source_file": "낭만·그 이후/055-21.1. 세르게이 프로코피예프의 피아노 소나타와 전쟁소나타.md",
+      "review_file": "review/3941.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 3963,
+      "category": "낭만·그 이후",
+      "order": 56,
+      "title": "21.2. 드미트리 쇼스타코비치의 24개의 전주곡과 푸가",
+      "source_file": "낭만·그 이후/056-21.2. 드미트리 쇼스타코비치의 24개의 전주곡과 푸가.md",
+      "review_file": "review/3963.review.json",
+      "issue_count": 3
+    },
+    {
+      "post_no": 3993,
+      "category": "낭만·그 이후",
+      "order": 57,
+      "title": "22. 미국 피아노 음악",
+      "source_file": "낭만·그 이후/057-22. 미국 피아노 음악.md",
+      "review_file": "review/3993.review.json",
+      "issue_count": 0
+    },
+    {
+      "post_no": 4014,
+      "category": "낭만·그 이후",
+      "order": 58,
+      "title": "22.1. 헨리 카웰의 톤 클러스터와 스트링 피아노",
+      "source_file": "낭만·그 이후/058-22.1. 헨리 카웰의 톤 클러스터와 스트링 피아노.md",
+      "review_file": "review/4014.review.json",
+      "issue_count": 5
+    },
+    {
+      "post_no": 4037,
+      "category": "낭만·그 이후",
+      "order": 59,
+      "title": "22.2. 찰스 아이브스의 실험적 피아노 음악과 콩코드 소나타",
+      "source_file": "낭만·그 이후/059-22.2. 찰스 아이브스의 실험적 피아노 음악과 콩코드 소나타.md",
+      "review_file": "review/4037.review.json",
+      "issue_count": 6
+    },
+    {
+      "post_no": 4066,
+      "category": "낭만·그 이후",
+      "order": 60,
+      "title": "22.3. 에런 코플런드의 미국적 스타일 구축",
+      "source_file": "낭만·그 이후/060-22.3. 에런 코플런드의 미국적 스타일 구축.md",
+      "review_file": "review/4066.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 4094,
+      "category": "낭만·그 이후",
+      "order": 61,
+      "title": "22.4. 조지 거슈윈, 클래식과 재즈",
+      "source_file": "낭만·그 이후/061-22.4. 조지 거슈윈, 클래식과 재즈.md",
+      "review_file": "review/4094.review.json",
+      "issue_count": 3
+    },
+    {
+      "post_no": 1909,
+      "category": "바로크·고전",
+      "order": 1,
+      "title": "1. 피아노 이전의 건반 악기들",
+      "source_file": "바로크·고전/001-1. 피아노 이전의 건반 악기들.md",
+      "review_file": "review/1909.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 1910,
+      "category": "바로크·고전",
+      "order": 2,
+      "title": "1.1. 하프시코드의 구조와 음향적 특징",
+      "source_file": "바로크·고전/002-1.1. 하프시코드의 구조와 음향적 특징.md",
+      "review_file": "review/1910.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 1935,
+      "category": "바로크·고전",
+      "order": 3,
+      "title": "1.2. 클라비코드의 구조와 베붕(Bebung) 기법",
+      "source_file": "바로크·고전/003-1.2. 클라비코드의 구조와 베붕(Bebung) 기법.md",
+      "review_file": "review/1935.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 1966,
+      "category": "바로크·고전",
+      "order": 4,
+      "title": "1.3. 17-18세기 주요 건반 악기 제작과 분포",
+      "source_file": "바로크·고전/004-1.3. 17-18세기 주요 건반 악기 제작과 분포.md",
+      "review_file": "review/1966.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 1980,
+      "category": "바로크·고전",
+      "order": 5,
+      "title": "2. 피아노포르테의 발명과 초기 발전",
+      "source_file": "바로크·고전/005-2. 피아노포르테의 발명과 초기 발전.md",
+      "review_file": "review/1980.review.json",
+      "issue_count": 0
+    },
+    {
+      "post_no": 1979,
+      "category": "바로크·고전",
+      "order": 6,
+      "title": "2.1. 바르톨로메오 크리스토포리와 피아노포르테의 발명",
+      "source_file": "바로크·고전/006-2.1. 바르톨로메오 크리스토포리와 피아노포르테의 발명.md",
+      "review_file": "review/1979.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 1994,
+      "category": "바로크·고전",
+      "order": 7,
+      "title": "2.2. 초기 피아노포르테의 음향적 특성과 연주법",
+      "source_file": "바로크·고전/007-2.2. 초기 피아노포르테의 음향적 특성과 연주법.md",
+      "review_file": "review/1994.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 2007,
+      "category": "바로크·고전",
+      "order": 8,
+      "title": "2.3. 고트프리트 질버만의 개량과 독일 지역으로의 확산",
+      "source_file": "바로크·고전/008-2.3. 고트프리트 질버만의 개량과 독일 지역으로의 확산.md",
+      "review_file": "review/2007.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 2016,
+      "category": "바로크·고전",
+      "order": 9,
+      "title": "3. 후기 바로크 시대 이탈리아와 프랑스의 건반 음악",
+      "source_file": "바로크·고전/009-3. 후기 바로크 시대 이탈리아와 프랑스의 건반 음악.md",
+      "review_file": "review/2016.review.json",
+      "issue_count": 0
+    },
+    {
+      "post_no": 2017,
+      "category": "바로크·고전",
+      "order": 10,
+      "title": "3.1. 도메니코 스카를라티의 소나타와 이베리아 반도의 영향",
+      "source_file": "바로크·고전/010-3.1. 도메니코 스카를라티의 소나타와 이베리아 반도의 영향.md",
+      "review_file": "review/2017.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 2029,
+      "category": "바로크·고전",
+      "order": 11,
+      "title": "3.2. 프랑수아 쿠프랭과 장 필리프 라모의 클라브생 모음곡",
+      "source_file": "바로크·고전/011-3.2. 프랑수아 쿠프랭과 장 필리프 라모의 클라브생 모음곡.md",
+      "review_file": "review/2029.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 2044,
+      "category": "바로크·고전",
+      "order": 12,
+      "title": "3.3. 갈랑 양식(Galant Style)의 등장과 그 특징",
+      "source_file": "바로크·고전/012-3.3. 갈랑 양식(Galant Style)의 등장과 그 특징.md",
+      "review_file": "review/2044.review.json",
+      "issue_count": 0
+    },
+    {
+      "post_no": 2057,
+      "category": "바로크·고전",
+      "order": 13,
+      "title": "4. 독일 후기 바로크 건반 음악의 정점",
+      "source_file": "바로크·고전/013-4. 독일 후기 바로크 건반 음악의 정점.md",
+      "review_file": "review/2057.review.json",
+      "issue_count": 0
+    },
+    {
+      "post_no": 2059,
+      "category": "바로크·고전",
+      "order": 14,
+      "title": "4.1. 요한 세바스티안 바흐의 건반 음악 개관",
+      "source_file": "바로크·고전/014-4.1. 요한 세바스티안 바흐의 건반 음악 개관.md",
+      "review_file": "review/2059.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 2068,
+      "category": "바로크·고전",
+      "order": 15,
+      "title": "4.2. 인벤션과 신포니아, 평균율 클라비어 곡집",
+      "source_file": "바로크·고전/015-4.2. 인벤션과 신포니아, 평균율 클라비어 곡집.md",
+      "review_file": "review/2068.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 2085,
+      "category": "바로크·고전",
+      "order": 16,
+      "title": "4.3. dance suite 영국 모음곡, 프랑스 모음곡, 파르티타",
+      "source_file": "바로크·고전/016-4.3. dance suite 영국 모음곡, 프랑스 모음곡, 파르티타.md",
+      "review_file": "review/2085.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 2103,
+      "category": "바로크·고전",
+      "order": 17,
+      "title": "4.4. 게오르크 프리드리히 헨델의 건반 악기 모음곡",
+      "source_file": "바로크·고전/017-4.4. 게오르크 프리드리히 헨델의 건반 악기 모음곡.md",
+      "review_file": "review/2103.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 2132,
+      "category": "바로크·고전",
+      "order": 18,
+      "title": "5. 전고전주의와 새로운 양식의 대두",
+      "source_file": "바로크·고전/018-5. 전고전주의와 새로운 양식의 대두.md",
+      "review_file": "review/2132.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 2131,
+      "category": "바로크·고전",
+      "order": 19,
+      "title": "5.1. 다감 양식과 C.P.E. 바흐",
+      "source_file": "바로크·고전/019-5.1. 다감 양식과 C.P.E. 바흐.md",
+      "review_file": "review/2131.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 2157,
+      "category": "바로크·고전",
+      "order": 20,
+      "title": "5.2. J.C. 바흐와 런던 피아니즘의 형성",
+      "source_file": "바로크·고전/020-5.2. J.C. 바흐와 런던 피아니즘의 형성.md",
+      "review_file": "review/2157.review.json",
+      "issue_count": 4
+    },
+    {
+      "post_no": 2177,
+      "category": "바로크·고전",
+      "order": 21,
+      "title": "5.3. 소나타 형식의 기원과 초기 발전 과정",
+      "source_file": "바로크·고전/021-5.3. 소나타 형식의 기원과 초기 발전 과정.md",
+      "review_file": "review/2177.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 2204,
+      "category": "바로크·고전",
+      "order": 22,
+      "title": "6. 프란츠 요제프 하이든, 소나타 형식의 개척자",
+      "source_file": "바로크·고전/022-6. 프란츠 요제프 하이든, 소나타 형식의 개척자.md",
+      "review_file": "review/2204.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 2205,
+      "category": "바로크·고전",
+      "order": 23,
+      "title": "6.1. 건반 소나타의 아버지: 초기, 중기, 후기 소나타의 양식적 변화",
+      "source_file": "바로크·고전/023-6.1. 건반 소나타의 아버지- 초기, 중기, 후기 소나타의 양식적 변화.md",
+      "review_file": "review/2205.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 2246,
+      "category": "바로크·고전",
+      "order": 24,
+      "title": "6.2. 하이든의 음악 어법: 유머, 서프라이즈, 그리고 민속적 요소",
+      "source_file": "바로크·고전/024-6.2. 하이든의 음악 어법- 유머, 서프라이즈, 그리고 민속적 요소.md",
+      "review_file": "review/2246.review.json",
+      "issue_count": 0
+    },
+    {
+      "post_no": 2260,
+      "category": "바로크·고전",
+      "order": 25,
+      "title": "6.3. 하이든의 대표적인 소나타. C단조와 E♭장조",
+      "source_file": "바로크·고전/025-6.3. 하이든의 대표적인 소나타. C단조와 E♭장조.md",
+      "review_file": "review/2260.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 2287,
+      "category": "바로크·고전",
+      "order": 26,
+      "title": "6.4. 건반악기를 위한 변주곡과 협주곡",
+      "source_file": "바로크·고전/026-6.4. 건반악기를 위한 변주곡과 협주곡.md",
+      "review_file": "review/2287.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 2288,
+      "category": "바로크·고전",
+      "order": 27,
+      "title": "(번외) 하이든의 두번째 장례. 145년 만에 만난 몸과 머리.",
+      "source_file": "바로크·고전/027-(번외) 하이든의 두번째 장례. 145년 만에 만난 몸과 머리.md",
+      "review_file": "review/2288.review.json",
+      "issue_count": 6
+    },
+    {
+      "post_no": 2326,
+      "category": "바로크·고전",
+      "order": 28,
+      "title": "7. 볼프강 아마데우스 모차르트. 칸타빌레",
+      "source_file": "바로크·고전/028-7. 볼프강 아마데우스 모차르트. 칸타빌레.md",
+      "review_file": "review/2326.review.json",
+      "issue_count": 4
+    },
+    {
+      "post_no": 2339,
+      "category": "바로크·고전",
+      "order": 29,
+      "title": "7.1. 노래하는 선율: 칸타빌레 스타일과 오페라의 영향",
+      "source_file": "바로크·고전/029-7.1. 노래하는 선율- 칸타빌레 스타일과 오페라의 영향.md",
+      "review_file": "review/2339.review.json",
+      "issue_count": 3
+    },
+    {
+      "post_no": 2436,
+      "category": "바로크·고전",
+      "order": 30,
+      "title": "7.2. 피아노 소나타 분석: 만하임과 빈 시대의 작품들",
+      "source_file": "바로크·고전/030-7.2. 피아노 소나타 분석- 만하임과 빈 시대의 작품들.md",
+      "review_file": "review/2436.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 2465,
+      "category": "바로크·고전",
+      "order": 31,
+      "title": "7.3. 피아노 협주곡 장르의 확립과 발전",
+      "source_file": "바로크·고전/031-7.3. 피아노 협주곡 장르의 확립과 발전.md",
+      "review_file": "review/2465.review.json",
+      "issue_count": 3
+    },
+    {
+      "post_no": 2512,
+      "category": "바로크·고전",
+      "order": 32,
+      "title": "7.4. 환상곡과 변주곡, 모차르트의 즉흥연주와 테크닉",
+      "source_file": "바로크·고전/032-7.4. 환상곡과 변주곡, 모차르트의 즉흥연주와 테크닉.md",
+      "review_file": "review/2512.review.json",
+      "issue_count": 3
+    },
+    {
+      "post_no": 2548,
+      "category": "바로크·고전",
+      "order": 33,
+      "title": "8. 고전시대의 피아노 연주 기술과 제작 기술의 발전",
+      "source_file": "바로크·고전/033-8. 고전시대의 피아노 연주 기술과 제작 기술의 발전.md",
+      "review_file": "review/2548.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 2551,
+      "category": "바로크·고전",
+      "order": 34,
+      "title": "8.1. 무치오 클레멘티",
+      "source_file": "바로크·고전/034-8.1. 무치오 클레멘티.md",
+      "review_file": "review/2551.review.json",
+      "issue_count": 3
+    },
+    {
+      "post_no": 2568,
+      "category": "바로크·고전",
+      "order": 35,
+      "title": "8.2. 18세기 후반 피아노 제작 기술(빈 액션 vs영국 식 액션)",
+      "source_file": "바로크·고전/035-8.2. 18세기 후반 피아노 제작 기술(빈 액션 vs영국 식 액션).md",
+      "review_file": "review/2568.review.json",
+      "issue_count": 3
+    },
+    {
+      "post_no": 2600,
+      "category": "바로크·고전",
+      "order": 36,
+      "title": "9. 루트비히 판 베토벤",
+      "source_file": "바로크·고전/036-9. 루트비히 판 베토벤.md",
+      "review_file": "review/2600.review.json",
+      "issue_count": 1
+    },
+    {
+      "post_no": 2603,
+      "category": "바로크·고전",
+      "order": 37,
+      "title": "9.1. 베토벤의 초기 피아노 소나타 (작품 2 ~ 작품 28)",
+      "source_file": "바로크·고전/037-9.1. 베토벤의 초기 피아노 소나타 (작품 2 ~ 작품 28).md",
+      "review_file": "review/2603.review.json",
+      "issue_count": 5
+    },
+    {
+      "post_no": 2616,
+      "category": "바로크·고전",
+      "order": 38,
+      "title": "9.2. 베토벤, 중기의 영웅적 양식",
+      "source_file": "바로크·고전/038-9.2. 베토벤, 중기의 영웅적 양식.md",
+      "review_file": "review/2616.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 2638,
+      "category": "바로크·고전",
+      "order": 39,
+      "title": "9.3. 내면적이며 명상적인 베토벤 후기 작품",
+      "source_file": "바로크·고전/039-9.3. 내면적이며 명상적인 베토벤 후기 작품.md",
+      "review_file": "review/2638.review.json",
+      "issue_count": 5
+    },
+    {
+      "post_no": 2665,
+      "category": "바로크·고전",
+      "order": 40,
+      "title": "9.4 베토벤의 피아노 협주곡과 변주곡",
+      "source_file": "바로크·고전/040-9.4 베토벤의 피아노 협주곡과 변주곡.md",
+      "review_file": "review/2665.review.json",
+      "issue_count": 3
+    },
+    {
+      "post_no": 2200,
+      "category": "작곡가 이야기",
+      "order": 1,
+      "title": "음악의 아버지 어머니를 모두 죽인 음악의 원수",
+      "source_file": "작곡가 이야기/001-음악의 아버지 어머니를 모두 죽인 음악의 원수.md",
+      "review_file": "review/2200.review.json",
+      "issue_count": 0
+    },
+    {
+      "post_no": 2717,
+      "category": "작곡가 이야기",
+      "order": 2,
+      "title": "바로크 번외. 프랑수아 쿠플랭",
+      "source_file": "작곡가 이야기/002-바로크 번외. 프랑수아 쿠플랭.md",
+      "review_file": "review/2717.review.json",
+      "issue_count": 4
+    },
+    {
+      "post_no": 1435,
+      "category": "작곡가 이야기",
+      "order": 3,
+      "title": "베토벤의 유전체로부터의 단상",
+      "source_file": "작곡가 이야기/003-베토벤의 유전체로부터의 단상.md",
+      "review_file": "review/1435.review.json",
+      "issue_count": 3
+    },
+    {
+      "post_no": 2672,
+      "category": "작곡가 이야기",
+      "order": 4,
+      "title": "모차르트의 두개골로(추정) 3D 얼굴 복원",
+      "source_file": "작곡가 이야기/004-모차르트의 두개골로(추정) 3D 얼굴 복원.md",
+      "review_file": "review/2672.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 2562,
+      "category": "작곡가 이야기",
+      "order": 5,
+      "title": "베토벤은 납중독이 아니었다.",
+      "source_file": "작곡가 이야기/005-베토벤은 납중독이 아니었다.md",
+      "review_file": "review/2562.review.json",
+      "issue_count": 4
+    },
+    {
+      "post_no": 1415,
+      "category": "작곡가 이야기",
+      "order": 6,
+      "title": "베토벤 편지 모음집",
+      "source_file": "작곡가 이야기/006-베토벤 편지 모음집.md",
+      "review_file": "review/1415.review.json",
+      "issue_count": 6
+    },
+    {
+      "post_no": 4130,
+      "category": "작곡가 이야기",
+      "order": 7,
+      "title": "작곡가들의 수입 (바흐 & 헨델)",
+      "source_file": "작곡가 이야기/007-작곡가들의 수입 (바흐 & 헨델).md",
+      "review_file": "review/4130.review.json",
+      "issue_count": 6
+    },
+    {
+      "post_no": 4181,
+      "category": "작곡가 이야기",
+      "order": 8,
+      "title": "작곡가들의 수입 (모차르트)",
+      "source_file": "작곡가 이야기/008-작곡가들의 수입 (모차르트).md",
+      "review_file": "review/4181.review.json",
+      "issue_count": 6
+    },
+    {
+      "post_no": 4407,
+      "category": "작곡가 이야기",
+      "order": 9,
+      "title": "작곡가들의 수입 (스카를라티)",
+      "source_file": "작곡가 이야기/009-작곡가들의 수입 (스카를라티).md",
+      "review_file": "review/4407.review.json",
+      "issue_count": 4
+    },
+    {
+      "post_no": 4272,
+      "category": "작곡가 이야기",
+      "order": 10,
+      "title": "작곡가들의 수입 (클레멘티)",
+      "source_file": "작곡가 이야기/010-작곡가들의 수입 (클레멘티).md",
+      "review_file": "review/4272.review.json",
+      "issue_count": 3
+    },
+    {
+      "post_no": 4164,
+      "category": "작곡가 이야기",
+      "order": 11,
+      "title": "작곡가들의 수입 (살리에리)",
+      "source_file": "작곡가 이야기/011-작곡가들의 수입 (살리에리).md",
+      "review_file": "review/4164.review.json",
+      "issue_count": 5
+    },
+    {
+      "post_no": 4206,
+      "category": "작곡가 이야기",
+      "order": 12,
+      "title": "작곡가들의 수입 (베토벤)",
+      "source_file": "작곡가 이야기/012-작곡가들의 수입 (베토벤).md",
+      "review_file": "review/4206.review.json",
+      "issue_count": 4
+    },
+    {
+      "post_no": 4231,
+      "category": "작곡가 이야기",
+      "order": 13,
+      "title": "작곡가들의 수입 (체르니)",
+      "source_file": "작곡가 이야기/013-작곡가들의 수입 (체르니).md",
+      "review_file": "review/4231.review.json",
+      "issue_count": 3
+    },
+    {
+      "post_no": 4300,
+      "category": "작곡가 이야기",
+      "order": 14,
+      "title": "작곡가들의 수입 (멘델스존)",
+      "source_file": "작곡가 이야기/014-작곡가들의 수입 (멘델스존).md",
+      "review_file": "review/4300.review.json",
+      "issue_count": 6
+    },
+    {
+      "post_no": 2969,
+      "category": "작곡가 이야기",
+      "order": 15,
+      "title": "고전 번외. 카를 체르니의 계보와 현대에 미친 영향",
+      "source_file": "작곡가 이야기/015-고전 번외. 카를 체르니의 계보와 현대에 미친 영향.md",
+      "review_file": "review/2969.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 4338,
+      "category": "작곡가 이야기",
+      "order": 16,
+      "title": "작곡가들의 수입 (슈베르트)",
+      "source_file": "작곡가 이야기/016-작곡가들의 수입 (슈베르트).md",
+      "review_file": "review/4338.review.json",
+      "issue_count": 7
+    },
+    {
+      "post_no": 4368,
+      "category": "작곡가 이야기",
+      "order": 17,
+      "title": "작곡가들의 수입 (클라라 슈만 1)",
+      "source_file": "작곡가 이야기/017-작곡가들의 수입 (클라라 슈만 1).md",
+      "review_file": "review/4368.review.json",
+      "issue_count": 3
+    },
+    {
+      "post_no": 4377,
+      "category": "작곡가 이야기",
+      "order": 18,
+      "title": "작곡가들의 수입 (클라라 슈만 2)",
+      "source_file": "작곡가 이야기/018-작곡가들의 수입 (클라라 슈만 2).md",
+      "review_file": "review/4377.review.json",
+      "issue_count": 5
+    },
+    {
+      "post_no": 4446,
+      "category": "작곡가 이야기",
+      "order": 19,
+      "title": "작곡가들의 수입 (리스트 1)",
+      "source_file": "작곡가 이야기/019-작곡가들의 수입 (리스트 1).md",
+      "review_file": "review/4446.review.json",
+      "issue_count": 2
+    },
+    {
+      "post_no": 4473,
+      "category": "작곡가 이야기",
+      "order": 20,
+      "title": "작곡가들의 수입 (리스트 2)",
+      "source_file": "작곡가 이야기/020-작곡가들의 수입 (리스트 2).md",
+      "review_file": "review/4473.review.json",
+      "issue_count": 4
+    },
+    {
+      "post_no": 4490,
+      "category": "작곡가 이야기",
+      "order": 21,
+      "title": "작곡가들의 수입 (리스트 3)",
+      "source_file": "작곡가 이야기/021-작곡가들의 수입 (리스트 3).md",
+      "review_file": "review/4490.review.json",
+      "issue_count": 3
+    },
+    {
+      "post_no": 4506,
+      "category": "작곡가 이야기",
+      "order": 22,
+      "title": "작곡가의 수입 (리스트 4)",
+      "source_file": "작곡가 이야기/022-작곡가의 수입 (리스트 4).md",
+      "review_file": "review/4506.review.json",
+      "issue_count": 4
+    },
+    {
+      "post_no": 4601,
+      "category": "작곡가 이야기",
+      "order": 23,
+      "title": "작곡가들의 수입 (리스트 5)",
+      "source_file": "작곡가 이야기/023-작곡가들의 수입 (리스트 5).md",
+      "review_file": "review/4601.review.json",
+      "issue_count": 4
+    },
+    {
+      "post_no": 4701,
+      "category": "작곡가 이야기",
+      "order": 24,
+      "title": "작곡가들의 수입 (리스트 6. 끝)",
+      "source_file": "작곡가 이야기/024-작곡가들의 수입 (리스트 6. 끝).md",
+      "review_file": "review/4701.review.json",
+      "issue_count": 5
+    }
+  ],
+  "byCategory": {
+    "낭만·그 이후": {
+      "posts": 60,
+      "issues": 120
+    },
+    "바로크·고전": {
+      "posts": 40,
+      "issues": 76
+    },
+    "작곡가 이야기": {
+      "posts": 24,
+      "issues": 95
+    }
+  },
+  "applied": {
+    "appliedIssues": 100,
+    "notApplied": 191,
+    "totalIssues": 291,
+    "factualEdits": 6,
+    "filesModified": 67
+  },
+  "factCheckVerdicts": {
+    "insufficient_evidence": 27,
+    "confirmed_error": 6
+  },
+  "notAppliedReasons": {
+    "original_not_found_or_multiple_or_multifragment": 16,
+    "type_not_typo_grammar": 70,
+    "confidence_not_high": 102,
+    "blocked_category": 1,
+    "no_proposed": 1,
+    "changes_meaning": 1
+  }
+}

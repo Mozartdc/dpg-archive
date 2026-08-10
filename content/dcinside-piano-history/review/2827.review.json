@@ -1,0 +1,22 @@
+{
+  "post_no": 2827,
+  "source_file": "낭만·그 이후/007-11.2. 쇼팽 에튀드.md",
+  "title": "11.2. 쇼팽 에튀드",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/007-11.2. 쇼팽 에튀드.md",
+      "paragraph": "12번 C단조 ‘혁명’: 1830년 러시아의 바르샤바 침공 소식을 듣고 격분하여 썼다고 전해지는 작품.",
+      "issue_type": "factual_error",
+      "original": "1830년 러시아의 바르샤바 침공",
+      "proposed": null,
+      "reason": "같은 글의 이미지 설명에는 ‘1831년 러시아의 바르샤바 침공’이라 적혀 있어 본문과 연도가 어긋남. 11월 봉기 발발은 1830년 11월, 러시아군의 바르샤바 함락은 1831년 9월로 서로 다른 사건이라 어느 쪽을 가리키는지 확정이 필요함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    }
+  ]
+}

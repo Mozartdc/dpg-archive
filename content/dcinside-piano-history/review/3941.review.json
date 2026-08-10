@@ -1,0 +1,22 @@
+{
+  "post_no": 3941,
+  "source_file": "낭만·그 이후/055-21.1. 세르게이 프로코피예프의 피아노 소나타와 전쟁소나타.md",
+  "title": "21.1. 세르게이 프로코피예프의 피아노 소나타와 전쟁소나타",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/055-21.1. 세르게이 프로코피예프의 피아노 소나타와 전쟁소나타.md",
+      "paragraph": "프로코피예프 피아노 음악의 중심엔 피아노를 노래하는 현악기가 아닌, 두드리는 타악기(Percussion)로 인식했다는 점에 있음.",
+      "issue_type": "grammar",
+      "original": "중심엔 ... 점에 있음",
+      "proposed": "중심에는 ... 점이 있음",
+      "reason": "‘중심엔’과 ‘점에 있음’이 겹쳐 조사가 중복됨.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "post_no": 2729,
+  "source_file": "낭만·그 이후/003-10.2 펠릭스 멘델스존 (1).md",
+  "title": "10.2 펠릭스 멘델스존 (1)",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/003-10.2 펠릭스 멘델스존 (1).md",
+      "paragraph": "멘델스존이 편집한 바헨라이터 출판사의 《Matthäus‑Passion》 악보 표지.",
+      "issue_type": "typo",
+      "original": "바헨라이터 출판사",
+      "proposed": "베렌라이터 출판사",
+      "reason": "독일 악보 출판사 Bärenreiter의 표기 오류.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/003-10.2 펠릭스 멘델스존 (1).md",
+      "paragraph": "이는 바흐 사후 80~100년 만에 대중 앞에 선 공연으로, 음악계에 큰 반향과 각성을 불러옴.",
+      "issue_type": "ambiguous",
+      "original": "바흐 사후 80~100년 만에",
+      "proposed": null,
+      "reason": "바흐 사망은 1750년이고 본문이 밝힌 공연일은 1829년이라 사후 79년임. 80~100년이라는 폭이 어떤 기준에서 나온 것인지 불분명함. 마태 수난곡의 마지막 연주 시점을 기준으로 잡았을 여지가 있어 오류로 단정하지 않고 기록만 남김.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    }
+  ]
+}

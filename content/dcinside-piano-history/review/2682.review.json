@@ -1,0 +1,22 @@
+{
+  "post_no": 2682,
+  "source_file": "낭만·그 이후/001-10. 초기 낭만주의와 캐릭터 피스.md",
+  "title": "10. 초기 낭만주의와 캐릭터 피스.",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/001-10. 초기 낭만주의와 캐릭터 피스.md",
+      "paragraph": "10장은이런 전환기에 새로운 시대를 연 첫 번째 낭만주의 세대의 작곡가애 대한 이야기임.",
+      "issue_type": "typo",
+      "original": "10장은이런 ... 작곡가애 대한",
+      "proposed": "10장은 이런 ... 작곡가에 대한",
+      "reason": "띄어쓰기 누락과 조사 오타가 한 문장에 겹침.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

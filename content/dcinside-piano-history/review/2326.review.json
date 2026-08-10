@@ -1,0 +1,64 @@
+{
+  "post_no": 2326,
+  "source_file": "바로크·고전/028-7. 볼프강 아마데우스 모차르트. 칸타빌레.md",
+  "title": "7. 볼프강 아마데우스 모차르트. 칸타빌레",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/028-7. 볼프강 아마데우스 모차르트. 칸타빌레.md",
+      "paragraph": "2029년 크리스티 경매에서 400만유로에 낙찰.된 모차르트의 13세 무렵을 담은 초상화.",
+      "issue_type": "factual_error",
+      "original": "2029년 크리스티 경매에서",
+      "proposed": null,
+      "reason": "2029년은 아직 오지 않은 해라 경매 연도로 성립하지 않음. 소년 모차르트 초상이 크리스티에서 400만 유로대에 낙찰된 것은 2019년으로 알려져 있어 2019의 오타로 보임. 다만 연도 확정은 경매 기록 확인이 필요해 검증 대상으로 올림.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    },
+    {
+      "source_file": "바로크·고전/028-7. 볼프강 아마데우스 모차르트. 칸타빌레.md",
+      "paragraph": "400만유로에 낙찰.된 모차르트의 13세 무렵을 담은 초상화.",
+      "issue_type": "typo",
+      "original": "400만유로에 낙찰.된",
+      "proposed": "400만 유로에 낙찰된",
+      "reason": "단위 띄어쓰기와 불필요한 마침표.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "바로크·고전/028-7. 볼프강 아마데우스 모차르트. 칸타빌레.md",
+      "paragraph": "이무렵 모차르트는 이탈리아 전역을 다니며 예술 수업을 받는 동시에",
+      "issue_type": "typo",
+      "original": "이무렵",
+      "proposed": "이 무렵",
+      "reason": "띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "바로크·고전/028-7. 볼프강 아마데우스 모차르트. 칸타빌레.md",
+      "paragraph": "모차르트의 피아노 음악의 가장 특징은 “노래하듯이” 연주되는 선율을 강조한 ‘cantabile‘임.",
+      "issue_type": "grammar",
+      "original": "가장 특징은",
+      "proposed": "가장 큰 특징은",
+      "reason": "‘가장’ 뒤에 형용사가 빠져 호응이 어긋남.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

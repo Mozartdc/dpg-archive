@@ -1,0 +1,24 @@
+{
+  "post_no": 2131,
+  "stage": 2,
+  "checked_at": "2026-08-10T04:12:17.135Z",
+  "revisited_at": "2026-08-10T22:00:00.000Z",
+  "checks": [
+    {
+      "original_claim": "Versuch가 피아노포르테를 독립적이고 구별되는 악기로 처음 명확히 언급한 저술임",
+      "verdict": "correct",
+      "proposed": null,
+      "source_1_url": "https://c-p-e-bach.org/en/FortePiano.html",
+      "source_1_title": "Fortepiano - C.P.E. Bach: The Complete Works",
+      "source_1_support": "C.P.E. Bach's Versuch (1753/1762) is described as the first treatise to refer specifically to the pianoforte as a separate and distinct instrument, laying groundwork for later piano instruction manuals.",
+      "source_2_url": "https://exhibitions.lib.umd.edu/piano-genealogies/pianist-bios/bach-tradition",
+      "source_2_title": "The CPE Bach Tradition - Piano Genealogies (Univ. of Maryland)",
+      "source_2_support": "Corroborates the Versuch's foundational, historically primary status regarding the fortepiano as distinct instrument.",
+      "reasoning": "재검증(2회차): 두 독립 출처(C.P.E. Bach 전집 공식 아카이브, 메릴랜드대 피아노 계보 전시)가 본문 서술과 일치함. 수정 불필요, 판정만 insufficient_evidence에서 correct로 변경.",
+      "confidence": "high",
+      "paired_posts": [],
+      "changes_meaning": false,
+      "criteria_group": "B"
+    }
+  ]
+}

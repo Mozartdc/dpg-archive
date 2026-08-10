@@ -1,0 +1,50 @@
+{
+  "post_no": 3689,
+  "source_file": "낭만·그 이후/045-18.3. 알반 베르크와 안톤 베베른의 피아노 작품.md",
+  "title": "18.3. 알반 베르크와 안톤 베베른의 피아노 작품",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/045-18.3. 알반 베르크와 안톤 베베른의 피아노 작품.md",
+      "paragraph": "그들의 피아노 작품을 통하 이러한 차이점을 알 수 있음.",
+      "issue_type": "typo",
+      "original": "작품을 통하 이러한",
+      "proposed": "작품을 통해 이러한",
+      "reason": "어미 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/045-18.3. 알반 베르크와 안톤 베베른의 피아노 작품.md",
+      "paragraph": "순수한 소리 요소들의 구조적인 관계로 표련하고자 했음.",
+      "issue_type": "typo",
+      "original": "표련하고자",
+      "proposed": "표현하고자",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/045-18.3. 알반 베르크와 안톤 베베른의 피아노 작품.md",
+      "paragraph": "그의 음악은 선율은 연속적인 선으로 나타나지 않고, 개별적인 음들이 쉼표와 함께 점처럼 흩어져 나타나기 때문에",
+      "issue_type": "grammar",
+      "original": "그의 음악은 선율은",
+      "proposed": "그의 음악에서 선율은",
+      "reason": "한 문장에 주격 조사가 두 번 나와 주어가 겹침.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

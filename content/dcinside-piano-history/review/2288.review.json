@@ -1,0 +1,92 @@
+{
+  "post_no": 2288,
+  "source_file": "바로크·고전/027-(번외) 하이든의 두번째 장례. 145년 만에 만난 몸과 머리.md",
+  "title": "(번외) 하이든의 두번째 장례. 145년 만에 만난 몸과 머리.",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/027-(번외) 하이든의 두번째 장례. 145년 만에 만난 몸과 머리.md",
+      "paragraph": "하이든의 징례는 조촐하게 치뤄지고, 시신은 빈 외곽의 한 공동묘지에 안장됨.",
+      "issue_type": "typo",
+      "original": "하이든의 징례는 조촐하게 치뤄지고",
+      "proposed": "하이든의 장례는 조촐하게 치러지고",
+      "reason": "장례의 오타와 ‘치르다’의 활용 오류가 겹침.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "바로크·고전/027-(번외) 하이든의 두번째 장례. 145년 만에 만난 몸과 머리.md",
+      "paragraph": "<빈 음악협회에 잔시중인 하이든의 진짜 두개골>",
+      "issue_type": "typo",
+      "original": "잔시중인",
+      "proposed": "전시 중인",
+      "reason": "오타와 띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "바로크·고전/027-(번외) 하이든의 두번째 장례. 145년 만에 만난 몸과 머리.md",
+      "paragraph": "두개골을 들고 있는 사람은 오스트리아의 조각가이자, 두개골 반환 운동에 앞장섰던 구스트누스 암브로시임.",
+      "issue_type": "typo",
+      "original": "구스트누스 암브로시",
+      "proposed": "구스티누스 암브로시",
+      "reason": "오스트리아 조각가 Gustinus Ambrosi의 표기 오류.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "바로크·고전/027-(번외) 하이든의 두번째 장례. 145년 만에 만난 몸과 머리.md",
+      "paragraph": "같은해 6월, 요제프 카를 로젠바움(에스테르하지 가문의 전 비서)과",
+      "issue_type": "typo",
+      "original": "같은해",
+      "proposed": "같은 해",
+      "reason": "띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "바로크·고전/027-(번외) 하이든의 두번째 장례. 145년 만에 만난 몸과 머리.md",
+      "paragraph": "그제서야 시신에 머리가 없다는 사실을 발견하고 도난 사실을 알게됨.",
+      "issue_type": "typo",
+      "original": "알게됨",
+      "proposed": "알게 됨",
+      "reason": "띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "바로크·고전/027-(번외) 하이든의 두번째 장례. 145년 만에 만난 몸과 머리.md",
+      "paragraph": "이 어처구니 없는 상태는 20세기 중반까지 이어지다. 수많은 논의와 협상 끝에",
+      "issue_type": "grammar",
+      "original": "20세기 중반까지 이어지다. 수많은",
+      "proposed": "20세기 중반까지 이어지다가, 수많은",
+      "reason": "연결어미가 잘려 문장이 끊김. 음슴체 유지 범위에서 어미만 보완함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

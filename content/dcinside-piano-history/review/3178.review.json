@@ -1,0 +1,22 @@
+{
+  "post_no": 3178,
+  "source_file": "낭만·그 이후/024-14.2. 브람스의 변주곡.md",
+  "title": "14.2. 브람스의 변주곡",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/024-14.2. 브람스의 변주곡.md",
+      "paragraph": "브람스의 변주곡은 발전적 변주(developing variation)개념의 정수로",
+      "issue_type": "typo",
+      "original": "(developing variation)개념의",
+      "proposed": "(developing variation) 개념의",
+      "reason": "괄호 뒤 띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "low",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

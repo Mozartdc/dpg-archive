@@ -1,0 +1,64 @@
+{
+  "post_no": 3223,
+  "source_file": "낭만·그 이후/026-14.4. 브람스의 피아노 협주곡.md",
+  "title": "14.4. 브람스의 피아노 협주곡",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/026-14.4. 브람스의 피아노 협주곡.md",
+      "paragraph": "베크베커 남작이 노이마이어 부시장이 개막식 연설을 함.",
+      "issue_type": "grammar",
+      "original": "베크베커 남작이 노이마이어 부시장이 개막식 연설을 함",
+      "proposed": null,
+      "reason": "주격 조사가 두 번 나와 주어가 둘이 됨. 두 사람이 함께 연설했다는 뜻인지 한 사람만 연설했는지 원문에서 판단할 수 없어 수정안은 제시하지 않고 확인만 요청함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/026-14.4. 브람스의 피아노 협주곡.md",
+      "paragraph": "4악장(스케르초 포함)으로 구성되어, 전통적 3악장 구조에서 확장된 형식을 특징을 보임.",
+      "issue_type": "grammar",
+      "original": "확장된 형식을 특징을 보임",
+      "proposed": "확장된 형식이 특징임",
+      "reason": "목적격 조사가 겹쳐 문장이 성립하지 않음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/026-14.4. 브람스의 피아노 협주곡.md",
+      "paragraph": "이탈리아 여행에서 받은 인상 등 새로운 자극을 반영해, 긴작곡 기간 끝에 완성되었함.",
+      "issue_type": "typo",
+      "original": "긴작곡 기간 끝에 완성되었함",
+      "proposed": "긴 작곡 기간 끝에 완성됨",
+      "reason": "띄어쓰기 누락과 어미 오타가 겹침.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/026-14.4. 브람스의 피아노 협주곡.md",
+      "paragraph": "기부자 중에 윌리엄 셰익스피어도 있음",
+      "issue_type": "ambiguous",
+      "original": "기부자 중에 윌리엄 셰익스피어도 있음",
+      "proposed": null,
+      "reason": "극작가 셰익스피어로 오해되기 쉬운 대목임. 동명이인인 영국의 성악 교육자 윌리엄 셰익스피어(1849~1931)를 가리킬 가능성이 있어 사실 여부와 별개로 설명 보강이 필요해 보임. 기부자 명단 확인 전에는 오류로 단정하지 않음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "low",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

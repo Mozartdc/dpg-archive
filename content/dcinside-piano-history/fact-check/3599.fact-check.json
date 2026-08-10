@@ -1,0 +1,24 @@
+{
+  "post_no": 3599,
+  "stage": 2,
+  "checked_at": "2026-08-10T04:12:17.139Z",
+  "revisited_at": "2026-08-10T22:00:00.000Z",
+  "checks": [
+    {
+      "original_claim": "소나타 4번: 법열의 시, 그의 작곡 양식 전환을 보여주는 중요한 작품으로 …",
+      "verdict": "confirmed_error",
+      "proposed": "'법열의 시, ' 삭제 (소나타 4번에는 이 부제가 붙지 않음)",
+      "source_1_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._4_(Scriabin)",
+      "source_1_title": "Piano Sonata No. 4 (Scriabin) - Wikipedia",
+      "source_1_support": "'The Poem of Ecstasy' is the subtitle/nickname associated with Piano Sonata No.5, Op.53, not Sonata No.4, Op.30.",
+      "source_2_url": "https://www.sfsymphony.org/Data/Event-Data/Program-Notes/S/Scriabin-Sonata-No-4-in-F-sharp-major-for-Piano,-O",
+      "source_2_title": "San Francisco Symphony Program Notes - Scriabin Sonatas",
+      "source_2_support": "Confirms 'Poem of Ecstasy' notebook inscription became the basis for both the tone poem and Sonata No.5, not No.4.",
+      "reasoning": "재검증(2회차): 같은 문서의 소나타 5번 항목은 '법열의 시'를 정확히 교향곡(관현악곡)으로 인용하고 있어 이미 올바름. 소나타 4번 항목의 '법열의 시,' 문구만 삭제(대체 표현을 추측해 넣지 않고 오류 문구만 제거). B군, 2건 독립 출처.",
+      "confidence": "high",
+      "paired_posts": [],
+      "changes_meaning": false,
+      "criteria_group": "B"
+    }
+  ]
+}

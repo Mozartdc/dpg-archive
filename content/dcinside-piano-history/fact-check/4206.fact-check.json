@@ -1,0 +1,23 @@
+{
+  "post_no": 4206,
+  "stage": 2,
+  "checked_at": "2026-08-09T23:37:48.636Z",
+  "checks": [
+    {
+      "post_no": 4206,
+      "original_claim": "1815년, 영국의 아서 웰슬리 웰링턴 공작이 나폴레옹을 워털루 전투에서 완전히 몰락시키자 베토벤은 웰링턴의 승리 (Wellington's Victory)를 작곡해 무대에 올림.",
+      "verdict": "confirmed_error",
+      "proposed": "1813년, 영국의 아서 웰슬리 웰링턴 공작이 비토리아 전투에서 프랑스군을 격파하자 베토벤은 웰링턴의 승리 (Wellington's Victory)를 작곡해 무대에 올림.",
+      "source_1_url": "https://www.beethoven.de/de/work/view/6170289125720064/%22Wellingtons+Sieg+oder+die+Schlacht+bei+Vittoria%22+op.+91",
+      "source_1_title": "Beethoven-Haus Bonn, Digitales Archiv — \"Wellingtons Sieg oder die Schlacht bei Vittoria\" op. 91",
+      "source_1_support": "작품 해설(Entstehung)에 \"Am 21. Juni 1813 besiegten in der Ebene von Vittoria die Truppen von Sir Arthur Wellesley Herzog von Wellington die Truppen des französischen Marschalls Jean-Baptiste Graf Jourdan und des Königs Joseph von Spanien\"이라 적혀 있고, 작곡 시기를 \"August bis Oktober 1813 (Fassung Panharmonikon), Oktober bis Dezember 1813 (Orchesterfassung)\", 초연을 \"am 8. und 12. Dezember 1813\"으로 명시함. 워털루(1815)는 언급되지 않음.",
+      "source_2_url": "https://ageofrevolution.waterlooassociation.org.uk/200-object/wellingtons-victory-or-the-battle-of-vittoria/",
+      "source_2_title": "Age of Revolution (Waterloo 200 / National Army Museum / University of Kent) — Wellington's Victory, Ludwig van Beethoven",
+      "source_2_support": "\"This 15-minute piece of martial music was composed to celebrate Wellington's victory over Joseph Bonaparte at the Battle of Vitoria in Spain on 21 June 1813\"라고 적고, 작곡 시기를 \"between August and October 1813\"으로 명시함. 나아가 \"It became associated with Wellington's triumph at Waterloo rather than Vitoria\"라며 워털루와의 혼동이 후대에 생긴 통념임을 직접 설명함.",
+      "reasoning": "두 출처는 서로 다른 기관(독일 베토벤하우스 재단 / 영국 워털루200 유산 컨소시엄)이 각자 작성한 해설이며 상대를 재인용하지 않음. 두 곳 모두 이 작품이 1813년 6월 21일 비토리아 전투를 기린 곡이고 1813년 8~12월에 작곡·초연되었다고 밝힘. 워털루 전투는 1815년 6월이므로 작품 성립보다 뒤이며, 원문 자체도 같은 문단에서 초연을 1813년 12월로 적어 내부적으로 모순됨. 두 번째 출처가 워털루와의 결부를 후대의 오해로 명시한 점이 이 오류의 발생 경위까지 설명함.",
+      "confidence": "high",
+      "paired_posts": [],
+      "changes_meaning": true
+    }
+  ]
+}

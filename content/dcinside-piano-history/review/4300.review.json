@@ -1,0 +1,92 @@
+{
+  "post_no": 4300,
+  "source_file": "작곡가 이야기/014-작곡가들의 수입 (멘델스존).md",
+  "title": "작곡가들의 수입 (멘델스존)",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "작곡가 이야기/014-작곡가들의 수입 (멘델스존).md",
+      "paragraph": "프로이센 국왕 빌헬름 4세가 베를린을 예술의 수도로 만들겠다며 멘델스존을 불러 연간 3,000 탈러를 제안함.",
+      "issue_type": "factual_error",
+      "original": "프로이센 국왕 빌헬름 4세",
+      "proposed": null,
+      "reason": "당시 멘델스존을 베를린으로 부른 프로이센 국왕은 프리드리히 빌헬름 4세임. ‘빌헬름 4세’라는 프로이센 국왕은 따로 없어 이름 일부가 빠진 것으로 보임. 검증 대상으로 올림.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    },
+    {
+      "source_file": "작곡가 이야기/014-작곡가들의 수입 (멘델스존).md",
+      "paragraph": "그가 사비와 열정을 털어 세운 이 학교는 니중에 히틀러와 니치에 의해 멘델스존이라는 이름이 지워지고",
+      "issue_type": "typo",
+      "original": "니중에 히틀러와 니치에",
+      "proposed": "나중에 히틀러와 나치에",
+      "reason": "한 구절에 글자 오타가 두 군데 있음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/014-작곡가들의 수입 (멘델스존).md",
+      "paragraph": "멘델스존은 자신의 시비로 장학금으로 내놓고, 남의 유산을 끌어와 국립 학교를 세우고",
+      "issue_type": "grammar",
+      "original": "자신의 시비로 장학금으로 내놓고",
+      "proposed": "자신의 사비를 장학금으로 내놓고",
+      "reason": "글자 오타와 조사 중복이 겹쳐 문장이 성립하지 않음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/014-작곡가들의 수입 (멘델스존).md",
+      "paragraph": "노블레스 오블리주가 무엇인지 보려준 훌륭한 음악가임.",
+      "issue_type": "typo",
+      "original": "보려준",
+      "proposed": "보여준",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/014-작곡가들의 수입 (멘델스존).md",
+      "paragraph": "이후 멘델스존은 초대 학장으로 역임하며 본이 벌고 있던 연봉(약 4,000~4,500탈러)전액을",
+      "issue_type": "typo",
+      "original": "본이 벌고 있던 연봉(...)전액을",
+      "proposed": "본인이 벌고 있던 연봉(...) 전액을",
+      "reason": "글자 누락과 괄호 뒤 띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "작곡가 이야기/014-작곡가들의 수입 (멘델스존).md",
+      "paragraph": "아무리 찾아도 저 동상이 파니라는 근거가 없음. (3대 AI도 다 아니리고 하니 아니겠지)",
+      "issue_type": "typo",
+      "original": "다 아니리고 하니",
+      "proposed": "다 아니라고 하니",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    }
+  ]
+}

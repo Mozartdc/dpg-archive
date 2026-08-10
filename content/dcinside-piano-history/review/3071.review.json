@@ -1,0 +1,50 @@
+{
+  "post_no": 3071,
+  "source_file": "낭만·그 이후/017-13.1. 니콜로 파가니니가 피아니스트들에게 미친 영향.md",
+  "title": "13.1. 니콜로 파가니니가 피아니스트들에게 미친 영향",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/017-13.1. 니콜로 파가니니가 피아니스트들에게 미친 영향.md",
+      "paragraph": "그의 파가니니에 의한 대연습곡이 바로 그 결과물이며, 이 중 6번 곡은 파가니니의 바이올린 협주곡 2번의 론도 주제(종소리)를 바탕으로 한 유명한 라 캄파넬라(La Campanella)’임.",
+      "issue_type": "factual_error",
+      "original": "이 중 6번 곡은 ... 라 캄파넬라",
+      "proposed": null,
+      "reason": "파가니니 대연습곡(S.141)에서 라 캄파넬라는 3번임. 6번은 카프리스 24번을 주제로 한 변주곡이라는 서술이 일반적이라 번호가 어긋난 것으로 보임. 검증 대상으로 올림.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/017-13.1. 니콜로 파가니니가 피아니스트들에게 미친 영향.md",
+      "paragraph": "이중 복함 하모닉스",
+      "issue_type": "typo",
+      "original": "이중 복함 하모닉스",
+      "proposed": "이중 복합 하모닉스",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/017-13.1. 니콜로 파가니니가 피아니스트들에게 미친 영향.md",
+      "paragraph": "피아노가 가진 가능성이 이아직 완전히 발견되지 않았다고 생각하고",
+      "issue_type": "typo",
+      "original": "이아직",
+      "proposed": "아직",
+      "reason": "글자가 덧붙은 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    }
+  ]
+}

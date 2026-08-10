@@ -1,0 +1,22 @@
+{
+  "post_no": 3622,
+  "source_file": "낭만·그 이후/042-18. 조성의 해체와 제2 빈 악파.md",
+  "title": "18. 조성의 해체와 제2 빈 악파",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/042-18. 조성의 해체와 제2 빈 악파.md",
+      "paragraph": "음색의 섞이는 오케스트라와 달리, 피아노의 명확한 음정은 새로운 화성과 구조를 시험하기에 가장 적합했기 때문에",
+      "issue_type": "grammar",
+      "original": "음색의 섞이는",
+      "proposed": "음색이 섞이는",
+      "reason": "주격 조사 자리에 관형격 조사가 들어가 호응이 깨짐.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    }
+  ]
+}

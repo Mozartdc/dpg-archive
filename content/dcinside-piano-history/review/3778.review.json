@@ -1,0 +1,50 @@
+{
+  "post_no": 3778,
+  "source_file": "낭만·그 이후/049-19.3. 이고르 스트라빈스키의 원시주의와 피아노.md",
+  "title": "19.3. 이고르 스트라빈스키의 원시주의와 피아노",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/049-19.3. 이고르 스트라빈스키의 원시주의와 피아노.md",
+      "paragraph": "불새(1910), 페트루슈카(11), 그리고 음악사상 가장 유명한 스캔들을 일으킨 봄의 제전(1913)",
+      "issue_type": "typo",
+      "original": "페트루슈카(11)",
+      "proposed": "페트루슈카(1911)",
+      "reason": "앞뒤가 네 자리 연도인데 이 항목만 두 자리로 잘려 있음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/049-19.3. 이고르 스트라빈스키의 원시주의와 피아노.md",
+      "paragraph": "러시아의 민속 설화나 이교도적 제의를 소재로, 원시주의적 음악을선보임.",
+      "issue_type": "typo",
+      "original": "음악을선보임",
+      "proposed": "음악을 선보임",
+      "reason": "띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/049-19.3. 이고르 스트라빈스키의 원시주의와 피아노.md",
+      "paragraph": "특히 피아니스트 아르투르 루빈슈타인을 위해 편곡한 페트루슈카’로부터의 3개의 악장은 ... 피아노, 편곡: 아르투르 루빈스타인",
+      "issue_type": "typo",
+      "original": "루빈슈타인 ... 루빈스타인",
+      "proposed": null,
+      "reason": "같은 글 안에서 같은 인물의 표기가 루빈슈타인과 루빈스타인으로 갈림. 또한 ‘페트루슈카’로부터의’에서 여는 작은따옴표가 빠져 있음. 통용 표기가 여럿이라 어느 쪽으로 통일할지는 확인이 필요함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

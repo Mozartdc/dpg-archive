@@ -1,0 +1,22 @@
+{
+  "post_no": 2751,
+  "source_file": "낭만·그 이후/005-11. 프레데리크 쇼팽과 피아노 시학.md",
+  "title": "11. 프레데리크 쇼팽과 피아노 시학",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/005-11. 프레데리크 쇼팽과 피아노 시학.md",
+      "paragraph": "쇼팽은 리스트처럼 대중을 열광시키는 큰 규모늬 콘서트홀의 비르투오소는 아니었음.",
+      "issue_type": "typo",
+      "original": "큰 규모늬",
+      "proposed": "큰 규모의",
+      "reason": "조사 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    }
+  ]
+}

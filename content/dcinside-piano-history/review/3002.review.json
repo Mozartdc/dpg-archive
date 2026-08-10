@@ -1,0 +1,36 @@
+{
+  "post_no": 3002,
+  "source_file": "낭만·그 이후/013-12.2. 슈만의 환상곡과 대형 작품들.md",
+  "title": "12.2. 슈만의 환상곡과 대형 작품들",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/013-12.2. 슈만의 환상곡과 대형 작품들.md",
+      "paragraph": "크라이슬레리아나(Kreisleriana), Op.16는 E.T.A. 호프만의 소설에 등장하는",
+      "issue_type": "grammar",
+      "original": "Op.16는",
+      "proposed": "Op.16은",
+      "reason": "받침 있는 숫자 뒤 보조사 오류.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/013-12.2. 슈만의 환상곡과 대형 작품들.md",
+      "paragraph": "소나타 1번(F#  단조, Op.11)이나 3번(F단조, Op.14)과 같은 작품들은",
+      "issue_type": "typo",
+      "original": "F#  단조",
+      "proposed": "F# 단조",
+      "reason": "공백 두 칸.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "low",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

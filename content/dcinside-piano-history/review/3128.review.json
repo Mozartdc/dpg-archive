@@ -1,0 +1,36 @@
+{
+  "post_no": 3128,
+  "source_file": "낭만·그 이후/020-13.4. 리스트의 피아노 편곡.md",
+  "title": "13.4. 리스트의 피아노 편곡",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/020-13.4. 리스트의 피아노 편곡.md",
+      "paragraph": "작곡만큼이나 중요한 비중을 차지하는 것이 피아노 편곡(Piano Tranion)작업임.",
+      "issue_type": "typo",
+      "original": "피아노 편곡(Piano Tranion)작업임",
+      "proposed": "피아노 편곡(Piano Transcription) 작업임",
+      "reason": "영어 단어가 깨져 Transcription의 중간 글자가 빠졌고 괄호 뒤 띄어쓰기도 없음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/020-13.4. 리스트의 피아노 편곡.md",
+      "paragraph": "피아노 : 유자왕",
+      "issue_type": "typo",
+      "original": "유자왕",
+      "proposed": "유자 왕",
+      "reason": "피아니스트 Yuja Wang의 이름과 성이 붙어 한 단어처럼 적힘.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

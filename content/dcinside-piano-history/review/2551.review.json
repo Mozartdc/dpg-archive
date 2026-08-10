@@ -1,0 +1,50 @@
+{
+  "post_no": 2551,
+  "source_file": "바로크·고전/034-8.1. 무치오 클레멘티.md",
+  "title": "8.1. 무치오 클레멘티",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/034-8.1. 무치오 클레멘티.md",
+      "paragraph": "클레멘티는 이탈리아계 영국인으로 하프시코드 및 리아노 연주자, 작곡가, 교육자",
+      "issue_type": "typo",
+      "original": "하프시코드 및 리아노 연주자",
+      "proposed": "하프시코드 및 피아노 연주자",
+      "reason": "첫 글자가 빠진 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "바로크·고전/034-8.1. 무치오 클레멘티.md",
+      "paragraph": "후대 피아니스트,피아노 작곡가, 출판사. 제작사에 끼친 영향이 크고.",
+      "issue_type": "typo",
+      "original": "피아니스트,피아노 작곡가, 출판사. 제작사에 끼친 영향이 크고.",
+      "proposed": "피아니스트, 피아노 작곡가, 출판사, 제작사에 끼친 영향이 크고,",
+      "reason": "쉼표 뒤 공백 누락과 나열 항목 사이 마침표가 섞임.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "바로크·고전/034-8.1. 무치오 클레멘티.md",
+      "paragraph": "피아노포르테 연주의 기초(1801)와 그라두스 아드 파르나숨(1817, 1819, 1826)은 다시 피아노 교육에 널리 쓰임",
+      "issue_type": "awkward_expression",
+      "original": "은 다시 피아노 교육에 널리 쓰임",
+      "proposed": null,
+      "reason": "‘다시’가 어느 시점을 가리키는지 불분명하고 문장 끝 마침표도 빠져 있음. 원문 의도를 알기 어려워 수정안을 제시하지 않고 확인만 요청함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "low",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

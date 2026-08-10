@@ -1,0 +1,22 @@
+{
+  "post_no": 2132,
+  "source_file": "바로크·고전/018-5. 전고전주의와 새로운 양식의 대두.md",
+  "title": "5. 전고전주의와 새로운 양식의 대두",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/018-5. 전고전주의와 새로운 양식의 대두.md",
+      "paragraph": "5장에서는 이처럼 새로운 시대를 열었던 두 가지 핵심 양식을 보면서  J.S. 바흐의 아들들이",
+      "issue_type": "typo",
+      "original": "보면서  J.S.",
+      "proposed": "보면서 J.S.",
+      "reason": "공백 두 칸.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

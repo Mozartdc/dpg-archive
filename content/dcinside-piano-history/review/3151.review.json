@@ -1,0 +1,22 @@
+{
+  "post_no": 3151,
+  "source_file": "낭만·그 이후/023-14.1. 브람스의 초기 피아노 소나타.md",
+  "title": "14.1. 브람스의 초기 피아노 소나타",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/023-14.1. 브람스의 초기 피아노 소나타.md",
+      "paragraph": "이 중 최고 걸작으로 꼽히는 것은 소나타 3번 F단조, Op.5>임.",
+      "issue_type": "typo",
+      "original": "Op.5>임",
+      "proposed": "Op.5임",
+      "reason": "닫는 꺾쇠만 남아 있는 표기 오류.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "post_no": 2942,
+  "source_file": "낭만·그 이후/011-12. 로베르트 슈만.md",
+  "title": "12. 로베르트 슈만",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/011-12. 로베르트 슈만.md",
+      "paragraph": "동시대를 실있던 프레데리크 쇼팽이 피아노 자체의 소리와 울림에서 영감을 얻어",
+      "issue_type": "typo",
+      "original": "동시대를 실있던",
+      "proposed": "동시대를 살았던",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/011-12. 로베르트 슈만.md",
+      "paragraph": "십대 시절 별명이자 필명으로 쓰던 ‘스퀼란더(Skülander)’ 때문에 알렉산더가 미들 네임이라는 잘못된 이야기가 퍼지기도 함.",
+      "issue_type": "unsupported_claim",
+      "original": "‘스퀼란더(Skülander)’ 때문에 알렉산더가 미들 네임이라는 잘못된 이야기가 퍼지기도 함",
+      "proposed": null,
+      "reason": "별명의 철자, 그 별명이 ‘알렉산더’ 오전승의 원인이라는 인과 모두 근거가 제시돼 있지 않음. 확인 전에는 수정하지 않고 출처 보강만 권함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

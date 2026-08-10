@@ -1,0 +1,24 @@
+{
+  "post_no": 4377,
+  "stage": 2,
+  "checked_at": "2026-08-10T04:12:17.139Z",
+  "revisited_at": "2026-08-10T22:00:00.000Z",
+  "checks": [
+    {
+      "original_claim": "여자가 작곡하는 것에 대한 슈만의 부정적인 태도로 작곡을 그만두고 남편 곡 홍보로 전향함.",
+      "verdict": "confirmed_error",
+      "proposed": "작곡을 그만두고 남편 곡 홍보로 전향함 → 결혼·육아·연주 활동과 당시 사회적 통념이 겹치며 작곡 비중이 크게 줄었고, 남편 작품의 연주와 편집에 많은 힘을 쏟았음",
+      "source_1_url": "https://guides.loc.gov/clara-schumann",
+      "source_1_title": "Library of Congress — Clara Schumann: A Guide to Resources",
+      "source_1_support": "클라라의 평생 연주 경력, 일곱 자녀의 부양, 작곡 활동, 남편 작품의 편집과 유산 관리가 병행됐음을 설명함.",
+      "source_2_url": "https://www.schumann-portal.de/dresden-1844-1850.html",
+      "source_2_title": "Schumann Portal — Clara Schumann in Dresden, 1844–1850",
+      "source_2_support": "육아·가사·레슨·연주를 병행하면서도 드레스덴 시기에 피아노 트리오 등 주요 작품을 작곡했다고 기록함.",
+      "reasoning": "재검증(3회차, 모순쌍 4377↔3021): 결혼 뒤 작곡 활동이 크게 줄어든 것은 맞지만 완전히 중단하거나 곧바로 남편 작품 홍보로만 전향했다고 단정할 수 없음. 작곡 감소의 복합적 사정과 이후 남편 작품 연주·편집 활동을 구분해 서술함.",
+      "confidence": "medium",
+      "paired_posts": [3021],
+      "changes_meaning": false,
+      "criteria_group": "B"
+    }
+  ]
+}

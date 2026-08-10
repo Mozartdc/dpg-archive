@@ -1,0 +1,50 @@
+{
+  "post_no": 2665,
+  "source_file": "바로크·고전/040-9.4 베토벤의 피아노 협주곡과 변주곡.md",
+  "title": "9.4 베토벤의 피아노 협주곡과 변주곡",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/040-9.4 베토벤의 피아노 협주곡과 변주곡.md",
+      "paragraph": "3번(1796~1803)에서 본격적으로 베토벤 고유의 협주곡 양식을 확립함.C단조라는 명확한 색채",
+      "issue_type": "typo",
+      "original": "확립함.C단조라는",
+      "proposed": "확립함. C단조라는",
+      "reason": "마침표 뒤 공백 누락.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "바로크·고전/040-9.4 베토벤의 피아노 협주곡과 변주곡.md",
+      "paragraph": "이때부터 베토벤은 연주 불가 상태로 청력을 상실해 직접 초연하지 못한 유일한 협주곡임.",
+      "issue_type": "grammar",
+      "original": "이때부터 베토벤은 연주 불가 상태로 청력을 상실해 직접 초연하지 못한 유일한 협주곡임.",
+      "proposed": null,
+      "reason": "주어가 ‘베토벤은’인데 서술어가 ‘협주곡임’이라 호응이 깨짐. 문장을 나누거나 합치지 않는 범위에서 고치기 어려워 수정안은 제시하지 않고 확인만 요청함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "바로크·고전/040-9.4 베토벤의 피아노 협주곡과 변주곡.md",
+      "paragraph": "베토벤은 변주곡에서도 구조적 변화를 통한 장르의 진화로 형식적 실험과 개성있는 창작을 이어감.",
+      "issue_type": "typo",
+      "original": "개성있는",
+      "proposed": "개성 있는",
+      "reason": "띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "low",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

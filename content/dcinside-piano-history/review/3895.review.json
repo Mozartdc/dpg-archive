@@ -1,0 +1,50 @@
+{
+  "post_no": 3895,
+  "source_file": "낭만·그 이후/053-20.2. 파울 힌데미트의 음악과 실용음악.md",
+  "title": "20.2. 파울 힌데미트의 음악과 실용음악",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/053-20.2. 파울 힌데미트의 음악과 실용음악.md",
+      "paragraph": "이 작품은 12음 체계를 바탕으로 엄격하고 지적인 대위법을 구사하며",
+      "issue_type": "factual_error",
+      "original": "12음 체계를 바탕으로",
+      "proposed": null,
+      "reason": "루두스 토날리스는 쇤베르크식 12음 기법이 아니라 힌데미트가 자신의 이론서에서 세운 음 사이의 위계(Series 1)를 바탕으로 24개 조를 배열한 작품이라는 서술이 일반적임. 힌데미트는 도데카포니에 비판적이었던 것으로 알려져 있어 ‘12음 체계’라는 표현이 오해를 부를 수 있음. 검증 대상으로 올림.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/053-20.2. 파울 힌데미트의 음악과 실용음악.md",
+      "paragraph": "신고전주의를 독일식으로 해석하여 객관주의'를 극단적으로 표현한 작곡가임.",
+      "issue_type": "typo",
+      "original": "객관주의'를",
+      "proposed": "‘객관주의’를",
+      "reason": "닫는 따옴표만 있고 여는 따옴표가 빠짐.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/053-20.2. 파울 힌데미트의 음악과 실용음악.md",
+      "paragraph": "음조의 유희 라는 뜻을 가진 이 작품은",
+      "issue_type": "typo",
+      "original": "음조의 유희 라는",
+      "proposed": "음조의 유희라는",
+      "reason": "조사 앞 불필요한 띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "post_no": 3359,
+  "source_file": "낭만·그 이후/030-15.3. 보헤미아 악파, 베드르지흐 스메타나와 안토닌 드보르자크.md",
+  "title": "15.3. 보헤미아 악파, 베드르지흐 스메타나와 안토닌 드보르자크",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/030-15.3. 보헤미아 악파, 베드르지흐 스메타나와 안토닌 드보르자크.md",
+      "paragraph": "유모레스크, 시적인 인상(Poetic Tone Pictures과 같은 소품집들 역시",
+      "issue_type": "typo",
+      "original": "(Poetic Tone Pictures과 같은",
+      "proposed": "(Poetic Tone Pictures)과 같은",
+      "reason": "닫는 괄호 누락.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/030-15.3. 보헤미아 악파, 베드르지흐 스메타나와 안토닌 드보르자크.md",
+      "paragraph": "안토닌 드보르자크 (Antonín Dvořák, 1841-1904) 드보르자크는 체코 민족 음악을 세계적인 수준으로 끌어올린 작곡가임.",
+      "issue_type": "awkward_expression",
+      "original": "(Antonín Dvořák, 1841-1904) 드보르자크는",
+      "proposed": null,
+      "reason": "앞의 인명 표기는 스메타나 항목과 같은 소제목 형식인데 줄바꿈 없이 본문과 붙어 한 문장처럼 읽힘. 문단 구조를 바꾸지 않는 범위라 확인만 요청함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/030-15.3. 보헤미아 악파, 베드르지흐 스메타나와 안토닌 드보르자크.md",
+      "paragraph": "특히 브람스와의 교류를 통해 독일 고전주의의 견고한 형식미를 깊이있게 연구했음.",
+      "issue_type": "typo",
+      "original": "깊이있게",
+      "proposed": "깊이 있게",
+      "reason": "띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "low",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

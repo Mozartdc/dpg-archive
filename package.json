@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "node scripts/clear-astro-cache.js && astro build && node scripts/normalize-built-images.js",
     "preview": "astro preview",
     "astro": "astro",
     "sync": "node scripts/sync-notion.js",

@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-08-10T12:05:00.000Z",
+  "database": {
+    "name": "DPG Archive 콘텐츠",
+    "database_id": "2f726dfb-cd79-80e1-a9e4-c8872b0524f3",
+    "data_source_id": "2f726dfb-cd79-80e8-bf74-000b28a8aaa6"
+  },
+  "templates": [
+    {
+      "name": "피아노 음악사 · 바로크·고전",
+      "template_id": "3b826dfb-cd79-80d1-9a11-d4146bf87547",
+      "url": "https://app.notion.com/p/3b826dfbcd7980d19a11d4146bf87547",
+      "category": "바로크·고전",
+      "status": "시작 전"
+    },
+    {
+      "name": "피아노 음악사 · 낭만·그 이후",
+      "template_id": "3b826dfb-cd79-80a7-8341-f75db381d14b",
+      "url": "https://app.notion.com/p/3b826dfbcd7980a78341f75db381d14b",
+      "category": "낭만·그 이후",
+      "status": "시작 전"
+    },
+    {
+      "name": "피아노 음악사 · 작곡가 이야기",
+      "template_id": "3b826dfb-cd79-8008-9044-d83ba22a8bdf",
+      "url": "https://app.notion.com/p/3b826dfbcd7980089044d83ba22a8bdf",
+      "category": "작곡가 이야기",
+      "status": "시작 전"
+    }
+  ],
+  "syncedBlocks": {
+    "top": {
+      "id": "3b726dfb-cd79-808f-8ad4-d57f791ebb17",
+      "url": "https://app.notion.com/p/2f126dfbcd7980b1ba74de66e44a3d5d#3b726dfbcd79808f8ad4d57f791ebb17",
+      "usedInOtherPages": true
+    },
+    "bottom": {
+      "id": "2f126dfb-cd79-80c9-b783-d7e85011a79e",
+      "url": "https://app.notion.com/p/2f126dfbcd7980b1ba74de66e44a3d5d#2f126dfbcd7980c9b783d7e85011a79e",
+      "usedInOtherPages": true
+    }
+  },
+  "note_ko": "3개 템플릿을 실제 Notion 브라우저 UI에서 생성하고 제목·카테고리·상태(시작 전) 속성을 설정함. 본문은 '상단 동기화 블록 위치 / 본문 삽입 위치 / 하단 동기화 블록 위치'를 표시하는 안내 텍스트만 넣었음 — 실제 synced_block reference를 템플릿 안에 넣는 작업은 두 방식(브라우저 UI 복사·붙여넣기, MCP 마크다운 synced_block_reference 태그) 모두 이번 세션에서 신뢰할 수 없거나 위험하다고 판단해 보류함(붙여넣기 시 무관한 시스템 클립보드 내용이 섞여 들어가는 문제를 겪었고, MCP의 synced_block_reference는 children을 잘못 지정하면 359개 다른 페이지가 공유하는 원본 동기화 블록 내용을 덮어쓸 위험이 있어 시도하지 않음). 실제 124개 업로드 페이지는 scripts/upload-piano-history-to-notion.js가 Notion REST API의 synced_block(synced_from) 방식으로 안전하게 상단·하단 동기화 참조를 만들므로 이 템플릿의 한계와 무관하게 정상 동작함. 템플릿 본문에 실제 synced_block reference를 넣는 작업은 사용자가 Notion UI에서 직접 상단/하단 블록을 복사해 붙여넣는 것을 권장함."
+}

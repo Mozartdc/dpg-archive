@@ -1,0 +1,24 @@
+{
+  "post_no": 2029,
+  "stage": 2,
+  "checked_at": "2026-08-10T04:43:10.964Z",
+  "checks": [
+    {
+      "original_claim": "장 필리프 라모, 이론가이자 극작가 (Jean-Philippe Rameau, 1683-1764)",
+      "verdict": "confirmed_error",
+      "proposed": "장 필리프 라모, 이론가이자 극음악 작곡가 (Jean-Philippe Rameau, 1683-1764)",
+      "source_1_url": "https://www.britannica.com/biography/Jean-Philippe-Rameau",
+      "source_1_title": "Encyclopædia Britannica — Jean-Philippe Rameau",
+      "source_1_support": "\"a French composer of the late Baroque period, best known today for his harpsichord music, operas, and works in other theatrical genres but in his lifetime also famous as a music theorist\"",
+      "source_2_url": null,
+      "source_2_title": null,
+      "source_2_support": null,
+      "reasoning": "A군(직위). 라모는 오페라 등 극음악의 작곡가이자 음악 이론가로 서술되며, 희곡을 쓰는 극작가로 분류되지 않음.",
+      "confidence": "high",
+      "paired_posts": [],
+      "changes_meaning": true,
+      "criteria_group": "A",
+      "post_no": 2029
+    }
+  ]
+}

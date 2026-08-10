@@ -1,0 +1,36 @@
+{
+  "post_no": 3331,
+  "source_file": "낭만·그 이후/029-15.2. 표트르 일리치 차이콥스키.md",
+  "title": "15.2. 표트르 일리치 차이콥스키",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/029-15.2. 표트르 일리치 차이콥스키.md",
+      "paragraph": "이 작품은 멘델스존의 처럼, 표제적인 아이디어를 바탕으로 한 서정적인 캐릭터 피스의 전통을 잇고 있음.",
+      "issue_type": "grammar",
+      "original": "멘델스존의 처럼",
+      "proposed": null,
+      "reason": "‘멘델스존의’ 다음에 와야 할 작품명이 빠져 문장이 성립하지 않음. 문맥상 무언가(Lieder ohne Worte)로 보이나 원문 확인 없이 채워 넣지 않음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/029-15.2. 표트르 일리치 차이콥스키.md",
+      "paragraph": "1876년에 작곡된 12개의 캐릭터 피스모음곡 임.",
+      "issue_type": "typo",
+      "original": "캐릭터 피스모음곡 임",
+      "proposed": "캐릭터 피스 모음곡임",
+      "reason": "붙여 쓸 곳과 띄어 쓸 곳이 반대로 됨.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

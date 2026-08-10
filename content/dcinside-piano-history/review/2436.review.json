@@ -1,0 +1,22 @@
+{
+  "post_no": 2436,
+  "source_file": "바로크·고전/030-7.2. 피아노 소나타 분석- 만하임과 빈 시대의 작품들.md",
+  "title": "7.2. 피아노 소나타 분석: 만하임과 빈 시대의 작품들",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/030-7.2. 피아노 소나타 분석- 만하임과 빈 시대의 작품들.md",
+      "paragraph": "만하임-파리 시기 (1777-1778년, K.309-311, K.330-333)",
+      "issue_type": "ambiguous",
+      "original": "K.330-333",
+      "proposed": null,
+      "reason": "K.330~332의 작곡 시기를 1777~78년 파리로 보던 종전 견해와, 자필보 용지 연구로 1783년 빈으로 늦춰 잡는 견해가 갈림. 해석이 나뉘는 사안이라 오류로 단정하지 않고 기록만 남김.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "low",
+      "changes_meaning": true,
+      "applied": false
+    }
+  ]
+}

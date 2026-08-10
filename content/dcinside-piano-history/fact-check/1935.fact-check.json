@@ -1,0 +1,25 @@
+{
+  "post_no": 1935,
+  "stage": 2,
+  "checked_at": "2026-08-10T04:12:17.134Z",
+  "checks": [
+    {
+      "original_claim": "그는 클라비코드가 \"혼자 앉아 자신의 영혼과 대화하는 악기\"라고 평하기도 했음",
+      "verdict": "insufficient_evidence",
+      "proposed": null,
+      "source_1_url": null,
+      "source_1_title": null,
+      "source_1_support": null,
+      "source_2_url": null,
+      "source_2_title": null,
+      "source_2_support": null,
+      "reasoning": "이번 회차에서 처리 대상이었으나 비용 제한(주장당 최대 2회 시도) 안에서 정상적으로 열리는 권위 있는 출처를 확보하지 못함. 판정 기준: B군. 확인 계획: 인용문 진위라 B군. C.P.E. 바흐 Versuch 원문 대조 필요.",
+      "confidence": "low",
+      "paired_posts": [],
+      "changes_meaning": true,
+      "criteria_group": "B",
+      "revisited_at": "2026-08-10T22:00:00.000Z",
+      "revisit_note": "2회차 재검증: C.P.E. 바흐의 클라비코드 선호 및 하프시코드를 'seelenlos(영혼 없는)'로 표현했다는 관련 서술은 확인되나, '혼자 앉아 자신의 영혼과 대화하는 악기'라는 정확한 인용문의 출처는 2회 시도 안에서 확보하지 못함. insufficient_evidence 유지, 본문 수정하지 않음."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "post_no": 4066,
+  "source_file": "낭만·그 이후/060-22.3. 에런 코플런드의 미국적 스타일 구축.md",
+  "title": "22.3. 에런 코플런드의 미국적 스타일 구축",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/060-22.3. 에런 코플런드의 미국적 스타일 구축.md",
+      "paragraph": "단 4개의 음(E-C-D#  C#)으로 이루어진 짧고 강렬한 주제를 사용하여",
+      "issue_type": "typo",
+      "original": "(E-C-D#  C#)",
+      "proposed": "(E-C-D#-C#)",
+      "reason": "앞의 세 음은 붙임표로 이어져 있는데 마지막 음만 공백 두 칸으로 떨어져 있음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

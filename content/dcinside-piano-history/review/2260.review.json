@@ -1,0 +1,36 @@
+{
+  "post_no": 2260,
+  "source_file": "바로크·고전/025-6.3. 하이든의 대표적인 소나타. C단조와 E♭장조.md",
+  "title": "6.3. 하이든의 대표적인 소나타. C단조와 E♭장조",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/025-6.3. 하이든의 대표적인 소나타. C단조와 E♭장조.md",
+      "paragraph": "2악장 (Adagio): E장조까지 매우 멀리 전조하여 신비로운 분위기를 만듦.",
+      "issue_type": "factual_error",
+      "original": "E장조까지 매우 멀리 전조하여",
+      "proposed": null,
+      "reason": "Hob.XVI:52의 2악장은 곡 중간에 E장조로 전조하는 것이 아니라 악장 자체가 E장조로 쓰여 있음. 1·3악장의 E♭장조에서 반음 위 E장조로 뛴 조성 배치가 특이한 대목이라 ‘전조’라는 서술이 사실과 어긋날 수 있음. 악보 확인 전에는 수정하지 않음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    },
+    {
+      "source_file": "바로크·고전/025-6.3. 하이든의 대표적인 소나타. C단조와 E♭장조.md",
+      "paragraph": "즐거운 분위기를 연출함 장대한 1악장과 깊이 있는 2악장을 지나",
+      "issue_type": "typo",
+      "original": "연출함 장대한",
+      "proposed": "연출함. 장대한",
+      "reason": "문장 끝 마침표 누락으로 두 문장이 붙음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    }
+  ]
+}

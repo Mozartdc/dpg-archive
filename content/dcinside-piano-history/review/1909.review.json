@@ -1,0 +1,22 @@
+{
+  "post_no": 1909,
+  "source_file": "바로크·고전/001-1. 피아노 이전의 건반 악기들.md",
+  "title": "1. 피아노 이전의 건반 악기들",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/001-1. 피아노 이전의 건반 악기들.md",
+      "paragraph": "바흐 Dminor  BWV 1052 쳄발로 협주곡 자필 악보",
+      "issue_type": "typo",
+      "original": "바흐 Dminor  BWV 1052",
+      "proposed": "바흐 D minor BWV 1052",
+      "reason": "조성 표기 Dminor가 붙어 있고 minor와 BWV 사이에 공백이 두 칸 들어감. 표기 정정과 공백 정리만 함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "post_no": 2512,
+  "stage": 2,
+  "checked_at": "2026-08-10T04:12:17.139Z",
+  "revisited_at": "2026-08-10T22:00:00.000Z",
+  "checks": [
+    {
+      "original_claim": "요한 네포무크 훔멜은 스승을 \"작은 체구에 창백한 얼굴, 유쾌하고 친근한 인상 속에 약간의 우울한 진지함이 담겨 있었으며, 큰 푸른 눈은 밝게 빛났다\"고 묘사함",
+      "verdict": "correct",
+      "proposed": null,
+      "source_1_url": "https://hekint.org/2018/05/15/visualizing-mozart/",
+      "source_1_title": "Visualizing Mozart - Hektoen International",
+      "source_1_support": "Hummel described Mozart as of small build, pale face, friendly with a touch of melancholy seriousness, large blue eyes that shone brightly — matches the Korean text closely.",
+      "source_2_url": "https://en.wikipedia.org/wiki/Appearance_and_character_of_Wolfgang_Amadeus_Mozart",
+      "source_2_title": "Appearance and character of Wolfgang Amadeus Mozart - Wikipedia",
+      "source_2_support": "Corroborates Hummel's testimony as a direct pupil (1786-88) and the described physical traits.",
+      "reasoning": "재검증(2회차): 인용문이 정확히 대응됨. 판정만 insufficient_evidence에서 correct로 변경. 같은 문서의 랑게 초상 캡션은 3회차에 Morgan Library 설명을 반영해 '1783년경 시작해 1789년경 캔버스를 확장한 미완성 초상화'로 정밀화함(본 클레임과는 무관).",
+      "confidence": "high",
+      "paired_posts": [],
+      "changes_meaning": false,
+      "criteria_group": "B"
+    }
+  ]
+}

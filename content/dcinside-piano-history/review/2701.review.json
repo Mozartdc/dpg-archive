@@ -1,0 +1,22 @@
+{
+  "post_no": 2701,
+  "source_file": "낭만·그 이후/002-10.1 프란츠 슈베르트.md",
+  "title": "10.1 프란츠 슈베르트",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/002-10.1 프란츠 슈베르트.md",
+      "paragraph": "‘슈베르티아데’를 꾸려 창작을 이어갔고,자신의 곡을 직접 연주하고",
+      "issue_type": "typo",
+      "original": "이어갔고,자신의",
+      "proposed": "이어갔고, 자신의",
+      "reason": "쉼표 뒤 공백 누락.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    }
+  ]
+}

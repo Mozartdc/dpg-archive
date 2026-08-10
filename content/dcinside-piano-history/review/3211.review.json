@@ -1,0 +1,64 @@
+{
+  "post_no": 3211,
+  "source_file": "낭만·그 이후/025-14.3. 브람스, 간주곡과 카프리치오.md",
+  "title": "14.3. 브람스, 간주곡과 카프리치오",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/025-14.3. 브람스, 간주곡과 카프리치오.md",
+      "paragraph": "브람스는 젊은 시절 피아노 소나타와 변주곡에 몰두하다가 오랜시간 피아노 독주곡 작곡에서 멀어져 있었음.",
+      "issue_type": "typo",
+      "original": "오랜시간",
+      "proposed": "오랜 시간",
+      "reason": "띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/025-14.3. 브람스, 간주곡과 카프리치오.md",
+      "paragraph": "이 작품들은 형식적으로는 낭만주의 캐릭터 피스를따르고 있지만",
+      "issue_type": "typo",
+      "original": "캐릭터 피스를따르고",
+      "proposed": "캐릭터 피스를 따르고",
+      "reason": "띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/025-14.3. 브람스, 간주곡과 카프리치오.md",
+      "paragraph": "브람스 자신이 ‘나의 슬픔의 자장가”’라고 불렀던 작품.",
+      "issue_type": "typo",
+      "original": "‘나의 슬픔의 자장가”’",
+      "proposed": "‘나의 슬픔의 자장가’",
+      "reason": "따옴표가 세 개 겹쳐 짝이 맞지 않음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/025-14.3. 브람스, 간주곡과 카프리치오.md",
+      "paragraph": "그는 거의 20년 만에 다시 피아노 독주곡으로 돌아와 네 개의 짧은 모음곡(Op.116-119)을 집중적으로 발표함.",
+      "issue_type": "ambiguous",
+      "original": "거의 20년 만에",
+      "proposed": null,
+      "reason": "직전 피아노 독주곡을 Op.76·Op.79(1878~79)로 보면 1892년까지는 13년 남짓임. 초기 소나타 이후로 계산하면 훨씬 길어져 기준에 따라 값이 달라짐. 어느 시점을 기준으로 삼았는지 확인이 필요함.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    }
+  ]
+}

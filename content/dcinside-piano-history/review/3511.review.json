@@ -1,0 +1,36 @@
+{
+  "post_no": 3511,
+  "source_file": "낭만·그 이후/038-17.1. 세르게이 라흐마니노프와 러시아 낭만주의.md",
+  "title": "17.1. 세르게이 라흐마니노프와 러시아 낭만주의",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/038-17.1. 세르게이 라흐마니노프와 러시아 낭만주의.md",
+      "paragraph": "사진: 좌측으로부터 라트마니노프, 디즈니, 호로비츠",
+      "issue_type": "typo",
+      "original": "라트마니노프",
+      "proposed": "라흐마니노프",
+      "reason": "같은 글의 다른 부분은 모두 라흐마니노프로 적고 있음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/038-17.1. 세르게이 라흐마니노프와 러시아 낭만주의.md",
+      "paragraph": "그의 명성을 처음으로 알린 작품)Op.3, No.2",
+      "issue_type": "typo",
+      "original": "작품)Op.3, No.2",
+      "proposed": "작품)",
+      "reason": "괄호 앞에 이미 같은 작품번호가 적혀 있어 문장 끝에서 중복됨.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

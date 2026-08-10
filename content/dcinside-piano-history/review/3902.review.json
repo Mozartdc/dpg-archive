@@ -1,0 +1,22 @@
+{
+  "post_no": 3902,
+  "source_file": "낭만·그 이후/054-21. 소비에트 연방의 작곡가들.md",
+  "title": "21. 소비에트 연방의 작곡가들",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/054-21. 소비에트 연방의 작곡가들.md",
+      "paragraph": "이러한 특수한 환경때문이 서유럽의 모더니즘과는 구별되는 독특한 음악적 발전을 낳았음.",
+      "issue_type": "grammar",
+      "original": "환경때문이",
+      "proposed": "환경 때문에",
+      "reason": "의존명사 띄어쓰기와 조사 오류가 겹쳐 문장이 성립하지 않음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    }
+  ]
+}

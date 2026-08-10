@@ -1,0 +1,24 @@
+{
+  "post_no": 2827,
+  "stage": 2,
+  "checked_at": "2026-08-10T04:12:17.139Z",
+  "revisited_at": "2026-08-10T22:00:00.000Z",
+  "checks": [
+    {
+      "original_claim": "12번 C단조 '혁명': 1830년 러시아의 바르샤바 침공 소식을 듣고 격분하여 썼다고 전해지는 작품 (이미지 설명은 1831년으로 상충)",
+      "verdict": "confirmed_error",
+      "proposed": "1830년 러시아의 바르샤바 침공 소식 → 1831년 바르샤바 함락 소식을 들은 뒤 구상했다고 전해짐",
+      "source_1_url": "https://www.chopin.pl/kronika_zycia_tworczosci_chopina_metamorfozy.en.html",
+      "source_1_title": "Fryderyk Chopin Society — Chronicle of Chopin's Life and Works",
+      "source_1_support": "1831년 9월 8일 바르샤바 함락 소식을 접했고, 슈투트가르트에서 C단조 에튀드의 구상이 생겼다는 것은 전승으로 명시함.",
+      "source_2_url": "https://www.chopin.pl/biography_chopin.en.html",
+      "source_2_title": "Fryderyk Chopin Society — Biography of Chopin",
+      "source_2_support": "1831년 슈투트가르트에서 바르샤바 함락 소식을 듣고 격렬한 반응을 보였다는 전기적 맥락을 확인함.",
+      "reasoning": "재검증(3회차): 1830년은 11월 봉기 발발 연도이고 쇼팽이 슈투트가르트에서 바르샤바 함락 소식을 접한 때는 1831년임. 작품과 사건의 직접 인과는 확정 사실이 아니라 전승이므로 '침공 소식을 듣고 썼다'를 '함락 소식을 들은 뒤 구상했다고 전해진다'로 제한함.",
+      "confidence": "high",
+      "paired_posts": [],
+      "changes_meaning": false,
+      "criteria_group": "A"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "post_no": 3703,
+  "source_file": "낭만·그 이후/046-19. 민속음악의 재발견과 원시주의.md",
+  "title": "19. 민속음악의 재발견과 원시주의",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/046-19. 민속음악의 재발견과 원시주의.md",
+      "paragraph": "20세기 초, 쇤베르크가 활동 할 무렵 유럽의 다른 지역에서는",
+      "issue_type": "typo",
+      "original": "활동 할 무렵",
+      "proposed": "활동할 무렵",
+      "reason": "띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/046-19. 민속음악의 재발견과 원시주의.md",
+      "paragraph": "(문서 구조에 대한 지적) 19장의 하위 글 순서",
+      "issue_type": "ambiguous",
+      "original": "19.4(순서 47) → 19.3(48) → 19.2(49) → 19.1(50)",
+      "proposed": null,
+      "reason": "19장 하위 글의 order 값이 제목 번호와 정반대로 매겨져 있음. 다른 장은 모두 제목 번호와 순서가 일치하는데 19장만 역순이라 수집 단계에서 링크 순서가 뒤집혔을 가능성이 큼. 본문 내용 문제가 아니라 frontmatter의 order 값 문제라 이 보고서에는 기록만 남기고 수정은 제안하지 않음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

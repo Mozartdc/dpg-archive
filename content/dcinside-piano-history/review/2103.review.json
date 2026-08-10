@@ -1,0 +1,22 @@
+{
+  "post_no": 2103,
+  "source_file": "바로크·고전/017-4.4. 게오르크 프리드리히 헨델의 건반 악기 모음곡.md",
+  "title": "4.4. 게오르크 프리드리히 헨델의 건반 악기 모음곡",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/017-4.4. 게오르크 프리드리히 헨델의 건반 악기 모음곡.md",
+      "paragraph": "1726년~1728년경 바탈자르 덴너(Balthasar Denner)가 그린것으로 추청.",
+      "issue_type": "typo",
+      "original": "바탈자르 덴너(Balthasar Denner)가 그린것으로 추청",
+      "proposed": "발타자르 덴너(Balthasar Denner)가 그린 것으로 추정",
+      "reason": "인명 표기 오류(바탈자르→발타자르), 의존명사 띄어쓰기(그린것→그린 것), 오타(추청→추정)가 한 문장에 겹침.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    }
+  ]
+}

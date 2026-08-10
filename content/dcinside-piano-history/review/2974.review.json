@@ -1,0 +1,36 @@
+{
+  "post_no": 2974,
+  "source_file": "낭만·그 이후/012-12.1. 슈만의 캐릭터 피스.md",
+  "title": "12.1. 슈만의 캐릭터 피스",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/012-12.1. 슈만의 캐릭터 피스.md",
+      "paragraph": "그의 초기 피아노 작품의 대부분 차지하는 ‘캐릭터 피스 모음집’임.",
+      "issue_type": "grammar",
+      "original": "작품의 대부분 차지하는",
+      "proposed": "작품의 대부분을 차지하는",
+      "reason": "목적격 조사 누락.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/012-12.1. 슈만의 캐릭터 피스.md",
+      "paragraph": "슈만이 가장 좋아했던 작가 장 파울(Jean Paul)의 소설 『가면 무도회』의 마지막 장면에서 영감을 얻은 작품.",
+      "issue_type": "factual_error",
+      "original": "소설 『가면 무도회』",
+      "proposed": null,
+      "reason": "나비(Op.2)가 바탕으로 삼은 것은 장 파울의 소설 『Flegeljahre』 마지막 부분의 가면무도회 장면이라는 서술이 일반적임. 『가면 무도회』라는 제목의 소설이 따로 있는 것이 아니라 작품 속 장면 이름이 제목처럼 적혔을 가능성이 큼. 검증 대상으로 올림.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    }
+  ]
+}

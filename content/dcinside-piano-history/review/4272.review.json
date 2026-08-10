@@ -1,0 +1,50 @@
+{
+  "post_no": 4272,
+  "source_file": "작곡가 이야기/010-작곡가들의 수입 (클레멘티).md",
+  "title": "작곡가들의 수입 (클레멘티)",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "작곡가 이야기/010-작곡가들의 수입 (클레멘티).md",
+      "paragraph": "클레멘티가 시망하면서 남긴 유동 자산(현금 및 주식 등)은 약 26,000 파운드로",
+      "issue_type": "typo",
+      "original": "시망하면서",
+      "proposed": "사망하면서",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "작곡가 이야기/010-작곡가들의 수입 (클레멘티).md",
+      "paragraph": "죽어서 웨스트 민스터 사원에 묻히게 됨.",
+      "issue_type": "typo",
+      "original": "웨스트 민스터 사원",
+      "proposed": "웨스트민스터 사원",
+      "reason": "고유명사 띄어쓰기. 바로 다음 문단에서는 붙여 쓰고 있어 표기가 갈림.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "작곡가 이야기/010-작곡가들의 수입 (클레멘티).md",
+      "paragraph": "소리가 더 크고 웅장하게 나도록 개량하는데 성공해 영국식 피아노의 시작점이 됨, 이것이 현대 피아노의 근간임.",
+      "issue_type": "typo",
+      "original": "개량하는데 성공해 ... 시작점이 됨, 이것이",
+      "proposed": "개량하는 데 성공해 ... 시작점이 됨. 이것이",
+      "reason": "의존명사 띄어쓰기와 문장 종결 부호 오류.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

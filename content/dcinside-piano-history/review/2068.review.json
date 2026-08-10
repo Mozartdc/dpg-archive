@@ -1,0 +1,36 @@
+{
+  "post_no": 2068,
+  "source_file": "바로크·고전/015-4.2. 인벤션과 신포니아, 평균율 클라비어 곡집.md",
+  "title": "4.2. 인벤션과 신포니아, 평균율 클라비어 곡집",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/015-4.2. 인벤션과 신포니아, 평균율 클라비어 곡집.md",
+      "paragraph": "그것을 대위법적으로 모방하고 발전시켜 전체 곡을 완섵하는 방식으로 이루어짐.",
+      "issue_type": "typo",
+      "original": "완섵하는",
+      "proposed": "완성하는",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "바로크·고전/015-4.2. 인벤션과 신포니아, 평균율 클라비어 곡집.md",
+      "paragraph": "음악의 구약성서'라 불리는 이 기념비적인 작품집은",
+      "issue_type": "typo",
+      "original": "음악의 구약성서'라 불리는",
+      "proposed": "'음악의 구약성서'라 불리는",
+      "reason": "여는 작은따옴표 누락. 같은 문단의 \"평균율(Well-Tempered)'이란\"도 같은 형태로 여는 따옴표가 빠져 있음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

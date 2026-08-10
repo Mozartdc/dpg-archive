@@ -1,0 +1,36 @@
+{
+  "post_no": 3720,
+  "source_file": "낭만·그 이후/047-19.1. 벨러 버르토크와 민속음악.md",
+  "title": "19.1. 벨러 버르토크와 민속음악",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/047-19.1. 벨러 버르토크와 민속음악.md",
+      "paragraph": "그는 민요 선율을 단순히 인용하고, 근본 원리를 자신의 음악에 담았음.",
+      "issue_type": "grammar",
+      "original": "민요 선율을 단순히 인용하고, 근본 원리를",
+      "proposed": "민요 선율을 단순히 인용하는 데 그치지 않고, 근본 원리를",
+      "reason": "앞뒤 문맥은 ‘인용에 머물지 않았다’는 뜻인데 부정 표현이 빠져 정반대로 읽힘. 글 전체 논지와 어긋나는 대목이라 뜻이 바뀌는 수정임.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": true,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/047-19.1. 벨러 버르토크와 민속음악.md",
+      "paragraph": "자신의 현대적인 작곡 기법과 결합하여 독창적인 음악 음악을 창조함.",
+      "issue_type": "typo",
+      "original": "독창적인 음악 음악을",
+      "proposed": "독창적인 음악을",
+      "reason": "같은 낱말이 두 번 적힘.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    }
+  ]
+}

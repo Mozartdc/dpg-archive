@@ -1,0 +1,24 @@
+{
+  "post_no": 3071,
+  "stage": 2,
+  "checked_at": "2026-08-10T04:12:17.150Z",
+  "checks": [
+    {
+      "original_claim": "그의 파가니니에 의한 대연습곡이 바로 그 결과물이며, 이 중 6번 곡은 파가니니의 바이올린 협주곡 2번의 론도 주제(종소리)를 바탕으로 한 유명한 라 캄파넬라(La Campanella)임.",
+      "verdict": "confirmed_error",
+      "proposed": "이 중 3번 곡은 … 라 캄파넬라(La Campanella)임.",
+      "source_1_url": "https://imslp.org/wiki/Grandes_%C3%A9tudes_de_Paganini,_S.141_(Liszt,_Franz)",
+      "source_1_title": "IMSLP / Petrucci Music Library — Grandes études de Paganini, S.141 (Liszt) 악보 목차",
+      "source_1_support": "작품 구성 목차에 \"Etude in G♯ minor 'La Campanella' (No.3)\"로 표기됨.",
+      "source_2_url": null,
+      "source_2_title": null,
+      "source_2_support": null,
+      "reasoning": "A군(작품번호). 공개 악보 저장소의 S.141 곡 목차에서 라 캄파넬라는 3번으로 표기됨. 원문의 6번은 다른 곡에 해당함.",
+      "confidence": "high",
+      "paired_posts": [],
+      "changes_meaning": true,
+      "criteria_group": "A",
+      "post_no": 3071
+    }
+  ]
+}

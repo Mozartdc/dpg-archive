@@ -1,0 +1,24 @@
+{
+  "post_no": 4701,
+  "stage": 2,
+  "checked_at": "2026-08-10T04:12:17.155Z",
+  "revisited_at": "2026-08-10T22:00:00.000Z",
+  "checks": [
+    {
+      "original_claim": "이 과정에서 심한 감기에 걸렸고, 바이로이트에 도착했을 때는 이미 폐렴으로 악화된 상태였음.",
+      "verdict": "correct",
+      "proposed": null,
+      "source_1_url": "https://www.britannica.com/biography/Franz-Liszt",
+      "source_1_title": "Franz Liszt - Britannica",
+      "source_1_support": "Liszt caught a cold at the 1886 Bayreuth Festival which developed into pneumonia, from which he died on 31 July 1886.",
+      "source_2_url": "https://www.ualberta.ca/en/wirth-institute/online-programming/original-series/composers-of-central-europe/franz-liszt.html",
+      "source_2_title": "Franz Liszt - Wirth Institute",
+      "source_2_support": "Corroborates the cold-to-pneumonia progression at Bayreuth.",
+      "reasoning": "재검증(2회차, 모순쌍 3037↔4701): 본문 서술(감기→폐렴 악화)이 정확함. 오류가 있던 쪽은 3037('심장 발작 추정')이었고 그쪽만 수정함. 4701은 판정만 correct로 변경, 본문 수정 없음.",
+      "confidence": "high",
+      "paired_posts": [3037],
+      "changes_meaning": false,
+      "criteria_group": "A"
+    }
+  ]
+}

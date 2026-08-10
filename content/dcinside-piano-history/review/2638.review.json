@@ -1,0 +1,78 @@
+{
+  "post_no": 2638,
+  "source_file": "바로크·고전/039-9.3. 내면적이며 명상적인 베토벤 후기 작품.md",
+  "title": "9.3. 내면적이며 명상적인 베토벤 후기 작품",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "바로크·고전/039-9.3. 내면적이며 명상적인 베토벤 후기 작품.md",
+      "paragraph": "1827년 3월 27일, 루트비히 판 베토벤이 사망한 다음 날, 페르디난트 폰 힐러 박사에 의해 베토벤의 시신에서 잘린 것임.",
+      "issue_type": "factual_error",
+      "original": "페르디난트 폰 힐러 박사",
+      "proposed": null,
+      "reason": "머리카락을 자른 페르디난트 힐러는 당시 15세 소년이자 훗날의 작곡가로, 의사가 아님. ‘박사’ 호칭이 사실과 어긋날 가능성이 큼. 같은 문서 모음의 2562번 글에서 다루는 힐러 락과 같은 사안이라 함께 검증 대상으로 올림.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": true,
+      "applied": false
+    },
+    {
+      "source_file": "바로크·고전/039-9.3. 내면적이며 명상적인 베토벤 후기 작품.md",
+      "paragraph": "슈베르트, 리스트, 브람스, 쇼스타코비치 등 많은 후대 작곡가들이 베토벤 후기 소나타를 창작의 영감이 됨.",
+      "issue_type": "grammar",
+      "original": "많은 후대 작곡가들이 베토벤 후기 소나타를 창작의 영감이 됨",
+      "proposed": "많은 후대 작곡가들이 베토벤 후기 소나타에서 창작의 영감을 얻음",
+      "reason": "주어와 서술어, 목적격 조사가 서로 맞지 않아 문장이 성립하지 않음.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "바로크·고전/039-9.3. 내면적이며 명상적인 베토벤 후기 작품.md",
+      "paragraph": "소나타 29번(함머클라비어)는 베토벤의 최장, 최대 규모 소나타로",
+      "issue_type": "grammar",
+      "original": "29번(함머클라비어)는",
+      "proposed": "29번(함머클라비어)은",
+      "reason": "받침 있는 말 뒤 보조사 오류.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "바로크·고전/039-9.3. 내면적이며 명상적인 베토벤 후기 작품.md",
+      "paragraph": "브람스, 리스트,등 19~20세기 작곡가들이",
+      "issue_type": "typo",
+      "original": "리스트,등",
+      "proposed": "리스트 등",
+      "reason": "불필요한 쉼표.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "바로크·고전/039-9.3. 내면적이며 명상적인 베토벤 후기 작품.md",
+      "paragraph": "후기 소나타의 넓은 음역 및 음색 변화가 나타남..",
+      "issue_type": "typo",
+      "original": "나타남..",
+      "proposed": "나타남.",
+      "reason": "마침표 중복.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

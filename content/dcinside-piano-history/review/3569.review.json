@@ -1,0 +1,50 @@
+{
+  "post_no": 3569,
+  "source_file": "낭만·그 이후/040-17.3. 알렉산드르 스크리아빈.md",
+  "title": "17.3. 알렉산드르 스크리아빈",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/040-17.3. 알렉산드르 스크리아빈.md",
+      "paragraph": "그래서 그의 음악은 전페적으로 긴장과 이완의 경계가 모호함.",
+      "issue_type": "typo",
+      "original": "전페적으로",
+      "proposed": "전체적으로",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/040-17.3. 알렉산드르 스크리아빈.md",
+      "paragraph": "헬레나 블라바츠키, 신지학의 창시자이며 뉴에이지 음악으로 우리에 잘 알려진 뉴에이지 운동의 뿌리.",
+      "issue_type": "typo",
+      "original": "우리에 잘 알려진",
+      "proposed": "우리에게 잘 알려진",
+      "reason": "조사 누락.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    },
+    {
+      "source_file": "낭만·그 이후/040-17.3. 알렉산드르 스크리아빈.md",
+      "paragraph": "신비화음(Mystic Chord) 또는 프로메테우스 화음 이라고 부름.",
+      "issue_type": "typo",
+      "original": "프로메테우스 화음 이라고",
+      "proposed": "프로메테우스 화음이라고",
+      "reason": "조사 앞 불필요한 띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "medium",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}

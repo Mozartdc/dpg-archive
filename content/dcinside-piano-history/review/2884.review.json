@@ -1,0 +1,36 @@
+{
+  "post_no": 2884,
+  "source_file": "낭만·그 이후/008-11.3. 마주르카와 폴로네이즈.md",
+  "title": "11.3. 마주르카와 폴로네이즈",
+  "reviewed": true,
+  "issues": [
+    {
+      "source_file": "낭만·그 이후/008-11.3. 마주르카와 폴로네이즈.md",
+      "paragraph": "절뚝이는 듯한 특유의 흥과 멋, 그리규 쇼팽 특유의 템포 루바토를 만들어냄.",
+      "issue_type": "typo",
+      "original": "그리규",
+      "proposed": "그리고",
+      "reason": "글자 오타.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "high",
+      "changes_meaning": false,
+      "applied": true
+    },
+    {
+      "source_file": "낭만·그 이후/008-11.3. 마주르카와 폴로네이즈.md",
+      "paragraph": "폴로네이즈는 보다 격식있게 민족의 서사를 이야기하는 웅변과 같음.",
+      "issue_type": "typo",
+      "original": "격식있게",
+      "proposed": "격식 있게",
+      "reason": "띄어쓰기.",
+      "evidence_url": null,
+      "evidence_title": null,
+      "evidence_excerpt": null,
+      "confidence": "low",
+      "changes_meaning": false,
+      "applied": false
+    }
+  ]
+}
