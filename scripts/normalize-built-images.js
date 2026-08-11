@@ -2,7 +2,16 @@ import fs from 'fs';
 import path from 'path';
 import { createHash } from 'crypto';
 
-const DIST_PATH = path.resolve('dist');
+function readDistPath() {
+  const distArgumentIndex = process.argv.indexOf('--dist');
+  if (distArgumentIndex === -1) return path.resolve('dist');
+
+  const distPath = process.argv[distArgumentIndex + 1];
+  if (!distPath) throw new Error('--dist 뒤에 빌드 디렉터리 경로가 필요함');
+  return path.resolve(distPath);
+}
+
+const DIST_PATH = readDistPath();
 const DIST_IMAGES_PATH = path.join(DIST_PATH, 'images');
 const IMAGE_EXTENSIONS = /\.(?:avif|gif|jpe?g|png|svg|webp)$/i;
 
@@ -38,7 +47,9 @@ function decodeUrlComponent(value) {
 }
 
 function buildSafeImageMap() {
-  if (!fs.existsSync(DIST_IMAGES_PATH)) return new Map();
+  if (!fs.existsSync(DIST_IMAGES_PATH)) {
+    throw new Error(`빌드 이미지 디렉터리를 찾을 수 없음: ${DIST_IMAGES_PATH}`);
+  }
 
   const imageMap = new Map();
   let renamed = 0;
