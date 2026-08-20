@@ -760,3 +760,135 @@
     transition: none !important;
   }
 }
+
+/* Keep the score visible while the user reads each practice session. */
+.score-lab .score-lab__tonality {
+  align-items: center;
+  background: var(--sl-color-bg-nav);
+  border: 1px solid var(--sl-color-hairline);
+  border-radius: 8px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(8rem, 0.35fr) minmax(0, 1fr);
+  margin: 1rem 0;
+  padding: 1rem 1.15rem;
+}
+
+.score-lab .score-lab__tonality h2 {
+  font-family: inherit;
+  font-size: 1.15rem;
+  margin: 0.2rem 0 0;
+}
+
+.score-lab .score-lab__tonality p {
+  color: var(--sl-color-gray-2);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.score-lab .score-lab__plan-panel {
+  align-self: start;
+  background: var(--sl-color-bg);
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 8px;
+  margin: 0;
+  max-height: calc(100vh - 6rem);
+  overflow: auto;
+  padding: 1rem;
+  position: sticky;
+  top: 5rem;
+}
+
+.score-lab .score-lab__plan-head {
+  border-bottom: 1px solid var(--sl-color-hairline);
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.85rem;
+}
+
+.score-lab .score-lab__plan-head h2 {
+  font-family: inherit;
+  font-size: 1.15rem;
+  margin: 0.2rem 0;
+}
+
+.score-lab .score-lab__plan-head p {
+  color: var(--sl-color-gray-2);
+  font-size: 0.84rem;
+  margin: 0;
+}
+
+.score-lab .score-lab__plan-panel .score-lab__form-map {
+  grid-template-columns: 1fr;
+  margin-bottom: 1rem;
+}
+
+.score-lab .score-lab__day-button {
+  align-items: start;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--sl-color-hairline);
+  color: var(--sl-color-text);
+  cursor: pointer;
+  display: grid;
+  font: inherit;
+  gap: 0.75rem;
+  grid-template-columns: 2.25rem minmax(0, 1fr);
+  padding: 0.9rem 0.4rem;
+  text-align: left;
+  width: 100%;
+}
+
+.score-lab .score-lab__day-button:hover,
+.score-lab .score-lab__day-button.is-active {
+  background: color-mix(in srgb, var(--pantone-very-peri) 8%, transparent);
+}
+
+.score-lab .score-lab__day-button.is-active {
+  box-shadow: inset 3px 0 0 var(--pantone-very-peri);
+}
+
+.score-lab .score-lab__day-number {
+  color: var(--pantone-very-peri);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.score-lab .score-lab__day-copy,
+.score-lab .score-lab__day-copy strong,
+.score-lab .score-lab__day-copy small {
+  display: block;
+}
+
+.score-lab .score-lab__day-copy strong {
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.score-lab .score-lab__day-copy small {
+  color: var(--pantone-very-peri);
+  font-size: 0.76rem;
+  font-weight: 700;
+  margin: 0.2rem 0 0.35rem;
+}
+
+.score-lab .score-lab__day-copy > span {
+  color: var(--sl-color-gray-2);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.score-lab .score-lab__page g.measure.is-plan-measure {
+  filter: drop-shadow(0 0 4px var(--pantone-peach-fuzz));
+}
+
+@media (max-width: 760px) {
+  .score-lab .score-lab__tonality {
+    grid-template-columns: 1fr;
+  }
+
+  .score-lab .score-lab__plan-panel {
+    max-height: none;
+    order: -1;
+    position: static;
+  }
+}
