@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Serif+KR:wght@500;600&display=swap');
-
 .score-lab {
   --lab-accent: light-dark(#b84b2b, #ed805f);
   --lab-accent-soft: light-dark(#f8e7df, #40251f);
@@ -8,14 +6,14 @@
   --lab-line: light-dark(#d7d1c5, #3c403e);
   --lab-muted: light-dark(#665f55, #aeb6b1);
   color: var(--sl-color-text);
-  font-family: 'Gowun Dodum', sans-serif;
+  font-family: inherit;
   max-width: none;
 }
 
 .score-lab h1,
 .score-lab h2,
 .score-lab h3 {
-  font-family: 'Noto Serif KR', serif;
+  font-family: inherit;
   letter-spacing: -.025em;
 }
 
@@ -188,7 +186,7 @@
 .score-lab__block p { margin: .35rem 0; }
 .score-lab__block ul,.score-lab__block ol { margin: .45rem 0 0; padding-left: 1.25rem; }
 .score-lab__block li { margin: .35rem 0; }
-.score-lab__roman { color: var(--lab-blue); font-family: 'Noto Serif KR', serif; font-size: 2.3rem; line-height: 1.2; margin: .25rem 0; }
+.score-lab__roman { color: var(--lab-blue); font-family: inherit; font-size: 2.3rem; line-height: 1.2; margin: .25rem 0; }
 .score-lab__muted { color: var(--lab-muted); font-size: .82rem; }
 
 .score-lab__memory { background: var(--lab-accent-soft); margin-top: 1rem; padding: .85rem 1rem; }
@@ -200,7 +198,7 @@
 .score-lab__form-map span { color: var(--lab-muted); display: block; font-size: .8rem; margin-top: .25rem; }
 .score-lab__days { border-top: 1px solid var(--lab-line); }
 .score-lab__days article { border-bottom: 1px solid var(--lab-line); display: grid; gap: 1rem; grid-template-columns: 3rem 1fr; padding: 1.1rem .2rem; }
-.score-lab__days article > span { color: var(--lab-accent); font-family: 'Noto Serif KR', serif; font-size: 1.45rem; }
+.score-lab__days article > span { color: var(--lab-accent); font-family: inherit; font-size: 1.45rem; }
 .score-lab__days h2 { font-size: 1.1rem; margin: 0; }
 .score-lab__days p { color: var(--lab-muted); margin: .35rem 0 0; }
 
@@ -223,4 +221,3 @@
   .score-lab__priority { align-items: flex-start; flex-direction: column; }
   .score-lab__score { margin-left: -.75rem; margin-right: -.75rem; padding: .25rem; }
 }
-

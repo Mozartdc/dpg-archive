@@ -38,7 +38,7 @@ async function readScoreFile(file) {
 function MeasureAnalysis({ measure, onMove }) {
   if (!measure) return null;
   const harmonyNote = measure.harmony.confidence < 0.6
-    ? '한 마디 안에서 코드이 바뀌거나 논코드톤이 많아 가장 가까운 코드으로 표시함.'
+    ? '한 마디 안에서 코드가 바뀌거나 논코드톤이 많아 가장 가까운 코드로 표시함.'
     : '베이스와 오래 유지되는 코드톤을 함께 보고 가장 가까운 코드를 잡음.';
   return (
     <aside className="score-lab__analysis">
@@ -78,8 +78,75 @@ function MeasureAnalysis({ measure, onMove }) {
 
       <section className="score-lab__memory">
         <span className="score-lab__eyebrow">암보 요령</span>
-        <p>{measure.number}마디를 암보 시작 마디로 삼음. 오른손 첫 음 {measure.firstRight}, 왼손 첫 음 {measure.firstLeft}, {measure.harmony.roman} 코드을 말한 뒤 악보 없이 시작함.</p>
+        <p>{measure.number}마디를 암보 시작 마디로 삼음. 오른손 첫 음 {measure.firstRight}, 왼손 첫 음 {measure.firstLeft}, {measure.harmony.roman} 코드를 말한 뒤 악보 없이 시작함.</p>
       </section>
+    </aside>
+  );
+}
+
+function getDayMeasureIndices(day, analysis) {
+  if (!analysis?.measures.length) return [];
+  const range = (section) => section
+    ? Array.from({ length: section.end - section.start + 1 }, (_, index) => section.start + index)
+    : [];
+  const all = analysis.measures.map((measure) => measure.index);
+  const priority = analysis.priority.slice(0, 2).map((measure) => measure.index);
+
+  if (day === 1 || day === 2) return priority;
+  if (day === 3) return range(analysis.form[0]);
+  if (day === 4) return range(analysis.form.at(-1));
+  if (day === 5) {
+    const middle = analysis.form.slice(1, -1).flatMap(range);
+    return middle.length ? middle : all;
+  }
+  if (day === 6) return [...new Set([...priority, ...analysis.form.map((section) => section.start)])].sort((a, b) => a - b);
+  return all;
+}
+
+function formatMeasureRange(indices, analysis) {
+  if (!indices.length || indices.length === analysis.measures.length) return '곡 전체';
+  const numbers = indices.map((index) => analysis.measures[index]?.number).filter(Boolean);
+  if (numbers.length === 1) return `${numbers[0]}마디`;
+  const sequential = indices.every((value, index) => index === 0 || value === indices[index - 1] + 1);
+  return sequential ? `${numbers[0]}~${numbers.at(-1)}마디` : `${numbers.join('·')}마디`;
+}
+
+function PracticePlan({ analysis, selectedDay, onSelectDay, onSelectSection }) {
+  return (
+    <aside className="score-lab__plan score-lab__plan-panel">
+      <div className="score-lab__plan-head">
+        <span className="score-lab__eyebrow">회차별 연습</span>
+        <h2>악보를 보면서 진행함</h2>
+        <p>회차를 누르면 오늘 연습할 마디가 악보에 표시됨.</p>
+      </div>
+      <div className="score-lab__form-map">
+        {analysis.form.map((section) => (
+          <button key={section.name} type="button" onClick={() => onSelectSection(section)}>
+            <strong>{section.label}</strong>
+            <span>{section.cadence}</span>
+          </button>
+        ))}
+      </div>
+      <div className="score-lab__days">
+        {analysis.dayPlan.map((day) => {
+          const indices = getDayMeasureIndices(day.day, analysis);
+          return (
+            <button
+              className={`score-lab__day-button ${selectedDay === day.day ? 'is-active' : ''}`}
+              key={day.day}
+              type="button"
+              onClick={() => onSelectDay(day.day)}
+            >
+              <span className="score-lab__day-number">{String(day.day).padStart(2, '0')}</span>
+              <span className="score-lab__day-copy">
+                <strong>{day.day}일차 · {day.title}</strong>
+                <small>연습 범위: {formatMeasureRange(indices, analysis)}</small>
+                <span>{day.body}</span>
+              </span>
+            </button>
+          );
+        })}
+      </div>
     </aside>
   );
 }
@@ -92,12 +159,17 @@ export default function ScorePracticeLab() {
   const [analysis, setAnalysis] = useState(null);
   const [svgs, setSvgs] = useState([]);
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [selectedDay, setSelectedDay] = useState(1);
   const [screen, setScreen] = useState('measure');
   const [status, setStatus] = useState('체르니 30번 1번 예제를 여는 중임.');
   const [dragging, setDragging] = useState(false);
   const scoreRef = useRef(null);
 
   const currentMeasure = analysis?.measures[selectedIndex];
+  const planMeasureIndices = useMemo(
+    () => getDayMeasureIndices(selectedDay, analysis),
+    [analysis, selectedDay],
+  );
 
   const loadXml = async (xml, label) => {
     const doc = parseScoreDocument(xml);
@@ -170,8 +242,9 @@ export default function ScorePracticeLab() {
     if (!scoreRef.current) return;
     scoreRef.current.querySelectorAll('g.measure').forEach((group, index) => {
       group.classList.toggle('score-lab__selected-measure', index === selectedIndex);
+      group.classList.toggle('is-plan-measure', screen === 'plan' && planMeasureIndices.includes(index));
     });
-  }, [selectedIndex, svgs]);
+  }, [selectedIndex, svgs, screen, planMeasureIndices]);
 
   const handleFile = async (file) => {
     if (!file) return;
@@ -190,6 +263,20 @@ export default function ScorePracticeLab() {
     scoreRef.current?.querySelector(`g.measure[data-measure-index="${next}"]`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
   };
 
+  const focusMeasure = (index, nextScreen = screen) => {
+    setSelectedIndex(index);
+    setScreen(nextScreen);
+    requestAnimationFrame(() => {
+      scoreRef.current?.querySelector(`g.measure[data-measure-index="${index}"]`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  };
+
+  const selectPracticeDay = (day) => {
+    const indices = getDayMeasureIndices(day, analysis);
+    setSelectedDay(day);
+    if (indices.length) focusMeasure(indices[0], 'plan');
+  };
+
   const measureButtons = useMemo(() => analysis?.measures || [], [analysis]);
 
   return (
@@ -197,8 +284,8 @@ export default function ScorePracticeLab() {
       <header className="score-lab__hero">
         <div>
           <span className="score-lab__eyebrow">DPINSIDE 악보 연습실</span>
-          <h1>악보를 불러오면 연습 루트가 바로 보임</h1>
-          <p>MXL과 MusicXML을 내 기기에서 바로 조판함. 마디를 누르면 코드, 멜로디, 반주 텍스처, 핑거링, 연습 순서, 암보 요령이 한 화면에 붙어 나옴.</p>
+          <h1>악보를 보면서 연습할 마디를 바로 찾음</h1>
+          <p>MXL이나 MusicXML 악보를 불러오면 곡의 조성과 프레이즈, 어려운 마디를 먼저 살핌. 악보 옆에서 마디별 연습 순서와 암보 요령을 함께 확인할 수 있음.</p>
         </div>
         <div className="score-lab__privacy">내 기기에서만 분석함</div>
       </header>
@@ -246,62 +333,57 @@ export default function ScorePracticeLab() {
       {analysis && (
         <>
           <section className="score-lab__overview">
-            <div><span>키</span><strong>{analysis.key.name}</strong></div>
+            <div><span>조성</span><strong>{analysis.key.name}</strong></div>
             <div><span>박자</span><strong>{analysis.time}</strong></div>
             <div><span>길이</span><strong>{analysis.measureCount}마디</strong></div>
             <div className="score-lab__form"><span>프레이즈 맵</span><strong>{analysis.form.map((section) => section.label).join(' · ')}</strong></div>
           </section>
 
-          {screen === 'measure' ? (
-            <>
-              <section className="score-lab__priority">
-                <span className="score-lab__eyebrow">우선 공략 마디</span>
-                <div>
-                  {analysis.priority.map((measure, index) => (
-                    <button key={measure.index} type="button" onClick={() => setSelectedIndex(measure.index)} className={selectedIndex === measure.index ? 'is-active' : ''}>
-                      {index + 1}번 · {measure.number}마디
-                    </button>
-                  ))}
-                </div>
-              </section>
+          <section className="score-lab__tonality">
+            <div>
+              <span className="score-lab__eyebrow">곡 전체 조성</span>
+              <h2>{analysis.key.name}</h2>
+            </div>
+            <p>{analysis.key.name}을 중심으로 곡 전체의 프레이즈와 종지를 살핌. 악보 옆의 코드 분석은 선택한 마디에서 들리는 화성을 따로 보여 줌.</p>
+          </section>
 
-              <div className="score-lab__workspace">
-                <main className="score-lab__score-column">
-                  <div className="score-lab__measure-strip" aria-label="마디 선택">
-                    {measureButtons.map((measure) => (
-                      <button key={measure.index} type="button" className={selectedIndex === measure.index ? 'is-active' : ''} onClick={() => setSelectedIndex(measure.index)}>{measure.number}</button>
-                    ))}
-                  </div>
-                  <div className="score-lab__score" ref={scoreRef}>
-                    {svgs.map((svg, index) => <div className="score-lab__page" key={index} dangerouslySetInnerHTML={{ __html: svg }} />)}
-                  </div>
-                </main>
-                <MeasureAnalysis measure={currentMeasure} onMove={moveMeasure} />
-              </div>
-            </>
-          ) : (
-            <section className="score-lab__plan">
-              <div className="score-lab__form-map">
-                {analysis.form.map((section) => (
-                  <button key={section.name} type="button" onClick={() => { setSelectedIndex(section.start); setScreen('measure'); }}>
-                    <strong>{section.label}</strong>
-                    <span>{section.cadence}</span>
+          {screen === 'measure' && (
+            <section className="score-lab__priority">
+              <span className="score-lab__eyebrow">우선 공략 마디</span>
+              <div>
+                {analysis.priority.map((measure, index) => (
+                  <button key={measure.index} type="button" onClick={() => focusMeasure(measure.index, 'measure')} className={selectedIndex === measure.index ? 'is-active' : ''}>
+                    {index + 1}번 · {measure.number}마디
                   </button>
-                ))}
-              </div>
-              <div className="score-lab__days">
-                {analysis.dayPlan.map((day) => (
-                  <article key={day.day}>
-                    <span>{String(day.day).padStart(2, '0')}</span>
-                    <div><h2>{day.day}일차 · {day.title}</h2><p>{day.body}</p></div>
-                  </article>
                 ))}
               </div>
             </section>
           )}
+
+          <div className="score-lab__workspace">
+            <main className="score-lab__score-column">
+              <div className="score-lab__measure-strip" aria-label="마디 선택">
+                {measureButtons.map((measure) => (
+                  <button key={measure.index} type="button" className={selectedIndex === measure.index ? 'is-active' : ''} onClick={() => focusMeasure(measure.index, 'measure')}>{measure.number}</button>
+                ))}
+              </div>
+              <div className="score-lab__score" ref={scoreRef}>
+                {svgs.map((svg, index) => <div className="score-lab__page" key={index} dangerouslySetInnerHTML={{ __html: svg }} />)}
+              </div>
+            </main>
+            {screen === 'measure'
+              ? <MeasureAnalysis measure={currentMeasure} onMove={moveMeasure} />
+              : (
+                <PracticePlan
+                  analysis={analysis}
+                  selectedDay={selectedDay}
+                  onSelectDay={selectPracticeDay}
+                  onSelectSection={(section) => focusMeasure(section.start, 'plan')}
+                />
+              )}
+          </div>
         </>
       )}
     </div>
   );
 }
-
