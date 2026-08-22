@@ -111,43 +111,75 @@ function formatMeasureRange(indices, analysis) {
   return sequential ? `${numbers[0]}~${numbers.at(-1)}마디` : `${numbers.join('·')}마디`;
 }
 
-function PracticePlan({ analysis, selectedDay, onSelectDay, onSelectSection }) {
+function getDayDetails(indices, analysis) {
+  const measures = indices.map((index) => analysis.measures[index]).filter(Boolean);
+  const parts = analysis.form.filter((section) => indices.some((index) => index >= section.start && index <= section.end));
+  const reasons = [...new Set(measures.flatMap((measure) => measure.difficulty.reasons))].slice(0, 3);
+  const steps = [...new Set(measures.flatMap((measure) => measure.difficulty.steps))].slice(0, 4);
+  return { parts, reasons, steps };
+}
+
+function PracticePlan({ analysis, selectedDay, onSelectDay }) {
   return (
-    <aside className="score-lab__plan score-lab__plan-panel">
+    <section className="score-lab__plan score-lab__plan-panel">
       <div className="score-lab__plan-head">
-        <span className="score-lab__eyebrow">회차별 연습</span>
-        <h2>악보를 보면서 진행함</h2>
-        <p>회차를 누르면 오늘 연습할 마디가 악보에 표시됨.</p>
+        <span className="score-lab__step-number">3</span>
+        <div>
+          <span className="score-lab__eyebrow">완성까지 연습 순서</span>
+          <h2>Day 1부터 차례대로 진행함</h2>
+          <p>각 Day에서 연습할 파트와 마디를 먼저 확인한 뒤 아래 순서대로 연습함.</p>
+        </div>
       </div>
-      <div className="score-lab__form-map">
-        {analysis.form.map((section) => (
-          <button key={section.name} type="button" onClick={() => onSelectSection(section)}>
-            <strong>{section.label}</strong>
-            <span>{section.cadence}</span>
-          </button>
-        ))}
-      </div>
-      <div className="score-lab__days">
+      <div className="score-lab__days" role="list">
         {analysis.dayPlan.map((day) => {
           const indices = getDayMeasureIndices(day.day, analysis);
+          const details = getDayDetails(indices, analysis);
           return (
-            <button
-              className={`score-lab__day-button ${selectedDay === day.day ? 'is-active' : ''}`}
+            <article
+              className={`score-lab__day-card ${selectedDay === day.day ? 'is-active' : ''}`}
               key={day.day}
-              type="button"
-              onClick={() => onSelectDay(day.day)}
+              role="listitem"
             >
-              <span className="score-lab__day-number">{String(day.day).padStart(2, '0')}</span>
-              <span className="score-lab__day-copy">
-                <strong>{day.day}일차 · {day.title}</strong>
-                <small>연습 범위: {formatMeasureRange(indices, analysis)}</small>
-                <span>{day.body}</span>
-              </span>
-            </button>
+              <div className="score-lab__day-index">
+                <span>DAY</span>
+                <strong>{String(day.day).padStart(2, '0')}</strong>
+              </div>
+              <div className="score-lab__day-content">
+                <header>
+                  <div>
+                    <span className="score-lab__day-range">연습 범위 · {formatMeasureRange(indices, analysis)}</span>
+                    <h3>{day.title}</h3>
+                  </div>
+                  <button type="button" onClick={() => onSelectDay(day.day)}>악보에서 보기</button>
+                </header>
+                <div className="score-lab__day-parts">
+                  <strong>연습 파트</strong>
+                  <span>{details.parts.map((part) => part.label).join(' · ') || '곡 전체'}</span>
+                </div>
+                <div className="score-lab__day-method">
+                  <div>
+                    <h4>오늘의 목표</h4>
+                    <p>{day.body}</p>
+                    {details.reasons.length > 0 && (
+                      <>
+                        <h4>먼저 풀어야 할 점</h4>
+                        <ul>{details.reasons.map((reason) => <li key={reason}>{reason}</li>)}</ul>
+                      </>
+                    )}
+                  </div>
+                  <div>
+                    <h4>연습 순서</h4>
+                    {details.steps.length > 0
+                      ? <ol>{details.steps.map((step) => <li key={step}>{step}</li>)}</ol>
+                      : <p>느린 템포로 한 손씩 확인한 뒤, 같은 구간을 양손으로 이어서 연주함.</p>}
+                  </div>
+                </div>
+              </div>
+            </article>
           );
         })}
       </div>
-    </aside>
+    </section>
   );
 }
 
@@ -324,30 +356,46 @@ export default function ScorePracticeLab() {
           </label>
         )}
         <div className="score-lab__status" role="status">{status}</div>
-        <div className="score-lab__view-tabs" aria-label="결과 보기">
-          <button type="button" className={screen === 'measure' ? 'is-active' : ''} onClick={() => setScreen('measure')}>악보 + 마디 코칭</button>
-          <button type="button" className={screen === 'plan' ? 'is-active' : ''} onClick={() => setScreen('plan')}>1일차부터 완성까지</button>
-        </div>
       </div>
 
       {analysis && (
         <>
-          <section className="score-lab__overview">
-            <div><span>조성</span><strong>{analysis.key.name}</strong></div>
-            <div><span>박자</span><strong>{analysis.time}</strong></div>
-            <div><span>길이</span><strong>{analysis.measureCount}마디</strong></div>
-            <div className="score-lab__form"><span>프레이즈 맵</span><strong>{analysis.form.map((section) => section.label).join(' · ')}</strong></div>
-          </section>
-
-          <section className="score-lab__tonality">
-            <div>
-              <span className="score-lab__eyebrow">곡 전체 조성</span>
-              <h2>{analysis.key.name}</h2>
+          <section className="score-lab__orientation">
+            <div className="score-lab__section-head">
+              <span className="score-lab__step-number">1</span>
+              <div>
+                <span className="score-lab__eyebrow">곡 전체 읽기</span>
+                <h2>조성과 프레이즈 구조를 먼저 확인함</h2>
+              </div>
             </div>
-            <p>{analysis.key.name}을 중심으로 곡 전체의 프레이즈와 종지를 살핌. 악보 옆의 코드 분석은 선택한 마디에서 들리는 화성을 따로 보여 줌.</p>
+            <div className="score-lab__orientation-grid">
+              <div className="score-lab__key-card">
+                <span>전체 조성</span>
+                <strong>{analysis.key.name}</strong>
+                <p>{analysis.key.name}을 중심으로 {analysis.time}박자, 전체 {analysis.measureCount}마디의 흐름을 먼저 익힘. 마디별 코드는 아래 악보에서 따로 확인함.</p>
+              </div>
+              <div className="score-lab__structure-card">
+                <span>프레이즈 구조</span>
+                <div className="score-lab__form-map">
+                  {analysis.form.map((section) => (
+                    <button key={section.name} type="button" onClick={() => focusMeasure(section.start, 'plan')}>
+                      <strong>{section.label}</strong>
+                      <span>{section.cadence}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
           </section>
 
-          {screen === 'measure' && (
+          <section className="score-lab__score-stage">
+            <div className="score-lab__section-head">
+              <span className="score-lab__step-number">2</span>
+              <div>
+                <span className="score-lab__eyebrow">악보에서 확인하기</span>
+                <h2>어려운 마디부터 위치와 음형을 익힘</h2>
+              </div>
+            </div>
             <section className="score-lab__priority">
               <span className="score-lab__eyebrow">우선 공략 마디</span>
               <div>
@@ -358,30 +406,23 @@ export default function ScorePracticeLab() {
                 ))}
               </div>
             </section>
-          )}
 
-          <div className="score-lab__workspace">
-            <main className="score-lab__score-column">
-              <div className="score-lab__measure-strip" aria-label="마디 선택">
-                {measureButtons.map((measure) => (
-                  <button key={measure.index} type="button" className={selectedIndex === measure.index ? 'is-active' : ''} onClick={() => focusMeasure(measure.index, 'measure')}>{measure.number}</button>
-                ))}
-              </div>
-              <div className="score-lab__score" ref={scoreRef}>
-                {svgs.map((svg, index) => <div className="score-lab__page" key={index} dangerouslySetInnerHTML={{ __html: svg }} />)}
-              </div>
-            </main>
-            {screen === 'measure'
-              ? <MeasureAnalysis measure={currentMeasure} onMove={moveMeasure} />
-              : (
-                <PracticePlan
-                  analysis={analysis}
-                  selectedDay={selectedDay}
-                  onSelectDay={selectPracticeDay}
-                  onSelectSection={(section) => focusMeasure(section.start, 'plan')}
-                />
-              )}
-          </div>
+            <div className="score-lab__workspace">
+              <main className="score-lab__score-column">
+                <div className="score-lab__measure-strip" aria-label="마디 선택">
+                  {measureButtons.map((measure) => (
+                    <button key={measure.index} type="button" className={selectedIndex === measure.index ? 'is-active' : ''} onClick={() => focusMeasure(measure.index, 'measure')}>{measure.number}</button>
+                  ))}
+                </div>
+                <div className="score-lab__score" ref={scoreRef}>
+                  {svgs.map((svg, index) => <div className="score-lab__page" key={index} dangerouslySetInnerHTML={{ __html: svg }} />)}
+                </div>
+              </main>
+              <MeasureAnalysis measure={currentMeasure} onMove={moveMeasure} />
+            </div>
+          </section>
+
+          <PracticePlan analysis={analysis} selectedDay={selectedDay} onSelectDay={selectPracticeDay} />
         </>
       )}
     </div>
