@@ -726,6 +726,299 @@
   }
 }
 
+/* Lesson-note flow: orientation, score, then the complete practice sequence. */
+.score-lab .score-lab__orientation,
+.score-lab .score-lab__score-stage,
+.score-lab .score-lab__plan-panel {
+  margin-top: 1.25rem;
+}
+
+.score-lab .score-lab__orientation {
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.score-lab .score-lab__section-head,
+.score-lab .score-lab__plan-head {
+  align-items: center;
+  background: var(--sl-color-bg-nav);
+  border-bottom: 1px solid var(--sl-color-hairline);
+  display: flex;
+  gap: 0.85rem;
+  margin: 0;
+  padding: 1rem 1.15rem;
+}
+
+.score-lab .score-lab__section-head h2,
+.score-lab .score-lab__plan-head h2 {
+  font-family: inherit;
+  font-size: 1.15rem;
+  line-height: 1.4;
+  margin: 0.15rem 0 0;
+}
+
+.score-lab .score-lab__step-number {
+  align-items: center;
+  background: var(--pantone-very-peri);
+  border-radius: 50%;
+  color: white;
+  display: inline-flex;
+  flex: 0 0 2.2rem;
+  font-size: 1rem;
+  font-weight: 800;
+  height: 2.2rem;
+  justify-content: center;
+}
+
+.score-lab .score-lab__orientation-grid {
+  display: grid;
+  gap: 0;
+  grid-template-columns: minmax(14rem, 0.75fr) minmax(0, 1.25fr);
+}
+
+.score-lab .score-lab__key-card,
+.score-lab .score-lab__structure-card {
+  padding: 1.15rem;
+}
+
+.score-lab .score-lab__key-card {
+  border-right: 1px solid var(--sl-color-hairline);
+}
+
+.score-lab .score-lab__key-card > span,
+.score-lab .score-lab__structure-card > span {
+  color: var(--sl-color-gray-2);
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.score-lab .score-lab__key-card > strong {
+  color: var(--pantone-very-peri);
+  display: block;
+  font-size: 1.45rem;
+  margin-bottom: 0.5rem;
+}
+
+.score-lab .score-lab__key-card p {
+  color: var(--sl-color-gray-2);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.score-lab .score-lab__structure-card .score-lab__form-map {
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  margin: 0;
+}
+
+.score-lab .score-lab__score-stage {
+  border-top: 2px solid var(--pantone-very-peri);
+  padding-top: 0;
+}
+
+.score-lab .score-lab__score-stage > .score-lab__priority {
+  margin: 1rem 0;
+}
+
+.score-lab .score-lab__plan-panel {
+  background: transparent;
+  border: 1px solid var(--sl-color-gray-5);
+  max-height: none;
+  overflow: visible;
+  padding: 0;
+  position: static;
+}
+
+.score-lab .score-lab__plan-head p {
+  line-height: 1.55;
+  margin-top: 0.25rem;
+}
+
+.score-lab .score-lab__days {
+  border: 0;
+  display: block;
+  padding: 0 1.15rem 1.15rem;
+}
+
+.score-lab .score-lab__days .score-lab__day-card {
+  background: var(--sl-color-bg);
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 8px;
+  display: grid;
+  gap: 0;
+  grid-template-columns: 5rem minmax(0, 1fr);
+  margin-top: 1rem;
+  min-height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.score-lab .score-lab__days .score-lab__day-card.is-active {
+  border-color: var(--pantone-very-peri);
+  box-shadow: 0 0 0 1px var(--pantone-very-peri);
+}
+
+.score-lab .score-lab__day-index {
+  align-items: center;
+  background: var(--sl-color-bg-nav);
+  border-right: 1px solid var(--sl-color-hairline);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  padding: 1rem 0.5rem;
+}
+
+.score-lab .score-lab__day-index span {
+  color: var(--sl-color-gray-2);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.score-lab .score-lab__day-index strong {
+  color: var(--pantone-very-peri);
+  font-size: 1.55rem;
+  line-height: 1.2;
+}
+
+.score-lab .score-lab__day-content {
+  min-width: 0;
+  padding: 1rem 1.1rem 1.1rem;
+}
+
+.score-lab .score-lab__day-content > header {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.score-lab .score-lab__day-range {
+  color: var(--pantone-very-peri);
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  margin-bottom: 0.2rem;
+}
+
+.score-lab .score-lab__day-content h3 {
+  font-family: inherit;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.score-lab .score-lab__day-content > header button {
+  background: var(--pantone-very-peri);
+  border: 0;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.5rem 0.7rem;
+}
+
+.score-lab .score-lab__day-parts {
+  background: var(--sl-color-bg-nav);
+  border-radius: 6px;
+  display: grid;
+  font-size: 0.82rem;
+  gap: 0.65rem;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  margin-top: 0.85rem;
+  padding: 0.65rem 0.75rem;
+}
+
+.score-lab .score-lab__day-parts span {
+  color: var(--sl-color-gray-2);
+}
+
+.score-lab .score-lab__day-method {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 0.9rem;
+}
+
+.score-lab .score-lab__day-method > div {
+  border-left: 2px solid var(--sl-color-hairline);
+  padding-left: 0.85rem;
+}
+
+.score-lab .score-lab__day-method h4 {
+  font-family: inherit;
+  font-size: 0.82rem;
+  margin: 0 0 0.35rem;
+}
+
+.score-lab .score-lab__day-method h4:not(:first-child) {
+  margin-top: 0.85rem;
+}
+
+.score-lab .score-lab__day-method p,
+.score-lab .score-lab__day-method li {
+  color: var(--sl-color-gray-2);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.score-lab .score-lab__day-method p,
+.score-lab .score-lab__day-method ul,
+.score-lab .score-lab__day-method ol {
+  margin: 0;
+}
+
+.score-lab .score-lab__day-method ul,
+.score-lab .score-lab__day-method ol {
+  padding-left: 1.15rem;
+}
+
+@media (max-width: 760px) {
+  .score-lab .score-lab__orientation-grid,
+  .score-lab .score-lab__day-method {
+    grid-template-columns: 1fr;
+  }
+
+  .score-lab .score-lab__key-card {
+    border-bottom: 1px solid var(--sl-color-hairline);
+    border-right: 0;
+  }
+
+  .score-lab .score-lab__plan-panel {
+    order: initial;
+  }
+}
+
+@media (max-width: 520px) {
+  .score-lab .score-lab__section-head,
+  .score-lab .score-lab__plan-head {
+    align-items: flex-start;
+  }
+
+  .score-lab .score-lab__days .score-lab__day-card {
+    grid-template-columns: 1fr;
+  }
+
+  .score-lab .score-lab__day-index {
+    border-bottom: 1px solid var(--sl-color-hairline);
+    border-right: 0;
+    flex-direction: row;
+    gap: 0.35rem;
+    justify-content: flex-start;
+    padding: 0.55rem 0.85rem;
+  }
+
+  .score-lab .score-lab__day-content > header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 480px) {
   .score-lab .score-lab__hero,
   .score-lab .score-lab__drop,
