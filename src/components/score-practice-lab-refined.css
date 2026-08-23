@@ -1396,6 +1396,42 @@
   }
 }
 
+/* One accent color; all other surfaces stay neutral. */
+.score-lab {
+  --score-lab-accent: #6667ab;
+  --lab-accent: var(--score-lab-accent);
+  --lab-blue: var(--score-lab-accent);
+  --lab-accent-soft: color-mix(in srgb, var(--score-lab-accent) 9%, var(--sl-color-bg));
+  --pantone-very-peri: var(--score-lab-accent);
+  --pantone-peach-fuzz: var(--score-lab-accent);
+  --pantone-viva-magenta: var(--score-lab-accent);
+}
+
+.score-lab .score-lab__file-button,
+.score-lab .score-lab__step-number,
+.score-lab .score-lab__day-nav button.is-active,
+.score-lab .score-lab__measure-nav-list button.is-active,
+.score-lab .score-lab__view-tabs button.is-active {
+  background: var(--score-lab-accent);
+  border-color: var(--score-lab-accent);
+  color: white;
+}
+
+.score-lab .score-lab__memory,
+.score-lab .score-lab__lesson-note {
+  background: var(--sl-color-bg-nav);
+  border-left: 3px solid var(--score-lab-accent);
+}
+
+.score-lab .score-lab__day-toc-list > button:hover,
+.score-lab .score-lab__day-toc-list > button.is-active {
+  background: var(--lab-accent-soft);
+}
+
+.score-lab .score-lab__page g.measure.is-plan-measure {
+  filter: drop-shadow(0 0 3px var(--score-lab-accent));
+}
+
 @media (max-width: 480px) {
   .score-lab .score-lab__hero,
   .score-lab .score-lab__drop,
