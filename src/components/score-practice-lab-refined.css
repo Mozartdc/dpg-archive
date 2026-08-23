@@ -1019,6 +1019,194 @@
   }
 }
 
+/* Practice workspace: one score and one active lesson, without a long report. */
+.score-lab .score-lab__workspace--practice {
+  align-items: start;
+  grid-template-columns: minmax(0, 1fr) minmax(19rem, 0.48fr);
+}
+
+.score-lab .score-lab__workspace--practice .score-lab__score-column {
+  max-height: calc(100vh - 7rem);
+  overflow: auto;
+  position: sticky;
+  top: 5rem;
+}
+
+.score-lab .score-lab__practice-panel {
+  align-self: start;
+  background: var(--sl-color-bg);
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 8px;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.score-lab .score-lab__practice-panel .score-lab__plan-head {
+  display: block;
+}
+
+.score-lab .score-lab__practice-panel .score-lab__plan-head p {
+  color: var(--pantone-very-peri);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.score-lab .score-lab__day-nav {
+  background: var(--sl-color-bg-nav);
+  border-bottom: 1px solid var(--sl-color-hairline);
+  display: flex;
+  gap: 0.35rem;
+  overflow-x: auto;
+  padding: 0.65rem;
+  scrollbar-width: thin;
+}
+
+.score-lab .score-lab__day-nav button {
+  background: var(--sl-color-bg);
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 999px;
+  color: var(--sl-color-text);
+  cursor: pointer;
+  flex: 0 0 auto;
+  font: inherit;
+  font-size: 0.76rem;
+  font-weight: 700;
+  padding: 0.4rem 0.65rem;
+}
+
+.score-lab .score-lab__day-nav button.is-active {
+  background: var(--pantone-very-peri);
+  border-color: var(--pantone-very-peri);
+  color: white;
+}
+
+.score-lab .score-lab__current-day {
+  padding: 1rem;
+}
+
+.score-lab .score-lab__day-intro {
+  color: var(--sl-color-gray-2);
+  font-size: 0.84rem;
+  line-height: 1.65;
+  margin: 0 0 1rem;
+}
+
+.score-lab .score-lab__lesson-section {
+  border-top: 1px solid var(--sl-color-hairline);
+  padding: 1rem 0 0.2rem;
+}
+
+.score-lab .score-lab__lesson-section + .score-lab__lesson-section {
+  margin-top: 0.8rem;
+}
+
+.score-lab .score-lab__lesson-section header {
+  align-items: baseline;
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.45rem;
+}
+
+.score-lab .score-lab__lesson-section header strong {
+  color: var(--pantone-very-peri);
+  font-size: 1.05rem;
+}
+
+.score-lab .score-lab__lesson-section header span {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.score-lab .score-lab__lesson-section p,
+.score-lab .score-lab__lesson-section li,
+.score-lab .score-lab__lesson-note p,
+.score-lab .score-lab__lesson-check li {
+  color: var(--sl-color-gray-2);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.score-lab .score-lab__lesson-section p {
+  margin: 0 0 0.55rem;
+}
+
+.score-lab .score-lab__lesson-section ol,
+.score-lab .score-lab__lesson-check ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.score-lab .score-lab__lesson-note,
+.score-lab .score-lab__lesson-check {
+  border-radius: 7px;
+  margin-top: 0.9rem;
+  padding: 0.8rem;
+}
+
+.score-lab .score-lab__lesson-note {
+  background: color-mix(in srgb, var(--pantone-peach-fuzz) 22%, var(--sl-color-bg));
+}
+
+.score-lab .score-lab__lesson-check {
+  background: var(--sl-color-bg-nav);
+}
+
+.score-lab .score-lab__lesson-note > strong,
+.score-lab .score-lab__lesson-check > strong {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.score-lab .score-lab__lesson-note p {
+  margin: 0;
+}
+
+.score-lab .score-lab__learning-order {
+  border-top: 1px solid var(--sl-color-hairline);
+  color: var(--pantone-very-peri);
+  font-size: 0.82rem;
+  font-weight: 800;
+  margin: 0.85rem 0 0;
+  padding-top: 0.75rem;
+}
+
+.score-lab .score-lab__measure-details {
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 8px;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+.score-lab .score-lab__measure-details > summary {
+  background: var(--sl-color-bg-nav);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.8rem 1rem;
+}
+
+.score-lab .score-lab__measure-details .score-lab__analysis {
+  border: 0 !important;
+  border-radius: 0 !important;
+  position: static;
+}
+
+@media (max-width: 900px) {
+  .score-lab .score-lab__workspace--practice {
+    grid-template-columns: 1fr;
+  }
+
+  .score-lab .score-lab__workspace--practice .score-lab__score-column {
+    max-height: 68vh;
+    position: static;
+  }
+
+  .score-lab .score-lab__practice-panel {
+    order: -1;
+  }
+}
+
 @media (max-width: 480px) {
   .score-lab .score-lab__hero,
   .score-lab .score-lab__drop,
