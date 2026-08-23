@@ -126,12 +126,50 @@ function getDayDetails(indices, analysis) {
   return { parts, reasons, steps };
 }
 
-function PracticePlan({ analysis, lessonProfile, selectedDay, onSelectDay }) {
+function rangeIncludesMeasure(rangeText, measureNumber) {
+  if (rangeText.includes('전곡')) return true;
+  return Array.from(rangeText.matchAll(/(\d+)(?:~(\d+))?/g)).some((match) => {
+    const start = Number(match[1]);
+    const end = Number(match[2] || match[1]);
+    return measureNumber >= start && measureNumber <= end;
+  });
+}
+
+function DayTableOfContents({ analysis, lessonProfile, selectedDay, onSelectDay }) {
+  const days = lessonProfile?.days || analysis.dayPlan;
+  return (
+    <section className="score-lab__day-toc">
+      <div className="score-lab__section-head">
+        <span className="score-lab__step-number">2</span>
+        <div>
+          <span className="score-lab__eyebrow">전체 연습 목차</span>
+          <h2>Day별 연습 범위를 먼저 확인함</h2>
+        </div>
+      </div>
+      <div className="score-lab__day-toc-list">
+        {days.map((day) => {
+          const indices = getDayMeasureIndices(day.day, analysis, lessonProfile);
+          return (
+            <button key={day.day} type="button" className={selectedDay === day.day ? 'is-active' : ''} onClick={() => onSelectDay(day.day)}>
+              <span className="score-lab__toc-day">Day {day.day}</span>
+              <span className="score-lab__toc-copy">
+                <strong>{day.title}</strong>
+                <small>{formatMeasureRange(indices, analysis)}</small>
+              </span>
+              <span className="score-lab__toc-arrow" aria-hidden="true">›</span>
+            </button>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
+function PracticePlan({ analysis, lessonProfile, selectedDay, selectedIndex, onSelectMeasure }) {
   const profileDay = lessonProfile?.days.find((day) => day.day === selectedDay);
   const genericDay = analysis.dayPlan.find((day) => day.day === selectedDay) || analysis.dayPlan[0];
   const indices = getDayMeasureIndices(selectedDay, analysis, lessonProfile);
   const details = getDayDetails(indices, analysis);
-  const days = lessonProfile?.days || analysis.dayPlan;
   const lesson = profileDay || {
     day: genericDay.day,
     title: genericDay.title,
@@ -140,31 +178,54 @@ function PracticePlan({ analysis, lessonProfile, selectedDay, onSelectDay }) {
     memory: indices.length ? `${analysis.measures[indices[0]].number}마디에서 악보 없이 바로 시작해 봄.` : '곡의 첫 마디에서 악보 없이 시작해 봄.',
     criteria: ['정한 핑거링을 바꾸지 않음.', '연습 구간을 끊기지 않고 두 번 연주함.'],
   };
+  const currentIndex = indices.includes(selectedIndex) ? selectedIndex : (indices[0] ?? 0);
+  const currentMeasure = analysis.measures[currentIndex];
+  const currentNumber = Number(currentMeasure?.number);
+  const currentSection = lesson.sections.find((section) => rangeIncludesMeasure(section.range, currentNumber)) || lesson.sections[0];
+  const measureReasons = currentMeasure?.difficulty.reasons || [];
+  const measureSteps = currentMeasure?.difficulty.steps || [];
   return (
     <aside className="score-lab__practice-panel">
       <div className="score-lab__plan-head">
         <div>
-          <span className="score-lab__eyebrow">오늘의 레슨</span>
+          <span className="score-lab__eyebrow">선택한 Day</span>
           <h2>Day {lesson.day} · {lesson.title}</h2>
           <p>연습 범위 · {formatMeasureRange(indices, analysis)}</p>
         </div>
       </div>
-      <nav className="score-lab__day-nav" aria-label="연습 날짜 선택">
-        {days.map((day) => (
-          <button key={day.day} type="button" className={selectedDay === day.day ? 'is-active' : ''} onClick={() => onSelectDay(day.day)}>
-            Day {day.day}
+      <nav className="score-lab__measure-nav-list" aria-label="오늘 연습할 마디">
+        {indices.map((index) => (
+          <button key={index} type="button" className={currentIndex === index ? 'is-active' : ''} onClick={() => onSelectMeasure(index)}>
+            {analysis.measures[index]?.number}마디
           </button>
         ))}
       </nav>
       <div className="score-lab__current-day">
         <p className="score-lab__day-intro">{lesson.intro}</p>
-        {lesson.sections.map((section) => (
-          <section className="score-lab__lesson-section" key={`${section.label}-${section.range}`}>
-            <header><strong>{section.label}</strong><span>{section.range}</span></header>
-            <p>{section.problem}</p>
-            <ol>{section.steps.map((step) => <li key={step}>{step}</li>)}</ol>
-          </section>
-        ))}
+        <section className="score-lab__selected-measure-lesson">
+          <header>
+            <div><span>현재 마디</span><strong>{currentMeasure?.number}마디</strong></div>
+            <small>{currentSection.label} · {currentSection.range}</small>
+          </header>
+          <div className="score-lab__measure-problem">
+            <strong>이 마디에서 어려운 점</strong>
+            <p>{currentSection.problem}</p>
+            {measureReasons.length > 0 && <ul>{measureReasons.map((reason) => <li key={reason}>{reason}</li>)}</ul>}
+          </div>
+          <div className="score-lab__measure-practice">
+            <strong>연습 방법</strong>
+            <ol>
+              {currentSection.steps.map((step) => <li key={step}>{step}</li>)}
+              {measureSteps.filter((step) => !currentSection.steps.includes(step)).map((step) => <li key={step}>{step}</li>)}
+            </ol>
+          </div>
+          {(currentMeasure?.fingerings.length > 0 || currentMeasure?.directions.length > 0) && (
+            <div className="score-lab__measure-score-info">
+              {currentMeasure.fingerings.length > 0 && <p><strong>핑거링</strong> {currentMeasure.fingerings.join('-')}</p>}
+              {currentMeasure.directions.length > 0 && <p><strong>악보 지시</strong> {currentMeasure.directions.join(' · ')}</p>}
+            </div>
+          )}
+        </section>
         <section className="score-lab__lesson-note">
           <strong>암보 요령</strong>
           <p>{lesson.memory}</p>
@@ -399,12 +460,14 @@ export default function ScorePracticeLab() {
             </div>
           </section>
 
+          <DayTableOfContents analysis={analysis} lessonProfile={lessonProfile} selectedDay={selectedDay} onSelectDay={selectPracticeDay} />
+
           <section className="score-lab__score-stage">
             <div className="score-lab__section-head">
-              <span className="score-lab__step-number">2</span>
+              <span className="score-lab__step-number">3</span>
               <div>
-                <span className="score-lab__eyebrow">악보에서 확인하기</span>
-                <h2>어려운 마디부터 위치와 음형을 익힘</h2>
+                <span className="score-lab__eyebrow">마디별 연습</span>
+                <h2>Day를 고른 뒤 마디별 연습 방법을 확인함</h2>
               </div>
             </div>
             <div className="score-lab__workspace score-lab__workspace--practice">
@@ -418,7 +481,13 @@ export default function ScorePracticeLab() {
                   {svgs.map((svg, index) => <div className="score-lab__page" key={index} dangerouslySetInnerHTML={{ __html: svg }} />)}
                 </div>
               </main>
-              <PracticePlan analysis={analysis} lessonProfile={lessonProfile} selectedDay={selectedDay} onSelectDay={selectPracticeDay} />
+              <PracticePlan
+                analysis={analysis}
+                lessonProfile={lessonProfile}
+                selectedDay={selectedDay}
+                selectedIndex={selectedIndex}
+                onSelectMeasure={(index) => focusMeasure(index, 'plan')}
+              />
             </div>
             <details className="score-lab__measure-details">
               <summary>{currentMeasure?.number}마디 코드·핑거링 상세 분석</summary>
