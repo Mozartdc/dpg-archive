@@ -143,7 +143,7 @@ function DayTableOfContents({ analysis, lessonProfile, selectedDay, onSelectDay 
         <span className="score-lab__step-number">2</span>
         <div>
           <span className="score-lab__eyebrow">전체 연습 목차</span>
-          <h2>Day별 연습 범위를 먼저 확인함</h2>
+          <h2>회차별 연습 범위를 먼저 확인함</h2>
         </div>
       </div>
       <div className="score-lab__day-toc-list">
@@ -151,7 +151,7 @@ function DayTableOfContents({ analysis, lessonProfile, selectedDay, onSelectDay 
           const indices = getDayMeasureIndices(day.day, analysis, lessonProfile);
           return (
             <button key={day.day} type="button" className={selectedDay === day.day ? 'is-active' : ''} onClick={() => onSelectDay(day.day)}>
-              <span className="score-lab__toc-day">Day {day.day}</span>
+              <span className="score-lab__toc-day">{day.day}회차</span>
               <span className="score-lab__toc-copy">
                 <strong>{day.title}</strong>
                 <small>{formatMeasureRange(indices, analysis)}</small>
@@ -188,8 +188,8 @@ function PracticePlan({ analysis, lessonProfile, selectedDay, selectedIndex, onS
     <aside className="score-lab__practice-panel">
       <div className="score-lab__plan-head">
         <div>
-          <span className="score-lab__eyebrow">선택한 Day</span>
-          <h2>Day {lesson.day} · {lesson.title}</h2>
+          <span className="score-lab__eyebrow">오늘 연습</span>
+          <h2>{lesson.day}회차 · {lesson.title}</h2>
           <p>연습 범위 · {formatMeasureRange(indices, analysis)}</p>
         </div>
       </div>
@@ -231,7 +231,7 @@ function PracticePlan({ analysis, lessonProfile, selectedDay, selectedIndex, onS
           <p>{lesson.memory}</p>
         </section>
         <section className="score-lab__lesson-check">
-          <strong>다음 Day로 넘어가기 전 확인</strong>
+          <strong>오늘 연습을 마치는 기준</strong>
           <ul>{lesson.criteria.map((item) => <li key={item}>{item}</li>)}</ul>
         </section>
       </div>
@@ -376,7 +376,7 @@ export default function ScorePracticeLab() {
         <div>
           <span className="score-lab__eyebrow">DPINSIDE 악보 연습실</span>
           <h1>악보를 넣으면 조성과 연습 계획을 분석함</h1>
-          <p>MXL이나 MusicXML 악보를 넣으면 조성, 프레이즈 구조, 어려운 마디를 분석하고 Day별 연습 계획을 만듦.</p>
+          <p>MXL이나 MusicXML 악보를 넣으면 조성, 프레이즈 구조, 어려운 마디를 분석하고 회차별 연습 계획을 만듦.</p>
         </div>
         <div className="score-lab__privacy">내 기기에서만 분석함</div>
       </header>
@@ -467,7 +467,7 @@ export default function ScorePracticeLab() {
               <span className="score-lab__step-number">3</span>
               <div>
                 <span className="score-lab__eyebrow">마디별 연습</span>
-                <h2>Day를 고른 뒤 마디별 연습 방법을 확인함</h2>
+                <h2>연습 날짜를 고른 뒤 마디별 연습 방법을 확인함</h2>
               </div>
             </div>
             <div className="score-lab__workspace score-lab__workspace--practice">
