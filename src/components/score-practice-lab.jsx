@@ -375,8 +375,8 @@ export default function ScorePracticeLab() {
       <header className="score-lab__hero">
         <div>
           <span className="score-lab__eyebrow">DPINSIDE 악보 연습실</span>
-          <h1>악보를 보면서 연습할 마디를 바로 찾음</h1>
-          <p>MXL이나 MusicXML 악보를 불러오면 곡의 조성과 프레이즈, 어려운 마디를 먼저 살핌. 악보 옆에서 마디별 연습 순서와 암보 요령을 함께 확인할 수 있음.</p>
+          <h1>악보를 넣으면 조성과 연습 계획을 분석함</h1>
+          <p>MXL이나 MusicXML 악보를 넣으면 조성, 프레이즈 구조, 어려운 마디를 분석하고 Day별 연습 계획을 만듦.</p>
         </div>
         <div className="score-lab__privacy">내 기기에서만 분석함</div>
       </header>
