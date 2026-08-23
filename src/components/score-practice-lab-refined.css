@@ -1398,10 +1398,10 @@
 
 /* One accent color; all other surfaces stay neutral. */
 .score-lab {
-  --score-lab-accent: #6667ab;
+  --score-lab-accent: var(--sl-color-text);
   --lab-accent: var(--score-lab-accent);
   --lab-blue: var(--score-lab-accent);
-  --lab-accent-soft: color-mix(in srgb, var(--score-lab-accent) 9%, var(--sl-color-bg));
+  --lab-accent-soft: var(--sl-color-bg-nav);
   --pantone-very-peri: var(--score-lab-accent);
   --pantone-peach-fuzz: var(--score-lab-accent);
   --pantone-viva-magenta: var(--score-lab-accent);
@@ -1412,9 +1412,14 @@
 .score-lab .score-lab__day-nav button.is-active,
 .score-lab .score-lab__measure-nav-list button.is-active,
 .score-lab .score-lab__view-tabs button.is-active {
-  background: var(--score-lab-accent);
+  background: var(--sl-color-bg-nav);
   border-color: var(--score-lab-accent);
-  color: white;
+  color: var(--sl-color-text);
+}
+
+.score-lab .score-lab__step-number {
+  background: transparent;
+  border: 1px solid var(--sl-color-text);
 }
 
 .score-lab .score-lab__memory,
@@ -1425,7 +1430,7 @@
 
 .score-lab .score-lab__day-toc-list > button:hover,
 .score-lab .score-lab__day-toc-list > button.is-active {
-  background: var(--lab-accent-soft);
+  background: var(--sl-color-bg-nav);
 }
 
 .score-lab .score-lab__page g.measure.is-plan-measure {
