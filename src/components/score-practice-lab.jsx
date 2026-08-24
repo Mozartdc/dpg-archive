@@ -38,7 +38,70 @@ async function readScoreFile(file) {
   return scoreFile.async('text');
 }
 
-function MeasureAnalysis({ measure, onMove }) {
+const czernyPaperScorePages = [
+  {
+    src: '/samples/czerny-op849-no1-page-18.jpg',
+    label: '체르니 30번 1번 1~16마디',
+    systems: [
+      { start: 1, end: 3, top: 11.5, height: 13.5, left: 8, width: 84 },
+      { start: 4, end: 6, top: 26.5, height: 13.5, left: 7, width: 86 },
+      { start: 7, end: 9, top: 41.5, height: 13.5, left: 7, width: 86 },
+      { start: 10, end: 12, top: 56.5, height: 14, left: 7, width: 86 },
+      { start: 13, end: 16, top: 72.5, height: 15, left: 7, width: 86 },
+    ],
+  },
+  {
+    src: '/samples/czerny-op849-no1-page-19.jpg',
+    label: '체르니 30번 1번 17~32마디',
+    systems: [
+      { start: 17, end: 19, top: 3, height: 14, left: 7, width: 86 },
+      { start: 20, end: 22, top: 18.5, height: 14.5, left: 7, width: 86 },
+      { start: 23, end: 25, top: 35.5, height: 15, left: 7, width: 86 },
+      { start: 26, end: 28, top: 53, height: 15, left: 7, width: 86 },
+      { start: 29, end: 32, top: 71.5, height: 16, left: 7, width: 86 },
+    ],
+  },
+];
+
+function PaperScore({ pages, analysis, selectedIndex, planMeasureIndices, onSelectMeasure }) {
+  const indexByNumber = new Map(analysis.measures.map((measure) => [Number(measure.number), measure.index]));
+  return (
+    <figure className="score-lab__paper-score">
+      <figcaption>이 악보에 적힌 핑거링을 그대로 사용함</figcaption>
+      {pages.map((page) => (
+        <div className="score-lab__paper-page" key={page.src}>
+          <img src={page.src} alt={page.label} />
+          {page.systems.flatMap((system) => {
+            const count = system.end - system.start + 1;
+            return Array.from({ length: count }, (_, offset) => {
+              const measureNumber = system.start + offset;
+              const measureIndex = indexByNumber.get(measureNumber);
+              if (measureIndex === undefined) return null;
+              return (
+                <button
+                  aria-label={`${measureNumber}마디`}
+                  className={`score-lab__paper-measure ${selectedIndex === measureIndex ? 'score-lab__selected-measure' : ''} ${planMeasureIndices.includes(measureIndex) ? 'is-plan-measure' : ''}`}
+                  data-measure-index={measureIndex}
+                  key={measureNumber}
+                  onClick={() => onSelectMeasure(measureIndex)}
+                  style={{
+                    left: `${system.left + (system.width / count) * offset}%`,
+                    top: `${system.top}%`,
+                    width: `${system.width / count}%`,
+                    height: `${system.height}%`,
+                  }}
+                  type="button"
+                />
+              );
+            });
+          })}
+        </div>
+      ))}
+    </figure>
+  );
+}
+
+function MeasureAnalysis({ measure, onMove, showFingerings = true }) {
   if (!measure) return null;
   const harmonyNote = measure.harmony.confidence < 0.6
     ? '한 마디 안에서 코드가 바뀌거나 논코드톤이 많아 가장 가까운 코드로 표시함.'
@@ -69,7 +132,7 @@ function MeasureAnalysis({ measure, onMove }) {
         <p>오른손: {measure.texture.rightLabel}</p>
         <p>왼손: {measure.texture.leftLabel}</p>
         {measure.directions.length > 0 && <p>악보 메모: {measure.directions.join(' · ')}</p>}
-        {measure.fingerings.length > 0 && <p>적힌 핑거링: {measure.fingerings.join('-')}</p>}
+        {showFingerings && measure.fingerings.length > 0 && <p>적힌 핑거링: {measure.fingerings.join('-')}</p>}
       </section>
 
       <section className="score-lab__block score-lab__block--practice">
@@ -221,9 +284,9 @@ function PracticePlan({ analysis, lessonProfile, selectedDay, selectedIndex, onS
               {measureSteps.filter((step) => !currentSection.steps.includes(step)).map((step) => <li key={step}>{step}</li>)}
             </ol>
           </div>
-          {(currentMeasure?.fingerings.length > 0 || currentMeasure?.directions.length > 0) && (
+          {((!lessonProfile && currentMeasure?.fingerings.length > 0) || currentMeasure?.directions.length > 0) && (
             <div className="score-lab__measure-score-info">
-              {currentMeasure.fingerings.length > 0 && <p><strong>핑거링</strong> {currentMeasure.fingerings.join('-')}</p>}
+              {!lessonProfile && currentMeasure.fingerings.length > 0 && <p><strong>핑거링</strong> {currentMeasure.fingerings.join('-')}</p>}
               {currentMeasure.directions.length > 0 && <p><strong>악보 지시</strong> {currentMeasure.directions.join(' · ')}</p>}
             </div>
           )}
@@ -353,14 +416,14 @@ export default function ScorePracticeLab() {
     if (!analysis) return;
     const next = Math.min(analysis.measures.length - 1, Math.max(0, selectedIndex + delta));
     setSelectedIndex(next);
-    scoreRef.current?.querySelector(`g.measure[data-measure-index="${next}"]`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    scoreRef.current?.querySelector(`[data-measure-index="${next}"]`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
   };
 
   const focusMeasure = (index, nextScreen = screen) => {
     setSelectedIndex(index);
     setScreen(nextScreen);
     requestAnimationFrame(() => {
-      scoreRef.current?.querySelector(`g.measure[data-measure-index="${index}"]`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      scoreRef.current?.querySelector(`[data-measure-index="${index}"]`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
   };
 
@@ -480,7 +543,9 @@ export default function ScorePracticeLab() {
                   ))}
                 </div>
                 <div className="score-lab__score" ref={scoreRef}>
-                  {svgs.map((svg, index) => <div className="score-lab__page" key={index} dangerouslySetInnerHTML={{ __html: svg }} />)}
+                  {lessonProfile
+                    ? <PaperScore pages={czernyPaperScorePages} analysis={analysis} selectedIndex={selectedIndex} planMeasureIndices={planMeasureIndices} onSelectMeasure={(index) => focusMeasure(index, 'measure')} />
+                    : svgs.map((svg, index) => <div className="score-lab__page" key={index} dangerouslySetInnerHTML={{ __html: svg }} />)}
                 </div>
               </main>
               <PracticePlan
@@ -492,8 +557,8 @@ export default function ScorePracticeLab() {
               />
             </div>
             <details className="score-lab__measure-details">
-              <summary>{currentMeasure?.number}마디 코드·핑거링 상세 분석</summary>
-              <MeasureAnalysis measure={currentMeasure} onMove={moveMeasure} />
+              <summary>{currentMeasure?.number}마디 코드 상세 분석</summary>
+              <MeasureAnalysis measure={currentMeasure} onMove={moveMeasure} showFingerings={!lessonProfile} />
             </details>
           </section>
         </>
