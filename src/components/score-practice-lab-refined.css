@@ -1615,3 +1615,56 @@
 .score-lab .score-lab__measure-details > summary {
   font-weight: 700;
 }
+
+.score-lab .score-lab__paper-score {
+  background: var(--sl-color-bg);
+  margin: 0;
+}
+
+.score-lab .score-lab__paper-score figcaption {
+  background: var(--sl-color-bg-nav);
+  border-bottom: 1px solid var(--sl-color-hairline);
+  color: var(--sl-color-text);
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.score-lab .score-lab__paper-page {
+  line-height: 0;
+  position: relative;
+}
+
+.score-lab .score-lab__paper-page + .score-lab__paper-page {
+  border-top: 1px solid var(--sl-color-hairline);
+}
+
+.score-lab .score-lab__paper-page img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.score-lab .score-lab__paper-measure {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+}
+
+.score-lab .score-lab__paper-measure:hover,
+.score-lab .score-lab__paper-measure:focus-visible,
+.score-lab .score-lab__paper-measure.score-lab__selected-measure {
+  background: color-mix(in srgb, var(--sl-color-text) 5%, transparent);
+  border-color: var(--sl-color-text);
+  outline: none;
+}
+
+.score-lab .score-lab__paper-measure.is-plan-measure:not(.score-lab__selected-measure) {
+  border-color: color-mix(in srgb, var(--sl-color-text) 28%, transparent);
+}
