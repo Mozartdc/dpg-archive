@@ -1603,3 +1603,15 @@
     position: static;
   }
 }
+
+/* Navigation labels stay visually distinct from lesson copy. */
+.score-lab .score-lab__file-button,
+.score-lab .score-lab__secondary-button,
+.score-lab .score-lab__toolbar label,
+.score-lab .score-lab__view-tabs button,
+.score-lab .score-lab__day-toc-list > button,
+.score-lab .score-lab__measure-nav-list button,
+.score-lab .score-lab__measure-nav button,
+.score-lab .score-lab__measure-details > summary {
+  font-weight: 700;
+}
