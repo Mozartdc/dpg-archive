@@ -8,6 +8,7 @@ import {
   parseScoreDocument,
   sliceMovementXml,
 } from '../lib/musicxml-analysis.js';
+import { lilyPondToMusicXml } from '../lib/lilypond-to-musicxml.js';
 import { czernyOp849No1Lesson } from '../data/czerny-op849-no1-lesson.js';
 import './score-practice-lab.css';
 import './score-practice-lab-refined.css';
@@ -23,6 +24,7 @@ async function getVerovioToolkit() {
 
 async function readScoreFile(file) {
   const lower = file.name.toLowerCase();
+  if (lower.endsWith('.ly')) return lilyPondToMusicXml(await file.text(), file.name);
   if (!lower.endsWith('.mxl')) return file.text();
   const zip = await JSZip.loadAsync(await file.arrayBuffer());
   let scorePath = '';
@@ -399,7 +401,7 @@ export default function ScorePracticeLab() {
         <div className="score-lab__drop-actions">
           <label className="score-lab__file-button">
             악보 선택
-            <input type="file" accept=".mxl,.xml,.musicxml,application/vnd.recordare.musicxml,application/vnd.recordare.musicxml+xml" onChange={(event) => handleFile(event.target.files[0])} />
+            <input type="file" accept=".mxl,.xml,.musicxml,.ly,application/vnd.recordare.musicxml,application/vnd.recordare.musicxml+xml" onChange={(event) => handleFile(event.target.files[0])} />
           </label>
           <button type="button" className="score-lab__secondary-button" onClick={() => loadDemo().catch((error) => setStatus(error.message))}>체르니 30-1 예제</button>
         </div>
