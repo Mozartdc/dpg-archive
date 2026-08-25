@@ -8,6 +8,11 @@ on:
   
   # GitHub Actions 탭에서 수동 실행 가능
   workflow_dispatch:
+    inputs:
+      category:
+        description: '특정 Notion 카테고리만 동기화 (비워 두면 전체)'
+        required: false
+        type: string
 
 jobs:
   sync-notion:
@@ -33,6 +38,7 @@ jobs:
         env:
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          SYNC_CATEGORY: ${{ inputs.category }}
         run: npm run sync
 
       - name: Astro 빌드 검증

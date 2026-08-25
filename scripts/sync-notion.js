@@ -16,6 +16,7 @@ const DOCS_PATH = path.join(__dirname, '..', 'src', 'content', 'docs');
 const IMAGES_PATH = path.join(__dirname, '..', 'public', 'images');
 const REPAIR_GENERATED_DOCS_ONLY = process.argv.includes('--repair-generated-docs-only');
 const REWRITE_INTERNAL_LINKS_ONLY = process.argv.includes('--rewrite-internal-links-only');
+const SYNC_CATEGORY = process.env.SYNC_CATEGORY?.trim().normalize('NFC') || null;
 const CATEGORY_PATHS = new Map([
   ['03.형식', ['음악 이론', 'Open Music Theory', '03.형식']],
   ['바로크, 고전', ['음악 이야기', '피아노 음악사', '바로크, 고전']],
@@ -1264,6 +1265,7 @@ async function syncNotion() {
 
         if (!['시작 전', '완료'].includes(status?.trim())) continue;
         if (!category) continue;
+        if (SYNC_CATEGORY && category.normalize('NFC') !== SYNC_CATEGORY) continue;
 
         const categoryFolder = findCategoryFolder(category);
         if (!categoryFolder) continue;
