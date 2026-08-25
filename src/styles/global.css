@@ -193,6 +193,11 @@ a[rel="next"] .label {
   color: var(--pastel-lavender) !important;
 }
 
+/* 악보 연습실은 독립 도구이므로 카테고리 제목과 같은 굵기로 표시 */
+#starlight__sidebar a[href$="/악보-연습실/"] {
+  font-weight: 600 !important;
+}
+
 
 /* ============================================================
    4. Notion 색상 시스템 (Pantone 파레트로 재정의)
