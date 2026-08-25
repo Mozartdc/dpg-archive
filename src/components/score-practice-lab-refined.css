@@ -1668,3 +1668,35 @@
 .score-lab .score-lab__paper-measure.is-plan-measure:not(.score-lab__selected-measure) {
   border-color: color-mix(in srgb, var(--sl-color-text) 28%, transparent);
 }
+
+/* Keep navigation cards aligned even when a label wraps to another line. */
+.score-lab .score-lab__structure-card .score-lab__form-map,
+.score-lab .score-lab__day-toc-list {
+  align-items: stretch;
+  grid-auto-rows: 1fr;
+}
+
+.score-lab .score-lab__structure-card .score-lab__form-map > button,
+.score-lab .score-lab__day-toc-list > button {
+  height: 100%;
+}
+
+.score-lab .score-lab__structure-card .score-lab__form-map > button {
+  min-height: 6.25rem;
+}
+
+.score-lab .score-lab__day-toc-list > button {
+  min-height: 6rem;
+}
+
+@media (max-width: 760px) {
+  .score-lab .score-lab__structure-card .score-lab__form-map,
+  .score-lab .score-lab__day-toc-list {
+    grid-auto-rows: auto;
+  }
+
+  .score-lab .score-lab__structure-card .score-lab__form-map > button,
+  .score-lab .score-lab__day-toc-list > button {
+    min-height: 0;
+  }
+}
