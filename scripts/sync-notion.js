@@ -17,6 +17,7 @@ const IMAGES_PATH = path.join(__dirname, '..', 'public', 'images');
 const REPAIR_GENERATED_DOCS_ONLY = process.argv.includes('--repair-generated-docs-only');
 const REWRITE_INTERNAL_LINKS_ONLY = process.argv.includes('--rewrite-internal-links-only');
 const CATEGORY_PATHS = new Map([
+  ['03.형식', ['음악 이론', 'Open Music Theory', '03.형식']],
   ['바로크, 고전', ['음악 이야기', '피아노 음악사', '바로크, 고전']],
   ['바로크·고전', ['음악 이야기', '피아노 음악사', '바로크, 고전']],
   ['낭만, 그 이후', ['음악 이야기', '피아노 음악사', '낭만, 그 이후']],
@@ -172,8 +173,15 @@ function findCategoryFolder(category) {
     const child = fs.readdirSync(currentPath, { withFileTypes: true })
       .find((entry) => entry.isDirectory()
         && entry.name.normalize('NFC') === normalizedSegment);
-    if (!child) return null;
-    currentPath = path.join(currentPath, child.name);
+    if (child) {
+      currentPath = path.join(currentPath, child.name);
+      continue;
+    }
+
+    // 명시적으로 경로를 지정한 새 Notion 카테고리는 첫 동기화 때
+    // 아직 Astro 폴더가 없어도 건너뛰지 않고 생성한다.
+    currentPath = path.join(currentPath, segment);
+    fs.mkdirSync(currentPath, { recursive: true });
   }
   return currentPath;
 }
