@@ -18,6 +18,21 @@ const REPAIR_GENERATED_DOCS_ONLY = process.argv.includes('--repair-generated-doc
 const REWRITE_INTERNAL_LINKS_ONLY = process.argv.includes('--rewrite-internal-links-only');
 const SYNC_CATEGORY = process.env.SYNC_CATEGORY?.trim().normalize('NFC') || null;
 const CATEGORY_PATHS = new Map([
+  ['연결 및 홈 스튜디오 구성', ['디지털 피아노', '디지털 피아노 연결흐름과 개념']],
+  ['ASIO4ALL 가이드', ['디지털 피아노', '디지털 피아노 연결흐름과 개념', 'ASIO4ALL 가이드']],
+  ['1. 디지털 피아노와 그랜드 피아노', ['디지털 피아노', '1. 디지털 피아노와 그랜드 피아노']],
+  ['2. 디지털 피아노와 키보드', ['디지털 피아노', '2. 디지털 피아노와 키보드']],
+  ['3. 디지털 피아노의 형태', ['디지털 피아노', '3. 디지털 피아노의 형태']],
+  ['4. 타건감과 음원 외 디지털 피아노 선택 요소', ['디지털 피아노', '4. 타건감과 음원 외 디지털 피아노 선택 요소']],
+  ['5. 브랜드별 스펙 및 리뷰', ['디지털 피아노', '브랜드별 스펙 및 리뷰']],
+  ['4. 팔과 손의 구조 인식', ['피아노 연습', '내 몸 사용 설명서', '4. 팔과 손의 구조']],
+  ['08장. 세븐스 코드', ['음악 이론', 'Open Music Theory', '08장. 세븐스 코드']],
+  ['13장. 프레이즈의 결합', ['음악 이론', 'Open Music Theory', '13장. 프레이즈의 결합']],
+  ['16장. 피겨드 베이스', ['음악 이론', 'Open Music Theory', '16장. 피겨드 베이스']],
+  ['17장. 세컨더리 도미넌트 코드', ['음악 이론', 'Open Music Theory', '17장. 세컨더리 도미넌트 코드']],
+  ['18장. 세컨더리 디미니시드 코드', ['음악 이론', 'Open Music Theory', '18장. 세컨더리 디미니시드 코드']],
+  ['19장. 모드 믹스처', ['음악 이론', 'Open Music Theory', '19장. 모드 믹스처']],
+  ['33장. 집합 이론', ['음악 이론', 'Open Music Theory', '33장. 집합 이론']],
   ['03.형식', ['음악 이론', 'Open Music Theory', '03.형식']],
   ['바로크, 고전', ['음악 이야기', '피아노 음악사', '바로크, 고전']],
   ['바로크·고전', ['음악 이야기', '피아노 음악사', '바로크, 고전']],
@@ -1264,11 +1279,17 @@ async function syncNotion() {
         }
 
         if (!['시작 전', '완료'].includes(status?.trim())) continue;
-        if (!category) continue;
+        if (!category) {
+          console.warn(`   [건너뜀] 카테고리 없음: "${title}" (${page.id})`);
+          continue;
+        }
         if (SYNC_CATEGORY && category.normalize('NFC') !== SYNC_CATEGORY) continue;
 
         const categoryFolder = findCategoryFolder(category);
-        if (!categoryFolder) continue;
+        if (!categoryFolder) {
+          console.warn(`   [건너뜀] 아스트로 폴더 없음: "${title}" / 카테고리 "${category}" (${page.id})`);
+          continue;
+        }
 
         console.log(`   📄 [변환] "${title}" (순서: ${order})`);
 
