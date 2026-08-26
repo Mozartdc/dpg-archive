@@ -9,7 +9,7 @@ sidebar:
 
 
 
-<img src="/images/코르그-C1-Air-디지털-피아노-0.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+<img src="/images/코르그-C1-Air-디지털-피아노-0.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 C1 Air는 2017년 9월에 나온 코르그의 슬림형 콘솔 디지털 피아노임. 상위 모델인 G1 Air와 같은 RH3 건반을 쓰면서 음원과 스피커 구성을 줄여 가격과 크기를 낮춘 모델임. 이름의 Air는 Bluetooth Audio를 뜻하며, 스마트폰 음악을 피아노 스피커로 받아 재생할 수 있음.
 
@@ -22,21 +22,21 @@ C1 Air는 2017년 9월에 나온 코르그의 슬림형 콘솔 디지털 피아�
 
 C1 Air에는 코르그의 RH3, Real Weighted Hammer Action 3 건반이 들어감. 저음에서 고음으로 갈수록 가벼워지는 4구간 가중 구조이고 터치 감도는 Light, Normal, Heavy, Stable, Fixed 다섯 단계로 바꿀 수 있음. 
 
-RH3의 타건감은 야마하 P225와 지나치게 무겁거나 가볍지 않은 중간 무게의 액션으로 평가함. 빠른 반복에도 반응이 좋고, 건반 앞쪽과 안쪽의 무게 균형도 비교적 자연스러우며, 동급 Yamaha와 Casio의 보급형 액션보다 기계 소음이 작은 편이라는 평가가 공통적임. 클래식 연습에 필요한 저항감은 있으면서 전자피아노나 오르간 음색도 부담 없이 연주할 수 있는 성향임.
+RH3의 타건감은 지나치게 무겁거나 가볍지 않은 중간 무게의 액션이고, 2센서임에도 빠른 반복에도 반응이 좋고, 건반 앞쪽과 안쪽의 무게 균형도 비교적 자연스러우며, 타건 소음이 작은 편임. 
 
 
 
 <img src="/images/코르그-C1-Air-디지털-피아노-2.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-흰 건반과 검은 건반에는 인조상아나 합성 흑단 질감 처리가 없고, 에스케이프먼트 재현도 없음. 매끈한 일반 플라스틱 표면이므로 건반 표면의 마찰감이나 어쿠스틱 피아노식 클릭감을 중요하게 보면 현재 동급 모델보다 단순하게 느껴질 수 있음.
+흰 건반과 검은 건반에는 인조상아나 합성 흑단 질감 처리가 없고, 에스케이프먼트 재현도 없음. 매끈한 일반 플라스틱 표면이라 마찰감이나 어쿠스틱 피아노식 클릭감이 동급 모델보다 아쉬운 점임. 
 
-피아노 음색의 중심은 German Grand와 Japanese Grand 두 개임. German Grand는 둥근 저음과 힘 있는 중역, 선명한 고역을 갖춘 진한 성향이고, Japanese Grand는 더 밝고 직접적이며 팝과 재즈에도 잘 맞는 성향임. 전문 리뷰에서는 German Grand가 더 풍부하고 범용성이 높다는 평가가 많음.
+피아노 음색은 German Grand와 Japanese Grand 두 개임. German Grand는 둥글고 부드러운 편이고, Japanese Grand는 더 밝은 느낌의 음색임. 
 
-두 그랜드 피아노 음색에는 댐퍼 페달을 밟았을 때의 공명을 재현하는 Damper Resonance와 건반을 놓을 때의 소리를 재현하는 Key-off Simulation이 들어감. 상위 G1 Air에 있는 String Resonance 조절은 없음. 음색을 세밀하게 편집하는 피아노라기보다 미리 조정된 음색을 바로 골라 쓰는 구조임.
+Damper Resonance와 건반을 놓을 때의 소리를 재현하는 Key-off Simulation이 들어지만, 상위 G1 Air에 있는 String Resonance 조절은 없음. 
 
-전체 음색은 30개임. 어쿠스틱 피아노 6개, 전자피아노, 하프시코드와 클라비, 비브라폰과 마림바, 기타, 재즈와 파이프 오르간, 스트링과 합창, 베이스와 피아노 조합으로 구성됨. 최대 동시발음수는 120음이고 Brilliance, Reverb, Chorus를 각각 3단계로 조절할 수 있음.
+전체 음색은 30개로, 어쿠스틱 피아노 6개, 전자피아노, 하프시코드와 클라비, 비브라폰과 마림바, 기타, 재즈와 파이프 오르간, 스트링과 합창, 베이스와 피아노 조합으로 구성됨. 최대 동시발음수는 120음이고 Brilliance, Reverb, Chorus를 각각 3단계로 조절할 수 있음.
 
-스피커는 10cm 2개에 25W + 25W 출력임. 전용 스피커 박스가 연주자 쪽으로 소리를 보내는 구조라 동급의 하향식 저출력 스피커보다 저음과 음량이 풍부하고 방을 채우는 힘이 좋다는 평가가 많음. 다만 기본 설정에서는 고역의 선명도가 조금 무르게 들릴 수 있고, 이때 Brilliance를 올리면 보완할 수 있다는 평가도 있음.
+스피커는 10cm 2개에 25W + 25W 출력임. 전용 스피커 박스가 연주자 쪽으로 소리를 보내는 구조라 동급의 하향식 저출력 스피커보다 저음과 음량이 풍부하고 방을 채우는 힘이 좋다는 평가가 많음. 다만 기본 설정에서는 고역의 선명도가 조금 무르게 들릴 수 있고, 이때 Brilliance를 올리면 보완할 수 있음.
 
 
 
@@ -45,13 +45,13 @@ RH3의 타건감은 야마하 P225와 지나치게 무겁거나 가볍지 않은
 
 ### 디자인 및 조작부
 
-크기는 1346 x 347 x 770mm, 무게는 스탠드와 3페달을 포함해 35kg임. 피아노 본체 깊이만 보면 약 260mm지만 전도 방지 부품까지 포함한 설치 깊이는 347mm이므로 벽에 완전히 붙일 수는 없음.
+크기는 1346 x 347 x 770mm, 무게는 스탠드와 3페달을 포함해 35kg임. 
 
-앞쪽 두 다리가 본체와 연결되어 있어 얇은 콘솔형 피아노 가운데서는 좌우와 앞뒤 흔들림을 잘 잡는 편임. 건반 덮개에는 소프트 랜딩 장치가 있어 손을 놓아도 천천히 닫힘. 전체 조립과 RH3 건반 생산은 일본 교토부 난탄시 공장에서 이루어짐.
+건반 덮개에는 소프트 랜딩 장치가 있어 손을 놓아도 천천히 닫힘. RH3 건반 생산은 물론, 전체 조립까지 일본 교토부 난탄시 공장에서 이루어짐.
 
-현재 코르그 공식 페이지 기준 색상은 Black, White, Brown, White Ash, Wooden Black 다섯 가지임. 지역과 재고에 따라 실제 판매 색상은 달라질 수 있음.
+현재 코르그 공식 페이지 기준 색상은 Black, White, Brown, White Ash, Wooden Black 다섯 가지임. 국내엔 White Ash는 미출시임.
 
-조작부는 건반 왼쪽 위에 볼륨 노브, 기능 버튼, 음색 버튼 10개, 녹음과 재생 버튼, 작은 표시창을 배치함. 자주 쓰는 터치 감도, 밝기, 리버브, 코러스, 음색을 버튼으로 바로 고를 수 있어 앱 없이도 조작하기 쉬운 편임. 반대로 검정과 갈색 모델의 유광 조작면에는 지문이 잘 보인다는 지적이 있음.
+조작부는 건반 왼쪽 위에 볼륨 노브, 기능 버튼, 음색 버튼 10개, 녹음과 재생 버튼, 작은 표시창을 배치함. 자주 쓰는 터치 감도, 밝기, 리버브, 코러스, 음색을 버튼으로 바로 고를 수 있어 앱 없이도 조작하기 쉬운 편임. 
 
 
 
@@ -70,7 +70,7 @@ Bluetooth는 스마트폰 음원을 C1 Air 스피커로 받는 Audio 수신만 �
 
 ### 타 브랜드 비교 모델
 
-Yamaha YDP-165 / YDP-S55, Roland RP701 / F701, Kawai KDP120, Casio AP-470 / AP-S450
+Yamaha YDP-146 / YDP-S36, Roland RP701 / F701, Kawai CX202
 
 
 ### C1 Air 상세 스펙
@@ -123,11 +123,7 @@ C1 Air에는 USB 단자가 없고 본체 녹음 메모리도 한 곡뿐임. KORG
 | 오디오 전송·녹음 | 지원하지 않음 |
 | 피아노 설정 원격 조작 | 지원하지 않음 |
 
-<a href="https://www.korg.com/us/products/digitalpianos/c1_air/" target="_blank" style="color: inherit; text-decoration: underline;">KORG C1 Air 공식 제품 페이지</a>
-
-<a href="https://www.korg.com/us/support/download/software/0/752/3696/" target="_blank" style="color: inherit; text-decoration: underline;">KORG MIDI Data Filer 다운로드</a>
-
-이 글은 DPG Archive 운영자가 이 사이트를 위해 직접 작성한 원고입니다. 독자와 의견을 나누기 위해 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a>에도 게시하고 있습니다. 질문이나 토론은 갤러리를 방문해주세요.
+이 글에 관련해 의견을 나누기 위해 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a>에도 게시하고 있습니다. 질문이나 토론은 갤러리를 방문해주세요.
 
 
 

@@ -243,7 +243,7 @@ Kawai CN201
 | 사용 목적 | 본체에서 번거로운 음색, 효과, 메트로놈, 곡 설정을 화면에서 바꾸고 내장 악보와 연습 기능을 쓰는 용도 |
 | 주의사항 | Bluetooth 기능은 판매 지역에 따라 지원 여부가 달라질 수 있음 |
 
-이 글은 DPG Archive 운영자가 이 사이트를 위해 직접 작성한 원고입니다. 독자와 의견을 나누기 위해 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a>에도 게시하고 있습니다. 질문이나 토론은 갤러리를 방문해주세요.
+이 글에 관련해 의견을 나누기 위해 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a>에도 게시하고 있습니다. 질문이나 토론은 갤러리를 방문해주세요.
 
 
 

@@ -9,7 +9,7 @@ sidebar:
 
 
 
-<img src="/images/코르그-B2+-B2+SP-디지털-피아노-0.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+<img src="/images/코르그-B2+-B2+SP-디지털-피아노-0.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 기존 B2는 NH 건반과 12음색, 15W + 15W 스피커를 갖춘 코르그의 엔트리 디지털 피아노였음. 2025년 후속으로 나온 B2+도 이 기본 구조를 거의 그대로 이어감. B2+SP는 같은 본체에 전용 스탠드와 3페달을 붙인 구성임.
 
@@ -232,7 +232,7 @@ B2+ : Yamaha P-145BT, Roland FP-10, Kawai ES60, Casio CDP-S110
 
 <a href="https://apps.apple.com/kr/app/korg-module/id1048875111" target="_blank" style="color: inherit; text-decoration: underline;">KORG Module 앱 - App Store</a>
 
-이 글은 DPG Archive 운영자가 이 사이트를 위해 직접 작성한 원고입니다. 독자와 의견을 나누기 위해 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a>에도 게시하고 있습니다. 질문이나 토론은 갤러리를 방문해주세요.
+이 글에 관련해 의견을 나누기 위해 <a href="https://gall.dcinside.com/digitalpiano" target="_blank" style="color: inherit; text-decoration: underline;">dcinside digital piano gallery</a>에도 게시하고 있습니다. 질문이나 토론은 갤러리를 방문해주세요.
 
 
 
