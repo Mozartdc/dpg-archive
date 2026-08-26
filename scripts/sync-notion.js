@@ -17,6 +17,10 @@ const IMAGES_PATH = path.join(__dirname, '..', 'public', 'images');
 const REPAIR_GENERATED_DOCS_ONLY = process.argv.includes('--repair-generated-docs-only');
 const REWRITE_INTERNAL_LINKS_ONLY = process.argv.includes('--rewrite-internal-links-only');
 const CATEGORY_PATHS = new Map([
+  ['연결 및 홈 스튜디오 구성', ['디지털 피아노', '디지털 피아노 연결흐름과 개념']],
+  ['ASIO4ALL 가이드', ['디지털 피아노', '디지털 피아노 연결흐름과 개념']],
+  ['4. 팔과 손의 구조 인식', ['피아노 연습', '내 몸 사용 설명서', '4. 팔과 손의 구조']],
+  ['5. 브랜드별 스펙 및 리뷰', ['디지털 피아노', '브랜드별 스펙 및 리뷰']],
   ['바로크, 고전', ['음악 이야기', '피아노 음악사', '바로크, 고전']],
   ['바로크·고전', ['음악 이야기', '피아노 음악사', '바로크, 고전']],
   ['낭만, 그 이후', ['음악 이야기', '피아노 음악사', '낭만, 그 이후']],
@@ -1255,10 +1259,16 @@ async function syncNotion() {
         }
 
         if (!['시작 전', '완료'].includes(status?.trim())) continue;
-        if (!category) continue;
+        if (!category) {
+          console.warn(`   [건너뜀] 카테고리 없음: "${title}" (${page.id})`);
+          continue;
+        }
 
         const categoryFolder = findCategoryFolder(category);
-        if (!categoryFolder) continue;
+        if (!categoryFolder) {
+          console.warn(`   [건너뜀] 아스트로 폴더 없음: "${title}" / 카테고리 "${category}" (${page.id})`);
+          continue;
+        }
 
         console.log(`   📄 [변환] "${title}" (순서: ${order})`);
 
