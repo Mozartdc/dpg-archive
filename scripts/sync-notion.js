@@ -8,7 +8,7 @@ import { syncPianoDB } from './sync-pianos.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-dotenv.config();
+dotenv.config({ path: process.env.DOTENV_CONFIG_PATH || undefined });
 
 const DATABASE_ID = process.env.NOTION_DATABASE_ID;
 const API_KEY = process.env.NOTION_API_KEY;
@@ -17,22 +17,63 @@ const IMAGES_PATH = path.join(__dirname, '..', 'public', 'images');
 const REPAIR_GENERATED_DOCS_ONLY = process.argv.includes('--repair-generated-docs-only');
 const REWRITE_INTERNAL_LINKS_ONLY = process.argv.includes('--rewrite-internal-links-only');
 const SYNC_CATEGORY = process.env.SYNC_CATEGORY?.trim().normalize('NFC') || null;
+const SYNC_CATEGORIES = process.env.SYNC_CATEGORIES_FILE
+  ? new Set(JSON.parse(fs.readFileSync(process.env.SYNC_CATEGORIES_FILE, 'utf8')).map((category) => category.trim().normalize('NFC')))
+  : null;
+const PURCHASE_GUIDE_PATH = ['디지털 피아노', '디지털 피아노 구매 · 추천 가이드'];
+const MT21_CATEGORY_FOLDERS = new Map([
+  ['01장. 기본 개념', '01장. 기본 개념'],
+  ['02장. 장음계와 조표', '02장. 장음계와 조표'],
+  ['03장. 단음계와 조표', '03장. 단음계와 조표'],
+  ['04장. 리듬의 기초', '04장. 리듬의 기초'],
+  ['05장. 음정', '05장. 음정'],
+  ['06장. 셋온음', '06장. 삼화음'],
+  ['06장. 삼화음', '06장. 삼화음'],
+  ['07장. 로마 숫자와 케이던스', '07장. 로마 숫자와 케이던스'],
+  ['08장. 세븐스 코드', '08장. 7화음'],
+  ['09장. 화성 진행과 화성 기능', '09장. 화성 진행과 화성 기능'],
+  ['10장. 비화성음', '10장. 비화성음'],
+  ['11장. 선율 분석', '11장. 선율 분석'],
+  ['12장. 대중음악의 형식', '12장. 대중음악의 형식'],
+  ['13장. 프레이즈의 결합', '13장. 악구의 결합'],
+  ['14장. 반주 텍스처', '14장. 반주 텍스처'],
+  ['15장. 섹션 간 대비 만들기', '15장. 섹션 간 대비 만들기'],
+  ['16장. 피겨드 베이스', '16장. 통주저음'],
+  ['17장. 세컨더리 도미넌트 코드', '17장. 세컨더리 도미넌트 화음'],
+  ['18장. 세컨더리 디미니시드 코드', '18장. 세컨더리 디미니시드 화음'],
+  ['19장. 모드 믹스처', '19장. 장단조 병용'],
+  ['20장. 나폴리 화음', '20장. 나폴리 화음'],
+  ['21장. 증6화음', '21장. 증6화음'],
+  ['22장. 전조', '22장. 전조'],
+  ['23장. 이명동음 전조', '23장. 이명동음 전조'],
+  ['24장. 2부분 형식과 3부분 형식', '24장. 2부분 형식과 3부분 형식'],
+  ['25장. 소나타와 론도 형식', '25장. 소나타와 론도 형식'],
+  ['26장. 삼화음의 성부 진행', '26장. 삼화음의 성부 진행'],
+  ['27장. 7화음의 성부 진행', '27장. 7화음의 성부 진행'],
+  ['28장. 비화성음을 포함한 성부 진행', '28장. 비화성음을 포함한 성부 진행'],
+  ['29장. 반음계적 화성의 성부 진행', '29장. 반음계적 화성의 성부 진행'],
+  ['30장. 대위법 입문', '30장. 대위법 입문'],
+  ['31장. 재즈 이론 입문', '31장. 재즈 이론 입문'],
+  ['32장. 인상주의와 확장된 조성', '32장. 인상주의와 확장된 조성'],
+  ['33장. 집합 이론', '33장. 집합이론'],
+  ['34장. 음렬주의', '34장. 음렬주의'],
+  ['35장. 미니멀리즘', '35장. 미니멀리즘'],
+]);
 const CATEGORY_PATHS = new Map([
   ['연결 및 홈 스튜디오 구성', ['디지털 피아노', '디지털 피아노 연결흐름과 개념']],
   ['ASIO4ALL 가이드', ['디지털 피아노', '디지털 피아노 연결흐름과 개념', 'ASIO4ALL 가이드']],
-  ['1. 디지털 피아노와 그랜드 피아노', ['디지털 피아노', '1. 디지털 피아노와 그랜드 피아노']],
-  ['2. 디지털 피아노와 키보드', ['디지털 피아노', '2. 디지털 피아노와 키보드']],
-  ['3. 디지털 피아노의 형태', ['디지털 피아노', '3. 디지털 피아노의 형태']],
-  ['4. 타건감과 음원 외 디지털 피아노 선택 요소', ['디지털 피아노', '4. 타건감과 음원 외 디지털 피아노 선택 요소']],
-  ['5. 브랜드별 스펙 및 리뷰', ['디지털 피아노', '브랜드별 스펙 및 리뷰']],
+  ['1. 디지털 피아노와 그랜드 피아노', [...PURCHASE_GUIDE_PATH, '1. 디지털 피아노와 그랜드 피아노']],
+  ['2. 디지털 피아노와 키보드', [...PURCHASE_GUIDE_PATH, '2. 디지털 피아노와 키보드']],
+  ['3. 디지털 피아노의 형태', [...PURCHASE_GUIDE_PATH, '3. 디지털 피아노의 형태']],
+  ['4. 타건감과 음원 외 디지털 피아노 선택 요소', [...PURCHASE_GUIDE_PATH, '4. 타건감과 음원 외 디지털 피아노 선택 요소']],
+  ['5. 브랜드별 스펙 및 리뷰', [...PURCHASE_GUIDE_PATH, '5. 브랜드별 스펙 및 리뷰']],
   ['4. 팔과 손의 구조 인식', ['피아노 연습', '내 몸 사용 설명서', '4. 팔과 손의 구조']],
-  ['08장. 세븐스 코드', ['음악 이론', 'Open Music Theory', '08장. 세븐스 코드']],
-  ['13장. 프레이즈의 결합', ['음악 이론', 'Open Music Theory', '13장. 프레이즈의 결합']],
-  ['16장. 피겨드 베이스', ['음악 이론', 'Open Music Theory', '16장. 피겨드 베이스']],
-  ['17장. 세컨더리 도미넌트 코드', ['음악 이론', 'Open Music Theory', '17장. 세컨더리 도미넌트 코드']],
-  ['18장. 세컨더리 디미니시드 코드', ['음악 이론', 'Open Music Theory', '18장. 세컨더리 디미니시드 코드']],
-  ['19장. 모드 믹스처', ['음악 이론', 'Open Music Theory', '19장. 모드 믹스처']],
-  ['33장. 집합 이론', ['음악 이론', 'Open Music Theory', '33장. 집합 이론']],
+  ...[...MT21_CATEGORY_FOLDERS].map(([category, folder]) => [
+    category,
+    ['음악 이론', '21세기 음악이론 한글판', folder],
+  ]),
+  ['01. 기초편', ['음악 이론', 'Open Music Theory', '01. 기초편']],
+  ['02.대위법과 갈랑 양식', ['음악 이론', 'Open Music Theory', '02.대위법과 갈랑 양식']],
   ['03.형식', ['음악 이론', 'Open Music Theory', '03.형식']],
   ['바로크, 고전', ['음악 이야기', '피아노 음악사', '바로크, 고전']],
   ['바로크·고전', ['음악 이야기', '피아노 음악사', '바로크, 고전']],
@@ -1283,7 +1324,9 @@ async function syncNotion() {
           console.warn(`   [건너뜀] 카테고리 없음: "${title}" (${page.id})`);
           continue;
         }
-        if (SYNC_CATEGORY && category.normalize('NFC') !== SYNC_CATEGORY) continue;
+        const normalizedCategory = category.normalize('NFC');
+        if (SYNC_CATEGORY && normalizedCategory !== SYNC_CATEGORY) continue;
+        if (SYNC_CATEGORIES && !SYNC_CATEGORIES.has(normalizedCategory)) continue;
 
         const categoryFolder = findCategoryFolder(category);
         if (!categoryFolder) {
