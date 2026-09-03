@@ -4,7 +4,7 @@ date: 2026-05-06
 lastEdited: 2026-05-06
 notionPageId: "35826dfb-cd79-806e-b11c-fae25756c314"
 sidebar:
-  order: 11
+  order: 8
 ---
 
 
@@ -60,7 +60,7 @@ N3X는 Spatial Acoustic Speaker System과 Soundboard Resonator를 사용함.
 
 
 
-<img src="/images/야마하-N3x-하이브리드-디지털-피아노-6.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+<img src="/images/야마하-N3x-하이브리드-디지털-피아노-6.webp" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 여기에 사운드보드 레조네이터가 들어가 스피커 소리에 맞춰 평판을 울려서 본체 상부 쪽 울림을 보강하고, 소리가 더 넓게 퍼지게 함.  
 
@@ -83,7 +83,7 @@ N3X는 10음색 구성이고, 내장곡은 프리셋 10곡과 보이스 데모 1
 
 
 
-<img src="/images/야마하-N3x-하이브리드-디지털-피아노-8.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+<img src="/images/야마하-N3x-하이브리드-디지털-피아노-8.webp" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 단자는 헤드폰 2개, MIDI IN/OUT, AUX IN, AUX OUT, USB TO DEVICE, USB TO HOST를 지원함. N3X에는 XLR 밸런스 출력도 들어가서 외부 장비나 녹음 환경으로 연결할 수 있음.
 

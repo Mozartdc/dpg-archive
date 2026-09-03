@@ -15,6 +15,13 @@ const API_KEY = process.env.NOTION_API_KEY;
 const DOCS_PATH = path.join(__dirname, '..', 'src', 'content', 'docs');
 const IMAGES_PATH = path.join(__dirname, '..', 'public', 'images');
 const OMT_TOP_SYNCED_BLOCK_ID = '2f826dfb-cd79-8043-a554-ca2da1e633af';
+const VSL_PLAYER_TOP_SYNCED_BLOCK_ID = '31126dfb-cd79-809b-bad7-cc8f15ed1250';
+const VSL_PIANO_TOP_SYNCED_BLOCK_ID = '2fa26dfb-cd79-80f4-98dd-de9c1f376ab3';
+const IMAGE_ONLY_SYNCED_BLOCKS = new Map([
+  [OMT_TOP_SYNCED_BLOCK_ID, 'Open Music Theory 상단 배너'],
+  [VSL_PLAYER_TOP_SYNCED_BLOCK_ID, 'Vienna Synchron Player 상단 배너'],
+  [VSL_PIANO_TOP_SYNCED_BLOCK_ID, 'Vienna Synchron Pianos 상단 배너'],
+]);
 const REPAIR_GENERATED_DOCS_ONLY = process.argv.includes('--repair-generated-docs-only');
 const REWRITE_INTERNAL_LINKS_ONLY = process.argv.includes('--rewrite-internal-links-only');
 const SYNC_CATEGORY = process.env.SYNC_CATEGORY?.trim().normalize('NFC') || null;
@@ -88,43 +95,48 @@ const CATEGORY_PATHS = new Map([
 let notionPageRouteMap = new Map();
 let notionPageOrderMap = new Map();
 let notionTitleOrderMap = new Map();
+let duplicateNotionTitleKeys = new Set();
 const TITLE_ORDER_OVERRIDES = new Map([
-  ['카시오 PX-S1100 디지털 피아노', 2],
+  ['카시오 PX-S1100 디지털 피아노', 1],
+  ['카시오 PX-S7000 디지털 피아노', 2],
   ['카시오 PX-S3100 디지털 피아노', 3],
   ['카시오 PX-S5000 디지털 피아노', 4],
   ['카시오 PX-S6000 디지털 피아노', 5],
-  ['카시오 PX-S7000 디지털 피아노', 6],
-  ['카시오 AP-S200 / AP-300 디지털 피아노', 7],
-  ['카시오 AP-S450 / 550 디지털 피아노', 8],
-  ['카시오 AP-750 디지털 피아노', 9],
-  ['카시오 GP-310 디지털 피아노', 10],
-  ['카시오 GP-510 디지털 피아노', 11],
-  ['가와이 ES60 디지털 피아노', 2],
-  ['가와이 ES120 디지털 피아노', 3],
-  ['가와이 ES520 디지털 피아노', 4],
-  ['가와이 CX102, 202, 302 디지털 피아노', 5],
-  ['가와이 CN201, CN301 디지털 피아노', 6],
-  ['가와이 CA401/501 디지털 피아노', 7],
-  ['가와이 CA701 디지털 피아노', 8],
-  ['롤랜드 FP-10 디지털 피아노', 2],
-  ['롤랜드 FP-30X 디지털 피아노', 3],
-  ['롤랜드 FP-60X 디지털 피아노', 4],
-  ['롤랜드 FP-90X 디지털 피아노', 5],
-  ['F701/RP701 디지털 피아노', 6],
-  ['롤랜드 HP702 / HP704 디지털 피아노', 7],
-  ['롤랜드 LX5 디지털 피아노', 8],
-  ['롤랜드 LX6 디지털 피아노', 9],
-  ['롤랜드 LX9 디지털 피아노', 10],
-  ['야마하 P-145 디지털 피아노', 2],
-  ['야마하 P-225 디지털 피아노', 3],
-  ['야마하 P-525 디지털 피아노', 4],
-  ['야마하 YDP 145 / S35 디지털 피아노', 5],
-  ['야마하 YDP-165, YDP-S55 디지털 피아노', 6],
-  ['야마하 CLP-825,835,845 디지털 피아노', 7],
-  ['야마하 CLP-875, 885 디지털 피아노', 8],
-  ['야마하 NU1XA 하이브리드 디지털 피아노', 9],
-  ['야마하 N1X 하이브리드 디지털 피아노', 10],
-  ['야마하 N3x 하이브리드 디지털 피아노', 11],
+  ['카시오 AP-S200 / AP-300 디지털 피아노', 6],
+  ['카시오 AP-S450 / 550 디지털 피아노', 7],
+  ['카시오 AP-750 디지털 피아노', 8],
+  ['카시오 GP-310 디지털 피아노', 9],
+  ['카시오 GP-510 디지털 피아노', 10],
+  ['코르그 B2+ / B2+SP 디지털 피아노', 1],
+  ['코르그 C1 Air 디지털 피아노', 2],
+  ['가와이 ES60 디지털 피아노', 1],
+  ['가와이 ES120 디지털 피아노', 2],
+  ['가와이 ES520 디지털 피아노', 3],
+  ['가와이 CX102, 202, 302 디지털 피아노', 4],
+  ['가와이 CN201, CN301 디지털 피아노', 5],
+  ['가와이 CA401/501 디지털 피아노', 6],
+  ['가와이 CA701 디지털 피아노', 7],
+  ['가와이 건반 계보', 8],
+  ['롤랜드 FP-10 디지털 피아노', 1],
+  ['롤랜드 FP-30X 디지털 피아노', 2],
+  ['롤랜드 FP-60X 디지털 피아노', 3],
+  ['롤랜드 FP-90X 디지털 피아노', 4],
+  ['F701/RP701 디지털 피아노', 5],
+  ['롤랜드 HP702 / HP704 디지털 피아노', 6],
+  ['롤랜드 LX5 디지털 피아노', 7],
+  ['롤랜드 LX6 디지털 피아노', 8],
+  ['롤랜드 LX9 디지털 피아노', 9],
+  ['야마하 P-225 디지털 피아노', 1],
+  ['야마하 P-525 디지털 피아노', 2],
+  ['야마하 YDP 145 / S35 디지털 피아노', 3],
+  ['야마하 YDP-165, YDP-S55 디지털 피아노', 4],
+  ['야마하 CLP-825,835,845 디지털 피아노', 5],
+  ['야마하 CLP-875, 885 디지털 피아노', 6],
+  ['야마하 N1X 하이브리드 디지털 피아노', 7],
+  ['야마하 N3x 하이브리드 디지털 피아노', 8],
+  ['야마하 P-145 디지털 피아노', 9],
+  ['야마하 NU1XA 하이브리드 디지털 피아노', 10],
+  ['야마하 YDP-166 / YDP-S56 디지털 피아노', 11],
   ['E2x2 OTG 한글 매뉴얼', 2],
   ['TOPPING Control Center 한글 매뉴얼', 3],
   ['i. 화음과 화성', 2],
@@ -271,13 +283,13 @@ function collectDocumentPaths(directoryPath, output = []) {
 }
 
 function pageOrder(page, title) {
+  const override = TITLE_ORDER_OVERRIDES.get(normalizeTitleKey(title));
+  if (override !== undefined) return override;
+
   const storedOrder = page.properties['순서']?.number;
   if (storedOrder !== undefined && storedOrder !== null && storedOrder < 9999) {
     return storedOrder;
   }
-
-  const override = TITLE_ORDER_OVERRIDES.get(normalizeTitleKey(title));
-  if (override !== undefined) return override;
 
   const numberMatch = title.trim().match(/^(\d+)(?:\.(\d+))?/);
   if (!numberMatch) return 9999;
@@ -290,6 +302,17 @@ function normalizeTitleKey(title) {
     .normalize('NFC')
     .toLowerCase()
     .replace(/[^\p{L}\p{N}]+/gu, '');
+}
+
+function findDuplicateNotionTitleKeys(allPages) {
+  const counts = new Map();
+  for (const page of allPages) {
+    const title = page.properties['제목']?.title?.map((text) => text.plain_text).join('') || '';
+    if (!title) continue;
+    const key = normalizeTitleKey(title);
+    counts.set(key, (counts.get(key) || 0) + 1);
+  }
+  return new Set([...counts].filter(([, count]) => count > 1).map(([key]) => key));
 }
 
 function getStoredTitle(contents) {
@@ -523,12 +546,10 @@ async function fetchAllChildren(blockId, depth = 0) {
     cursor = response.next_cursor;
   } while (cursor);
 
-  if (
-    blockId === OMT_TOP_SYNCED_BLOCK_ID
-    && (directChildTypes.length !== 1 || directChildTypes[0] !== 'image')
-  ) {
+  const imageOnlyBlockName = IMAGE_ONLY_SYNCED_BLOCKS.get(blockId);
+  if (imageOnlyBlockName && (directChildTypes.length !== 1 || directChildTypes[0] !== 'image')) {
     throw new Error(
-      `Open Music Theory 상단 동기화 블록이 손상되었습니다: `
+      `${imageOnlyBlockName} 동기화 블록이 손상되었습니다: `
       + `자식 ${directChildTypes.length}개 (${directChildTypes.join(', ') || '없음'}). `
       + `정상 상태는 image 1개입니다. 파일 생성을 중단합니다.`,
     );
@@ -1133,10 +1154,11 @@ async function downloadImage(url, filepathWithoutExt) {
       else if (contentType.includes('jpeg') || contentType.includes('jpg')) ext = '.jpg';
       else if (contentType.includes('png'))                                  ext = '.png';
       else if (contentType.includes('gif'))                                  ext = '.gif';
+      else if (contentType.includes('webp'))                                 ext = '.webp';
     } else {
       const urlPath = new URL(url).pathname;
       const urlExt = path.extname(urlPath).toLowerCase();
-      if (['.svg', '.png', '.jpg', '.jpeg', '.gif'].includes(urlExt)) ext = urlExt;
+      if (['.svg', '.png', '.jpg', '.jpeg', '.gif', '.webp'].includes(urlExt)) ext = urlExt;
     }
 
     const buffer = await response.arrayBuffer();
@@ -1291,6 +1313,7 @@ async function syncNotion() {
     notionPageRouteMap = pageMaps.routeMap;
     notionPageOrderMap = pageMaps.orderMap;
     notionTitleOrderMap = pageMaps.titleOrderMap;
+    duplicateNotionTitleKeys = findDuplicateNotionTitleKeys(allPages);
     console.log(`🔗 내부 링크 경로 ${notionPageRouteMap.size}개 준비 완료.\n`);
 
     if (REPAIR_GENERATED_DOCS_ONLY || REWRITE_INTERNAL_LINKS_ONLY) {
@@ -1364,7 +1387,10 @@ async function syncNotion() {
         let newMarkdown = markdown;
         const matches = [...markdown.matchAll(imageRegex)];
         let imageIndex = 0;
-        const safeTitleForImage = sanitizeName(title).replace(/\s+/g, '-');
+        const duplicateTitleSuffix = duplicateNotionTitleKeys.has(normalizeTitleKey(title))
+          ? `-${normalizeNotionId(page.id).slice(0, 12)}`
+          : '';
+        const safeTitleForImage = `${sanitizeName(title).replace(/\s+/g, '-')}${duplicateTitleSuffix}`;
 
         for (const m of matches) {
           const imageUrl = m[1];

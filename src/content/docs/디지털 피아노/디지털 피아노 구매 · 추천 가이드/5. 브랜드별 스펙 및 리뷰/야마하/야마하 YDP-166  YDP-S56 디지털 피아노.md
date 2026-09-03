@@ -6,7 +6,7 @@ notionPageId: "3bb26dfb-cd79-8170-a1ff-fcde014d3e60"
 tags:
   - "https://m.dcinside.com/board/digitalpiano/8237"
 sidebar:
-  order: 9999
+  order: 11
 ---
 
 

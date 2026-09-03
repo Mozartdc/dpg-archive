@@ -23,6 +23,13 @@ const brandReviewRoot = path.join(
 );
 const brandReviewRouteRoot = `${purchaseGuideRouteRoot}/${githubSlug('5. 브랜드별 스펙 및 리뷰')}`;
 
+function purchaseGuideDocument(section, filename, label = filename) {
+  return {
+    label,
+    link: `${purchaseGuideRouteRoot}/${githubSlug(section)}/${githubSlug(filename)}/`,
+  };
+}
+
 function collectBrandReviewRedirects(directory = brandReviewRoot, redirects = {}) {
   for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
     const entryPath = path.join(directory, entry.name);
@@ -139,7 +146,29 @@ export default defineConfig({
               items: [
                 {
                   label: '1. 디지털 피아노와 그랜드 피아노',
-                  autogenerate: { directory: '디지털 피아노/디지털 피아노 구매 · 추천 가이드/1. 디지털 피아노와 그랜드 피아노' }
+                  items: [
+                    {
+                      label: '1). 디지털 피아노의 타건감',
+                      items: [
+                        purchaseGuideDocument('1. 디지털 피아노와 그랜드 피아노', '그랜드 피아노의 해머액션'),
+                        purchaseGuideDocument('1. 디지털 피아노와 그랜드 피아노', '1. 건반 무게와 타건감'),
+                        purchaseGuideDocument('1. 디지털 피아노와 그랜드 피아노', '2. 건반의 전체 길이  피벗 길이와 타건감', '2. 건반의 전체 길이 / 피벗 길이와 타건감'),
+                        purchaseGuideDocument('1. 디지털 피아노와 그랜드 피아노', '3. 디지털 피아노의 해머 액션과 타건감'),
+                        purchaseGuideDocument('1. 디지털 피아노와 그랜드 피아노', '4. 키베드의 구조와 타건감'),
+                        purchaseGuideDocument('1. 디지털 피아노와 그랜드 피아노', '5. 센서의 구조와 타건감'),
+                        purchaseGuideDocument('1. 디지털 피아노와 그랜드 피아노', '6. 음원, 인지와 타건감'),
+                      ],
+                    },
+                    {
+                      label: '2) 디지털 피아노의 음원',
+                      items: [
+                        purchaseGuideDocument('1. 디지털 피아노와 그랜드 피아노', '1. 디지털 피아노 음원 제작 방식'),
+                        purchaseGuideDocument('1. 디지털 피아노와 그랜드 피아노', '2. 배음(harmonics)'),
+                        purchaseGuideDocument('1. 디지털 피아노와 그랜드 피아노', '3. 공명(resonance)'),
+                        purchaseGuideDocument('1. 디지털 피아노와 그랜드 피아노', '4. 샘플링과 모델링 믹싱'),
+                      ],
+                    },
+                  ]
                 },
                 {
                   label: '2. 디지털 피아노와 키보드',
@@ -155,7 +184,29 @@ export default defineConfig({
                 },
                 {
                   label: '5. 브랜드별 스펙 및 리뷰',
-                  autogenerate: { directory: '디지털 피아노/디지털 피아노 구매 · 추천 가이드/5. 브랜드별 스펙 및 리뷰' }
+                  items: [
+                    purchaseGuideDocument('5. 브랜드별 스펙 및 리뷰', '브랜드 모델별 디지털 피아노 비교'),
+                    {
+                      label: '카시오',
+                      autogenerate: { directory: '디지털 피아노/디지털 피아노 구매 · 추천 가이드/5. 브랜드별 스펙 및 리뷰/카시오' },
+                    },
+                    {
+                      label: '코르그',
+                      autogenerate: { directory: '디지털 피아노/디지털 피아노 구매 · 추천 가이드/5. 브랜드별 스펙 및 리뷰/코르그' },
+                    },
+                    {
+                      label: '야마하',
+                      autogenerate: { directory: '디지털 피아노/디지털 피아노 구매 · 추천 가이드/5. 브랜드별 스펙 및 리뷰/야마하' },
+                    },
+                    {
+                      label: '롤랜드',
+                      autogenerate: { directory: '디지털 피아노/디지털 피아노 구매 · 추천 가이드/5. 브랜드별 스펙 및 리뷰/롤랜드' },
+                    },
+                    {
+                      label: '가와이',
+                      autogenerate: { directory: '디지털 피아노/디지털 피아노 구매 · 추천 가이드/5. 브랜드별 스펙 및 리뷰/가와이' },
+                    },
+                  ]
                 },
               ]
             },

@@ -4,7 +4,7 @@ date: 2026-05-07
 lastEdited: 2026-05-07
 notionPageId: "35926dfb-cd79-8068-ad91-e10968ea33d2"
 sidebar:
-  order: 9
+  order: 10
 ---
 
 
@@ -25,7 +25,7 @@ NU1XA는 88건반이고, 실제 어쿠스틱 업라이트 피아노 액션을 �
 
 
 
-<img src="/images/야마하-NU1XA-하이브리드-디지털-피아노-2.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+<img src="/images/야마하-NU1XA-하이브리드-디지털-피아노-2.webp" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 NU1X와 가장 크게 달라진 부분은 센서임. NU1XA에는 새로 개발한 Articulation Sensor System이 들어감. 건반과 해머 움직임을 비접촉 전자기 센서가 받음. 전작 NU1X보다 약한 터치, 빠른 반복 타건, 트릴에서 세밀한 움직임을 더 안정적으로 읽도록 개선됨.
 
@@ -37,7 +37,7 @@ NU1X와 가장 크게 달라진 부분은 센서임. NU1XA에는 새로 개발�
 
 
 
-<img src="/images/야마하-NU1XA-하이브리드-디지털-피아노-4.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+<img src="/images/야마하-NU1XA-하이브리드-디지털-피아노-4.webp" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 NU1XA는 댐퍼, 소스테누토, 소프트 3페달이고, 하프페달을 지원함. 페달은 GrandTouch Pedals이고, 댐퍼 페달은 GP Response Damper를 포함함. CLP-875/885와 같은 계열의 상급 페달 구조임.
 단순히 켜지고 꺼지는 페달이 아니라, 그랜드 피아노 페달처럼 밟는 깊이에 따른 변화를 구현함.
