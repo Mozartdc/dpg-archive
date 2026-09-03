@@ -157,7 +157,7 @@ USB 허브에서 발열이 가장 많은게 영상을 처리하는 칩셋임. �
 
 
 
-<img src="/images/디지털-피아노와-PC-연결-6.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
+<img src="/images/디지털-피아노와-PC-연결-6.webp" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
 
 ### <strong>맥이면 기본 제공되는 GarageBand 쓰면됨. </strong>
