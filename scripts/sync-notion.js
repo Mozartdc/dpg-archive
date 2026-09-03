@@ -14,6 +14,7 @@ const DATABASE_ID = process.env.NOTION_DATABASE_ID;
 const API_KEY = process.env.NOTION_API_KEY;
 const DOCS_PATH = path.join(__dirname, '..', 'src', 'content', 'docs');
 const IMAGES_PATH = path.join(__dirname, '..', 'public', 'images');
+const OMT_TOP_SYNCED_BLOCK_ID = '2f826dfb-cd79-8043-a554-ca2da1e633af';
 const REPAIR_GENERATED_DOCS_ONLY = process.argv.includes('--repair-generated-docs-only');
 const REWRITE_INTERNAL_LINKS_ONLY = process.argv.includes('--rewrite-internal-links-only');
 const SYNC_CATEGORY = process.env.SYNC_CATEGORY?.trim().normalize('NFC') || null;
@@ -478,6 +479,7 @@ async function fetchSingleBlock(blockId) {
 
 async function fetchAllChildren(blockId, depth = 0) {
   let allResults = [];
+  const directChildTypes = [];
   let cursor = undefined;
   if (depth > 5) return [];
 
@@ -492,6 +494,7 @@ async function fetchAllChildren(blockId, depth = 0) {
     if (!response.results) break;
 
     for (const block of response.results) {
+      directChildTypes.push(block.type);
       if (block.type === 'synced_block') {
         const syncedFrom = block.synced_block.synced_from;
         if (syncedFrom && syncedFrom.block_id) {
@@ -519,6 +522,17 @@ async function fetchAllChildren(blockId, depth = 0) {
     }
     cursor = response.next_cursor;
   } while (cursor);
+
+  if (
+    blockId === OMT_TOP_SYNCED_BLOCK_ID
+    && (directChildTypes.length !== 1 || directChildTypes[0] !== 'image')
+  ) {
+    throw new Error(
+      `Open Music Theory 상단 동기화 블록이 손상되었습니다: `
+      + `자식 ${directChildTypes.length}개 (${directChildTypes.join(', ') || '없음'}). `
+      + `정상 상태는 image 1개입니다. 파일 생성을 중단합니다.`,
+    );
+  }
 
   return allResults;
 }
