@@ -22,10 +22,6 @@ sidebar:
 
 <img src="/images/롤랜드-LX5-디지털-피아노-0.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-<div class="notion-top-image-spacer" style="height: 1em;"></div>
-
-
-
 LX-5는 2024년 3월 12일 Roland가 공식 발표한 모델로 LX700 시리즈를 개편한 LX 라인업의 엔트리 모델로 기존 LX705의 후속기임. 국내에서는 코스모스악기가 비슷한 시기에 정식 수입함.
 
 

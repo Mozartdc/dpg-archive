@@ -22,10 +22,6 @@ sidebar:
 
 <img src="/images/롤랜드-FP-60X-디지털-피아노-0.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-<div class="notion-top-image-spacer" style="height: 1em;"></div>
-
-
-
 2021년 1월 11일 Roland가 FP-X 시리즈를 공식 발표했고, 글로벌 출시는 2021년 2월부터 시작됨. 국내에서는 코스모스악기가 2021년 02월 22일 FP-60X를 정식 수입함.
 
 

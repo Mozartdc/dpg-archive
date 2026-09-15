@@ -11,10 +11,6 @@ sidebar:
 
 <img src="/images/코르그-C1-Air-디지털-피아노-0.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-<div class="notion-top-image-spacer" style="height: 1em;"></div>
-
-
-
 C1 Air는 2017년 9월에 나온 코르그의 슬림형 콘솔 디지털 피아노임. 상위 모델인 G1 Air와 같은 RH3 건반을 쓰면서 음원과 스피커 구성을 줄여 가격과 크기를 낮춘 모델임. 이름의 Air는 Bluetooth Audio를 뜻하며, 스마트폰 음악을 피아노 스피커로 받아 재생할 수 있음.
 
 

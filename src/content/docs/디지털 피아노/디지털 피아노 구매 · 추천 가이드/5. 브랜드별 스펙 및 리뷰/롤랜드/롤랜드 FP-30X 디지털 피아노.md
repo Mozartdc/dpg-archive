@@ -22,10 +22,6 @@ sidebar:
 
 <img src="/images/롤랜드-FP-30X-디지털-피아노-0.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-<div class="notion-top-image-spacer" style="height: 1em;"></div>
-
-
-
 2020년 말 Roland가 FP-X 시리즈를 발표했고, FP-30X는2021년 1월 출시함.
 
 코스모스에서는 2021 02 22에 정식수입함.

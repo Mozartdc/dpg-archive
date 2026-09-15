@@ -11,10 +11,6 @@ sidebar:
 
 <img src="/images/코르그-B2+-B2+SP-디지털-피아노-0.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-<div class="notion-top-image-spacer" style="height: 1em;"></div>
-
-
-
 기존 B2는 NH 건반과 12음색, 15W + 15W 스피커를 갖춘 코르그의 엔트리 디지털 피아노였음. 2025년 후속으로 나온 B2+도 이 기본 구조를 거의 그대로 이어감. B2+SP는 같은 본체에 전용 스탠드와 3페달을 붙인 구성임.
 
 전작과 비교해 건반이나 음원, 스피커는 달라지지 않았음. NH 건반, 12음색, 최대 120음 동시발음, 15W + 15W 출력, 10 x 5cm 타원형 스피커 2개, 11.4kg의 본체 무게까지 같음. USB 단자가 Type B에서 Type C로 바뀐 것이 가장 눈에 큰 변화임.

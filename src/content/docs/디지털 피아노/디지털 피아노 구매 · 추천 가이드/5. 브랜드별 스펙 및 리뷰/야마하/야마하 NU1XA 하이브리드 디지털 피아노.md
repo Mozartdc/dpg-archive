@@ -11,10 +11,6 @@ sidebar:
 
 <img src="/images/야마하-NU1XA-하이브리드-디지털-피아노-0.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
-<div class="notion-top-image-spacer" style="height: 1em;"></div>
-
-
-
 NU1XA는 2023년 9월 13일 Yamaha가 공식 발표한 AvantGrand 업라이트형 하이브리드 피아노임. NU1X 후속 모델이고, 실제 업라이트 피아노 액션에 새로운 센서 시스템, GrandTouch Pedals, CFX/Bösendorfer 바이노럴 샘플링, Bluetooth Audio/MIDI, Smart Pianist 연동을 넣은 모델임. Yamaha Korea에도 같은 날 공식 발표 자료가 올라왔고, 국내 판매는 2023년 12월 1일부터 시작됨.
 
 
