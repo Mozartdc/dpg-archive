@@ -151,12 +151,15 @@ const LEGACY_NOTION_ROUTE_OVERRIDES = new Map([
 const EXCLUDED_NOTION_PAGE_IDS = new Set([
   // 사이트에서 제거한 가와이 라인업 인덱스 페이지
   '35e26dfb-cd79-80dc-b0ad-c09ee5223f7d',
+  // DCInside 카테고리 인덱스를 잘못 가져온 페이지: 실제 글이 아님
+  '30326dfb-cd79-801d-b9a9-f76f5637a0cb',
 ]);
 const EXCLUDED_NOTION_PAGE_TITLES = new Set([
   '내 몸 사용 설명서',
   '내몸 사용 설명서',
   'ToppingPro V1.6_페이지_15_이미지_0003',
   'ToppingPro V1.6_페이지_15_이미지_0003',
+  '브랜드 모델별 디지털 피아노 비교',
 ]);
 
 
@@ -384,6 +387,33 @@ function isNotionHref(href) {
   }
 }
 
+const LEGACY_INTERNAL_LINKS = new Map([
+  ['https://m.dcinside.com/board/digitalpiano/4137', '/디지털-피아노/디지털-피아노-연결흐름과-개념/디지털-피아노와-외부-스피커active-monitor-직결/'],
+]);
+
+function repairPurchaseGuideLayout(markdown, documentPath) {
+  const purchaseGuideRoot = path.join(DOCS_PATH, ...PURCHASE_GUIDE_PATH);
+  if (!documentPath.startsWith(purchaseGuideRoot + path.sep)) return markdown;
+
+  let repaired = markdown;
+  for (const [legacyUrl, internalRoute] of LEGACY_INTERNAL_LINKS) {
+    repaired = repaired.replaceAll(legacyUrl, internalRoute);
+  }
+
+  // 상단 동기화 이미지와 본문 첫 이미지가 맞붙지 않도록 한 줄 간격을 둔다.
+  const frontmatterEnd = repaired.indexOf('\n---', 4);
+  if (frontmatterEnd !== -1) {
+    const bodyStart = frontmatterEnd + 4;
+    const body = repaired.slice(bodyStart);
+    const spacer = '<div class="notion-top-image-spacer" style="height: 1em;"></div>\n\n';
+    const imageMatch = body.match(/^(\s*<img\b[^>]*\/?>\s*\n)(?!\s*<div class="notion-top-image-spacer")/i);
+    if (imageMatch && !body.startsWith(spacer.trimStart())) {
+      repaired = repaired.slice(0, bodyStart) + body.replace(imageMatch[0], `${imageMatch[1]}\n${spacer}`);
+    }
+  }
+  return repaired;
+}
+
 function repairGeneratedDocuments({ rewriteOrders = true } = {}) {
   let changedDocuments = 0;
   let rewrittenLinks = 0;
@@ -410,6 +440,8 @@ function repairGeneratedDocuments({ rewriteOrders = true } = {}) {
         return route;
       },
     );
+
+    markdown = repairPurchaseGuideLayout(markdown, documentPath);
 
     if (rewriteOrders) {
       const pageId = normalizeNotionId(getStoredNotionPageId(markdown));
@@ -1402,6 +1434,7 @@ async function syncNotion() {
           }
         }
         markdown = newMarkdown;
+        markdown = repairPurchaseGuideLayout(markdown, path.join(categoryFolder, `${sanitizeName(title)}.md`));
 
         let imports = '';
         let extension = '.md';

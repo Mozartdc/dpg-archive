@@ -22,6 +22,10 @@ sidebar:
 
 <img src="/images/롤랜드-LX6-디지털-피아노-0.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
+<div class="notion-top-image-spacer" style="height: 1em;"></div>
+
+
+
 LX6는 2024년 3월 12일 Roland가 공식 발표한 모델로 LX700 시리즈를 개편한 LX모델로 기존 LX706의 후속기임. 국내에서는 코스모스악기가 비슷한 시기에 정식 수입함.
 
 LX6는 LX 시리즈의 중간 모델이지만, 단순히 LX5와 LX9 사이의 중간 모델이 아니라 LX9와 같은 건반 계열과 같은 음원 구조를 공유하는 상급기종임.

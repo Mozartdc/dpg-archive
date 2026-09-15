@@ -22,6 +22,10 @@ sidebar:
 
 <img src="/images/롤랜드-LX9-디지털-피아노-0.png" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
+<div class="notion-top-image-spacer" style="height: 1em;"></div>
+
+
+
 LX9는 2024년 3월 12일 Roland가 공식 발표한 모델로, LX700 시리즈를 개편한 새 LX 라인업의 최상위 플래그십 모델임. 같은 세대의 LX5, LX6와 달리 가장 큰 캐비닛과 가장 강한 스피커 시스템, 그리고 Haptic Key Vibration이 포함된 Hybrid Grand Keyboard를 사용함. 
 
 

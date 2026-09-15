@@ -11,6 +11,10 @@ sidebar:
 
 <img src="/images/야마하-N3x-하이브리드-디지털-피아노-0.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
+<div class="notion-top-image-spacer" style="height: 1em;"></div>
+
+
+
 N3X는 AvantGrand N 시리즈의 최상위 그랜드형 모델임.2016년 NAMM Show에서 공개 후 2017년 1월 부터 판매하기 시작함.
 
 N1X가 그랜드 액션을 세로형 캐비닛에 넣은 모델이라면, N3X는 그랜드형 외관, 대형 스피커 시스템, 사운드보드 레조네이터, TRS까지 넣은 모델임.

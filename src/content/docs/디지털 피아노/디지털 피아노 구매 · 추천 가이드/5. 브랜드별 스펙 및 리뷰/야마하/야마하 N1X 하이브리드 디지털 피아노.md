@@ -11,6 +11,10 @@ sidebar:
 
 <img src="/images/야마하-N1X-하이브리드-디지털-피아노-0.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
+<div class="notion-top-image-spacer" style="height: 1em;"></div>
+
+
+
 N1X는 하이브리드 형태의 그랜드 해머 액션을 그대로 탑재한 모델임. 2019년 1월 24일 NAMM 2019에서 발표했고, 국내엔 미출시 모델임.
 
 

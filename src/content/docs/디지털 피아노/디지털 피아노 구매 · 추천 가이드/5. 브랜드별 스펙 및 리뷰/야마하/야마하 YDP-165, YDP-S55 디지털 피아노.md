@@ -11,6 +11,10 @@ sidebar:
 
 <img src="/images/야마하-YDP-165,-YDP-S55-디지털-피아노-0.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
+<div class="notion-top-image-spacer" style="height: 1em;"></div>
+
+
+
 YDP-165와 YDP-S55는 2022년 4월에 나온 Yamaha Arius 시리즈 모델로, 내부 사양은 사실상 같고 캐비닛 형태만 다른 모델임. YDP-165는 일반 콘솔형, YDP-S55는 슬림형으로 보면 됨. 두 모델 모두 2019년형 YDP-164와 YDP-S54의 후속기이며, 핵심 변화는 VRM Lite와 Volume Limiter 추가 정도라 큰 변화는 없음.
 
 

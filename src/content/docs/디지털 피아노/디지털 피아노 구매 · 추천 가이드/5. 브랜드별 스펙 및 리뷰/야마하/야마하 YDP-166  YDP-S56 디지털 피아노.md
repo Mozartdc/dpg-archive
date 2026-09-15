@@ -13,6 +13,10 @@ sidebar:
 
 <img src="/images/야마하-YDP-166-YDP-S56-디지털-피아노-0.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
 
+<div class="notion-top-image-spacer" style="height: 1em;"></div>
+
+
+
 
 
 <img src="/images/야마하-YDP-166-YDP-S56-디지털-피아노-1.jpg" alt="" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 10px 0;" />
