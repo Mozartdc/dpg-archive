@@ -273,6 +273,13 @@ a[rel="next"] .label {
    Notion Embeds
    ============================================================ */
 
+.sl-markdown-content .katex-display {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-block: 0.25rem;
+}
+
 .sl-markdown-content .notion-embed {
   width: 100%;
   margin: 1rem 0;
